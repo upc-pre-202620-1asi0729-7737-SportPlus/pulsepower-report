@@ -87,7 +87,7 @@ Como criterio inicial de éxito, se propone que, durante un futuro piloto de cua
 - Suponemos que integrar una pulsera compatible permitirá obtener los datos necesarios para desarrollar las funcionalidades propuestas.
 - Creemos que el valor de las recomendaciones mantendrá el uso recurrente de la plataforma más allá del periodo de novedad inicial (evitando la tasa de abandono típica en apps de salud).
 
-**Business outcomes**
+**Business Outcome Assumptions**
 
 - Lograr que la mayoría de usuarios registrados conecten su pulsera y configuren su perfil en su primera sesión.
 - Aumentar los días de consulta activa semanal para revisar sugerencias de entrenamiento y recuperación.
@@ -100,7 +100,7 @@ Como criterio inicial de éxito, se propone que, durante un futuro piloto de cua
 - Usuarios con rutinas de entrenamiento o alta exigencia física.
 - Personas que buscan mejorar su bienestar general y calidad de sueño.
 
-**Users outcomes**
+**Users outcomes and Benefit Assumptions**
 
 _Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)_
 
@@ -118,23 +118,47 @@ _Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellne
 - Evaluar ajustes en su rutina a partir de recomendaciones personalizadas.
 - Consultar su evolución para reconocer cambios a lo largo del tiempo.
 
-**Features**
+**Features Assumptions**
 
 - Integración y sincronización de datos de una pulsera compatible.
 - Registro del perfil, objetivos, preferencias y hábitos del usuario.
 - Panel de indicadores de sueño, esfuerzo y recuperación.
 - Recomendaciones personalizadas según el historial y los objetivos.
-- Asistente conversacional con inteligencia artificial para explicar los indicadores.
 - Avisos configurables sobre cambios en los registros.
 - Historial y reportes de evolución.
 - Gestión de planes de suscripción.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
-### Statement 1
-### Statement 2
-### Statement 3
-### Statement 4
-### Statement 5
+
+**Hipótesis 1:**
+
+Creemos que desarrollar una sincronización sin fricción de la pulsera logrará que los deportistas centralicen su información fisiológica sin esfuerzo manual. Lo sabremos cuando más del 85% de los usuarios mantengan sus dispositivos sincronizados diariamente durante el primer mes.
+
+**Hipótesis 2:**
+
+Creemos que capturar los hábitos y metas del usuario en el onboarding logrará que el sistema contextualice los datos con mayor precisión. Lo sabremos cuando veamos una tasa de finalización del perfil superior al 90% en la primera sesión de uso.
+
+**Hipótesis 3:**
+
+Creemos que simplificar la data cruda en tres indicadores visuales clave logrará reducir la confusión e incertidumbre del atleta sobre su estado físico. Lo sabremos cuando los usuarios activos diarios revisen este panel al menos una vez cada mañana.
+
+**Hipótesis 4:**
+
+Creemos que traducir los indicadores en acciones claras (ej. "hoy prioriza descanso") logrará que los atletas tomen mejores decisiones para evitar sobreentrenamiento. Lo sabremos cuando los usuarios reporten una alta utilidad de las recomendaciones mediante una calificación positiva (feedback in-app).
+
+**Hipótesis 5:**
+
+Creemos que enviar alertas oportunas sobre cambios fisiológicos logrará mantener el interés del usuario sin generar fatiga por notificaciones. Lo sabremos cuando la tasa de apertura (open rate) de los avisos supere el 40% y las desactivaciones por spam sean mínimas.
+
+**Hipótesis 6:**
+
+Creemos que mostrar gráficas de tendencias a largo plazo logrará que el usuario identifique patrones entre sus hábitos diarios y su rendimiento.Lo sabremos cuando los usuarios interactúen con la vista semanal/mensual de reportes al menos dos veces al mes de forma recurrente.
+
+**Hipótesis 7:**
+
+Creemos que estructurar el acceso mediante suscripciones logrará sostener financieramente la entrega de hardware sin costo inicial.Lo sabremos cuando alcancemos una tasa de conversión del 60% hacia planes de pago sostenidos tras los períodos de prueba.
+
 #### 1.2.2.4. Lean UX Canvas
+
 
 ### 1.3. Segmentos objetivo

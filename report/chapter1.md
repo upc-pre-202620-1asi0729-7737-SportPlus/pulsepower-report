@@ -160,5 +160,10 @@ Creemos que estructurar el acceso mediante suscripciones logrará sostener finan
 
 #### 1.2.2.4. Lean UX Canvas
 
+Link del canva: [https://canva.link/050da8fh7vfddyg](https://canva.link/050da8fh7vfddyg)
+
+_Figura 1 (Lean UX Canvas)_
+![Lean UX Canva](../assets/images/leanuxcanva.png)
 
 ### 1.3. Segmentos objetivo
+

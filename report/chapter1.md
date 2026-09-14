@@ -59,8 +59,76 @@ La magnitud de esta problemática se cuantifica en el alto índice de lesiones p
 
 
 ### 1.2.2 Lean UX Process
+
+Se aplicará Lean UX para orientar la creación del producto a partir de las necesidades de sus usuarios y la validación de los supuestos del equipo. Este proceso permitirá investigar cómo las personas interpretan sus registros de sueño, esfuerzo y recuperación, y qué dificultades encuentran al utilizarlos para organizar sus rutinas.
+
 #### 1.2.2.1. Lean UX Problem Statements
+
+El seguimiento digital del bienestar y del rendimiento físico ofrece dispositivos y aplicaciones que permiten registrar y consultar indicadores de actividad, sueño y recuperación. Estas herramientas atienden a personas interesadas en mejorar su entrenamiento y a quienes buscan comprender su descanso mediante cifras, gráficos y puntuaciones sobre sus hábitos.
+
+La brecha que buscamos investigar es la dificultad para interpretar estos indicadores de manera conjunta y relacionarlos con decisiones cotidianas. Se parte del supuesto de que algunas personas no encuentran suficiente orientación contextualizada en las herramientas que utilizan, lo que puede generar incertidumbre al distribuir su esfuerzo, planificar sus entrenamientos o revisar sus hábitos de descanso.
+
+Para abordar esta necesidad, se plantea desarrollar una plataforma web que integre registros de una pulsera compatible y los presente mediante explicaciones comprensibles, tendencias y recomendaciones personalizadas. La estrategia contempla un asistente conversacional con inteligencia artificial y un modelo de suscripción cuyo valor se apoye en el seguimiento histórico y el acompañamiento adaptado a los objetivos del usuario.
+
+Como criterio inicial de éxito, se propone que, durante un futuro piloto de cuatro semanas, al menos el 70 % de los participantes interprete correctamente los indicadores principales en una prueba de comprensión y al menos el 60 % consulte la plataforma en tres días distintos durante la última semana. Estos umbrales constituyen metas de validación propuestas por el equipo y deberán revisarse según los resultados de las pruebas.
+
+¿Cómo podríamos facilitar que tanto deportistas como personas enfocadas en su bienestar interpreten sus métricas fisiológicas para tomar decisiones diarias sobre su entrenamiento, descanso y hábitos?
+
+
 #### 1.2.2.2. Lean UX Assumptions
+
+**Business Assumptions**
+
+- Suponemos que los deportistas prefieren adaptar su carga de entrenamiento diaria según métricas de recuperación objetivas antes que seguir a ciegas su rutina programada o su nivel de motivación.
+- Creemos que quienes quieren mejorar su bienestar buscan sugerencias en lenguaje sencillo sobre cómo mejorar su descanso y energía diaria, evitando la interpretación de tablas, puntuaciones o gráficos complejos.
+- Suponemos que ambos grupos sienten que sus aplicaciones actuales les entregan datos aislados y que valoran una herramienta que integre esfuerzo y descanso en explicaciones accionables.
+- Creemos que los usuarios tienen la disposición de consultar la plataforma de forma recurrente para planificar su día, en lugar de usarla solo como una consulta pasiva al final de la semana.
+- Creemos que los usuarios estarán dispuestos a pagar una suscripción si reciben orientación personalizada y perciben utilidad en el seguimiento.
+- Suponemos que integrar una pulsera compatible permitirá obtener los datos necesarios para desarrollar las funcionalidades propuestas.
+- Creemos que el valor de las recomendaciones mantendrá el uso recurrente de la plataforma más allá del periodo de novedad inicial (evitando la tasa de abandono típica en apps de salud).
+
+**Business outcomes**
+
+- Lograr que la mayoría de usuarios registrados conecten su pulsera y configuren su perfil en su primera sesión.
+- Aumentar los días de consulta activa semanal para revisar sugerencias de entrenamiento y recuperación.
+- Convertir usuarios a la suscripción Pro demostrando el valor práctico de las interpretaciones.
+- Mantener la suscripción mediante reportes de progreso histórico que demuestren resultados acumulados.
+- Garantizar que el costo técnico de las interacciones con el asistente mantenga un margen positivo por cada usuario de pago.
+
+**Users**
+
+- Usuarios con rutinas de entrenamiento o alta exigencia física.
+- Personas que buscan mejorar su bienestar general y calidad de sueño.
+
+**Users outcomes**
+
+_Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)_
+
+- Comprender sus indicadores de esfuerzo y recuperación.
+- Revisar cómo se relacionan el descanso y sus actividades físicas.
+- Organizar sus entrenamientos considerando sus registros y objetivos.
+- Reconocer cambios en sus patrones mediante el seguimiento histórico.
+- Recibir orientaciones que les ayuden a distribuir sus actividades y descansos.
+
+_Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)_
+
+- Comprender sus registros de sueño mediante explicaciones sencillas.
+- Identificar patrones relacionados con sus hábitos de descanso.
+- Reducir la incertidumbre al interpretar sus indicadores.
+- Evaluar ajustes en su rutina a partir de recomendaciones personalizadas.
+- Consultar su evolución para reconocer cambios a lo largo del tiempo.
+
+**Features**
+
+- Integración y sincronización de datos de una pulsera compatible.
+- Registro del perfil, objetivos, preferencias y hábitos del usuario.
+- Panel de indicadores de sueño, esfuerzo y recuperación.
+- Recomendaciones personalizadas según el historial y los objetivos.
+- Asistente conversacional con inteligencia artificial para explicar los indicadores.
+- Avisos configurables sobre cambios en los registros.
+- Historial y reportes de evolución.
+- Gestión de planes de suscripción.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
 ### Statement 1
 ### Statement 2
@@ -68,4 +136,5 @@ La magnitud de esta problemática se cuantifica en el alto índice de lesiones p
 ### Statement 4
 ### Statement 5
 #### 1.2.2.4. Lean UX Canvas
+
 ### 1.3. Segmentos objetivo

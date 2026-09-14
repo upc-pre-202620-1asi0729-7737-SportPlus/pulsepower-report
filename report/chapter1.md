@@ -97,8 +97,8 @@ Como criterio inicial de éxito, se propone que, durante un futuro piloto de cua
 
 **Users**
 
-- Usuarios con rutinas de entrenamiento o alta exigencia física.
-- Personas que buscan mejorar su bienestar general y calidad de sueño.
+- Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas).
+- Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker).
 
 **Users outcomes and Benefit Assumptions**
 
@@ -167,3 +167,16 @@ _Figura 1 (Lean UX Canvas)_
 
 ### 1.3. Segmentos objetivo
 
+**Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
+
+- Demográfico: Hombres y mujeres entre los 18 y 60 años, deportistas amateurs, semiprofesionales o personas con rutinas de entrenamiento constantes.
+- Psicográfico: Orientados a la mejora de su rendimiento y a la prevención de lesiones. Valoran la disciplina y el control sobre su propio cuerpo. Buscan sustentar sus decisiones de entrenamiento en información objetiva más que en la intuición.
+- Conductual: Poseen un manejo intermedio a avanzado de conceptos vinculados al entrenamiento físico y al seguimiento del rendimiento personal. Recurren al servicio de manera constante y diaria, especialmente antes y después de cada sesión de entrenamiento. Están dispuestos a adoptar nuevas herramientas si estas ofrecen una ventaja clara para su rendimiento.
+- Geográfico: Residentes en Perú, principalmente en zonas urbanas con acceso a instalaciones deportivas y conectividad plena a internet móvil.
+
+**Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
+
+- Demográfico: Hombres y mujeres entre los 25 y 55 años, profesionales con jornadas laborales exigentes, estudiantes de posgrado y/o personas con niveles elevados de estrés cotidiano.
+- Psicográfico: Valoran el equilibrio entre su vida diaria y su bienestar personal. Buscan reducir la incertidumbre sobre su propio cuerpo y prevenir el desgaste derivado del estrés acumulado. Están orientados a mejorar su calidad de vida de forma sostenible, sin necesariamente seguir una rutina de entrenamiento intensa.
+- Conductual: Poseen un manejo elemental de herramientas digitales de salud y bienestar. Acuden al servicio de forma regular, principalmente para revisar su recuperación nocturna y en momentos de descanso a lo largo del día. Están dispuestos a adoptar nuevas herramientas si estas ofrecen un beneficio inmediato y claro para su bienestar.
+- Geográfico: Residentes en Perú, principalmente en zonas urbanas de alta densidad poblacional, con conectividad plena a internet móvil.

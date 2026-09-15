@@ -26,7 +26,43 @@ Los competidores identificados son:
 | | **Amenazas** | Adopción tecnológica limitada en algunos segmentos; ingreso de marcas internacionales consolidadas (WHOOP, Oura, Garmin) al mercado peruano. | Plataformas con motores de IA conversacional más personalizados, como PulsePower, que ofrecen mayor profundidad analítica. | Alternativas sin suscripción mensual que reducen el costo total para el usuario; plataformas con IA conversacional más profunda. | Plataformas nativas de inteligencia fisiológica que no dependen de comprar un reloj deportivo previo. |
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
+Con base en el análisis competitivo, PulsePower plantea las siguientes estrategias y tácticas preliminares, cuya viabilidad se evaluará durante la investigación y validación del producto.
+
+#### Estrategias
+
+- **Diferenciación mediante la comprensión de los indicadores:** PulsePower buscará destacar frente a competidores que ya incorporan funciones de inteligencia artificial mediante explicaciones claras y útiles de los indicadores fisiológicos, facilitando su comprensión y aplicación en la toma de decisiones.
+
+- **Transparencia comercial:** Se establecerá una propuesta comercial clara que permita al usuario comprender el precio del software, los costos asociados a la pulsera, las funcionalidades incluidas y las condiciones de cancelación.
+
+- **Experiencia web adaptable:** PulsePower ofrecerá una experiencia accesible desde computadoras, tabletas y teléfonos, buscando mantener una experiencia consistente entre la Landing Page y la aplicación web.
+
+- **Reducción de dificultades de incorporación:** Se priorizará una incorporación sencilla mediante una configuración guiada del perfil y de la pulsera compatible, reduciendo las dificultades relacionadas con la conexión, los permisos y la consulta de los primeros registros.
+
+- **Vinculación con los segmentos locales:** PulsePower buscará establecer vínculos con gimnasios, clubes y comunidades de bienestar en Perú para acercar la propuesta a sus segmentos objetivo y obtener retroalimentación sobre su utilidad.
+
+- **Demostración del valor de la suscripción:** Se buscará demostrar el valor del servicio antes de la contratación, permitiendo que los usuarios conozcan sus principales funcionalidades y beneficios.
+
+- **Construcción de confianza:** PulsePower comunicará de manera transparente la procedencia y actualización de los datos, los límites de las recomendaciones y las opciones de privacidad, evitando atribuir al producto capacidades que todavía no hayan sido demostradas.
+
+#### Tácticas
+
+- **Pruebas de comprensión:** Realizar pruebas con representantes de ambos segmentos para evaluar la comprensión de los indicadores y ajustar el lenguaje, los reportes y las recomendaciones.
+
+- **Presentación detallada de precios:** Mostrar explícitamente los costos del software y de la pulsera, las funcionalidades incluidas y las condiciones de cancelación. La estructura comercial definitiva se establecerá después de evaluar los costos y la disposición de pago.
+
+- **Pruebas multidispositivo:** Evaluar los principales flujos de consulta y seguimiento en diferentes dimensiones de pantalla, verificando la consistencia entre la Landing Page y la aplicación web.
+
+- **Configuración guiada:** Diseñar pruebas de incorporación que permitan identificar obstáculos relacionados con la conexión de la pulsera, la comprensión de permisos y la consulta de los primeros registros.
+
+- **Acuerdos piloto:** Buscar colaboraciones con gimnasios, clubes y comunidades de bienestar en Perú para obtener retroalimentación y evaluar la utilidad de PulsePower dentro de las rutinas de los participantes.
+
+- **Prueba del servicio:** Evaluar una modalidad de prueba que permita conocer las funcionalidades antes de contratar el servicio. La conversión, el uso recurrente y los motivos de abandono se utilizarán para ajustar los planes y priorizar mejoras.
+
+- **Comunicación basada en evidencia:** Explicar la procedencia y actualización de los datos, los límites de las recomendaciones y las opciones de privacidad. Los beneficios comunicados deberán respaldarse con resultados obtenidos durante la validación.
+
 ## 2.2. Entrevistas
+
 ### 2.2.1. Diseño de entrevistas
 ## 2.3. Needfinding
 ### 2.3.1. User Personas

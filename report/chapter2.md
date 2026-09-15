@@ -64,6 +64,37 @@ Con base en el análisis competitivo, PulsePower plantea las siguientes estrateg
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
+
+#### Segmento 1: Usuarios con rutinas de entrenamiento o alta exigencia física
+
+Este segmento comprende deportistas amateurs, atletas semiprofesionales o profesionales y personas con rutinas de entrenamiento exigentes. La documentación señala como principales problemas la dificultad para interpretar la recuperación, controlar el esfuerzo y tomar decisiones de entrenamiento basadas en información objetiva.
+
+1. ¿Cómo determina actualmente si su cuerpo está preparado para realizar una sesión de entrenamiento?
+2. ¿Qué factores toma en cuenta para decidir cuánto entrenar o qué tan intenso será su entrenamiento?
+3. ¿Qué dificultades encuentra al momento de saber si se está recuperando adecuadamente después de entrenar?
+4. ¿Cómo realiza actualmente el seguimiento de su rendimiento, esfuerzo y recuperación?
+5. ¿Qué tan fácil o difícil le resulta interpretar los datos que obtiene de su reloj, pulsera, aplicación u otro método de seguimiento?
+6. ¿Ha tenido situaciones en las que haya entrenado a pesar de sentirse físicamente agotado o, por el contrario, haya descansado cuando podría haber entrenado? ¿Qué ocurrió?
+7. ¿Cómo identifica actualmente señales de fatiga, sobreentrenamiento o falta de recuperación?
+8. ¿Qué sucede con su entrenamiento cuando tiene cambios en su rutina, duerme mal, atraviesa una semana de mayor estrés o está recuperándose de una lesión?
+9. ¿Qué información sobre su estado físico le gustaría conocer antes o después de entrenar y que actualmente le resulta difícil obtener?
+10. Si pudiera mejorar una sola cosa de la manera en que actualmente controla su entrenamiento y recuperación, ¿qué cambiaría y por qué?
+
+#### Segmento 2: Personas que buscan mejorar su bienestar general y su calidad de sueño
+
+Este segmento contempla principalmente adultos de 25 a 55 años, profesionales con jornadas exigentes, estudiantes de posgrado y personas con niveles elevados de estrés cotidiano. Buscan comprender mejor su descanso, reducir la incertidumbre sobre su estado fisiológico y recibir recomendaciones adaptadas a su rutina.
+
+1. ¿Cómo evalúa actualmente si ha descansado bien después de dormir?
+2. ¿Qué dificultades encuentra para saber por qué algunos días se siente más descansado o con más energía que otros?
+3. ¿Cómo realiza actualmente el seguimiento de su calidad de sueño o bienestar diario?
+4. ¿Qué información suele revisar al despertarse para saber cómo ha sido su descanso?
+5. ¿Qué tan fácil o difícil le resulta interpretar los datos de sueño o bienestar que obtiene de una aplicación, reloj, pulsera u otro dispositivo?
+6. ¿Cómo afectan actualmente el estrés, el trabajo, los estudios u otros factores de su rutina a sus horas y calidad de sueño?
+7. Cuando duerme mal o se siente cansado durante el día, ¿cómo decide qué hacer para recuperarse?
+8. ¿Ha identificado alguna relación entre sus hábitos diarios y la forma en que duerme o se siente al día siguiente? ¿Cómo la identifica?
+9. ¿Qué información sobre su descanso o estado físico le gustaría conocer diariamente y que actualmente no tiene o le resulta difícil interpretar?
+10. Si pudiera mejorar una sola cosa de la manera en que actualmente controla su descanso y bienestar, ¿qué cambiaría y por qué?
+
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
 ### 2.3.2. User Task Matrix

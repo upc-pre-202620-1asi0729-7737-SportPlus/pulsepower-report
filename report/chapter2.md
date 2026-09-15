@@ -270,6 +270,34 @@ La entrevista a Diana Pareja, de 24 años, quien busca mejorar su bienestar y ac
 
 ### 2.3.1. User Personas
 
+**Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
+
+### Entrevista 1
+
+**<img src="../assets/images/userpersona1.png"><br/>**
+
+### Entrevista 2
+
+**<img src="../assets/images/userpersona2.png"><br/>**
+
+### Entrevista 3
+
+**<img src="../assets/images/userpersona3.png"><br/>**
+
+**Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
+
+### Entrevista 1
+
+**<img src="../assets/images/userpersona4.png"><br/>**
+
+### Entrevista 2
+
+**<img src="../assets/images/userpersona5.png"><br/>**
+
+### Entrevista 3
+
+**<img src="../assets/images/userpersona6.png"><br/>**
+
 ### 2.3.2. User Task Matrix
 ### 2.3.3. User Journey Mapping
 ### 2.3.4. Empathy Mapping

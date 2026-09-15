@@ -270,6 +270,12 @@ La entrevista a Diana Pareja, de 24 años, quien busca mejorar su bienestar y ac
 
 ### 2.3.1. User Personas
 
+
+
+### 2.3.2. User Task Matrix
+### 2.3.3. User Journey Mapping
+### 2.3.4. Empathy Mapping
+
 **Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
 
 ### Entrevista 1
@@ -298,9 +304,6 @@ La entrevista a Diana Pareja, de 24 años, quien busca mejorar su bienestar y ac
 
 **<img src="../assets/images/userpersona6.png"><br/>**
 
-### 2.3.2. User Task Matrix
-### 2.3.3. User Journey Mapping
-### 2.3.4. Empathy Mapping
 ### 2.3.5. As-Is Scenario Maps
 ## 2.4. Big Picture EventStorming
 ## 2.5. Ubiquitous Language

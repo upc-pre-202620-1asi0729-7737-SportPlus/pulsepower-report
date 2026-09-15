@@ -95,7 +95,58 @@ Este segmento contempla principalmente adultos de 25 a 55 años, profesionales c
 9. ¿Qué información sobre su descanso o estado físico le gustaría conocer diariamente y que actualmente no tiene o le resulta difícil interpretar?
 10. Si pudiera mejorar una sola cosa de la manera en que actualmente controla su descanso y bienestar, ¿qué cambiaría y por qué?
 
+### 2.2.2. Registro de entrevistas
+
+**Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
+
+**URL de todas las entrevistas del segmento:**
+
+| Campo | Entrevista 1 | Entrevista 2                                                | Entrevista 3 |
+|---|---|-------------------------------------------------------------|---|
+| **Campo** | <img src="../assets/images/entrevista1.png"><br/> | <img src="../assets/images/entrevista3.png"><br/> | <img src="../assets/images/entrevista3.png"><br/> |
+| **Nombre** | Walter Navarro | Jesús Arrollo                                               | Yeremy Navarrete |
+| **Edad** | 22 años | 28 años                                                     | 25 años |
+| **Distrito** | Surco | San Martín de Porres                                        | Independencia |
+| **Duración** |  |                                                             |  |
+
+**Resumen – Walter Navarro**
+
+La entrevista a Walter Navarro, de 22 años, deportista amateur que entrena aproximadamente cinco veces por semana, permitió conocer cómo determina actualmente si está preparado para realizar una sesión de entrenamiento. Utiliza un smartwatch para revisar algunos datos relacionados con su actividad física y toma sus decisiones principalmente según cómo se siente durante el día, su nivel de energía y el cansancio acumulado de sesiones anteriores. Sin embargo, reconoce que en ocasiones no puede determinar con precisión si se ha recuperado correctamente, llegando a sentirse bien al inicio y experimentar cansancio durante el entrenamiento. Además, considera que las aplicaciones actuales muestran demasiadas métricas y no siempre comprende qué significan o cómo utilizarlas. Cuando duerme mal, suele reducir la intensidad de manera intuitiva, sin contar con información objetiva que respalde esa decisión. Considera que una herramienta capaz de interpretar automáticamente sus datos y mostrarle su nivel de recuperación y el esfuerzo que debería realizar le ayudaría a tomar mejores decisiones sobre su entrenamiento.
+
+**Resumen – Jesús Arrollo**
+
+La entrevista a Jesús Arrollo, de 28 años, atleta semiprofesional que entrena diariamente y participa en competencias, permitió comprender cómo controla actualmente su rendimiento. Utiliza un reloj deportivo y registros de sus entrenamientos, tomando en cuenta la carga de trabajo, el cansancio y sus objetivos semanales para decidir la intensidad de cada sesión. Una de sus principales dificultades aparece después de entrenamientos intensos, ya que no siempre puede determinar con precisión si su cuerpo está completamente recuperado. Ha continuado entrenando incluso cuando se encontraba demasiado cansado, especialmente durante periodos previos a competencias. Aunque identifica el sobreentrenamiento mediante señales como disminución del rendimiento y fatiga prolongada, no siempre sabe cuánto debería reducir su carga cuando duerme mal o se encuentra fatigado. Considera que sería útil contar con una medida clara de recuperación acompañada de recomendaciones concretas que le permitan convertir los datos fisiológicos en decisiones para su entrenamiento.
+
+**Resumen – Yeremy Navarrete**
+
+La entrevista a Yeremy Navarrete, de 25 años, quien combina una jornada laboral exigente con una rutina regular de entrenamiento, permitió identificar las dificultades que presenta al gestionar su recuperación. Actualmente utiliza un reloj y una aplicación deportiva para realizar seguimiento de su actividad, aunque reconoce que normalmente solo revisa algunos datos y no aprovecha toda la información disponible. Para decidir cuánto entrenar se basa principalmente en su nivel de energía, cansancio y el tiempo disponible. Su principal dificultad consiste en determinar cómo influyen conjuntamente el trabajo, el sueño y el entrenamiento sobre su recuperación. En varias ocasiones ha realizado sus sesiones a pesar de sentirse cansado debido a que busca cumplir con su rutina. Cuando duerme mal, le resulta difícil decidir si debería disminuir la intensidad o descansar. Considera que una solución que integre sus datos de sueño, actividad y recuperación y que los convierta en una recomendación sencilla podría ayudarlo a organizar mejor su entrenamiento.
+
+
+**Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
+
+**URL de todas las entrevistas del segmento:**
+
+| Campo | Entrevista 1                                      | Entrevista 2                                      | Entrevista 3                                      |
+|---|---------------------------------------------------|---------------------------------------------------|---------------------------------------------------|
+| **Campo** | <img src="../assets/images/entrevista4.png"><br/> | <img src="../assets/images/entrevista5.png"><br/> | <img src="../assets/images/entrevista6.png"><br/> |
+| **Nombre** | Rodrigo Colonio                                   | Alejandro Choquehuanca                            | Diana Pareja                                      |
+| **Edad** | 22 años                                           | 27 años                                           | 24 años                                           |
+| **Distrito** | San Miguel                                        | San Miguel                                        | San Miguel                                        |
+| **Duración** |                                                   |                                                   |                                                   |
+
+**Resumen – Rodrigo Colonio**
+
+La entrevista a Rodrigo Colonio, de 22 años, quien presenta una jornada laboral extensa, permitió conocer cómo evalúa actualmente su descanso. Principalmente determina la calidad de su descanso según cómo se siente al despertar y utiliza ocasionalmente una aplicación para revisar su sueño, aunque normalmente solo presta atención a la cantidad de horas dormidas. Una de sus principales dificultades es identificar qué factores están provocando que duerma mal, ya que el estrés, los horarios de trabajo y la falta de sueño pueden presentarse al mismo tiempo. Cuando tiene periodos de mayor carga laboral, suele dormir menos y experimentar una peor recuperación. Aunque ha identificado que trabajar hasta tarde afecta su descanso, no cuenta con un seguimiento constante que le permita conocer con precisión esta relación. Considera que una herramienta que analice su información y le indique de manera sencilla qué factores están afectando su descanso y qué podría cambiar le sería de utilidad.
+
+**Resumen – Alejandro Choquehuanca**
+
+La entrevista a Alejandro Choquehuanca, de 27 años, quien combina sus estudios de posgrado con actividades laborales, permitió comprender las dificultades que presenta para mantener una rutina de descanso constante. Actualmente utiliza un smartwatch para revisar principalmente las horas y fases de sueño, aunque reconoce que algunas de las métricas que obtiene son difíciles de interpretar. Durante periodos de entregas o mayor carga académica, su nivel de estrés aumenta y suele dormir menos y con menor calidad. Cuando esto sucede, intenta compensar el descanso durante los fines de semana, pero sus decisiones se basan principalmente en su percepción personal. Considera que una herramienta que pueda explicarle sus datos de sueño y mostrarle si su descanso realmente fue suficiente podría ayudarlo a identificar cambios necesarios en su rutina.
+
+**Resumen – Diana Pareja**
+
+La entrevista a Diana Pareja, de 24 años, quien busca mejorar su bienestar y actualmente no realiza un seguimiento constante de su sueño, permitió identificar sus principales dificultades relacionadas con el descanso. Para determinar si ha descansado correctamente, se basa principalmente en su nivel de energía al despertar y en si presenta sueño durante el día. Su principal dificultad está relacionada con el estrés, ya que cuando atraviesa periodos de mayor presión laboral tiene problemas para dormir y suele despertarse cansado. Aunque reconoce que sus hábitos diarios influyen en la calidad de su sueño, no lleva un registro detallado que le permita identificar estas relaciones. En ocasiones ha utilizado aplicaciones de sueño, pero algunas métricas le han resultado confusas. Considera que una herramienta capaz de analizar continuamente sus datos fisiológicos y ofrecerle orientación personalizada sobre su descanso podría ayudarlo a comprender mejor su estado y realizar cambios en su rutina.
 ## 2.3. Needfinding
+
 ### 2.3.1. User Personas
 ### 2.3.2. User Task Matrix
 ### 2.3.3. User Journey Mapping

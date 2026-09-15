@@ -145,9 +145,131 @@ La entrevista a Alejandro Choquehuanca, de 27 años, quien combina sus estudios 
 **Resumen – Diana Pareja**
 
 La entrevista a Diana Pareja, de 24 años, quien busca mejorar su bienestar y actualmente no realiza un seguimiento constante de su sueño, permitió identificar sus principales dificultades relacionadas con el descanso. Para determinar si ha descansado correctamente, se basa principalmente en su nivel de energía al despertar y en si presenta sueño durante el día. Su principal dificultad está relacionada con el estrés, ya que cuando atraviesa periodos de mayor presión laboral tiene problemas para dormir y suele despertarse cansado. Aunque reconoce que sus hábitos diarios influyen en la calidad de su sueño, no lleva un registro detallado que le permita identificar estas relaciones. En ocasiones ha utilizado aplicaciones de sueño, pero algunas métricas le han resultado confusas. Considera que una herramienta capaz de analizar continuamente sus datos fisiológicos y ofrecerle orientación personalizada sobre su descanso podría ayudarlo a comprender mejor su estado y realizar cambios en su rutina.
+
+### 2.2.3. Análisis de entrevistas
+
+### Segmento Objetivo 1: Usuarios con rutinas de entrenamiento o alta exigencia física
+
+#### 1. Perfil y actividad física
+
+- 100% realiza actividad física de manera frecuente y mantiene una rutina de entrenamiento constante.
+- 33% participa en competencias y mantiene una rutina de entrenamiento diaria.
+- 33% combina una rutina de entrenamiento exigente con una jornada laboral extensa.
+- 100% considera su estado físico y nivel de energía para decidir cómo afrontar sus sesiones.
+
+#### 2. Métodos actuales de seguimiento
+
+- 100% utiliza algún dispositivo o aplicación para registrar información relacionada con su actividad física.
+- 67% utiliza un smartwatch o reloj deportivo para consultar métricas de entrenamiento.
+- 33% utiliza además registros de sus entrenamientos para controlar su rendimiento.
+- 67% reconoce que no aprovecha o no comprende completamente toda la información proporcionada por sus dispositivos.
+
+#### 3. Problemas comunes
+
+- 100% tiene dificultades para determinar con certeza si está completamente recuperado antes de entrenar.
+- 100% toma decisiones de entrenamiento considerando principalmente cómo se siente físicamente.
+- 67% ha realizado entrenamientos estando demasiado cansado.
+- 100% tiene dificultades para determinar qué intensidad debería utilizar cuando presenta fatiga o ha dormido mal.
+- 67% identifica señales de sobreentrenamiento después de experimentar fatiga durante varios días o disminución del rendimiento.
+
+#### 4. Interpretación de información fisiológica
+
+- 67% considera que las métricas proporcionadas por sus dispositivos pueden ser difíciles de interpretar.
+- 33% considera que algunas métricas requieren conocimientos adicionales para comprenderlas correctamente.
+- 100% manifiesta la necesidad de convertir los datos obtenidos en información más clara para tomar decisiones sobre su entrenamiento.
+- 67% considera útil recibir una interpretación directa de sus datos en lugar de revisar únicamente valores o métricas.
+
+#### 5. Recuperación y descanso
+
+- 100% considera importante conocer su nivel de recuperación antes de realizar una sesión de entrenamiento.
+- 67% tiene dificultades para determinar cómo afecta la falta de sueño a su capacidad para entrenar.
+- 33% señala que el estrés laboral también influye en su recuperación.
+- 100% utiliza principalmente su percepción personal para decidir si debe reducir la intensidad o descansar.
+
+#### 6. Información deseada
+
+- 100% desea conocer de manera más clara su nivel de recuperación antes de entrenar.
+- 67% quiere conocer cuánto esfuerzo puede realizar de acuerdo con su estado actual.
+- 33% desea conocer cómo influyen conjuntamente el sueño, trabajo y entrenamiento sobre su recuperación.
+- 100% considera útil recibir recomendaciones concretas en lugar de únicamente visualizar métricas.
+
+#### 7. Personalización y toma de decisiones
+
+- 100% considera que sus decisiones actuales dependen en gran medida de su percepción personal.
+- 100% muestra interés en contar con recomendaciones adaptadas a su estado físico.
+- 67% considera que una herramienta que interprete automáticamente sus datos podría ayudarlo a tomar mejores decisiones.
+- 100% busca mejorar la relación entre esfuerzo, recuperación y descanso.
+
+#### 8. Necesidades para la adopción
+
+- 100% considera importante que la información sea clara y fácil de interpretar.
+- 100% valoraría una solución que reduzca la necesidad de analizar manualmente múltiples métricas.
+- 100% considera útil recibir orientación sobre cuándo entrenar, reducir la intensidad o descansar.
+
+
+### Segmento Objetivo 2: Personas que buscan mejorar su bienestar general y calidad de sueño
+
+#### 1. Perfil y contexto
+
+- 100% tiene responsabilidades laborales o académicas que pueden afectar su descanso.
+- 67% señala que el estrés influye directamente en su calidad de sueño.
+- 33% presenta horarios variables debido a la combinación de trabajo y estudios.
+- 33% mantiene una jornada laboral extensa como uno de los principales factores que afectan su descanso.
+
+#### 2. Métodos actuales de seguimiento
+
+- 67% utiliza algún dispositivo o aplicación para realizar seguimiento de su sueño.
+- 33% realiza un seguimiento ocasional mediante una aplicación.
+- 33% utiliza un smartwatch para consultar horas y fases del sueño.
+- 33% no realiza un seguimiento constante de su sueño.
+- 100% utiliza principalmente su percepción personal para determinar si ha descansado adecuadamente.
+
+#### 3. Problemas comunes
+
+- 100% tiene dificultades para determinar con precisión por qué algunos días descansa peor que otros.
+- 100% relaciona su calidad de sueño con factores como estrés, trabajo, estudios u horarios.
+- 67% reconoce que los datos proporcionados por las aplicaciones o dispositivos no siempre son fáciles de interpretar.
+- 100% considera que actualmente no cuenta con suficiente información para comprender completamente su estado de descanso.
+
+#### 4. Influencia del estrés y la rutina
+
+- 100% identifica factores externos de su rutina que afectan su descanso.
+- 67% señala específicamente al estrés como un factor que empeora su sueño.
+- 33% señala los horarios variables como una dificultad para mantener una rutina de descanso.
+- 33% indica que trabajar hasta tarde afecta negativamente la calidad de su sueño.
+
+#### 5. Seguimiento de la calidad del sueño
+
+- 100% utiliza principalmente la cantidad de energía al despertar como indicador de un buen o mal descanso.
+- 67% revisa algún tipo de métrica relacionada con las horas o fases del sueño.
+- 33% solo revisa principalmente la cantidad de horas dormidas.
+- 100% considera que conocer únicamente las horas de sueño no es suficiente para comprender completamente su descanso.
+
+#### 6. Interpretación de datos
+
+- 67% considera que algunas métricas de sueño son difíciles de interpretar.
+- 100% considera que obtener los datos no necesariamente significa saber qué hacer con ellos.
+- 67% quisiera recibir una explicación de los datos obtenidos.
+- 100% muestra interés en recibir recomendaciones que permitan convertir la información recopilada en acciones concretas.
+
+#### 7. Información deseada
+
+- 100% desea conocer si su descanso fue realmente suficiente.
+- 67% quiere identificar qué factores están afectando su calidad de sueño.
+- 33% quiere comprender mejor la relación entre sus hábitos diarios y su descanso.
+- 100% considera útil recibir orientación sobre qué cambios podría realizar en su rutina.
+
+#### 8. Personalización y bienestar
+
+- 100% considera que sus necesidades de descanso dependen de su situación y rutina personal.
+- 100% muestra interés en recibir recomendaciones adaptadas a su propio estado.
+- 100% busca reducir la incertidumbre respecto a su descanso y bienestar diario.
+- 67% considera que una herramienta capaz de analizar continuamente sus datos podría ayudarlo a comprender mejor su estado fisiológico.
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
+
 ### 2.3.2. User Task Matrix
 ### 2.3.3. User Journey Mapping
 ### 2.3.4. Empathy Mapping

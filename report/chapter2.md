@@ -364,8 +364,6 @@ El User Journey Map del usuario resume su experiencia en cinco etapas relacionad
 
 **<img src="../assets/images/empathymap6.png"><br/>**
 
-### 2.3.5. As-Is Scenario Maps
-
 ## 2.4. Big Picture EventStorming
 
 **<img src="../assets/images/eventstorm.png"><br/>**

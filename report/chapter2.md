@@ -276,13 +276,25 @@ La entrevista a Diana Pareja, de 24 años, quien busca mejorar su bienestar y ac
 
 **<img src="../assets/images/userpersona1.png"><br/>**
 
+### Walter Navarro
+
+Walter Navarro es un deportista amateur de 22 años de Lima que entrena cinco veces por semana y utiliza un smartwatch para revisar sus métricas. Busca saber si está preparado para entrenar, controlar mejor su recuperación, evitar el exceso de fatiga y ajustar la intensidad de sus sesiones. Necesita información clara sobre su recuperación, una interpretación sencilla de sus métricas, recomendaciones sobre la intensidad e identificación temprana de fatiga. Se frustra porque recibe demasiada información, algunas métricas son difíciles de comprender y no sabe exactamente cuándo debería descansar. Espera recibir indicaciones claras y recomendaciones personalizadas que le permitan entrenar de manera más inteligente.
+
 ### Entrevista 2
 
 **<img src="../assets/images/userpersona2.png"><br/>**
 
+### Jesús Arroyo
+
+Jesús Arroyo es un atleta semiprofesional de 28 años de Lima que entrena diariamente y participa en competencias. Utiliza un reloj deportivo y registros de entrenamiento para controlar su rendimiento, pero necesita mayor claridad para determinar su recuperación y ajustar su carga de entrenamiento. Sus objetivos son optimizar su rendimiento, evitar el sobreentrenamiento y prepararse adecuadamente para las competencias. Se frustra porque no siempre sabe si está completamente recuperado, ha entrenado estando cansado y algunas métricas requieren conocimientos para interpretarlas. Espera obtener una medida clara de recuperación, análisis personalizado y recomendaciones concretas que respalden sus decisiones.
+
 ### Entrevista 3
 
 **<img src="../assets/images/userpersona3.png"><br/>**
+
+### Yeremy Navarrete
+
+Yeremy Navarrete es un deportista de 25 años de Lima que combina una jornada laboral exigente con una rutina regular de entrenamiento y utiliza un reloj y una aplicación deportiva. Busca mantener su condición física, equilibrar el trabajo con la actividad física, controlar su recuperación y organizar mejor sus sesiones. Necesita integrar información sobre sueño, esfuerzo y recuperación, además de identificar la fatiga y recibir orientación sobre cuándo reducir la intensidad. Su principal frustración es no saber si debería entrenar o descansar, especialmente cuando el trabajo y el sueño afectan su recuperación. Espera tener sus datos integrados y recibir recomendaciones sencillas para tomar mejores decisiones sobre su entrenamiento.
 
 ### **Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
 
@@ -290,13 +302,25 @@ La entrevista a Diana Pareja, de 24 años, quien busca mejorar su bienestar y ac
 
 **<img src="../assets/images/userpersona4.png"><br/>**
 
+### Rodrigo Colonio
+
+Rodrigo Colonio es un profesional de 22 años de Lima con una jornada laboral extensa que evalúa su descanso principalmente según cómo se siente al despertar. Busca mejorar la calidad de su sueño, identificar qué factores afectan su descanso, tener mayor energía y mejorar su bienestar general. Necesita realizar un seguimiento constante y recibir información clara y recomendaciones sencillas. Se frustra porque no siempre sabe por qué duerme mal, el trabajo y el estrés afectan su descanso y no sabe cómo utilizar la información obtenida. Espera conocer la calidad real de su descanso y recibir recomendaciones personalizadas que se adapten a su rutina.
+
 ### Entrevista 2
 
 **<img src="../assets/images/userpersona5.png"><br/>**
 
+### Alejandro Choquehuanca
+
+Alejandro Choquehuanca es un estudiante de posgrado de 27 años de Lima que combina sus estudios con actividades laborales y utiliza un smartwatch para revisar sus horas y fases de sueño. Busca mejorar su calidad de sueño, reducir el estrés, mantener una rutina de descanso y tener más energía durante el día. Necesita interpretar fácilmente sus métricas, identificar los factores que afectan su descanso y recibir recomendaciones adaptadas a sus horarios. Sus principales frustraciones son los horarios cambiantes, el estrés académico y la dificultad para comprender algunas métricas. Espera saber si su descanso fue suficiente y recibir explicaciones y recomendaciones concretas.
+
 ### Entrevista 3
 
 **<img src="../assets/images/userpersona6.png"><br/>**
+
+### Diana Pareja
+
+Diana Pareja es una profesional de 24 años de Lima que busca mejorar su bienestar general y actualmente no realiza un seguimiento constante de su sueño. Su principal objetivo es mejorar su descanso, reducir los efectos del estrés, tener más energía y comprender mejor su estado de recuperación. Necesita información clara sobre su sueño y recomendaciones personalizadas, pero se frustra porque el estrés laboral afecta su descanso y algunas métricas son difíciles de interpretar. Espera recibir orientación sencilla que le permita identificar qué factores afectan su sueño y realizar cambios concretos en su rutina.
 
 ### 2.3.2. User Task Matrix
 

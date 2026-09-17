@@ -30,7 +30,7 @@ Se establece **Rubik** como tipografía principal para unificar la identidad vis
 * **Cuerpo del texto (p):** 1.6rem (aprox. 16px) con un interlineado de 1.6.
 * **Botones y etiquetas (span):** 1.4rem (aprox. 14px) a 1.8rem (aprox. 18px).
 
-![PulsePower-Typography.jpeg](../assets/images/PulsePower-Typography.jpeg)
+![PulsePower-Typography.jpeg](../assets/images/PulsePower-Typography.jpeg)<img src="../assets/images/pulsepower-logo.png" width="60"><br/>
 
 **Colors**
 
@@ -68,12 +68,60 @@ La comunicación de **PulsePower** será clara, cercana y respetuosa. Su propós
 * **Motivación equilibrada:** reconocer la constancia y valorar tanto la actividad como el descanso, sin generar culpa por interrumpir una racha.
 * **Precisión:** distinguir entre registros, estimaciones y recomendaciones, evitando presentar proyecciones como certezas.
 
-
 #### 4.1.2. Web Style Guidelines
+
+Las directrices de estilo web de **PulsePower** se centran en la claridad de la información, la personalización y la facilidad de uso. Nuestro objetivo es crear una experiencia visual que refleje el propósito de la plataforma: transformar los datos de sueño, esfuerzo y recuperación en información comprensible para acompañar las decisiones diarias de entrenamiento y descanso. La **Landing Page** y la aplicación web mantendrán una identidad coherente, utilizando azul marino, turquesa, lavanda suave y blanco suave como colores principales.
+
+**1) Layout**
+
+* **Sistema de Grid:** Utilizaremos una cuadrícula flexible para organizar el contenido según el espacio disponible. En la **Landing Page**, permitirá distribuir los beneficios, los pasos de uso y los planes de suscripción. En la aplicación web, facilitará la presentación de indicadores de sueño, esfuerzo y recuperación, manteniendo una jerarquía visual clara.
+
+* **Headers y Footers:** El encabezado de la **Landing Page** proporcionará acceso a las secciones principales y a las acciones *Sign In* y *Create Account*. El pie de página reunirá enlaces de contacto, ayuda, privacidad y condiciones de uso. En la aplicación, la navegación permitirá acceder al panel de indicadores, historial, recomendaciones y configuración del perfil.
+
+* **Cards:** Las tarjetas organizarán las funcionalidades, los planes **Basic** y **Pro**, y los indicadores fisiológicos. Utilizarán bordes redondeados, sombras suaves y espacios internos amplios. Cada tarjeta de seguimiento mostrará un título, el indicador correspondiente y su periodo de referencia, facilitando la comprensión de los registros.
+
+**2) Responsive Design**
+
+* **Desktop:** La navegación principal permanecerá visible y el contenido se distribuirá en varias columnas. Los indicadores y gráficos podrán consultarse de forma conjunta para facilitar la comparación entre esfuerzo, sueño y recuperación.
+
+* **Tablet:** La distribución se ajustará preferentemente a dos columnas, conservando la legibilidad de las tarjetas y los formularios. Los controles tendrán suficiente separación para facilitar la interacción táctil.
+
+* **Mobile:** El contenido se organizará en una sola columna y la navegación se agrupará en un menú desplegable. Se priorizará la consulta del resumen diario y las recomendaciones. Los gráficos adaptarán sus etiquetas y dimensiones para que puedan interpretarse sin depender de un desplazamiento horizontal de toda la página.
+
+**3) Interaction Design**
+
+* **Botones:** Las acciones principales utilizarán turquesa (`#2DD4BF`) con texto azul marino (`#101B35`) para destacar dentro de la interfaz. Las acciones secundarias emplearán contornos azul marino o fondos neutros. Se definirán estados visuales al pasar el cursor, seleccionar mediante teclado, presionar y deshabilitar un botón. Las etiquetas estarán en inglés y describirán acciones concretas, como *Connect Your Wearable*, *View Your Progress* y *Choose Pro*.
+
+* **Formularios:** Los formularios de registro, perfil y configuración solicitarán únicamente la información necesaria para cada proceso. Los campos tendrán etiquetas visibles, instrucciones breves y mensajes de error junto al dato que deba corregirse. Las confirmaciones indicarán claramente cuándo la información se haya guardado.
+
+* **Retroalimentación:** La plataforma mostrará estados de carga, confirmaciones de sincronización y avisos cuando falten datos. Los mensajes combinarán texto, iconos y color para explicar lo ocurrido y orientar al usuario sobre el siguiente paso.
+
+* **Recomendaciones y asistente:** Las orientaciones se presentarán mediante mensajes breves, con acceso a explicaciones adicionales. El asistente conversacional utilizará lenguaje cotidiano y distinguirá entre datos registrados, estimaciones y sugerencias.
+
+**4) Images and Icons**
+
+* **Imágenes:** Se utilizarán fotografías e ilustraciones relacionadas con actividad física, descanso, hábitos cotidianos y dispositivos conectados. La selección representará a ambos segmentos objetivo de **PulsePower**. Las imágenes estarán optimizadas para la web y contarán con texto alternativo cuando aporten información.
+
+* **Íconos:** Se empleará un estilo lineal y consistente para representar funciones como sueño, esfuerzo, recuperación, sincronización, reportes y asistencia con IA. Los iconos acompañarán las etiquetas para facilitar su reconocimiento.
+
+* **Coherencia visual:** Las ilustraciones incorporarán los colores de la marca. La lavanda suave (`#EDE9FE`) se utilizará en fondos y detalles relacionados con el descanso, mientras que el turquesa (`#2DD4BF`) destacará la actividad y las acciones principales. El azul marino (`#101B35`) aportará contraste en textos y elementos gráficos, y el blanco suave (`#F8FAFC`) mantendrá la claridad de los fondos.
+
+**5) Repositorio Central**
+
+* **Organización:** Los recursos del proyecto se organizarán en carpetas identificables para imágenes, iconos, tipografías, estilos y componentes. La **Landing Page** mantendrá separados su contenido, presentación y comportamiento interactivo. La aplicación web organizará sus componentes según sus funciones, como monitoreo, recomendaciones, perfil y suscripciones.
+
+* **Estilos compartidos:** Los colores, tamaños tipográficos y espaciados se definirán mediante valores reutilizables. Esto facilitará mantener una apariencia uniforme y aplicar ajustes de diseño de manera consistente.
+
+* **Versionado:** Se utilizarán **Git y GitHub** para registrar cambios y coordinar el trabajo del equipo de **PulsePower**. Las funcionalidades se desarrollarán en ramas independientes y se revisarán antes de integrarlas, manteniendo la trazabilidad de las modificaciones del producto.
+
 ### 4.2. Information Architecture
+
 #### 4.2.1. Organization Systems
+
 #### 4.2.2. Labeling Systems
+
 #### 4.2.3. SEO Tags and Meta Tags
+
 #### 4.2.4. Searching Systems
 #### 4.2.5. Navigation Systems
 ### 4.3. Landing Page UI Design

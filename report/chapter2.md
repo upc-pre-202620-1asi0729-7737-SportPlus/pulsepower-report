@@ -270,7 +270,7 @@ La entrevista a Diana Pareja, de 24 años, quien busca mejorar su bienestar y ac
 
 ### 2.3.1. User Personas
 
-**Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
+### **Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
 
 ### Entrevista 1
 
@@ -284,7 +284,7 @@ La entrevista a Diana Pareja, de 24 años, quien busca mejorar su bienestar y ac
 
 **<img src="../assets/images/userpersona3.png"><br/>**
 
-**Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
+### **Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
 
 ### Entrevista 1
 
@@ -299,21 +299,52 @@ La entrevista a Diana Pareja, de 24 años, quien busca mejorar su bienestar y ac
 **<img src="../assets/images/userpersona6.png"><br/>**
 
 ### 2.3.2. User Task Matrix
+
+### **Segmento objetivo 1: Usuarios con rutinas de entrenamiento o alta exigencia física**
+
+| **User Task** | **Frecuencia** | **Importancia** |
+|---|---|---|
+| Revisar su nivel de recuperación. | Alta | Alta |
+| Consultar sus métricas de entrenamiento. | Alta | Alta |
+| Decidir la intensidad del entrenamiento. | Alta | Alta |
+| Identificar fatiga o falta de recuperación. | Media | Alta |
+| Ajustar el entrenamiento según su estado. | Media | Alta |
+| Revisar su evolución. | Media | Media |
+
+### **Segmento objetivo 2: Personas que buscan mejorar su bienestar general y calidad de sueño**
+
+| **User Task** | **Frecuencia** | **Importancia** |
+|---|---|---|
+| Revisar la calidad de su sueño. | Alta | Alta |
+| Consultar sus métricas de descanso. | Alta | Alta |
+| Identificar factores que afectan su sueño. | Media | Alta |
+| Evaluar su nivel de recuperación. | Alta | Alta |
+| Ajustar sus hábitos de descanso. | Media | Alta |
+| Revisar su evolución. | Media | Media |
+
+
+
+
+
+
+
+
+
 ### 2.3.3. User Journey Mapping
 
-**Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
+### **Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
 
 **<img src="../assets/images/journeymap2.png"><br/>**
 El User Journey Map del usuario resume su experiencia en cinco etapas relacionadas con la gestión de su descanso. En Revisando su descanso, observa cómo se siente al despertar y cuánto durmió, buscando saber si realmente descansó bien, aunque depende principalmente de sus propias sensaciones. En Analizando sus datos, consulta las métricas disponibles para comprender la calidad de su sueño, pero encuentra dificultades para interpretar algunos indicadores. Durante Identificando factores, intenta relacionar su descanso con el estrés, trabajo y hábitos, pero no logra determinar con claridad qué factores afectan su sueño. En Ajustando sus hábitos, cambia horarios y rutinas para mejorar su descanso, aunque existe incertidumbre sobre qué cambios tendrán mayor impacto. Finalmente, en Evaluando su bienestar, analiza su energía y descanso durante el día con el objetivo de mejorar su bienestar, pero no cuenta con un seguimiento constante de su recuperación; abriendo así oportunidades para brindar un resumen de su descanso, explicaciones sencillas de las métricas, identificación de factores, recomendaciones personalizadas y seguimiento de su evolución y bienestar.
 
-**Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
+### **Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
 
 **<img src="../assets/images/journeymap1.png"><br/>**
 El User Journey Map del usuario resume su experiencia en cinco etapas relacionadas con el descanso y bienestar. En Revisando su descanso, observa cómo se siente al despertar y cuánto durmió, pero enfrenta la dificultad de basarse principalmente en sus propias sensaciones. En Analizando sus datos, consulta sus métricas de sueño para comprender su calidad de descanso, aunque algunas métricas pueden ser difíciles de interpretar. Durante Identificando factores, intenta relacionar su descanso con el estrés, trabajo y hábitos, pero existe incertidumbre sobre qué factores afectan realmente su sueño. En Ajustando sus hábitos, modifica horarios y rutinas buscando descansar mejor, pero no sabe qué cambios tendrán mayor impacto. Finalmente, en Evaluando su bienestar, analiza su energía y descanso durante el día, buscando mejorar su bienestar, aunque carece de un seguimiento constante de su recuperación; abriendo así la oportunidad de ofrecer un resumen claro del descanso, explicaciones sencillas de las métricas, identificación de factores, recomendaciones personalizadas y seguimiento de su evolución y bienestar.
 
 ### 2.3.4. Empathy Mapping
 
-**Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
+### **Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
 
 ### Entrevista 1
 
@@ -327,7 +358,7 @@ El User Journey Map del usuario resume su experiencia en cinco etapas relacionad
 
 **<img src="../assets/images/empathymap3.png"><br/>**
 
-**Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
+### **Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
 
 ### Entrevista 1
 

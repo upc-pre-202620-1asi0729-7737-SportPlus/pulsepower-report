@@ -322,14 +322,6 @@ La entrevista a Diana Pareja, de 24 años, quien busca mejorar su bienestar y ac
 | Ajustar sus hábitos de descanso. | Media | Alta |
 | Revisar su evolución. | Media | Media |
 
-
-
-
-
-
-
-
-
 ### 2.3.3. User Journey Mapping
 
 ### **Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
@@ -373,5 +365,20 @@ El User Journey Map del usuario resume su experiencia en cinco etapas relacionad
 **<img src="../assets/images/empathymap6.png"><br/>**
 
 ### 2.3.5. As-Is Scenario Maps
+
 ## 2.4. Big Picture EventStorming
+
 ## 2.5. Ubiquitous Language
+
+- **Athlete (Deportista):** Usuario que mantiene una rutina de entrenamiento y utiliza información sobre esfuerzo, recuperación y descanso para organizar sus actividades físicas.
+- **Wellness Seeker (Persona enfocada en bienestar):** Usuario que busca mejorar su bienestar general y calidad de sueño mediante la comprensión de sus registros y hábitos de descanso.
+- **Physiological Data (Datos fisiológicos):** Información obtenida a partir de la pulsera compatible sobre el sueño, esfuerzo y recuperación del usuario.
+- **Recovery Level (Nivel de recuperación):** Indicador que representa el estado de recuperación física del usuario y sirve para decidir si debe entrenar, reducir la intensidad o descansar.
+- **Sleep Quality (Calidad del sueño):** Medida utilizada para evaluar qué tan adecuado ha sido el descanso del usuario.
+- **Sleep Metrics (Métricas de sueño):** Datos registrados durante el periodo de descanso, como duración y fases del sueño.
+- **Training Load (Carga de entrenamiento):** Nivel de esfuerzo acumulado generado por las actividades físicas realizadas por el usuario.
+- **Effort (Esfuerzo):** Indicador que representa la exigencia física asociada a las actividades o sesiones de entrenamiento.
+- **Recovery (Recuperación):** Proceso mediante el cual el organismo se recupera después de realizar actividad física, considerando factores como el esfuerzo y el descanso.
+- **Compatible Wearable (Pulsera compatible):** Dispositivo conectado utilizado para registrar y sincronizar los datos fisiológicos del usuario con PulsePower.
+- **Personalized Recommendation (Recomendación personalizada):** Orientación generada a partir de los datos, historial y objetivos del usuario para ayudarlo a tomar decisiones sobre entrenamiento, descanso o hábitos.
+- **AI Conversational Assistant (Asistente conversacional con IA):** Funcionalidad que permite al usuario consultar sus indicadores mediante lenguaje cotidiano y recibir explicaciones sobre sus datos fisiológicos.

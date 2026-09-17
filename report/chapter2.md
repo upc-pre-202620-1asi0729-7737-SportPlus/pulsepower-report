@@ -366,13 +366,25 @@ El User Journey Map del usuario resume su experiencia en cinco etapas relacionad
 
 **<img src="../assets/images/empathymap1.png"><br/>**
 
+### Walter Navarro
+
+Walter Navarro es un deportista amateur de 22 años que entrena aproximadamente cinco veces por semana y utiliza un smartwatch para monitorear su actividad. Busca mejorar su rendimiento y saber si está preparado para entrenar, pero tiene dificultades para interpretar sus métricas y determinar cuándo debería descansar. Necesita información clara sobre su recuperación, esfuerzo y fatiga, además de recomendaciones sobre la intensidad de sus entrenamientos. Sus principales frustraciones son la dificultad para interpretar los datos y depender de sus propias sensaciones. Espera recibir recomendaciones claras y personalizadas que le permitan entrenar de manera más eficiente.
+
 ### Entrevista 2
 
 **<img src="../assets/images/empathymap2.png"><br/>**
 
+### Jesús Arroyo
+
+Jesús Arroyo es un atleta semiprofesional de 28 años que entrena diariamente y participa en competencias. Utiliza un reloj deportivo y registra sus entrenamientos para controlar su rendimiento, pero no siempre sabe cuándo está completamente recuperado ni cuánto puede exigirse. Necesita controlar su carga de entrenamiento, ajustar la intensidad, detectar la fatiga y evitar el sobreentrenamiento. Le preocupa entrenar estando demasiado cansado y que sus métricas no se conviertan en acciones concretas. Busca obtener una medición clara de su recuperación y recomendaciones que le ayuden a tomar decisiones respaldadas por sus datos.
+
 ### Entrevista 3
 
 **<img src="../assets/images/empathymap3.png"><br/>**
+
+### Yeremy Navarrete
+
+Yeremy Navarrete es un profesional de 25 años con una rutina de actividad física exigente que combina trabajo y entrenamiento regular. Utiliza un reloj y una aplicación deportiva, pero tiene poco tiempo disponible y dificultad para integrar la información sobre sueño, esfuerzo y recuperación. Necesita organizar sus sesiones, saber cuándo entrenar o descansar y mantener un equilibrio entre trabajo y actividad física. Sus principales frustraciones son la fatiga acumulada, la falta de tiempo y los datos separados entre diferentes herramientas. Espera integrar toda su información y recibir recomendaciones sencillas que le permitan controlar mejor su recuperación y mantener una rutina saludable.
 
 ### **Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
 
@@ -380,13 +392,26 @@ El User Journey Map del usuario resume su experiencia en cinco etapas relacionad
 
 **<img src="../assets/images/empathymap4.png"><br/>**
 
+### Rodrigo Colonio
+
+Rodrigo Colonio es un profesional de 22 años con una jornada laboral extensa que busca mejorar su descanso y bienestar. Utiliza ocasionalmente una aplicación para revisar sus horas de sueño y evalúa principalmente su descanso según cómo se siente al despertar. Necesita comprender la calidad de su sueño, identificar los factores que lo afectan y recibir recomendaciones sencillas. Sus principales frustraciones son el estrés laboral, la falta de tiempo y no saber exactamente por qué duerme mal. Espera obtener información clara sobre su descanso y recomendaciones personalizadas que le permitan mejorar sus hábitos y tener mayor control sobre su bienestar.
+
 ### Entrevista 2
 
 **<img src="../assets/images/empathymap5.png"><br/>**
 
+### Alejandro Choquehuanca
+
+Alejandro Choquehuanca es un estudiante de posgrado de 27 años que combina sus estudios con actividades laborales y utiliza un smartwatch para revisar sus horas y fases de sueño. Tiene horarios variables y períodos de mayor carga académica que afectan su descanso. Necesita mantener una rutina de descanso, comprender sus métricas, identificar qué factores afectan su sueño y reducir los efectos del estrés. Sus principales frustraciones son los horarios cambiantes, el estrés académico y la dificultad para interpretar algunas métricas. Espera saber si realmente está descansando lo suficiente, entender mejor sus datos y recibir recomendaciones concretas para mejorar sus hábitos y rendimiento diario.
+
+
 ### Entrevista 3
 
 **<img src="../assets/images/empathymap6.png"><br/>**
+
+### Diana Pareja
+
+Diana Pareja es una profesional de 24 años con una jornada laboral exigente que busca mejorar su bienestar y descanso. Actualmente no realiza un seguimiento constante de su sueño y evalúa principalmente su descanso según cómo se siente. Necesita controlar su bienestar, identificar los factores que afectan su sueño, reducir los efectos del estrés y realizar cambios en su rutina. Sus principales frustraciones son el estrés laboral, despertarse cansada, la falta de seguimiento y la dificultad para interpretar algunas métricas. Espera comprender mejor su recuperación, identificar qué afecta su sueño y recibir orientación personalizada para mejorar sus hábitos y bienestar.
 
 ## 2.4. Big Picture EventStorming
 

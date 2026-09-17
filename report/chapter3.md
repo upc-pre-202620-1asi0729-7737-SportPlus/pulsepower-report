@@ -62,3 +62,54 @@
 
 ## 3.3. Product Backlog
 
+Link del Product Backlog en Trello: https://trello.com/invite/b/6aa715e59c152274c921e449/ATTI0d63ef4207a820d948329b1211456e537B320132/pulsepower
+
+
+![ProductBacklog.PNG](../assets/images/ProductBacklog.PNG)
+
+| # Orden | User Story Id | Título | Descripción | Story Points (1/2/3/5/8) |
+|---|---|---|---|---|
+| 1 | US13 | Conocer propuesta de valor de PulsePower | Como visitante, deseo conocer la propuesta de valor de PulsePower en la página principal, para decidir si el producto se ajusta a mis necesidades. | 2 |
+| 2 | US14 | Acceder a sección para segmento | Como visitante del Deportista (Seg.1), deseo acceder a una sección dedicada a mi perfil de uso, para entender los beneficios específicos para mi caso. | 3 |
+| 3 | US15 | Registro desde el Landing Page | Como visitante, deseo iniciar mi registro desde un call-to-action del landing page, para comenzar a usar la WebApp sin pasos adicionales. | 2 |
+| 4 | US09 | Registro de perfil - Deportista | Como Deportista, deseo registrar mi perfil (training goals, rutina, historia físico) para que la plataforma personalice mis recomendaciones en el inicio. | 3 |
+| 5 | US19 | Configuración de objetivos de entrenamiento en el onboarding | Como Deportista, deseo completar un asistente de configuración inicial de mis objetivos de entrenamiento, para que la app calibre sus recomendaciones desde el primer uso. | 3 |
+| 6 | US20 | Configuración de objetivos de bienestar en el onboarding | Como Wellness Seeker, deseo completar un asistente de configuración inicial de mis objetivos de descanso, para que la app calibre sus recomendaciones desde el primer uso. | 3 |
+| 7 | US21 | Vinculación de pulsera durante el onboarding | Como Deportista o Wellness Seeker, deseo vincular mi pulsera vía Bluetooth durante el onboarding, para empezar a recibir datos sin pasos adicionales. | 5 |
+| 8 | US17 | Exposición endpoint en registro de perfil | Como Developer, deseo exponer un endpoint de registro de perfil, para persistir los datos del usuario. | 3 |
+| 9 | US01 | Ver recuperación en tiempo real | Como Deportista, deseo visualizar mi nivel de recuperación en tiempo real, para decidir con qué intensidad entrenar. | 5 |
+| 10 | US02 | Ver resumen de sueño al despertar | Como Wellness Seeker, deseo visualizar un resumen de mi calidad de sueño, para saber si descansé lo suficiente. | 3 |
+| 11 | US03 | Ver variables fisiológicas centralizadas | Como Usuario Común, deseo visualizar mis variables fisiológicas centralizadas, para no interpretarlas por separado. | 5 |
+| 12 | US16 | Exposición de endpoint en estado de recuperación | Como Developer, deseo exponer un endpoint de estado de recuperación, para que el frontend lo consuma. | 3 |
+| 13 | US04 | Recibir recomendaciones de entrenamiento personalizadas | Como Deportista, deseo recibir recomendaciones ajustadas a mi estado fisiológico, para evitar sobreentrenarme. | 8 |
+| 14 | US05 | Recibir sugerencias de rutina de sueño | Como Wellness Seeker, deseo recibir sugerencias de cambios en mi rutina de sueño, para mejorar mi descanso. | 5 |
+| 15 | US07 | Recibir alerta de riesgo de sobreentrenamiento | Como Deportista, deseo recibir una alerta de riesgo de sobreentrenamiento, para reducir mi esfuerzo a tiempo. | 5 |
+| 16 | US08 | Recibir alerta de descanso insuficiente sostenido | Como Wellness Seeker, deseo recibir una alerta de descanso insuficiente sostenido, para actuar antes de que afecte mi rendimiento. | 5 |
+| 17 | US18 | Exposición de endpoint en alertas activas | Como Developer, deseo exponer un endpoint de alertas activas, para que el frontend las muestre. | 3 |
+| 18 | US06 | Consulta de proyección de recuperación con IA | Como Usuario Común, deseo consultar con el asistente de IA mi recuperación proyectada, para planificar mi semana. | 8 |
+| 19 | US28 | Registro de calendario semanal de entrenamientos | Como Deportista, deseo registrar mi calendario semanal de entrenamientos planificados, para ajustar recomendaciones según lo agendado. | 5 |
+| 20 | US30 | Recibir sugerencia de reprogramación por baja recuperación | Como Deportista, deseo recibir una sugerencia de reprogramación cuando mi recuperación esté baja, para evitar lesiones. | 5 |
+| 21 | US29 | Marcar día como descanso activo | Como Deportista, deseo marcar un día como descanso activo, para que no se cuente como inactividad. | 2 |
+| 22 | US22 | Sincronización de entrenamientos con otras apps | Como Deportista, deseo sincronizar mis sesiones de entrenamiento externas, para no duplicar el registro manual. | 5 |
+| 23 | US23 | Sincronización de sueño con apps de salud | Como Wellness Seeker, deseo sincronizar mis datos de sueño con Apple Health/Google Fit, para centralizar mi información. | 5 |
+| 24 | US31 | Registro de niveles de estrés percibidos | Como Wellness Seeker, deseo registrar mi nivel de estrés percibido diariamente, para correlacionarlo con mi calidad de sueño. | 3 |
+| 25 | US32 | Acceso a sesión guiada de respiración | Como Wellness Seeker, deseo acceder a una sesión guiada de respiración antes de dormir, para reducir mi estrés. | 3 |
+| 26 | US33 | Configuración de horarios de desconexión digital | Como Wellness Seeker, deseo configurar un horario recomendado de desconexión digital, para mejorar mi higiene de sueño. | 2 |
+| 27 | US11 | Generación de reportes periódicos de progreso deportivo | Como Deportista, deseo generar un reporte periódico de mi progreso de entrenamiento, para hacer seguimiento de mi evolución. | 5 |
+| 28 | US25 | Comparación de recuperación semanal | Como Deportista, deseo comparar mi recuperación de esta semana con semanas anteriores, para evaluar mi carga de entrenamiento. | 3 |
+| 29 | US26 | Ver tendencia de sueño a 30 días | Como Wellness Seeker, deseo ver la tendencia de mi calidad de sueño de 30 días, para identificar patrones. | 3 |
+| 30 | US27 | Ver historial de alertas de sobreentrenamiento | Como Deportista, deseo ver mi historial de alertas de sobreentrenamiento, para identificar su frecuencia. | 3 |
+| 31 | US12 | Ver rachas y logros de uso | Como Deportista o Wellness Seeker, deseo ver mis rachas y logros de uso, para mantenerme motivado. | 3 |
+| 32 | US34 | Compartir logro semanal con grupo de entrenamiento | Como Deportista, deseo compartir mi logro semanal con mi grupo de entrenamiento, para mantenerme motivado. | 3 |
+| 33 | US35 | Compartir progreso de bienestar con un contacto | Como Wellness Seeker, deseo compartir mi progreso de bienestar con un contacto de confianza, para tener apoyo. | 3 |
+| 34 | US42 | Exportación del historial de entrenamiento en PDF | Como Deportista, deseo exportar mi historial de entrenamiento en PDF, para compartirlo con mi entrenador. | 2 |
+| 35 | US43 | Exportación del historial de sueño en PDF | Como Wellness Seeker, deseo exportar mi historial de sueño en PDF, para compartirlo con mi médico. | 3 |
+| 36 | US36 | Comparación de plan gratuito y Exclusive | Como Deportista o Wellness Seeker, deseo ver los beneficios del plan premium frente al gratuito, para decidir si actualizo mi suscripción. | 2 |
+| 37 | US37 | Cancelación de suscripción Exclusive | Como Deportista o Wellness Seeker, deseo cancelar mi suscripción premium en cualquier momento, para no depender de soporte. | 3 |
+| 38 | US40 | Configuración de horarios de notificaciones de entrenamiento | Como Deportista, deseo configurar mis horarios de notificaciones, para no ser interrumpido en horas no deseadas. | 2 |
+| 39 | US41 | Configuración de recordatorios de rutina de sueño | Como Wellness Seeker, deseo configurar un recordatorio de inicio de rutina de sueño, para mantener consistencia. | 2 |
+| 40 | US24 | Recibir alerta de batería baja | Como Deportista o Wellness Seeker, deseo recibir una alerta de batería baja de mi pulsera, para no perder registro de datos. | 3 |
+| 41 | US38 | Consulta a centro de ayuda | Como Deportista o Wellness Seeker, deseo acceder a un centro de ayuda con preguntas frecuentes, para resolver dudas comunes. | 3 |
+| 42 | US39 | Contacto a soporte técnico | Como Deportista o Wellness Seeker, deseo contactar a soporte técnico desde la app, para reportar un problema. | 2 |
+| 43 | US10 | Protección de datos fisiológicos del usuario | Como Deportista o Wellness Seeker, deseo que mis datos estén protegidos de extremo a extremo, para confiar en la privacidad de mi información. | 3 |
+| 44 | US44 | Terminación de cuenta y datos asociados | Como Deportista o Wellness Seeker, deseo eliminar mi cuenta y todos mis datos asociados, para ejercer mi derecho de privacidad. | 5 |

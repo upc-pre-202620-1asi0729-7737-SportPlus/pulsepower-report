@@ -291,29 +291,29 @@ El User Journey Map del usuario resume su experiencia en cinco etapas relacionad
 
 ### Entrevista 1
 
-**<img src="../assets/images/userpersona1.png"><br/>**
+**<img src="../assets/images/empathymap1.png"><br/>**
 
 ### Entrevista 2
 
-**<img src="../assets/images/userpersona2.png"><br/>**
+**<img src="../assets/images/empathymap2.png"><br/>**
 
 ### Entrevista 3
 
-**<img src="../assets/images/userpersona3.png"><br/>**
+**<img src="../assets/images/empathymap3.png"><br/>**
 
 **Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
 
 ### Entrevista 1
 
-**<img src="../assets/images/userpersona4.png"><br/>**
+**<img src="../assets/images/empathymap4.png"><br/>**
 
 ### Entrevista 2
 
-**<img src="../assets/images/userpersona5.png"><br/>**
+**<img src="../assets/images/empathymap5.png"><br/>**
 
 ### Entrevista 3
 
-**<img src="../assets/images/userpersona6.png"><br/>**
+**<img src="../assets/images/empathymap6.png"><br/>**
 
 ### 2.3.5. As-Is Scenario Maps
 ## 2.4. Big Picture EventStorming

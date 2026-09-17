@@ -274,6 +274,17 @@ La entrevista a Diana Pareja, de 24 años, quien busca mejorar su bienestar y ac
 
 ### 2.3.2. User Task Matrix
 ### 2.3.3. User Journey Mapping
+
+**Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
+
+
+El User Journey Map del usuario resume su experiencia en cinco etapas relacionadas con la gestión de su descanso. En Revisando su descanso, observa cómo se siente al despertar y cuánto durmió, buscando saber si realmente descansó bien, aunque depende principalmente de sus propias sensaciones. En Analizando sus datos, consulta las métricas disponibles para comprender la calidad de su sueño, pero encuentra dificultades para interpretar algunos indicadores. Durante Identificando factores, intenta relacionar su descanso con el estrés, trabajo y hábitos, pero no logra determinar con claridad qué factores afectan su sueño. En Ajustando sus hábitos, cambia horarios y rutinas para mejorar su descanso, aunque existe incertidumbre sobre qué cambios tendrán mayor impacto. Finalmente, en Evaluando su bienestar, analiza su energía y descanso durante el día con el objetivo de mejorar su bienestar, pero no cuenta con un seguimiento constante de su recuperación; abriendo así oportunidades para brindar un resumen de su descanso, explicaciones sencillas de las métricas, identificación de factores, recomendaciones personalizadas y seguimiento de su evolución y bienestar.
+
+**Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
+
+
+El User Journey Map del usuario resume su experiencia en cinco etapas relacionadas con el descanso y bienestar. En Revisando su descanso, observa cómo se siente al despertar y cuánto durmió, pero enfrenta la dificultad de basarse principalmente en sus propias sensaciones. En Analizando sus datos, consulta sus métricas de sueño para comprender su calidad de descanso, aunque algunas métricas pueden ser difíciles de interpretar. Durante Identificando factores, intenta relacionar su descanso con el estrés, trabajo y hábitos, pero existe incertidumbre sobre qué factores afectan realmente su sueño. En Ajustando sus hábitos, modifica horarios y rutinas buscando descansar mejor, pero no sabe qué cambios tendrán mayor impacto. Finalmente, en Evaluando su bienestar, analiza su energía y descanso durante el día, buscando mejorar su bienestar, aunque carece de un seguimiento constante de su recuperación; abriendo así la oportunidad de ofrecer un resumen claro del descanso, explicaciones sencillas de las métricas, identificación de factores, recomendaciones personalizadas y seguimiento de su evolución y bienestar.
+
 ### 2.3.4. Empathy Mapping
 
 **Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**

@@ -142,10 +142,123 @@ Dentro de cada categoría, la organización por fecha facilita la consulta y com
 
 #### 4.2.2. Labeling Systems
 
+* **Nomenclatura:** Se utilizarán etiquetas breves en inglés que permitan reconocer el contenido de cada sección. Los títulos de la **Landing Page** conservarán los nombres *What We Offer*, *Features*, *Benefits*, *About Us*, *Our Team* y *Plans*. Los botones describirán acciones concretas, como *Create Account*, *Sign In* y *View Plans*.
+
+* **Consistencia:** Cada sección y funcionalidad mantendrá el mismo nombre en menús, encabezados y mensajes. Los planes se identificarán siempre como **Basic** y **Pro**, evitando denominaciones diferentes entre la **Landing Page** y la aplicación.
+
+* **Lenguaje Comprensible:** Las explicaciones estarán dirigidas a usuarios con distintos niveles de conocimiento sobre indicadores fisiológicos. Los términos especializados, como *Heart Rate Variability (HRV)*, incluirán una descripción breve que facilite su comprensión.
+
+* **Identificación de la Información:** Los indicadores mostrarán sus unidades, periodo de referencia y última actualización. Las recomendaciones y proyecciones se identificarán como orientaciones o estimaciones, diferenciándolas de los datos registrados por la pulsera.
+
 #### 4.2.3. SEO Tags and Meta Tags
 
+En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **PulsePower**, considerando la **Landing Page** y las principales vistas de la aplicación web. Se incluyen **Title**, **Meta Description**, **Keywords** y **Author**, de acuerdo con las indicaciones del proyecto. Los valores se presentan en inglés y describen las funcionalidades de sueño, esfuerzo, recuperación y orientación personalizada que se plantea desarrollar.
+
+#### Landing Page
+
+* **Title:** PulsePower | Understand Your Body, Plan Your Day
+* **Meta Description:** Explore how PulsePower turns sleep, strain and recovery data into personalized insights to support your training, rest and everyday wellbeing.
+* **Keywords:** PulsePower, sleep tracking, recovery insights, training guidance, physiological data, AI wellbeing
+* **Author:** PulsePower Team
+
+### Vistas compartidas por ambos segmentos
+
+#### Dashboard
+
+* **Title:** Daily Overview | PulsePower
+* **Meta Description:** Review your latest sleep, strain and recovery indicators in one place. Access daily summaries and insights related to your personal goals.
+* **Keywords:** daily overview, physiological dashboard, sleep summary, strain indicators, recovery tracking
+* **Author:** PulsePower Team
+
+#### Profile and Goals Page
+
+* **Title:** Your Profile & Goals | PulsePower
+* **Meta Description:** Set your training and wellbeing goals, update your routine and manage the preferences used to personalize your PulsePower experience.
+* **Keywords:** user profile, training goals, wellbeing goals, personal preferences, daily routine
+* **Author:** PulsePower Team
+
+#### Wearable Connection Page
+
+* **Title:** Connect Your Wearable | PulsePower
+* **Meta Description:** Link your compatible wristband to PulsePower, check its connection status and review when your physiological records were last synchronized.
+* **Keywords:** wearable connection, compatible wristband, data synchronization, connection status
+* **Author:** PulsePower Team
+
+#### AI Assistant Page
+
+* **Title:** Your AI Assistant | PulsePower
+* **Meta Description:** Ask questions about your sleep, strain and recovery records. Explore clear explanations and personalized guidance based on your available data.
+* **Keywords:** AI assistant, physiological insights, personalized guidance, sleep questions, recovery explanations
+* **Author:** PulsePower Team
+
+#### Progress and Reports Page
+
+* **Title:** Progress & Reports | PulsePower
+* **Meta Description:** Explore your sleep, strain and recovery history. Compare periods and download reports to understand how your recorded patterns change over time.
+* **Keywords:** progress reports, physiological history, sleep trends, recovery trends, PDF reports
+* **Author:** PulsePower Team
+
+#### Alerts and Preferences Page
+
+* **Title:** Alerts & Preferences | PulsePower
+* **Meta Description:** Review notifications about changes in your records and customize your training reminders, sleep reminders and notification schedules.
+* **Keywords:** physiological alerts, notification preferences, training reminders, sleep reminders
+* **Author:** PulsePower Team
+
+#### Subscription Page
+
+* **Title:** Your Subscription | PulsePower
+* **Meta Description:** Compare PulsePower Basic and Pro features, review your current plan and manage your subscription and renewal preferences.
+* **Keywords:** PulsePower Basic, PulsePower Pro, subscription plans, plan comparison, renewal preferences
+* **Author:** PulsePower Team
+
+### Usuarios con rutinas de entrenamiento o alta exigencia física
+
+#### Recovery Page
+
+* **Title:** Recovery Insights | PulsePower
+* **Meta Description:** Explore your recovery indicators alongside recent sleep and strain records to help you review the balance between training and rest.
+* **Keywords:** recovery insights, training recovery, recovery history, sleep and strain, rest planning
+* **Author:** PulsePower Team
+
+#### Strain Page
+
+* **Title:** Strain & Activity | PulsePower
+* **Meta Description:** Review your recorded physical effort and activity trends. Relate your recent training load to your recovery indicators and personal goals.
+* **Keywords:** physical strain, activity tracking, training load, effort trends, training goals
+* **Author:** PulsePower Team
+
+#### Training Planner Page
+
+* **Title:** Your Training Planner | PulsePower
+* **Meta Description:** Organize your weekly workouts and rest days. Review personalized suggestions to adjust your schedule using your recent physiological records.
+* **Keywords:** training planner, weekly workouts, rest days, workout schedule, personalized training
+* **Author:** PulsePower Team
+
+### Personas que buscan mejorar su bienestar general y calidad de sueño
+
+#### Sleep Page
+
+* **Title:** Sleep Insights | PulsePower
+* **Meta Description:** Explore your nightly sleep summaries, duration and recorded patterns. Review trends to better understand your rest and daily routine.
+* **Keywords:** sleep insights, sleep duration, nightly summary, sleep patterns, rest tracking
+* **Author:** PulsePower Team
+
+#### Habits and Wellbeing Page
+
+* **Title:** Your Habits & Wellbeing | PulsePower
+* **Meta Description:** Record your daily habits, organize your bedtime routine and explore personalized suggestions that support your rest and wellbeing goals.
+* **Keywords:** daily habits, bedtime routine, wellbeing goals, rest habits, personalized suggestions
+* **Author:** PulsePower Team
+
 #### 4.2.4. Searching Systems
+
+
+
 #### 4.2.5. Navigation Systems
+
+
+
 ### 4.3. Landing Page UI Design
 #### 4.3.1. Landing Page Wireframe
 #### 4.3.2. Landing Page Mock-up

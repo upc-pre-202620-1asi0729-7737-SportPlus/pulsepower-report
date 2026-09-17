@@ -274,8 +274,21 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Adaptación a Dispositivos:** En escritorio, los enlaces principales permanecerán visibles. En tabletas y teléfonos, se agruparán en un menú desplegable. Las vistas de detalle incluirán una opción clara para regresar, conservando el contexto de navegación.
 
 ### 4.3. Landing Page UI Design
+
+La Landing Page de **PulsePower** presenta de forma clara la propuesta de valor de la plataforma, sus principales funcionalidades, beneficios y planes de suscripción. Su diseño busca transmitir una experiencia moderna, accesible y relacionada con el bienestar, el rendimiento y la recuperación.
+
 #### 4.3.1. Landing Page Wireframe
+
+El wireframe muestra la estructura inicial de la Landing Page de **PulsePower**, organizando las secciones principales, la navegación y la distribución del contenido antes de aplicar el diseño visual definitivo.
+
+![PulsePower-Landing_Page_Wireframe.jpeg](../assets/images/PulsePower-Landing_Page_Wireframe.jpeg)
+
 #### 4.3.2. Landing Page Mock-up
+
+El mock-up representa el diseño visual final propuesto para la Landing Page de **PulsePower**, aplicando la paleta de colores, tipografía, imágenes, botones y demás elementos definidos en la identidad visual del proyecto.
+
+![PulsePower-Landing_Page_Mock-up.jpeg](../assets/images/PulsePower-Landing_Page_Mock-up.jpeg)
+
 ### 4.4. Web Applications UX/UI Design
 #### 4.4.1. Web Applications Wireframes
 #### 4.4.2. Web Applications Wireflow Diagrams

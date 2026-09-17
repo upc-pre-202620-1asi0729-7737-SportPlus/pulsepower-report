@@ -277,7 +277,7 @@ La entrevista a Diana Pareja, de 24 años, quien busca mejorar su bienestar y ac
 
 **Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
 
-
+**<img src="../assets/images/journeymap2.png"><br/>**
 El User Journey Map del usuario resume su experiencia en cinco etapas relacionadas con la gestión de su descanso. En Revisando su descanso, observa cómo se siente al despertar y cuánto durmió, buscando saber si realmente descansó bien, aunque depende principalmente de sus propias sensaciones. En Analizando sus datos, consulta las métricas disponibles para comprender la calidad de su sueño, pero encuentra dificultades para interpretar algunos indicadores. Durante Identificando factores, intenta relacionar su descanso con el estrés, trabajo y hábitos, pero no logra determinar con claridad qué factores afectan su sueño. En Ajustando sus hábitos, cambia horarios y rutinas para mejorar su descanso, aunque existe incertidumbre sobre qué cambios tendrán mayor impacto. Finalmente, en Evaluando su bienestar, analiza su energía y descanso durante el día con el objetivo de mejorar su bienestar, pero no cuenta con un seguimiento constante de su recuperación; abriendo así oportunidades para brindar un resumen de su descanso, explicaciones sencillas de las métricas, identificación de factores, recomendaciones personalizadas y seguimiento de su evolución y bienestar.
 
 **Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**

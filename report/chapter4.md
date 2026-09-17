@@ -253,11 +253,25 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 
 #### 4.2.4. Searching Systems
 
+* **Localización de Contenidos:** La **Landing Page** permitirá encontrar información mediante sus enlaces de navegación, sin requerir una barra de búsqueda. En la aplicación web, la consulta de registros se apoyará en filtros, mientras que el centro de ayuda permitirá buscar respuestas mediante palabras clave.
 
+* **Filtros y Facetas:** Los usuarios podrán consultar su historial por rango de fechas y categoría de información, como sueño, esfuerzo o recuperación. Las alertas podrán filtrarse según su tipo y estado para facilitar la revisión de avisos anteriores.
+
+* **Consulta por Periodos:** Se ofrecerán vistas diarias, semanales y mensuales según los datos disponibles. Estas opciones permitirán revisar la evolución de los indicadores y comparar los registros de distintos periodos.
+
+* **Presentación de Resultados:** Los registros se mostrarán en orden cronológico, comenzando por los más recientes. Cuando no existan datos para una consulta, la interfaz explicará la situación y permitirá modificar los filtros seleccionados.
 
 #### 4.2.5. Navigation Systems
 
+* **Navegación Global:** El encabezado de la **Landing Page** permitirá acceder a las secciones *What We Offer*, *Features*, *Benefits*, *About Us*, *Our Team* y *Plans*. El logotipo de **PulsePower** permitirá regresar al inicio, donde se encuentra el bloque *Hero*. También se incluirán las acciones *Sign In* y *Create Account*.
 
+* **Navegación en la Aplicación:** El menú principal ofrecerá acceso al panel de indicadores, recomendaciones, historial, reportes y perfil. La sección activa se destacará visualmente para que el usuario identifique su ubicación.
+
+* **Navegación Contextual:** Los enlaces y botones conectarán contenidos relacionados. Desde *Features*, el visitante podrá consultar los planes disponibles; desde un indicador de la aplicación, podrá acceder a su explicación y evolución histórica.
+
+* **Recorridos por Segmento:** Dentro de *Benefits*, se diferenciarán las necesidades de entrenamiento y bienestar. Sus llamados a la acción conducirán hacia el registro o la configuración de objetivos correspondiente, manteniendo continuidad entre los beneficios presentados y la experiencia de uso.
+
+* **Adaptación a Dispositivos:** En escritorio, los enlaces principales permanecerán visibles. En tabletas y teléfonos, se agruparán en un menú desplegable. Las vistas de detalle incluirán una opción clara para regresar, conservando el contexto de navegación.
 
 ### 4.3. Landing Page UI Design
 #### 4.3.1. Landing Page Wireframe

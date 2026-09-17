@@ -116,6 +116,28 @@ Las directrices de estilo web de **PulsePower** se centran en la claridad de la 
 
 ### 4.2. Information Architecture
 
+La arquitectura de la información de **PulsePower** está diseñada para facilitar la comprensión de sus servicios y el acceso a los indicadores de sueño, esfuerzo y recuperación. Su organización considera las necesidades de quienes mantienen rutinas de entrenamiento exigentes y de quienes buscan mejorar su descanso y bienestar cotidiano.
+
+#### 4.2.1. Organization Systems
+
+**Jerarquía de Contenidos:** La información se estructura de lo general a lo específico. La **Landing Page** comienza con la propuesta de valor de **PulsePower**, continúa con los servicios, funcionalidades y beneficios, y presenta información del proyecto y sus planes de suscripción. En la aplicación web, se prioriza el resumen diario del usuario, seguido de las recomendaciones y el seguimiento histórico.
+
+**Secciones Principales**
+
+La **Landing Page** se organiza en los siguientes bloques:
+
+* **Hero:** Presentación de **PulsePower** y su propuesta de transformar las señales del cuerpo en decisiones informadas de entrenamiento y descanso.
+* **What We Offer:** Visión general del análisis fisiológico y el acompañamiento personalizado que ofrece la plataforma.
+* **Features:** Descripción del monitoreo de sueño, esfuerzo y recuperación, el asistente con IA y los reportes de progreso.
+* **Benefits:** Beneficios como comprender los indicadores personales, reconocer patrones y organizar mejor la actividad y el descanso.
+* **About Us:** Propósito de **PulsePower** y su enfoque en el bienestar y rendimiento físico.
+* **Our Team:** Presentación de los integrantes responsables del desarrollo de **PulsePower**.
+* **Plans:** Características y condiciones de los planes de suscripción **Basic** y **Pro**.
+
+**Agrupación de Contenidos:** Los contenidos relacionados se presentan mediante tarjetas y bloques visuales. En la aplicación, los registros se agrupan en categorías como *Sleep*, *Strain* y *Recovery*, mientras que las recomendaciones y los reportes cuentan con espacios diferenciados.
+
+Dentro de cada categoría, la organización por fecha facilita la consulta y comparación de periodos.
+
 #### 4.2.1. Organization Systems
 
 #### 4.2.2. Labeling Systems

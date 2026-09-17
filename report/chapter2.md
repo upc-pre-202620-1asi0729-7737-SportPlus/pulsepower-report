@@ -368,6 +368,8 @@ El User Journey Map del usuario resume su experiencia en cinco etapas relacionad
 
 ## 2.4. Big Picture EventStorming
 
+**<img src="../assets/images/eventstorm.png"><br/>**
+
 ## 2.5. Ubiquitous Language
 
 - **Athlete (Deportista):** Usuario que mantiene una rutina de entrenamiento y utiliza información sobre esfuerzo, recuperación y descanso para organizar sus actividades físicas.

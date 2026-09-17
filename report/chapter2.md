@@ -282,7 +282,7 @@ El User Journey Map del usuario resume su experiencia en cinco etapas relacionad
 
 **Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
 
-
+**<img src="../assets/images/journeymap1.png"><br/>**
 El User Journey Map del usuario resume su experiencia en cinco etapas relacionadas con el descanso y bienestar. En Revisando su descanso, observa cómo se siente al despertar y cuánto durmió, pero enfrenta la dificultad de basarse principalmente en sus propias sensaciones. En Analizando sus datos, consulta sus métricas de sueño para comprender su calidad de descanso, aunque algunas métricas pueden ser difíciles de interpretar. Durante Identificando factores, intenta relacionar su descanso con el estrés, trabajo y hábitos, pero existe incertidumbre sobre qué factores afectan realmente su sueño. En Ajustando sus hábitos, modifica horarios y rutinas buscando descansar mejor, pero no sabe qué cambios tendrán mayor impacto. Finalmente, en Evaluando su bienestar, analiza su energía y descanso durante el día, buscando mejorar su bienestar, aunque carece de un seguimiento constante de su recuperación; abriendo así la oportunidad de ofrecer un resumen claro del descanso, explicaciones sencillas de las métricas, identificación de factores, recomendaciones personalizadas y seguimiento de su evolución y bienestar.
 
 ### 2.3.4. Empathy Mapping

@@ -57,8 +57,13 @@
 
 ## 3.2. Impact Mapping
 
+**Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
 
+![Impact map Deportistas.png](../assets/images/Impact%20map%20Deportistas.png)
 
+**Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
+
+![Impact map Wellness.png](../assets/images/Impact%20map%20Wellness.png)
 
 ## 3.3. Product Backlog
 

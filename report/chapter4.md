@@ -329,6 +329,29 @@ y personas que buscan mejorar su descanso y bienestar cotidiano.
 #### 4.4.2. Web Applications Wireflow Diagrams
 
 #### 4.4.3. Web Applications Mock-ups
+
+En esta sección se presentan los mock-ups de alta fidelidad de la aplicación web de PulsePower. Estos diseños muestran la apariencia final de las principales pantallas, aplicando la identidad visual, colores, tipografía y componentes definidos para ofrecer una experiencia clara, moderna y consistente.
+
+![PulsePower-Applications_Mock-ups_0.jpeg](../assets/images/PulsePower-Applications_Mock-ups_0.jpeg)
+
+![PulsePower-Applications_Mock-ups_1.jpeg](../assets/images/PulsePower-Applications_Mock-ups_1.jpeg)
+
+![PulsePower-Applications_Mock-ups_2.jpeg](../assets/images/PulsePower-Applications_Mock-ups_2.jpeg)
+
+![PulsePower-Applications_Mock-ups_3.jpeg](../assets/images/PulsePower-Applications_Mock-ups_3.jpeg)
+
+![PulsePower-Applications_Mock-ups_4.jpeg](../assets/images/PulsePower-Applications_Mock-ups_4.jpeg)
+
+![PulsePower-Applications_Mock-ups_5.jpeg](../assets/images/PulsePower-Applications_Mock-ups_5.jpeg)
+
+![PulsePower-Applications_Mock-ups_6.jpeg](../assets/images/PulsePower-Applications_Mock-ups_6.jpeg)
+
+![PulsePower-Applications_Mock-ups_7.jpeg](../assets/images/PulsePower-Applications_Mock-ups_7.jpeg)
+
+![PulsePower-Applications_Mock-ups_8.jpeg](../assets/images/PulsePower-Applications_Mock-ups_8.jpeg)
+
+![PulsePower-Applications_Mock-ups_9.jpeg](../assets/images/PulsePower-Applications_Mock-ups_9.jpeg)
+
 #### 4.4.4. Web Applications User Flow Diagrams
 ### 4.5. Web Applications Prototyping
 ### 4.6. Domain-Driven Software Architecture

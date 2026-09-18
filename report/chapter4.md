@@ -357,6 +357,41 @@ En esta sección se presentan los mock-ups de alta fidelidad de la aplicación w
 ### 4.6. Domain-Driven Software Architecture
 #### 4.6.1. Design-Level EventStorming
 #### 4.6.2. Software Architecture Context Diagram
+
+El *Context Diagram* presenta a **PulsePower** como un sistema completo dentro de su entorno. Identifica a los usuarios que interactúan con la plataforma y a los sistemas externos que proporcionan datos o servicios, sin mostrar todavía sus componentes internos.
+
+El diagrama utiliza la notación **C4 Model**, expresada mediante **PlantUML**.
+
+#### Actores
+
+* **Usuario de entrenamiento:** persona con rutinas de entrenamiento o alta exigencia física. Registra sus objetivos, actividades y sesiones; organiza su calendario y consulta indicadores de esfuerzo y recuperación para revisar su planificación.
+
+* **Usuario de bienestar:** persona interesada en mejorar su descanso y bienestar cotidiano. Registra hábitos, horarios de sueño y estrés percibido; consulta tendencias y recomendaciones relacionadas con sus objetivos.
+
+Ambos actores pueden acceder a funciones compartidas, como editar su perfil, vincular una pulsera, consultar reportes y gestionar su suscripción. Los segmentos expresan necesidades diferentes y no implican necesariamente roles de autorización distintos.
+
+#### Sistemas externos
+
+* **Sistema AIoTI:** proporciona los registros autorizados de las pulseras compatibles. **PulsePower** utilizará estos datos para actualizar indicadores y analizar su evolución. El mecanismo concreto de sincronización dependerá del contrato disponible en **AIoTI**.
+
+* **Proveedor de inteligencia artificial:** permite generar explicaciones y respuestas contextualizadas para el asistente conversacional, utilizando únicamente la información necesaria y autorizada.
+
+* **Proveedor de pagos:** integración propuesta para procesar las transacciones asociadas a las suscripciones. El proveedor específico deberá definirse durante el desarrollo.
+
+#### Interacciones principales
+
+* **Interacciones de los usuarios:** registro de datos personales, objetivos, sesiones, hábitos y *check-ins*, además de la consulta de indicadores y reportes.
+
+* **Intercambio de datos fisiológicos:** sincronización de registros disponibles a través del sistema **AIoTI**.
+
+* **Solicitudes a servicios externos:** generación de explicaciones mediante IA y procesamiento de pagos de suscripción.
+
+#### Propósito del sistema
+
+**PulsePower** busca facilitar la comprensión conjunta del esfuerzo, el sueño y la recuperación. Para ello, combina los registros del dispositivo con la información ingresada por el usuario y presenta orientaciones que apoyan la organización de sus actividades y descansos.
+
+![Software_Architecture_Context_Diagram.png](../assets/images/Software_Architecture_Context_Diagram.png)
+
 #### 4.6.3. Software Architecture Container Diagrams
 #### 4.6.4. Software Architecture Components Diagrams
 ### 4.7. Software Object-Oriented Design

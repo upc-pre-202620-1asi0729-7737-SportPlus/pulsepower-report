@@ -448,7 +448,32 @@ El diagrama permite comprender la separación entre presentación, lógica de ne
 ![Software_Architecture_Container_Diagrams.png](../assets/images/Software_Architecture_Container_Diagrams.png)
 
 #### 4.6.4. Software Architecture Components Diagrams
+
+El diagrama de componentes presenta la estructura interna de la **API Application** de **PulsePower**, desarrollada con **Java y Spring Boot**. La solución se organiza en seis *bounded contexts*: **Training Management, Sleep Management, Wellness Management, Physiological Analysis & Recommendations, Reporting** y **Community**.
+
+Las solicitudes provenientes de la aplicación web llegan a los controladores **REST**, donde se aplican los controles de autenticación y autorización antes de delegar las operaciones a los servicios correspondientes. Cada contexto posee responsabilidades específicas:
+
+* **Training Management:** gestiona sesiones, planificación, intensidad y descanso.
+* **Sleep Management:** administra registros, horarios y hábitos de sueño.
+* **Wellness Management:** gestiona *check-ins*, estrés percibido y hábitos cotidianos.
+* **Physiological Analysis & Recommendations:** integra datos de **AIoTI**, analiza la recuperación y genera recomendaciones.
+* **Reporting:** genera reportes de evolución a partir de información de los demás contextos.
+* **Community:** administra rachas, logros y avances compartidos.
+
+Cada contexto mantiene sus propios repositorios, aunque todos utilizan **PostgreSQL** como base de datos. Las comunicaciones entre contextos se realizan mediante contratos internos, mientras que los módulos de acceso, perfil y suscripción funcionan como componentes de soporte.
+
+![Software_Architecture_Components_Diagrams.png](../assets/images/Software_Architecture_Components_Diagrams.png)
+
 ### 4.7. Software Object-Oriented Design
+
+
+
 #### 4.7.1. Class Diagrams
+
+
+
 ### 4.8. Database Design
+
+
+
 #### 4.8.1. Database Diagrams

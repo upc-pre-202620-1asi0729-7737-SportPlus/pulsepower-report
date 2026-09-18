@@ -393,6 +393,60 @@ Ambos actores pueden acceder a funciones compartidas, como editar su perfil, vin
 ![Software_Architecture_Context_Diagram.png](../assets/images/Software_Architecture_Context_Diagram.png)
 
 #### 4.6.3. Software Architecture Container Diagrams
+
+El *Container Diagram* descompone **PulsePower** en aplicaciones y almacenes de datos. Presenta las responsabilidades de cada contenedor, las tecnologías propuestas y sus comunicaciones.
+
+#### Landing Page
+
+Es la página pública de presentación de **PulsePower**, desarrollada con **HTML, CSS y JavaScript**. Incluye las secciones *Hero*, *What We Offer*, *Features*, *Benefits*, *About Us*, *Our Team* y *Plans*.
+
+Permite conocer la propuesta de valor, identificar los beneficios para cada segmento y consultar los planes **Basic, Pro y Premium**. Sus botones de acceso y registro conducen a la aplicación web.
+
+#### Web Application
+
+Es una *Single Page Application* desarrollada con **Angular, TypeScript y Angular Material**, ejecutada en el navegador.
+
+Centraliza las siguientes interacciones:
+
+* Registro, inicio de sesión y configuración del perfil.
+* Ingreso de objetivos, entrenamientos, sueño y hábitos.
+* Vinculación de pulsera y consulta del estado de sincronización.
+* Consulta de indicadores, recomendaciones y reportes.
+* Participación en comunidad y gestión de suscripciones.
+
+La aplicación se comunica con el backend mediante **REST sobre HTTPS**, intercambiando mensajes **JSON**. Las validaciones de seguridad y las reglas de negocio se ejecutan en el servidor.
+
+#### API Application
+
+El backend se desarrolla con **Java y Spring Boot** y organiza el dominio en seis *bounded contexts*:
+
+* **Training Management:** administra sesiones, intensidad, calendario y días de descanso.
+* **Sleep Management:** gestiona registros de sueño, horarios y hábitos de descanso.
+* **Wellness Management:** administra *check-ins*, estrés percibido y hábitos de bienestar.
+* **Physiological Analysis & Recommendations:** integra mediciones desde **AIoTI**, evalúa la recuperación y coordina recomendaciones y explicaciones con IA.
+* **Reporting:** genera reportes y presenta la evolución de los registros por periodos.
+* **Community:** gestiona rachas, logros y avances compartidos voluntariamente.
+
+La API también incorpora módulos de soporte para autenticación, perfiles y suscripciones. En esta propuesta no se contabilizan como *bounded contexts* adicionales.
+
+#### Base de datos
+
+Se propone **PostgreSQL** para persistir la información estructurada de la plataforma.
+
+Las tablas se organizarán por responsabilidad de módulo. Cada contexto administrará sus operaciones de escritura; cuando necesite información de otro contexto, accederá mediante contratos internos definidos en la aplicación.
+
+Esta organización permite mantener una sola base de datos durante el desarrollo inicial, conservando límites claros entre las responsabilidades del sistema.
+
+#### Integraciones externas
+
+La API centraliza la comunicación con **AIoTI**, el proveedor de inteligencia artificial y el proveedor de pagos. Así, las credenciales de estas integraciones permanecen en el backend.
+
+#### Propósito del diagrama
+
+El diagrama permite comprender la separación entre presentación, lógica de negocio y persistencia, así como las dependencias externas necesarias para el funcionamiento propuesto de **PulsePower**.
+
+![Software_Architecture_Container_Diagrams.png](../assets/images/Software_Architecture_Container_Diagrams.png)
+
 #### 4.6.4. Software Architecture Components Diagrams
 ### 4.7. Software Object-Oriented Design
 #### 4.7.1. Class Diagrams

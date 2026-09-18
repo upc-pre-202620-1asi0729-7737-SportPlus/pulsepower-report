@@ -290,8 +290,44 @@ El mock-up representa el diseño visual final propuesto para la Landing Page de 
 ![PulsePower-Landing_Page_Mock-up.jpeg](../assets/images/PulsePower-Landing_Page_Mock-up.jpeg)
 
 ### 4.4. Web Applications UX/UI Design
+
+En esta sección se presenta el diseño UX/UI de la aplicación web de PulsePower, considerando la organización de las interfaces, la navegación y la experiencia del usuario. El diseño busca ofrecer una interacción clara, intuitiva y consistente con la identidad visual de la plataforma.
+
 #### 4.4.1. Web Applications Wireframes
+
+En esta sección se presentan los esquemas visuales de baja fidelidad
+(wireframes) de la aplicación web PulsePower. El objetivo de estos
+diseños es definir la estructura de la información, la jerarquía de los
+elementos y el flujo de navegación de los distintos módulos
+
+Estos prototipos permiten validar la usabilidad y la disposición de los
+componentes funcionales sin la distracción de elementos estéticos,
+asegurando que la interfaz sea intuitiva para los dos segmentos de
+usuario identificados: personas con rutinas de entrenamiento exigentes
+y personas que buscan mejorar su descanso y bienestar cotidiano.
+
+![PulsePower_Applications-Wireframes-0.jpeg](../assets/images/PulsePower_Applications-Wireframes-0.jpeg)
+
+![PulsePower_Applications-Wireframes-1.jpeg](../assets/images/PulsePower_Applications-Wireframes-1.jpeg)
+
+![PulsePower_Applications-Wireframes-2.jpeg](../assets/images/PulsePower_Applications-Wireframes-2.jpeg)
+
+![PulsePower_Applications-Wireframes-3.jpeg](../assets/images/PulsePower_Applications-Wireframes-3.jpeg)
+
+![PulsePower_Applications-Wireframes-4.jpeg](../assets/images/PulsePower_Applications-Wireframes-4.jpeg)
+
+![PulsePower_Applications-Wireframes-5.jpeg](../assets/images/PulsePower_Applications-Wireframes-5.jpeg)
+
+![PulsePower_Applications-Wireframes-6.jpeg](../assets/images/PulsePower_Applications-Wireframes-6.jpeg)
+
+![PulsePower_Applications-Wireframes-7.jpeg](../assets/images/PulsePower_Applications-Wireframes-7.jpeg)
+
+![PulsePower_Applications-Wireframes-8.jpeg](../assets/images/PulsePower_Applications-Wireframes-8.jpeg)
+
+![PulsePower_Applications-Wireframes-9.jpeg](../assets/images/PulsePower_Applications-Wireframes-9.jpeg)
+
 #### 4.4.2. Web Applications Wireflow Diagrams
+
 #### 4.4.3. Web Applications Mock-ups
 #### 4.4.4. Web Applications User Flow Diagrams
 ### 4.5. Web Applications Prototyping

@@ -466,14 +466,74 @@ Cada contexto mantiene sus propios repositorios, aunque todos utilizan **Postgre
 
 ### 4.7. Software Object-Oriented Design
 
-
+En esta sección se presenta el diseño orientado a objetos de **PulsePower**, detallando la estructura interna de los principales elementos del dominio. Los diagramas de clases se organizan de acuerdo con los *bounded contexts* definidos previamente y representan las clases, atributos, operaciones, enumeraciones y relaciones necesarias para implementar las responsabilidades de cada módulo de la plataforma.
 
 #### 4.7.1. Class Diagrams
 
 
+#### Bounded Context: Training Management
+
+Gestiona el registro y la planificación de las actividades físicas. La entidad `TrainingPlan` agrupa actividades programadas mediante `PlannedActivity`, mientras que `TrainingSession` representa sesiones efectivamente realizadas.
+
+Esta separación permite registrar entrenamientos no planificados, mantener actividades pendientes y diferenciar un día de descanso de una sesión completada. Las actividades pueden reprogramarse o cancelarse según las decisiones del usuario.
+
+![PulsePower_Bounded-Context-Training-Management.png](../assets/images/PulsePower_Bounded-Context-Training-Management.png)
+
+#### Bounded Context: Sleep Management
+
+Administra el historial y los hábitos de descanso. `SleepRecord` representa un periodo de sueño, incluyendo su origen manual o sincronizado. `SleepRoutine` establece los horarios y la duración objetivo del descanso.
+
+Los datos estimados por el dispositivo, como una puntuación de sueño, pueden estar ausentes en los registros manuales. El sistema conserva esta diferencia para evitar presentar información ingresada por el usuario como una medición del dispositivo.
+
+![PulsePower_Bounded-Context-Sleep-Management.png](../assets/images/PulsePower_Bounded-Context-Sleep-Management.png)
+
+#### Bounded Context: Wellness Management
+
+Gestiona la información de bienestar declarada por el usuario. `WellnessCheckIn` registra el estado general, el estrés percibido, las molestias y las notas del día.
+
+`WellnessHabit` representa un hábito que el usuario desea mantener, mientras que `HabitLog` registra su cumplimiento en fechas específicas. Estas entidades permiten realizar seguimiento sin confundir las percepciones personales con mediciones fisiológicas.
+
+![PulsePower_Bounded-Context-Wellness-Management.png](../assets/images/PulsePower_Bounded-Context-Wellness-Management.png)
+
+#### Bounded Context: Physiological Analysis & Recommendations
+
+Integra los registros de la pulsera y organiza su interpretación. `WearableConnection` representa la vinculación con **AIoTI** y `PhysiologicalRecord` conserva las mediciones sincronizadas, con su fecha, unidad y referencia de origen.
+
+`RecoveryAssessment` representa una evaluación calculada sobre un periodo de datos. A partir de ella pueden generarse recomendaciones mediante `Recommendation` y avisos mediante `GuidanceAlert`.
+
+El asistente utiliza `AssistantConversation` y `AssistantMessage` para mantener el historial de consultas y respuestas. La generación de respuestas corresponde al servicio de aplicación y al adaptador del proveedor de IA, no a las entidades por sí solas.
+
+![PulsePower_Bounded-Context-Physiological-Analysis-&-Recommendations.png](../assets/images/PulsePower_Bounded-Context-Physiological-Analysis-%26-Recommendations.png)
+
+#### Bounded Context: Reporting
+
+Administra la generación de reportes de evolución mediante `ProgressReport`. Esta entidad registra el tipo de reporte, el periodo solicitado, su estado de generación y la referencia al documento disponible.
+
+Los reportes consultan información de otros contextos a través de contratos de aplicación. No necesitan mantener copias permanentes de todos los registros utilizados para producirlos.
+
+![PulsePower_Bounded-Context-Reporting.png](../assets/images/PulsePower_Bounded-Context-Reporting.png)
+
+#### Bounded Context: Community
+
+Gestiona la motivación y los avances compartidos. `Achievement` define los logros disponibles y `UserAchievement` registra cuáles ha obtenido cada usuario.
+
+`Streak` mantiene el seguimiento de días consecutivos de una actividad definida. `SharedProgress` representa un avance que el usuario decide compartir, conservando su visibilidad y permitiendo retirar la publicación.
+
+![PulsePower_Bounded-Context-Community.png](../assets/images/PulsePower_Bounded-Context-Community.png)
+
+#### Módulos de soporte
+
+`UserAccount` administra la identidad y el estado de la cuenta. `UserProfile` almacena los datos personales y la orientación del usuario, mientras que `PersonalGoal` registra objetivos concretos.
+
+![PulsePower_Módulos-de-soporte.png](../assets/images/PulsePower_M%C3%B3dulos-de-soporte.png)
+
+`SubscriptionPlan` define los planes comerciales y `Subscription` representa la suscripción del usuario. `Payment` conserva referencias y estados de las operaciones procesadas por el proveedor externo, sin almacenar números completos de tarjetas ni códigos de seguridad.
+
+![PulsePower_Class-Diagrams.png](../assets/images/PulsePower_Class-Diagrams.png)
 
 ### 4.8. Database Design
 
 
 
 #### 4.8.1. Database Diagrams
+

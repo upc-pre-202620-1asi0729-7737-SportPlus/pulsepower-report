@@ -99,15 +99,15 @@ Este segmento contempla principalmente adultos de 25 a 55 años, profesionales c
 
 **Primer Segmento Objetivo - Usuarios con rutinas de entrenamiento o alta exigencia física (Deportistas)**
 
-**URL de todas las entrevistas del segmento:**
+**URL de todas las entrevistas del segmento: https://1drv.ms/v/c/9e13d0eade016b07/IQCbZZ3ah28dSa6sKOCB7VidAcC9w3DJRo7ZycW8ehO_J5c?e=7WCfRw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D**
 
-| Campo | Entrevista 1 | Entrevista 2                                                   | Entrevista 3 |
-|---|---|----------------------------------------------------------------|---|
+| Campo | Entrevista 1                 | Entrevista 2                 | Entrevista 3                                      |
+|---|------------------------------|------------------------------|---------------------------------------------------|
 | **Campo** | <img src="../assets/images/entrevista1.png"><br/> | <img src="../assets/images/entrevista2.png" width="1200"><br/> | <img src="../assets/images/entrevista3.png"><br/> |
-| **Nombre** | Walter Navarro | Jesús Arrollo                                                  | Yeremy Navarrete |
-| **Edad** | 22 años | 28 años                                                        | 25 años |
-| **Distrito** | Surco | San Martín de Porres                                           | Independencia |
-| **Duración** |  |                                                                |  |
+| **Nombre** | Walter Navarro               | Jesús Arrollo                | Yeremy Navarrete                                  |
+| **Edad** | 22 años                      | 28 años                      | 25 años                                           |
+| **Distrito** | Surco                        | San Martín de Porres         | Independencia                                     |
+| **Duración** | 00:00 - 02:05 (02:05 minutos)| 02:05 - 03:25 (01:20 minutos)| 03:25 - 05:20 (01:55 minutos)                     |
 
 **Resumen – Walter Navarro**
 
@@ -124,15 +124,15 @@ La entrevista a Yeremy Navarrete, de 25 años, quien combina una jornada laboral
 
 **Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
 
-**URL de todas las entrevistas del segmento:**
+**URL de todas las entrevistas del segmento: https://1drv.ms/v/c/9e13d0eade016b07/IQCbZZ3ah28dSa6sKOCB7VidAcC9w3DJRo7ZycW8ehO_J5c?e=7WCfRw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D**
 
-| Campo | Entrevista 1                                      | Entrevista 2                                      | Entrevista 3                                      |
-|---|---------------------------------------------------|---------------------------------------------------|---------------------------------------------------|
+| Campo | Entrevista 1                 | Entrevista 2                 | Entrevista 3                 |
+|---|------------------------------|------------------------------|------------------------------|
 | **Campo** | <img src="../assets/images/entrevista4.png"><br/> | <img src="../assets/images/entrevista5.png"><br/> | <img src="../assets/images/entrevista6.png"><br/> |
-| **Nombre** | Rodrigo Colonio                                   | Alejandro Choquehuanca                            | Diana Pareja                                      |
-| **Edad** | 22 años                                           | 27 años                                           | 24 años                                           |
-| **Distrito** | San Miguel                                        | San Miguel                                        | San Miguel                                        |
-| **Duración** |                                                   |                                                   |                                                   |
+| **Nombre** | Rodrigo Colonio              | Alejandro Choquehuanca       | Diana Pareja                 |
+| **Edad** | 22 años                      | 27 años                      | 24 años                      |
+| **Distrito** | San Miguel                   | San Miguel                   | San Miguel                   |
+| **Duración** | 03:25 - 08:15 (04:50 minutos)| 08:15 - 10:25 (01:50 minutos)| 10:25 - 12:20 (01:55 minutos)|
 
 **Resumen – Rodrigo Colonio**
 

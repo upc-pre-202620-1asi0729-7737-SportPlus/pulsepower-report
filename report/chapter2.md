@@ -101,13 +101,13 @@ Este segmento contempla principalmente adultos de 25 a 55 años, profesionales c
 
 **URL de todas las entrevistas del segmento:**
 
-| Campo | Entrevista 1 | Entrevista 2                                                | Entrevista 3 |
-|---|---|-------------------------------------------------------------|---|
-| **Campo** | <img src="../assets/images/entrevista1.png"><br/> | <img src="../assets/images/entrevista3.png"><br/> | <img src="../assets/images/entrevista3.png"><br/> |
-| **Nombre** | Walter Navarro | Jesús Arrollo                                               | Yeremy Navarrete |
-| **Edad** | 22 años | 28 años                                                     | 25 años |
-| **Distrito** | Surco | San Martín de Porres                                        | Independencia |
-| **Duración** |  |                                                             |  |
+| Campo | Entrevista 1 | Entrevista 2                                                   | Entrevista 3 |
+|---|---|----------------------------------------------------------------|---|
+| **Campo** | <img src="../assets/images/entrevista1.png"><br/> | <img src="../assets/images/entrevista2.png" width="1200"><br/> | <img src="../assets/images/entrevista3.png"><br/> |
+| **Nombre** | Walter Navarro | Jesús Arrollo                                                  | Yeremy Navarrete |
+| **Edad** | 22 años | 28 años                                                        | 25 años |
+| **Distrito** | Surco | San Martín de Porres                                           | Independencia |
+| **Duración** |  |                                                                |  |
 
 **Resumen – Walter Navarro**
 

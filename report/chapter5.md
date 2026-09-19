@@ -86,3 +86,17 @@ En esta sección se describen los principales acuerdos y definiciones realizadas
 | **Sprint 1 Goal** | Our focus is on delivering a fast, static Landing Page (HTML/CSS/JS) with language support to attract clients and validate our value proposition. This will be confirmed when the Landing Page is deployed and fully navigable by users. |
 | **Sprint 1 Velocity** | 16 Story Points |
 | **Sum of Story Points** | 16 |
+
+#### 5.2.1.2 Aspect Leaders and Collaborators
+
+A continuación se detalla la matriz de liderazgo y colaboración (LACX) para brindar claridad en la comunicación del equipo durante el desarrollo de las tareas de este Sprint.
+
+| Team Member (Last Name, First Name) | GitHub Username | Landing Page UI/UX | Landing Page Structure | Basic Funcs | Special Funcs |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Osorio Ramírez, Eduardo Jesús | @[Iron819] | C | C | L | L |
+| Carbajal Santivañez, Sebastian Aaron | @[usuario] | L | C | C | C |
+| Martín Farro, Alexis Sebastián | @axismf | C | L | C | C |
+| Viza Quispe, Marlon Packard | @[usuario] | C | C | L | C |
+| Evangelista Ygnacio, Sergio Joaquin | @[usuario] | C | C | C | L |
+
+*(L = Leader, C = Collaborator)*

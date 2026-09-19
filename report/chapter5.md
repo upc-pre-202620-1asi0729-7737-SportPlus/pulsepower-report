@@ -235,3 +235,16 @@ Una parte central muy visual es la sección *"How PulsePower Works"*, que utiliz
 Durante el Sprint 1, el alcance de implementación estuvo enfocado exclusivamente en el desarrollo, diseño y despliegue de la primera versión del Landing Page de PulsePower/SportPlus, así como en la estructuración de la documentación técnica y las bases del sistema de diseño a nivel de interfaz de usuario.
 
 En consecuencia, no se ha realizado en este sprint el desarrollo de Web Services ni la implementación de endpoints RESTful, por lo que no existe documentación de servicios mediante OpenAPI/Swagger que reportar en esta entrega. La documentación de servicios será incorporada a partir del Sprint 2, cuando se inicie la implementación del backend, conforme al plan de desarrollo establecido en el Product Backlog.
+
+### 5.2.1.7. Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 1, el equipo realizó el despliegue de la primera versión pública de la Landing Page utilizando GitHub Pages, servicio gratuito y estático integrado directamente con el repositorio de GitHub.
+
+* **Plataforma de despliegue:** GitHub Pages — https://pages.github.com
+* **URL base del repositorio:** https://github.com/upc-pre-202620-1asi0729-7737-SportPlus
+
+**Proceso de despliegue:**
+1. Se utilizó el repositorio central del equipo bajo la organización de la clase.
+2. Todo el contenido estático de la landing page (HTML, CSS, JS) fue integrado mediante Pull Requests revisados por los integrantes del equipo, siguiendo el flujo GitFlow.
+3. En la sección *Settings → Pages* del repositorio, se seleccionó la rama principal de producción como fuente de publicación.
+4. GitHub Pages generó automáticamente la URL pública y publicó el sitio estático para su acceso global.

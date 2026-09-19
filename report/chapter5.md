@@ -41,4 +41,11 @@ Se implementará un flujo de trabajo basado en GitFlow con el objetivo de garant
 - style: Cambios de formato que no afectan la lógica del código (espacios, indentación, etc.)
 
 ### 5.1.3. Source Code Style Guide & Conventions
+
+Para mantener la legibilidad y calidad del código, todo el equipo aplicará nomenclatura estrictamente en inglés para clases, variables, métodos y bases de datos. Además, se adoptan las siguientes guías de estilo oficiales:
+- HTML & CSS: Se seguirán las directrices de la HTML Style Guide and Coding Conventions de W3C y la Google HTML/CSS Style Guide.
+- Frontend (Angular / TypeScript): Se respetará la Angular Coding Style Guide. Las clases usarán PascalCase, variables y métodos camelCase, y los archivos kebab-case. Se utilizará Prettier y ESLint para automatizar el formato en cada commit.
+- Backend (Spring Boot / Java): Se aplicará la Google Java Style Guide. La arquitectura se dividirá en capas estrictas (Controllers, Services, Repositories, Entities), respetando los seis bounded contexts definidos en el diseño orientado a objetos (Training Management, Sleep Management, Wellness Management, Physiological Analysis & Recommendations, Reporting y Community). Los endpoints RESTful usarán sustantivos en plural (ej. GET /api/v1/training-sessions).
+- Requerimientos: Se emplearán las Gherkin Conventions para la redacción estructurada de los criterios de aceptación (Given/When/Then).
+
 ### 5.1.4. Software Deployment Configuration

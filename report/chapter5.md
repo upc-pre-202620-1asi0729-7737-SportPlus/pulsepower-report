@@ -218,3 +218,14 @@ Durante el Sprint 1, el equipo avanzó en la implementación del Landing Page, d
 | https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-1 | b69c31f | docs(cap1): add caratula section. | | 09/13/2026 |
 | https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | main | 7faa42a | docs: first commit. | | 09/13/2026 |
 
+### 5.2.1.5. Execution Evidence for Sprint Review.
+
+Durante el Sprint 1, el equipo implementó y desplegó la primera versión pública del Landing Page de SportPlus, accesible en: [https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website](https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website).
+
+La landing page presenta un diseño moderno y responsive enfocado en la salud y el fitness. Incluye secciones clave como el Hero con llamadas a la acción, descripción de servicios de coaching, demostraciones de la aplicación, videos explicativos, presentación del equipo y planes de bienestar. A continuación se presenta la captura de la página implementada.
+
+![PulsePower-Landing_Page_Wireframe.jpeg](../assets/images/PulsePower-Landing_Page_Wireframe.jpeg)
+
+Esta captura de pantalla muestra el diseño completo de la página web de **PulsePower**, diseñada con un estilo dinámico que intercala secciones de fondo oscuro, blanco y tonos pastel claros. En la parte superior, el *Hero section* destaca la palabra "HEALTH" en gran tamaño junto a una atleta, con el lema *"Science-Backed, Results Driven Coaching"* y botones de registro. Descendiendo, la página expone los servicios (*Our Coaching Services*) con una imagen de entrenamiento y una lista de beneficios.
+
+Una parte central muy visual es la sección *"How PulsePower Works"*, que utiliza coloridas maquetas de dispositivos móviles (en tonos rosa, azul, naranja y turquesa) para explicar el proceso paso a paso. Posteriormente, se integran reproductores de video incrustados para detallar características como monitoreo fisiológico y reportes de progreso. Finalmente, la página incluye una sección de presentación del equipo (*Our Team*) con fotografías y nombres de los integrantes, una demostración de la interfaz móvil de la app bajo el título *"A Plan for Your Wellbeing"*, y concluye con un pie de página (footer) oscuro que contiene enlaces de navegación y redes sociales.

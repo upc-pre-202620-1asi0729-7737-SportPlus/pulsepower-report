@@ -105,16 +105,15 @@ A continuación se detalla la matriz de liderazgo y colaboración (LACX) para br
 
 **Sprint #**: Sprint 1
 
-| Story ID | Story Tittle | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| US-00 | | | | | | | |
-| US-00 | | | | | | | |
-| US-00 | | | | | | | |
-| US-00 | | | | | | | |
-| US-00 | | | | | | | |
-| US-00 | | | | | | | |
-| US-00 | | | | | | | |
-| US-00 | | | | | | | |
-| US-07 | | | | | | | |
-| US-07 | | | | | | | |
-| US-08 | | | | | | | |
+**Sprint #**: Sprint 1
+
+| Story ID | Story Tittle | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To                          | Status (To-do / In-Process / To-Review / Done) |
+| :--- | :--- | :--- | :--- | :--- | :--- |:-------------------------------------| :--- |
+| US-00 | Landing Page de Validación | TS00.1 | Setup Static Proj | Inicializar el repositorio del Landing Page con la estructura base HTML5/CSS y configurar el tablero de Trello. | 4 | Evangelista Ygnacio, Sergio Joaquín  | Done |
+| US-00 | Landing Page de Validación | TS00.2 | Implement Hero Section | Desarrollar la sección principal (Hero) responsiva con Flexbox/Grid, incluyendo la propuesta de valor de PulsePower. | 6 | Evangelista Ygnacio, Sergio Joaquín  | Done |
+| US-00 | Landing Page de Validación | TS00.3 | Maquetar sección "Beneficios" | Crear contenedor y tarjetas informativas sobre los beneficios de la pulsera para deportistas y usuarios de bienestar. | 4 | Martín Farro, Alexis Sebastián       | Done |
+| US-00 | Landing Page de Validación | TS00.4 | Grid de funcionalidades | Implementar una cuadrícula responsiva con las funcionalidades principales (indicadores, recomendaciones, reportes). | 4 | Viza Quispe, Marlon Packard          | Done |
+| US-00 | Landing Page de Validación | TS00.5 | Selector de idioma | Implementar el mecanismo de cambio de idioma (Español/Inglés) reutilizable en todas las secciones del Landing. | 5 | Osorio Ramírez, Eduardo Jesús        | In Progress |
+| US-00 | Landing Page de Validación | TS00.6 | Maquetar sección "Planes" | Desarrollar el layout de la sección de planes de suscripción. | 3 | Carbajal Santivañez, Sebastian Aaron | Done |
+| US-00 | Landing Page de Validación | TS00.7 | Header / Navbar | Implementar la barra de navegación superior con enlaces a cada sección y al selector de idioma. | 4 | Martín Farro, Alexis Sebastián       | Done |
+| US-00 | Landing Page de Validación | TS00.8 | Maquetar Footer | Añadir información de contacto, redes sociales y datos de la organización SportPlus. | 2 | Viza Quispe, Marlon Packard          | Done |

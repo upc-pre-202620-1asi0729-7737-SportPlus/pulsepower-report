@@ -358,12 +358,38 @@ En esta sección se presentan los mock-ups de alta fidelidad de la aplicación w
 En esta sección se presentan los User Flow Diagrams de la WebApp de PulsePower. A diferencia de los Wireflows, que utilizan esquemas de baja fidelidad, los User Flows incorporan los overview de las vistas ya definidas en la sección 4.4.2 y representan tanto la ruta esperada (happy path) como las rutas alternativas (unhappy paths) que puede tomar el usuario ante validaciones fallidas, ausencia de datos o interrupciones del proceso.
 Se elabora un User Flow por cada User goal identificado para los dos User Persona del proyecto. Los flujos son consistentes con el sistema de navegación descrito en la sección 4.2.5, en el que la navegación principal se resuelve mediante una barra lateral persistente con acceso directo a los módulos Home, Training, Sleep, Wellness, Planning, Reports, Community y Settings.
 
+### User Flow 1
+![User Flow 1](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_1.png)
+
+### User Flow 2
+![User Flow 2](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_2.png)
+
+### User Flow 3
+![User Flow 3](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_3.png)
+
+### User Flow 4
+![User Flow 4](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_4.png)
+
+### User Flow 5
+![User Flow 5](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_5.png)
+
+### User Flow 6
+![User Flow 6](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_6.png)
+
+### User Flow 7
+![User Flow 7](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_7.png)
+
+### User Flow 8
+![User Flow 8](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_8.png)
+
 ### 4.5. Web Applications Prototyping
+-
 ### 4.6. Domain-Driven Software Architecture
 En esta sección se presenta la propuesta de arquitectura de software de PulsePower desde la perspectiva de Domain-Driven Design. El punto de partida es el Big Picture EventStorming elaborado en la sección 2.4, sobre el cual se profundiza mediante una sesión de Design-Level EventStorming que permite identificar con mayor detalle los bounded contexts, aggregates, commands, events y queries que estructuran el dominio.
 A partir de dicha identificación,a continuación la arquitectura se representará aplicando el C4 Model en sus niveles de contexto, contenedores y componentes, los cuales están debidamente desarrollados en las secciones 4.6.2, 4.6.3 y 4.6.4 respectivamente. Esta progresión permite pasar del entendimiento del dominio del negocio a la definición de las unidades de despliegue y sus responsabilidades internas, manteniendo la trazabilidad entre el lenguaje del negocio establecido en el Ubiquitous Language y los elementos técnicos de la solución:
 #### 4.6.1. Design-Level EventStorming
 
+![PulsePower EventStorming](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_DesignLevelEventStorming.png)
 
 #### 4.6.2. Software Architecture Context Diagram
 

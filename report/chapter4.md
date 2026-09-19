@@ -138,8 +138,6 @@ La **Landing Page** se organiza en los siguientes bloques:
 
 Dentro de cada categoría, la organización por fecha facilita la consulta y comparación de periodos.
 
-#### 4.2.1. Organization Systems
-
 #### 4.2.2. Labeling Systems
 
 * **Nomenclatura:** Se utilizarán etiquetas breves en inglés que permitan reconocer el contenido de cada sección. Los títulos de la **Landing Page** conservarán los nombres *What We Offer*, *Features*, *Benefits*, *About Us*, *Our Team* y *Plans*. Los botones describirán acciones concretas, como *Create Account*, *Sign In* y *View Plans*.
@@ -327,6 +325,10 @@ y personas que buscan mejorar su descanso y bienestar cotidiano.
 ![PulsePower_Applications-Wireframes-9.jpeg](../assets/images/PulsePower_Applications-Wireframes-9.jpeg)
 
 #### 4.4.2. Web Applications Wireflow Diagrams
+
+Los wireflow diagrams representan de manera visual el recorrido que realiza el usuario a través de las principales pantallas de la aplicación web de PulsePower. Estos diagramas integran los wireframes con las conexiones y decisiones de navegación.
+
+![PulsePower_Web-Applications-Wireflow-Diagrams.jpeg](../assets/images/PulsePower_Web-Applications-Wireflow-Diagrams.jpeg)
 
 #### 4.4.3. Web Applications Mock-ups
 

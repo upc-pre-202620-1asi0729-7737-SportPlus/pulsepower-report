@@ -100,3 +100,21 @@ A continuación se detalla la matriz de liderazgo y colaboración (LACX) para br
 | Evangelista Ygnacio, Sergio Joaquin | @[usuario] | C | C | C | L |
 
 *(L = Leader, C = Collaborator)*
+
+#### 5.2.1.3 Sprint Backlog 1
+
+**Sprint #**: Sprint 1
+
+| Story ID | Story Tittle | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| US-00 | | | | | | | |
+| US-00 | | | | | | | |
+| US-00 | | | | | | | |
+| US-00 | | | | | | | |
+| US-00 | | | | | | | |
+| US-00 | | | | | | | |
+| US-00 | | | | | | | |
+| US-00 | | | | | | | |
+| US-07 | | | | | | | |
+| US-07 | | | | | | | |
+| US-08 | | | | | | | |

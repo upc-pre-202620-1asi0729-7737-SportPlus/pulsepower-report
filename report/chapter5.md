@@ -131,101 +131,61 @@ Tablero de Trello:
 
 Durante el Sprint 1, el equipo avanzó en la implementación del Landing Page, desarrollado en HTML5, CSS3 y JavaScript vanilla, y desplegado en GitHub Pages. Los principales avances incluyeron la estructura base de todas las secciones de la landing (Hero, Funcionalidades, Segmentos, Planes, Testimonios, FAQ, Contacto y Footer), la implementación del diseño responsive con media queries para móvil y tablet, y la habilitación del scroll suave y menú de navegación. A continuación se presentan los commits representativos del repositorio de Landing Page durante este Sprint.  
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
-|---|---|---|---|---|---|
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | develop | 4a28dee | Merge pull request #14 from upc-pre-202620-1asi0729-7737-SportPlus/feature/chapter-5 | docs (conclusiones) ; add conclusions and recommendations for pulsepo… | 09/19/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | main | a36f5a6 | docs(conclusions): fix. | | 09/19/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | fcd9333 | docs(cap4): fix images | | 09/19/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-5 | dcc4cd1 | docs (conclusiones) ; add conclusions and recommendations for pulsepower project | Document the conclusions and recommendations from the first stage of the PulsePower project, including insights on user needs, hypotheses, design objectives, and future actions. | 09/19/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | develop | 8093c15 | Merge pull request #13 from upc-pre-202620-1asi0729-7737-SportPlus/feature/chapter-5 | Feature/chapter 5 | 09/19/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | develop | 2ba74c7 | Merge pull request #12 from upc-pre-202620-1asi0729-7737-SportPlus/feature/chapter-4 | Feature/chapter 4 | 09/19/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | c4502a1 | docs(cap2): finish cap2. | | 09/19/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-5 | e17abf6 | docs(cap5): add Sprint Backlog 1 | | 09/19/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-5 | 4ba4a64 | docs(capt): add Sprint Backlog 1 | | 09/19/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-5 | 8bd886a | docs(cap5): add Aspect Leaders and Collaborators | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-5 | 94ddff3 | docs(cap5): add Sprint planning 1 | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 76e9c38 | Update chapter4.md | Added related images and more content of the remaining chapter | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-5 | 84e4aaf | docs(cap5): add Landing Page, Services & Applications Implementation description | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-5 | 0a95013 | docs(cap5): add Software Deployment Configuration | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-5 | 5c297a2 | docs(cap5): add Source Code Style Guide & Conventions | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-5 | 2d2bc6f | docs(cap5): add Source Code Management | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-5 | 90ded1e | docs(cap5): add Software Development Environment Configuration | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-5 | 6341d2d | docs(cap5): add Software Configuration Management | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | e9a5a39 | Add ch4 photos | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 656ebf8 | Update chapter4.md | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | a2f83a5 | docs(cap2): add interview data section | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 6577a0c | docs(cap2): add interview data section | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | c32f8ce | docs(cap4): refine section on organization and labeling systems; add wireflow diagrams for web applications | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 553d0a7 | docs(cap4): add comprehensive database design section with diagrams and bounded context details for PulsePower | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 18c440f | docs(cap4): add object-oriented design section with class diagrams for PulsePower modules | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 55abe7e | docs(cap4): add detailed description of API architecture and component responsibilities for PulsePower | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 06a56fe | docs(cap4): add detailed descriptions for PulsePower architecture, landing page, web application, API, database, and external integrations | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 9a120e1 | docs(cap4): add context diagram and actor interactions for PulsePower system | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 43dd20e | docs(cap4): add high-fidelity mock-ups for PulsePower web application | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 3f26bcd | docs(cap4): add UX/UI design section with wireframes for PulsePower web application | | 09/18/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 528c645 | docs(cap2): add interviews to interviews data section | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 7d459b1 | docs(cap2): add picture of the second interview in interview data section | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 1d6bafe | docs(cap4):add enhance landing page section with wireframe and mock-up details | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | bea3d25 | docs(cap4): enhance content organization with detailed navigation and searching systems | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 2ee696a | docs(cap4): expand labeling systems and SEO guidelines for improved content organization | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 3040143 | docs(cap4): expand information architecture section with detailed content organization and labeling systems | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 2c11526 | docs(cap4): update typography and enhance web style guidelines | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | a0b9bd0 | docs(cap4): add typography, color palette, spacing, and communication tone guidelines | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 073746a | docs(cap4): enhance style guidelines and add branding information | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | develop | 2df89fe | Merge pull request #10 from upc-pre-202620-1asi0729-7737-SportPlus/feature/chapter-3 | Feature/chapter 3 | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | develop | a53bd1f | Merge pull request #9 from upc-pre-202620-1asi0729-7737-SportPlus/feature/chapter-2 | Feature/chapter 2 | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 3561a28 | docs(cap2): add description to the pictures in empathy map section | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 235ba32 | docs(cap2): add description to the pictures in user persona section | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | f977f91 | docs(cap2): delete some extra lines | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 73b9d4d | docs(cap2): add event storm section | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 6a71ab1 | docs(cap2): add ubiquitous language section | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-3 | f10a987 | docs(cap3): add Impact Maps section. | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | b502390 | docs(cap2): add user task matrix section and improved the subtitles of segmento | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 9e960b6 | docs(cap2): add user persona section | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 62c2e79 | docs(cap2): fix userpersona to empathymap name in pictures section | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-3 | 69a89d4 | docs(cap3): add Product Backlog section. | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 49caac0 | docs(cap2): add journey map fixed section | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 764c5b7 | docs(cap2): journey map image correction | | 09/17/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | fd40de2 | docs(cap2): add journey map section | | 09/16/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-3 | 7a421b6 | docs(cap3): add user stories section. | | 09/16/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 0cbc9eb | docs(cap2): add empathy map section correction. | | 09/15/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 479476d | docs(cap2): add user person section. | | 09/15/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | b2ebfc5 | docs(cap2): add interview analysis section | | 09/15/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 898a69a | docs(cap2): add interview log section. | | 09/15/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 59382cc | docs(cap2): add Interview design section. | | 09/15/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | b1f4956 | docs(cap2): add Strategies and tactics against competitors section | | 09/15/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | deae66b | docs(cap2): add competitive analysis section. | | 09/15/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | 84ef350 | docs(cap2): add competitors section. | | 09/14/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | develop | e93d30e | Merge pull request #8 from upc-pre-202620-1asi0729-7737-SportPlus/feature/chapter-1 | docs(cap1): add target segments section. | 09/14/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-1 | 2ed6f3d | docs(cap1): add target segments section. | | 09/14/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | develop | 9e4e299 | Merge pull request #7 from upc-pre-202620-1asi0729-7737-SportPlus/feature/chapter-1 | Feature/chapter 1 | 09/14/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-1 | acbde9e | docs(cap1): add Lean UX Canvas information. | | 09/14/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-1 | d3ec88c | docs(cap1): add Lean UX Hypothesis Statements information. | | 09/14/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-1 | bf11a16 | docs(cap1): add lean ux process section. | | 09/14/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | develop | 41b657e | Merge pull request #6 from upc-pre-202620-1asi0729-7737-SportPlus/feature/chapter-1 | Feature/chapter 1 | 09/14/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-1 | 4ff238c | docs(cap1): add team description and Solution profile section. | | 09/14/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-1 | 4c42542 | docs(cap1): add startup description. | | 09/14/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | main | 81ec8d2 | docs: update the readme. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | develop | 333f96b | Merge pull request #5 from upc-pre-202620-1asi0729-7737-SportPlus/feature/chapter-4 | docs(cap4): cap4 fix. | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 31d3a22 | docs(cap4): cap4 fix. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | main | a9631e4 | docs(caratula): add information about the cover. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | develop | 367fe80 | Merge pull request #4 from upc-pre-202620-1asi0729-7737-SportPlus/feature/chapter-5 | docs(cap5): fix cap5 format. | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | develop | baed7ac | Merge pull request #3 from upc-pre-202620-1asi0729-7737-SportPlus/feature/chapter-3 | docs(cap3): fix cap3 format. | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | develop | 46b623d | Merge pull request #2 from upc-pre-202620-1asi0729-7737-SportPlus/feature/chapter-2 | docs(cap2): fix cap2 format. | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-5 | e0e3fcf | docs(cap5): fix cap5 format. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-3 | d815eed | docs(cap3): fix cap3 format. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | b9d514c | docs(cap2): fix cap2 format. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | develop | 5f41b98 | Merge pull request #1 from upc-pre-202620-1asi0729-7737-SportPlus/feature/chapter-1 | docs(cap1): add startup description. | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-1 | 8d85a4b | docs(cap1): add startup description. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | main | 2d87c01 | docs: add titles en all chapters. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | main | 0b410e1 | docs(conclusions): add conclusions section. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-5 | a6d5f36 | docs(cap5): add structure of cap5. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-4 | 683a6e3 | docs(cap4): add structure of cap4. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-3 | e2c0c44 | docs(cap3): add structure of cap3. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-2 | ad12d58 | docs(cap2): add structure of cap2. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-1 | c5ea8ff | docs(cap1): add structure of cap1. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | feature/chapter-1 | b69c31f | docs(cap1): add caratula section. | | 09/13/2026 |
-| https://github.com/upc-pre-202620-1asi0729-7737-SportPlus | main | 7faa42a | docs: first commit. | | 09/13/2026 |
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `82efb03` | `feat(landing): add responsive styles for various sections and navigation` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `53d26c4` | `feat(landing): add styles for legal pages with responsive design.` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `7b90494` | `feat(landing): add floating language switcher with responsive design.` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `a06344a` | `feat(landing): add styles for Footer section with responsive layout and social links` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `d792b51` | `feat(landing): add styles for Overview & Secondary Video section with grid layout and responsive design` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `de5e9f5` | `feat(landing): add styles for Plans & Pricing section with toggle and responsive cards` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `ceb849f` | `feat(team): add styles for Our Team section with responsive cards and hover effects` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `600dd3b` | `feat(video): add styles for interactive video section with tabs and player` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `ec96c5c` | `feat(landing): add styles for mid CTA banner section` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `2fffd30` | `feat(landing): add styles for How PulsePower Works section with 5-step arched cards` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `9553c2c` | `feat(landing): add styles for coaching services section and accordion components` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `fa5c120` | `feat(landing): add styles for science-backed coaching section` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `3a41450` | `feat(landing): add styles for marquee banner and ticker items` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `c42ccd0` | `feat(landing): add styles for hero section, including layout, watermark, and call-to-action button` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `7e8d84c` | `feat(landing): add language toggle switch and auth button styles` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `b7b5db3` | `feat(landing): add implement fixed header and navigation styles` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `7dac399` | `feat(landing): add SVG assets for PulsePower landing page and styles` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `main` | `16057ef` | `First Commit.` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `a745c4b` | `feat(landing): add implement function to apply translations based on selected language` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `b3d8e7a` | `feat(landing): add function to flatten nested translation objects` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `17b17c3` | `feat(landing): add Interactive Scripts & i18n` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `616c78d` | `feat(landing): add Spanish translations for overview and footer sections` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `0122e01` | `feat(landing): add Spanish translations for team and plans sections` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `34a43ca` | `feat(landing): add Spanish translations for CTA banner and video section` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `020e79f` | `feat(landing): add Spanish translations for coaching services and process steps` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `887f36d` | `feat(landing): add Spanish translations for navigation, hero, marquee, and science sections` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `9ba1dfb` | `feat(landing): fix names of i18n.` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `573634c` | `feat(landing): add Spanish translations for overview and footer sections` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `db2765a` | `feat(landing): add Spanish translations for video section, team members, and plans` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `9acf111` | `feat(landing): add Spanish translations for coaching services and process steps` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `82d5e88` | `feat(landing): add Spanish translations for marquee and science sections` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `517b628` | `feat(landing): add English translations for navigation and hero sections` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `2ea4dc7` | `feat(landing): add YouTube video placeholder styles with hover effects` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `06646a6` | `feat(package): initialize package-lock.json for PulsePower website` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `3780523` | `feat (landing): add main HTML structure for PulsePower website` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `419b0c4` | `feat (landing): add tos main` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `9c1bb99` | `feat (landing): add tos header` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `6ac16c0` | `feat (landing): add tos` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `e664249` | `feat(landing): add toggle functionality for pricing plans with active state management` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `f5f3437` | `feat(landing): add implement toggle functionality for monthly and annual pricing plans` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `d99a19a` | `feat(landing): add video embed functionality with tab navigation and active state management` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `ffeac89` | `feat(landing): add accordion functionality for coaching services and initialize first active tab` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `4f1390c` | `feat(landing): add scroll event to change header background on scroll` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `58341b5` | `feat(landing): add floating language switcher and mobile menu toggle functionality` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `3b744cf` | `feat(landing): add language toggle functionality with synchronization and HTML lang update` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `3aa73ec` | `feat(landing): add synchronize language toggle with active state and thumb position` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `58ac9ca` | `feat(landing): add functionality to apply translations to placeholders and HTML elements` | `09/18/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `main` | `696bf54` | `Merge pull request #2 from upc-pre-202620-1asi0729-7737-SportPlus/feature/app-features` | `09/19/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `9d2f6cb` | `feat(landing): fix video player placeholders to use div instead of anchor tags` | `09/19/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `cde0848` | `feat(landing): fix remove hardcoded YouTube links from video player placeholders` | `09/19/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `4ae3299` | `feat(landing): fix enhance hero section and team card layout with new styles` | `09/19/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `5225ad3` | `feat(landing):add update team member details and replace logo images` | `09/19/2026` |
+| `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `047c046` | `feat(landing): add privacy policy page for PulsePower website` | `09/18/2026` |
 
 ### 5.2.1.5. Execution Evidence for Sprint Review.
 

@@ -58,3 +58,31 @@ Para mantener la legibilidad y calidad del código, todo el equipo aplicará nom
 
 En esta sección se describe el proceso de implementación del producto PulsePower, incluyendo el desarrollo, pruebas, documentación y despliegue de la Landing Page. Para este avance se implementó la primera versión del Landing Page, orientada a presentar la propuesta de valor del sistema: "No puedes rendir más sin recuperarte mejor. Conócete primero."	
 
+### 5.2.1 Sprint 1
+
+En esta sección se describen los principales acuerdos y definiciones realizadas durante el Sprint Planning del Sprint 1, enfocado en la implementación del Landing Page de PulsePower.
+
+#### 5.2.1.1 Sprint Planning 1
+
+**Sprint Planning Background**
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Sprint #** | Sprint 1 |
+| **Date** | 13-09-2025 |
+| **Time** | 17:30 |
+| **Location** | Reunion Virtual |
+| **Prepared By** | Viza Quispe, Marlon Packard |
+| **Attendees** | Evangelista Ygnacio, Sergio Joaquin<br>Martin Farro, Alexis Sebastian<br>Carbajal Santivañez, Sebastian Aaron<br>Osorio Ramírez, Eduardo Jesús |
+| **Sprint 1 Review Summary** | Durante el Sprint 1 se logró implementar correctamente el Landing Page responsive de PulsePower, incluyendo navegación entre secciones, adaptación móvil y soporte multilenguaje. Además, el equipo consolidó la estructura base del frontend y definió estándares iniciales de trabajo colaborativo utilizando GitFlow y Trello para la gestión de tareas. |
+| **Sprint 1 Restrospective Summary** | El equipo identificó como principal fortaleza la capacidad tecnica y la comunicación constante durante el desarrollo del Sprint 1. Sin embargo, se detectaron pequeños retrasos en la delegacion de tareas, por lo que para este sprint se acordó mejorar la coordinación en estas fases y aumentar la frecuencia de revisiones entre integrantes. |
+
+<br>
+
+**Sprint Goal & User Stories**
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Sprint 1 Goal** | Our focus is on delivering a fast, static Landing Page (HTML/CSS/JS) with language support to attract clients and validate our value proposition. This will be confirmed when the Landing Page is deployed and fully navigable by users. |
+| **Sprint 1 Velocity** | 16 Story Points |
+| **Sum of Story Points** | 16 |

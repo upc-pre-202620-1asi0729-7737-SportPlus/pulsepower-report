@@ -30,7 +30,7 @@ Se establece **Rubik** como tipografía principal para unificar la identidad vis
 * **Cuerpo del texto (p):** 1.6rem (aprox. 16px) con un interlineado de 1.6.
 * **Botones y etiquetas (span):** 1.4rem (aprox. 14px) a 1.8rem (aprox. 18px).
 
-![PulsePower-Typography.jpeg](../assets/images/PulsePower-Typography.jpeg)<img src="../assets/images/pulsepower-logo.png" width="60"><br/>
+![PulsePower-Typography.jpeg](../assets/images/PulsePower-Typography.jpeg)
 
 **Colors**
 

@@ -103,6 +103,8 @@ A continuación se detalla la matriz de liderazgo y colaboración (LACX) para br
 
 #### 5.2.1.3 Sprint Backlog 1
 
+Se detalla el Sprint Backlogk 1, con su respectivo tablero en Trello: https://trello.com/invite/b/6aaede0bb47af502ba9eb29d/ATTI6002400c8c79f6ddabb88999b2168b7a7AB82763/pulsepower
+
 **Sprint #**: Sprint 1
 
 **Sprint #**: Sprint 1
@@ -120,6 +122,10 @@ A continuación se detalla la matriz de liderazgo y colaboración (LACX) para br
 | US-00    | Landing Page de Validación | TS00.6  | Maquetar sección "Planes"     | Desarrollar el layout de la sección de planes de suscripción.                                                         | 4                  | Carbajal Santivañez, Sebastian Aaron | Done        |
 | US-00    | Landing Page de Validación | TS00.8  | Maquetar Footer               | Añadir información de contacto, redes sociales y datos de la organización SportPlus.                                  | 2                  | Carbajal Santivañez, Sebastian Aaron | Done        |
 | US-00    | Landing Page de Validación | TS00.11 | Despliegue en GitHub Pages    | Configurar la rama main y publicar el sitio estático mediante GitHub Pages.                                           | 2                  | Carbajal Santivañez, Sebastian Aaron | Done        |
+
+Tablero de Trello:
+
+![Tablero Trello.png](../assets/images/Tablero%20Trello.png)
 
 #### 5.2.1.4 Development Evidence for Sprint Review
 

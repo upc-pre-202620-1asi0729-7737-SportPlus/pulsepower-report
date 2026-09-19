@@ -220,7 +220,7 @@ Durante el Sprint 1, el equipo avanzó en la implementación del Landing Page, d
 
 ### 5.2.1.5. Execution Evidence for Sprint Review.
 
-Durante el Sprint 1, el equipo implementó y desplegó la primera versión pública del Landing Page de SportPlus, accesible en: [https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website](https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website).
+Durante el Sprint 1, el equipo implementó y desplegó la primera versión pública del Landing Page de SportPlus, accesible en: [https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/](https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/)).
 
 La landing page presenta un diseño moderno y responsive enfocado en la salud y el fitness. Incluye secciones clave como el Hero con llamadas a la acción, descripción de servicios de coaching, demostraciones de la aplicación, videos explicativos, presentación del equipo y planes de bienestar. A continuación se presenta la captura de la página implementada.
 
@@ -240,7 +240,7 @@ En consecuencia, no se ha realizado en este sprint el desarrollo de Web Services
 
 Durante el Sprint 1, el equipo realizó el despliegue de la primera versión pública de la Landing Page utilizando GitHub Pages, servicio gratuito y estático integrado directamente con el repositorio de GitHub.
 
-* **Plataforma de despliegue:** GitHub Pages — https://pages.github.com
+* **Plataforma de despliegue:** GitHub Pages — [https://pages.github.com](https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/)
 * **URL base del repositorio:** https://github.com/upc-pre-202620-1asi0729-7737-SportPlus
 
 **Proceso de despliegue:**
@@ -248,3 +248,16 @@ Durante el Sprint 1, el equipo realizó el despliegue de la primera versión pú
 2. Todo el contenido estático de la landing page (HTML, CSS, JS) fue integrado mediante Pull Requests revisados por los integrantes del equipo, siguiendo el flujo GitFlow.
 3. En la sección *Settings → Pages* del repositorio, se seleccionó la rama principal de producción como fuente de publicación.
 4. GitHub Pages generó automáticamente la URL pública y publicó el sitio estático para su acceso global.
+
+### 5.2.1.8. Team Collaboration Insights during Sprint.
+
+Durante el Sprint 1, el equipo utilizó GitHub como plataforma central de colaboración y control de versiones para el repositorio `upc-pre-202620-1asi0729-7737-SportPlus`, aplicando el flujo de trabajo GitFlow junto con Conventional Commits para mantener la trazabilidad.
+
+**Flujo de trabajo aplicado:**
+* Cada integrante trabajó en ramas individuales creadas desde la rama `develop` o `main`, siguiendo la nomenclatura de funcionalidades o capítulos de documentación (ej. `feature/chapter-1`, `feature/chapter-2`, etc.).
+* Los cambios se integraron mediante Pull Requests, requiriendo revisión antes del merge.
+* Los mensajes de commit siguieron un estándar estructurado (`feat:`, `fix:`, `docs:`), garantizando la correcta identificación del trabajo realizado, como se evidenció en los aportes de documentación de los capítulos 1 al 5.
+
+![Commits Report.jpg](../assets/images/Commits%20Report.jpg)
+
+Esta captura de pantalla (espacio reservado para su imagen del repositorio de SportPlus) muestra el gráfico de actividad de GitHub del repositorio `upc-pre-202620-1asi0729-7737-SportPlus`. En él se puede observar una alta concentración de trabajo en equipo durante el mes de septiembre, con múltiples contribuciones y commits registrados durante la consolidación del Sprint 1, reflejando el trabajo concurrente de los distintos líderes de aspecto y colaboradores en sus respectivas ramas.

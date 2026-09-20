@@ -173,8 +173,27 @@ Considerando los avances alcanzados y las funcionalidades pendientes de implemen
 
 # Anexos
 
-## Anexo A: Videos de Exposiciones
+## Anexo A. Videos de Exposiciones
 
-| Entrega | Nombre del archivo | URL |
-| :--- | :--- | :--- |
-| AV1 | `upc-pre-202620-1asi0729-7737-pluspower-expo-av1.mp4` | [Ver exposición AV1](link) |
+| Entrega | Título                                                                                                   | Enlace        |
+|--------|----------------------------------------------------------------------------------------------------------|---------------|
+| AV1 | Presentación de la propuesta de negocio, Lean UX Process y primera versión del Landing Page| https://lix.li/10vH1f |
+
+## Anexo B. Repositorios del Proyecto
+
+| Descripción | Enlace |
+|------------|--------|
+| Repositorio del Informe del Proyecto | https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report       |
+| Repositorio de la Landing Page | https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website |
+
+## Anexo C. Enlaces de Despliegue (Deployment)
+
+| Descripción | Enlace |
+|------------|--------|
+| Deployment de la Landing Page en GitHub Pages | https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/ |
+
+## Anexo D. Diseño
+
+| Descripción | Enlace                                                                                               |
+|------------|------------------------------------------------------------------------------------------------------|
+| Link del Figma del Trabajo | https://www.figma.com/design/EpIU0MtmPNWZ9SRbxlpHb3/Sin-t%C3%ADtulo?t=J7onJ0Zc1CGCVNFR-1  |

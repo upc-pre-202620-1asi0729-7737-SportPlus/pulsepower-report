@@ -82,6 +82,9 @@ A continuación, se detallan las actividades realizadas en cada entrega, la part
 
 **AV1**
 
+![CommitsAV1.jpeg](../assets/images/CommitsAV1.jpeg)
+
+
 ## AV1 – Sprint Review (Semana 4)
 
 Durante la elaboración de la entrega **AV1**, el equipo se organizó distribuyendo los capítulos y secciones del informe de acuerdo con las responsabilidades de cada integrante. Se realizaron sesiones de coordinación y revisión conjunta para consolidar los avances del proyecto y preparar la presentación final. Cada integrante participó tanto en el desarrollo de la documentación como en la presentación oral de las partes asignadas.

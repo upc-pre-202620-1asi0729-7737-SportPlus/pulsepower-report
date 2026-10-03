@@ -1,7 +1,7 @@
 ﻿# Capítulo I: Introducción
 
 ## 1.1. Startup Profile
-### 1.1.1 Descripcion de la Startup
+### 1.1.1. Descripción de la startup
 SportPlus es una startup tecnológica enfocada en el desarrollo de soluciones digitales para la comprensión y el acompañamiento del bienestar físico de las personas. Construimos sistemas que interpretan las señales del cuerpo humano y las convierten en información útil para tomar mejores decisiones sobre el entrenamiento, el descanso y la salud en general. En SportPlus buscamos transformar la manera en que los deportistas, y quienes los entrenan, se relacionan con su estado físico: para quienes hoy lo interpretan de forma intuitiva y poco estructurada, les damos claridad; para quienes ya buscan maximizar su rendimiento, les damos precisión. Integramos progresivamente tecnologías de análisis de datos para construir soluciones capaces de adaptarse a las necesidades del bienestar personal del futuro, sin importar en qué punto de ese camino se encuentre cada deportista.
 
 #### Visión
@@ -14,19 +14,19 @@ _“No puedes rendir más sin recuperarte mejor. Conócete primero."_
 
 SportPlus existe para cerrar la brecha entre lo que el cuerpo comunica y lo que las personas realmente entienden de él. Creemos que el rendimiento, el bienestar y el entrenamiento no deberían decidirse por intuición, sino por información clara y accesible. Por eso construimos un puente entre los datos fisiológicos que ya generan los dispositivos que las personas usan, y las decisiones que toman todos los días: deportistas que buscan mejorar, personas que buscan entender su propio bienestar. Nuestra apuesta no es vender un dispositivo más, sino ser la capa de inteligencia que traduce el cuerpo en decisiones.
 
-### 1.1.2 Perfiles de integrantes del equipo
+### 1.1.2. Perfiles de integrantes del equipo
 
 | Foto                                                      | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![Sergi Photo](../assets/images/sergi-photo.jpg)          | **Evangelista Ygnacio, Sergio Joaquin**<br><br>Estudiante de Ingeniería de Software, organizado, responsable y orientado a resultados. Apasionado por el aprendizaje continuo y la actualización constante en nuevas tecnologías, metodologías y buenas prácticas. Me adapto con facilidad a diferentes entornos y busco aportar soluciones eficientes y proactivas.                                                                                                                                                                             |
 | ![Alexis Photo](../assets/images/alexis-photo.png)        | **Martin Farro, Alexis Sebastian**<br><br>Estudiante de Ingeniería de Software. Disciplinado y constante, cualidades desarrolladas a través de la natación que aplico para mantener el enfoque y superar obstáculos. Enfocado en resolver problemas de manera metódica y con atención al detalle.                                                                                                                                                                                                                                                |
 | ![Eduardo Photo](../assets/images/eduardo-photo.jpeg)     | **Osorio Ramírez, Eduardo Jesús**<br><br>Estudiante de Ingeniería de Software. Busca desarrollar nuevas habilidades y ampliar conocimiento en el área de inteligencia artificial, con conocimientos de C++, HTML, CSS, y conocimiento sobre código limpio.                                                                                                                                                                                                                                                                                       |
-| ![Sebastian Photo](../assets/images/sebastian-photo.jpeg) | **Carbajal Santivañez, Sebastian Aaron**<br><br>Estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas, actualmente cursando el 8vo ciclo de la carrera. Me apasiona el análisis de datos y de Databases, asimismo, el diseñar diferentes tipos de Interfaces para el usuario y brindar UX’s eficiente, asimismo me considero una persona analitica y creativa en el ambito innovativo. Cuento con conocimientos en Lenguajes como Python, uso del framework React, Node.js MySQL, SQL Management, Swift, C# y C++. |
+| ![Sebastian Photo](../assets/images/sebastian-photo.jpeg) | **Carbajal Santivañez, Sebastian Aaron**<br><br>Estudiante de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas, actualmente cursando el 8vo ciclo de la carrera. Me apasionan el análisis de datos, las bases de datos y el diseño de interfaces con una experiencia de usuario eficiente. Me considero una persona analítica y creativa. Cuento con conocimientos de Python, React, Node.js, MySQL, SQL Management, Swift, C# y C++. |
 | ![Marlon Photo](../assets/images/marlon-photo.jpeg)       | **Viza Quispe, Marlon Packard**<br><br>Estudiante responsable y proactivo con una sólida base técnica en C++. Destaco por mi capacidad para aportar soluciones creativas y por mi compromiso con el aprendizaje continuo en entornos profesionales.                                                                                                                                                                                                                                                                                             |
 
 
-## 1.2 Solution Profile
-### 1.2.1 Antecedentes y problemática
+## 1.2. Solution Profile
+### 1.2.1. Antecedentes y problemática
 **1. ¿Qué ocurre o qué problema se presenta? (What?)**
 
 Las exigencias físicas y laborales de las personas son cada vez mayores, y por ende, quienes mantienen una actividad física constante presentan dificultades para equilibrar adecuadamente su esfuerzo con su recuperación. Muchos procesos todavía se basan en la percepción subjetiva, la experiencia personal o la observación directa de síntomas de cansancio, lo que puede generar errores de calibración, decisiones tardías y dificultades para anticipar el desgaste físico. Como consecuencia, las personas entrenan o descansan en momentos inadecuados para su cuerpo, y quienes las acompañan tienen menor certeza sobre su verdadero estado fisiológico.
@@ -41,7 +41,7 @@ El problema ocurre principalmente en entornos donde las personas concentran una 
 
 **4. ¿Quiénes están involucrados o afectados? (Who?)**
 
-El problema impacta directamente a deportistas de alto rendimiento y amateur, quienes requieren maximizar su nivel competitivo sin arriesgarse a sufrir lesiones y/o aquellos deportistas que buscan cuidar su salud a un nivel, quienes deben balancear el ejercicio con responsabilidades laborales y académicas sin el tiempo o la guía experta para interpretar sus señales corporales.
+El problema impacta directamente a deportistas de alto rendimiento y amateur, quienes requieren maximizar su nivel competitivo sin arriesgarse a sufrir lesiones y a quienes buscan cuidar su bienestar y deben balancear el ejercicio con responsabilidades laborales y académicas sin el tiempo o la guía experta para interpretar sus señales corporales.
 
 **5. ¿Por qué ocurre? (Why?)**
 
@@ -132,7 +132,7 @@ _Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellne
 
 **Hipótesis 1:**
 
-Creemos que desarrollar una sincronización sin fricción de la pulsera logrará que los deportistas centralicen su información fisiológica sin esfuerzo manual. Lo sabremos cuando más del 85% de los usuarios mantengan sus dispositivos sincronizados diariamente durante el primer mes.
+Creemos que desarrollar una sincronización sin fricción de la pulsera logrará que los deportistas centralicen su información fisiológica sin esfuerzo manual. Lo sabremos cuando al menos el 70 % de los participantes del piloto mantenga su pulsera sincronizada al menos 5 de cada 7 días durante las cuatro semanas.
 
 **Hipótesis 2:**
 
@@ -140,27 +140,41 @@ Creemos que capturar los hábitos y metas del usuario en el onboarding logrará 
 
 **Hipótesis 3:**
 
-Creemos que simplificar la data cruda en tres indicadores visuales clave logrará reducir la confusión e incertidumbre del atleta sobre su estado físico. Lo sabremos cuando los usuarios activos diarios revisen este panel al menos una vez cada mañana.
+Creemos que simplificar la data cruda en tres indicadores visuales clave logrará reducir la confusión e incertidumbre del atleta sobre su estado físico. Lo sabremos cuando los usuarios consulten el panel antes de las 11:00 al menos 4 de cada 7 días.
 
 **Hipótesis 4:**
 
-Creemos que traducir los indicadores en acciones claras (ej. "hoy prioriza descanso") logrará que los atletas tomen mejores decisiones para evitar sobreentrenamiento. Lo sabremos cuando los usuarios reporten una alta utilidad de las recomendaciones mediante una calificación positiva (feedback in-app).
+Creemos que traducir los indicadores en acciones claras (ej. "hoy prioriza descanso") logrará que los atletas tomen mejores decisiones para evitar sobreentrenamiento. Lo sabremos cuando al menos el 60 % de las recomendaciones calificadas sea valorado como útil.
 
 **Hipótesis 5:**
 
-Creemos que enviar alertas oportunas sobre cambios fisiológicos logrará mantener el interés del usuario sin generar fatiga por notificaciones. Lo sabremos cuando la tasa de apertura (open rate) de los avisos supere el 40% y las desactivaciones por spam sean mínimas.
+Creemos que enviar alertas oportunas sobre cambios fisiológicos logrará mantener el interés del usuario sin generar fatiga por notificaciones. Lo sabremos cuando la tasa de apertura de los avisos supere el 40 % y menos del 10 % de los usuarios desactive las alertas.
 
 **Hipótesis 6:**
 
-Creemos que mostrar gráficas de tendencias a largo plazo logrará que el usuario identifique patrones entre sus hábitos diarios y su rendimiento.Lo sabremos cuando los usuarios interactúen con la vista semanal/mensual de reportes al menos dos veces al mes de forma recurrente.
+Creemos que mostrar gráficas de tendencias a largo plazo logrará que el usuario identifique patrones entre sus hábitos diarios y su rendimiento. Lo sabremos cuando los usuarios interactúen con la vista semanal/mensual de reportes al menos dos veces al mes de forma recurrente.
 
 **Hipótesis 7:**
 
-Creemos que estructurar el acceso mediante suscripciones logrará sostener financieramente la entrega de hardware sin costo inicial.Lo sabremos cuando alcancemos una tasa de conversión del 60% hacia planes de pago sostenidos tras los períodos de prueba.
+Creemos que estructurar el acceso mediante suscripciones permitirá evaluar la sostenibilidad financiera del servicio. Lo sabremos cuando al menos el 25 % de los participantes que completen el periodo de prueba elija el plan Pro y lo mantenga activo durante el segundo mes.
+
+**Justificación de umbrales y método de medición**
+
+Los umbrales anteriores son metas iniciales de validación y no resultados comprobados. H1–H6 se medirán en el piloto de cuatro semanas de la sección 1.2.2.1; H7 requiere seguimiento durante el segundo mes. Se reclutarán participantes en gimnasios, clubes y comunidades de bienestar de Lima, procurando una cantidad similar de participantes por segmento. Como la muestra será pequeña, cada resultado se reportará con el número absoluto de participantes y no solo como porcentaje. Si un umbral no se alcanza, la hipótesis se reformulará en lugar de ajustar la meta a posteriori.
+
+| Hipótesis | Umbral | Por qué el umbral es razonable | Cómo se medirá |
+|---|---|---|---|
+| H1 – Sincronización | ≥ 70 % sincroniza al menos 5 de 7 días | Se revisó desde "más del 85 % diario" porque exigir sincronización todos los días castiga olvidos normales (cargar la pulsera, días sin usarla). El valor se alinea con el criterio de éxito del piloto (70 %). | Historial de eventos `WearableSynced` por usuario y día; `last_synced_at` solo conserva la última sincronización. |
+| H2 – Onboarding | > 90 % completa el perfil en la primera sesión | El asistente solo pide datos imprescindibles; completarlo es el primer paso para obtener valor y lo hacen participantes que ya aceptaron entrar al piloto. | Eventos `ProfileCompleted` / `UserRegistered` dentro de la misma sesión. |
+| H3 – Panel de indicadores | Consulta matutina del panel (antes de las 11:00) al menos 4 de 7 días | Los entrevistados revisan su estado al despertar y antes de entrenar (User Task Matrix: frecuencia alta). "Cada mañana" se precisó a 4 de 7 días para que sea medible. | Registro de vista del Dashboard con marca de hora. |
+| H4 – Recomendaciones | ≥ 60 % de recomendaciones calificadas como útiles | Una mayoría clara indica valor percibido. Se complementa con la prueba de comprensión (≥ 70 % interpreta correctamente los indicadores). | Calificación in-app (útil / no útil). `ACCEPTED` / `DISMISSED` mide adopción, no utilidad percibida. |
+| H5 – Alertas | Open rate > 40 % y < 10 % de usuarios que desactivan alertas | Las alertas se emiten solo ante cambios relevantes, con máximo una por tipo y día (US07), lo que limita la fatiga por notificaciones. | Eventos de apertura de notificación y cambios en las preferencias de alertas. |
+| H6 – Tendencias | Al menos 2 consultas de la vista semanal o mensual al mes por usuario | Coincide con la frecuencia "media" de la tarea "Revisar su evolución" en la User Task Matrix. | Registro de vistas de Progress & Reports por usuario. |
+| H7 – Suscripción | ≥ 25 % elige Pro al terminar la prueba y lo mantiene en el segundo mes | Se revisó desde el 60 %, que no tenía sustento para un producto nuevo y sin reconocimiento de marca (ver SWOT, sección 2.1.1). El nuevo valor se validará con la disposición de pago observada en el piloto. | Eventos `SubscriptionActivated` y `SubscriptionCancelled` al terminar la prueba y durante el segundo mes. |
 
 #### 1.2.2.4. Lean UX Canvas
 
-Link del canva: [https://canva.link/050da8fh7vfddyg](https://canva.link/050da8fh7vfddyg)
+Enlace del Lean UX Canvas: [https://canva.link/050da8fh7vfddyg](https://canva.link/050da8fh7vfddyg)
 
 _Figura 1 (Lean UX Canvas)_
 ![Lean UX Canva](../assets/images/leanuxcanva.png)

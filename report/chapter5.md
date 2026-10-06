@@ -107,19 +107,21 @@ Se detalla el Sprint Backlog 1, con su respectivo tablero en Trello: https://tre
 
 **Sprint #**: Sprint 1
 
-| Story ID | Story Title                | Task ID | Task Title                    | Task Description                                                                                                      | Estimation (Hours) | Assigned To                          | Status      |
-|:---------|:---------------------------|:--------|:------------------------------|:----------------------------------------------------------------------------------------------------------------------|:-------------------|:-------------------------------------|:------------|
-| US-00    | Landing Page de Validación | TS00.1  | Setup Static Proj             | Inicializar el repositorio del Landing Page con la estructura base HTML5/CSS y configurar el tablero de Trello.       | 3                  | Evangelista Ygnacio, Sergio Joaquín  | Done        |
-| US-00    | Landing Page de Validación | TS00.2  | Implement Hero Section        | Desarrollar la sección principal (Hero) responsiva con Flexbox/Grid, incluyendo la propuesta de valor de PulsePower.  | 5                  | Evangelista Ygnacio, Sergio Joaquín  | Done        |
-| US-00    | Landing Page de Validación | TS00.3  | Maquetar sección "Beneficios" | Crear contenedor y tarjetas informativas sobre los beneficios de la pulsera para deportistas y usuarios de bienestar. | 4                  | Martín Farro, Alexis Sebastián       | Done        |
-| US-00    | Landing Page de Validación | TS00.7  | Header / Navbar               | Implementar la barra de navegación superior con enlaces a cada sección y al selector de idioma.                       | 4                  | Martín Farro, Alexis Sebastián       | Done        |
-| US-00    | Landing Page de Validación | TS00.4  | Grid de funcionalidades       | Implementar una cuadrícula responsiva con las funcionalidades principales (indicadores, recomendaciones, reportes).   | 4                  | Viza Quispe, Marlon Packard          | Done        |
-| US-00    | Landing Page de Validación | TS00.5  | Selector de idioma            | Implementar el mecanismo de cambio de idioma (Español/Inglés) reutilizable en todas las secciones del Landing.        | 4                  | Viza Quispe, Marlon Packard          | In Progress |
-| US-00    | Landing Page de Validación | TS00.9  | Segmentos y Testimonios       | Maquetar las secciones de segmentos objetivo ("Para quién es") y los testimonios de usuarios.                         | 4                  | Osorio Ramírez, Eduardo Jesús        | Done        |
-| US-00    | Landing Page de Validación | TS00.10 | FAQ y Contacto                | Implementar la sección de preguntas frecuentes y el formulario estático de contacto.                                  | 4                  | Osorio Ramírez, Eduardo Jesús        | Done        |
-| US-00    | Landing Page de Validación | TS00.6  | Maquetar sección "Planes"     | Desarrollar el layout de la sección de planes de suscripción.                                                         | 4                  | Carbajal Santivañez, Sebastian Aaron | Done        |
-| US-00    | Landing Page de Validación | TS00.8  | Maquetar Footer               | Añadir información de contacto, redes sociales y datos de la organización SportPlus.                                  | 2                  | Carbajal Santivañez, Sebastian Aaron | Done        |
-| US-00    | Landing Page de Validación | TS00.11 | Despliegue en GitHub Pages    | Configurar la rama main y publicar el sitio estático mediante GitHub Pages.                                           | 2                  | Carbajal Santivañez, Sebastian Aaron | Done        |
+El Sprint 1 incluye las seis primeras historias del Product Backlog (sección 3.3), cuya suma coincide con la velocity del Sprint (16 Story Points): US13 (5), US45 (3), US36 (2), US46 (1), TS04 (2) y US14 (3). Cada tarea se vincula con la historia del Product Backlog que atiende.
+
+| Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| TS04 | Configurar repositorio y despliegue de la Landing Page | T01 | Setup Static Proj | Inicializar el repositorio de la Landing Page con la estructura base HTML5/CSS y configurar el tablero de Trello. | 3 | Evangelista Ygnacio, Sergio Joaquín | Done |
+| US13 | Conocer la propuesta de valor de PulsePower | T02 | Implement Hero Section | Desarrollar la sección principal (Hero) responsiva con Flexbox/Grid, incluyendo la propuesta de valor de PulsePower. | 5 | Evangelista Ygnacio, Sergio Joaquín | Done |
+| US13 | Conocer la propuesta de valor de PulsePower | T03 | Header / Navbar | Implementar la barra de navegación superior con enlaces a cada sección y al selector de idioma. | 4 | Martín Farro, Alexis Sebastián | Done |
+| US13 | Conocer la propuesta de valor de PulsePower | T04 | Grid de funcionalidades | Implementar una cuadrícula responsiva con las funcionalidades principales (indicadores, recomendaciones, reportes). | 4 | Viza Quispe, Marlon Packard | Done |
+| US13 | Conocer la propuesta de valor de PulsePower | T05 | FAQ y Contacto | Implementar la sección de preguntas frecuentes y el formulario estático de contacto. | 4 | Osorio Ramírez, Eduardo Jesús | Done |
+| US14 | Identificar los beneficios para mi segmento | T06 | Maquetar sección "Beneficios" | Crear el contenedor y las tarjetas informativas sobre los beneficios para deportistas y para usuarios enfocados en su bienestar. | 4 | Martín Farro, Alexis Sebastián | Done |
+| US14 | Identificar los beneficios para mi segmento | T07 | Segmentos y Testimonios | Maquetar las secciones de segmentos objetivo ("Para quién es") y los testimonios de usuarios. | 4 | Osorio Ramírez, Eduardo Jesús | Done |
+| US45 | Consultar la Landing Page en mi idioma | T08 | Selector de idioma | Implementar el mecanismo de cambio de idioma (Español/Inglés) reutilizable en todas las secciones de la Landing Page. | 4 | Viza Quispe, Marlon Packard | Done |
+| US36 | Comparar los planes Basic y Pro | T09 | Maquetar sección "Planes" | Desarrollar la sección de planes Basic y Pro con el cambio entre facturación mensual y anual. | 4 | Carbajal Santivañez, Sebastian Aaron | Done |
+| US46 | Consultar términos y política de privacidad | T10 | Footer y páginas legales | Añadir el footer con contacto y redes sociales, y enlazar las páginas de términos del servicio y política de privacidad. | 2 | Carbajal Santivañez, Sebastian Aaron | Done |
+| TS04 | Configurar repositorio y despliegue de la Landing Page | T11 | Despliegue en GitHub Pages | Configurar la rama main y publicar el sitio estático mediante GitHub Pages. | 2 | Carbajal Santivañez, Sebastian Aaron | Done |
 
 Tablero de Trello:
 

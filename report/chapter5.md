@@ -66,16 +66,16 @@ En esta sección se describen los principales acuerdos y definiciones realizadas
 
 **Sprint Planning Background**
 
-| Campo | Detalle |
-| :--- | :--- |
-| **Sprint #** | Sprint 1 |
-| **Date** | 13-09-2025 |
-| **Time** | 17:30 |
-| **Location** | Reunion Virtual |
-| **Prepared By** | Viza Quispe, Marlon Packard |
-| **Attendees** | Evangelista Ygnacio, Sergio Joaquin<br>Martin Farro, Alexis Sebastian<br>Carbajal Santivañez, Sebastian Aaron<br>Osorio Ramírez, Eduardo Jesús |
+| Campo | Detalle                                                                                                                                                                                                                                                                                                                                                     |
+| :--- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint #** | Sprint 1                                                                                                                                                                                                                                                                                                                                                    |
+| **Date** | 13-09-2026                                                                                                                                                                                                                                                                                                                                                  |
+| **Time** | 17:30                                                                                                                                                                                                                                                                                                                                                       |
+| **Location** | Reunión Virtual                                                                                                                                                                                                                                                                                                                                             |
+| **Prepared By** | Viza Quispe, Marlon Packard                                                                                                                                                                                                                                                                                                                                 |
+| **Attendees** | Evangelista Ygnacio, Sergio Joaquin<br>Martin Farro, Alexis Sebastian<br>Carbajal Santivañez, Sebastian Aaron<br>Osorio Ramírez, Eduardo Jesús                                                                                                                                                                                                              |
 | **Sprint 1 Review Summary** | Durante el Sprint 1 se logró implementar correctamente el Landing Page responsive de PulsePower, incluyendo navegación entre secciones, adaptación móvil y soporte multilenguaje. Además, el equipo consolidó la estructura base del frontend y definió estándares iniciales de trabajo colaborativo utilizando GitFlow y Trello para la gestión de tareas. |
-| **Sprint 1 Restrospective Summary** | El equipo identificó como principal fortaleza la capacidad tecnica y la comunicación constante durante el desarrollo del Sprint 1. Sin embargo, se detectaron pequeños retrasos en la delegacion de tareas, por lo que para este sprint se acordó mejorar la coordinación en estas fases y aumentar la frecuencia de revisiones entre integrantes. |
+| **Sprint 1 Retrospective Summary** | El equipo identificó como principal fortaleza la capacidad técnica y la comunicación constante durante el desarrollo del Sprint 1. Sin embargo, se detectaron pequeños retrasos en la delegación de tareas, por lo que para este sprint se acordó mejorar la coordinación en estas fases y aumentar la frecuencia de revisiones entre integrantes.          |
 
 <br>
 
@@ -103,25 +103,25 @@ A continuación se detalla la matriz de liderazgo y colaboración (LACX) para br
 
 #### 5.2.1.3 Sprint Backlog 1
 
-Se detalla el Sprint Backlogk 1, con su respectivo tablero en Trello: https://trello.com/invite/b/6aaede0bb47af502ba9eb29d/ATTI6002400c8c79f6ddabb88999b2168b7a7AB82763/pulsepower
+Se detalla el Sprint Backlog 1, con su respectivo tablero en Trello: https://trello.com/invite/b/6aaede0bb47af502ba9eb29d/ATTI6002400c8c79f6ddabb88999b2168b7a7AB82763/pulsepower
 
 **Sprint #**: Sprint 1
 
-**Sprint #**: Sprint 1
+El Sprint 1 incluye las seis primeras historias del Product Backlog (sección 3.3), cuya suma coincide con la velocity del Sprint (16 Story Points): US13 (5), US45 (3), US36 (2), US46 (1), TS04 (2) y US14 (3). Cada tarea se vincula con la historia del Product Backlog que atiende.
 
-| Story ID | Story Title                | Task ID | Task Title                    | Task Description                                                                                                      | Estimation (Hours) | Assigned To                          | Status      |
-|:---------|:---------------------------|:--------|:------------------------------|:----------------------------------------------------------------------------------------------------------------------|:-------------------|:-------------------------------------|:------------|
-| US-00    | Landing Page de Validación | TS00.1  | Setup Static Proj             | Inicializar el repositorio del Landing Page con la estructura base HTML5/CSS y configurar el tablero de Trello.       | 3                  | Evangelista Ygnacio, Sergio Joaquín  | Done        |
-| US-00    | Landing Page de Validación | TS00.2  | Implement Hero Section        | Desarrollar la sección principal (Hero) responsiva con Flexbox/Grid, incluyendo la propuesta de valor de PulsePower.  | 5                  | Evangelista Ygnacio, Sergio Joaquín  | Done        |
-| US-00    | Landing Page de Validación | TS00.3  | Maquetar sección "Beneficios" | Crear contenedor y tarjetas informativas sobre los beneficios de la pulsera para deportistas y usuarios de bienestar. | 4                  | Martín Farro, Alexis Sebastián       | Done        |
-| US-00    | Landing Page de Validación | TS00.7  | Header / Navbar               | Implementar la barra de navegación superior con enlaces a cada sección y al selector de idioma.                       | 4                  | Martín Farro, Alexis Sebastián       | Done        |
-| US-00    | Landing Page de Validación | TS00.4  | Grid de funcionalidades       | Implementar una cuadrícula responsiva con las funcionalidades principales (indicadores, recomendaciones, reportes).   | 4                  | Viza Quispe, Marlon Packard          | Done        |
-| US-00    | Landing Page de Validación | TS00.5  | Selector de idioma            | Implementar el mecanismo de cambio de idioma (Español/Inglés) reutilizable en todas las secciones del Landing.        | 4                  | Viza Quispe, Marlon Packard          | In Progress |
-| US-00    | Landing Page de Validación | TS00.9  | Segmentos y Testimonios       | Maquetar las secciones de segmentos objetivo ("Para quién es") y los testimonios de usuarios.                         | 4                  | Osorio Ramírez, Eduardo Jesús        | Done        |
-| US-00    | Landing Page de Validación | TS00.10 | FAQ y Contacto                | Implementar la sección de preguntas frecuentes y el formulario estático de contacto.                                  | 4                  | Osorio Ramírez, Eduardo Jesús        | Done        |
-| US-00    | Landing Page de Validación | TS00.6  | Maquetar sección "Planes"     | Desarrollar el layout de la sección de planes de suscripción.                                                         | 4                  | Carbajal Santivañez, Sebastian Aaron | Done        |
-| US-00    | Landing Page de Validación | TS00.8  | Maquetar Footer               | Añadir información de contacto, redes sociales y datos de la organización SportPlus.                                  | 2                  | Carbajal Santivañez, Sebastian Aaron | Done        |
-| US-00    | Landing Page de Validación | TS00.11 | Despliegue en GitHub Pages    | Configurar la rama main y publicar el sitio estático mediante GitHub Pages.                                           | 2                  | Carbajal Santivañez, Sebastian Aaron | Done        |
+| Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| TS04 | Configurar repositorio y despliegue de la Landing Page | T01 | Setup Static Proj | Inicializar el repositorio de la Landing Page con la estructura base HTML5/CSS y configurar el tablero de Trello. | 3 | Evangelista Ygnacio, Sergio Joaquín | Done |
+| US13 | Conocer la propuesta de valor de PulsePower | T02 | Implement Hero Section | Desarrollar la sección principal (Hero) responsiva con Flexbox/Grid, incluyendo la propuesta de valor de PulsePower. | 5 | Evangelista Ygnacio, Sergio Joaquín | Done |
+| US13 | Conocer la propuesta de valor de PulsePower | T03 | Header / Navbar | Implementar la barra de navegación superior con enlaces a cada sección y al selector de idioma. | 4 | Martín Farro, Alexis Sebastián | Done |
+| US13 | Conocer la propuesta de valor de PulsePower | T04 | Grid de funcionalidades | Implementar una cuadrícula responsiva con las funcionalidades principales (indicadores, recomendaciones, reportes). | 4 | Viza Quispe, Marlon Packard | Done |
+| US13 | Conocer la propuesta de valor de PulsePower | T05 | FAQ y Contacto | Implementar la sección de preguntas frecuentes y el formulario estático de contacto. | 4 | Osorio Ramírez, Eduardo Jesús | Done |
+| US14 | Identificar los beneficios para mi segmento | T06 | Maquetar sección "Beneficios" | Crear el contenedor y las tarjetas informativas sobre los beneficios para deportistas y para usuarios enfocados en su bienestar. | 4 | Martín Farro, Alexis Sebastián | Done |
+| US14 | Identificar los beneficios para mi segmento | T07 | Segmentos y Testimonios | Maquetar las secciones de segmentos objetivo ("Para quién es") y los testimonios de usuarios. | 4 | Osorio Ramírez, Eduardo Jesús | Done |
+| US45 | Consultar la Landing Page en mi idioma | T08 | Selector de idioma | Implementar el mecanismo de cambio de idioma (Español/Inglés) reutilizable en todas las secciones de la Landing Page. | 4 | Viza Quispe, Marlon Packard | Done |
+| US36 | Comparar los planes Basic y Pro | T09 | Maquetar sección "Planes" | Desarrollar la sección de planes Basic y Pro con el cambio entre facturación mensual y anual. | 4 | Carbajal Santivañez, Sebastian Aaron | Done |
+| US46 | Consultar términos y política de privacidad | T10 | Footer y páginas legales | Añadir el footer con contacto y redes sociales, y enlazar las páginas de términos del servicio y política de privacidad. | 2 | Carbajal Santivañez, Sebastian Aaron | Done |
+| TS04 | Configurar repositorio y despliegue de la Landing Page | T11 | Despliegue en GitHub Pages | Configurar la rama main y publicar el sitio estático mediante GitHub Pages. | 2 | Carbajal Santivañez, Sebastian Aaron | Done |
 
 Tablero de Trello:
 
@@ -223,7 +223,7 @@ Durante el Sprint 1, el equipo realizó el despliegue de la primera versión pú
 Durante el Sprint 1, el equipo utilizó GitHub como plataforma central de colaboración y control de versiones para el repositorio `upc-pre-202620-1asi0729-7737-SportPlus`, aplicando el flujo de trabajo GitFlow junto con Conventional Commits para mantener la trazabilidad.
 
 **Flujo de trabajo aplicado:**
-* Cada integrante trabajó en ramas individuales creadas desde la rama `develop` o `main`, siguiendo la nomenclatura de funcionalidades o capítulos de documentación (ej. `feature/chapter-1`, `feature/chapter-2`, etc.).
+* En el repositorio del informe, cada integrante trabajó en la rama de su capítulo (`feature/chapter-1` a `feature/chapter-5`), creada desde `develop`. En el repositorio de la Landing Page, el desarrollo se concentró en una rama compartida (`feature/app-features`) integrada a `main` mediante Pull Request; para los siguientes sprints se acordó crear una rama `feature/US[ID]-[nombre]` por historia, según la estrategia definida en la sección 5.1.2.
 * Los cambios se integraron mediante Pull Requests, requiriendo revisión antes del merge.
 * Los mensajes de commit siguieron un estándar estructurado (`feat:`, `fix:`, `docs:`), garantizando la correcta identificación del trabajo realizado, como se evidenció en los aportes de documentación de los capítulos 1 al 5.
 

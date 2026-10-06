@@ -272,14 +272,14 @@ La siguiente matriz traza cada hallazgo desde la entrevista que lo originó hast
 
 | Hallazgo (entrevistas) | Evidencia | Necesidad | User Persona | User Stories |
 |---|---|---|---|---|
-| No saben con certeza si están recuperados antes de entrenar | Deportistas: 3/3 (Walter Navarro, Jesús Arroyo, Yeremy Navarrete) | Conocer su nivel de recuperación antes de entrenar | Walter Navarro, Jesús Arroyo | US01, US03, US25 |
-| No saben qué intensidad usar cuando duermen mal o están fatigados | Deportistas: 3/3 | Recibir una orientación concreta de intensidad | Jesús Arroyo, Yeremy Navarrete | US04, US30, US28 |
-| Entrenaron estando demasiado cansados; detectan el sobreentrenamiento tarde | Deportistas: 2/3 (Jesús Arroyo, Yeremy Navarrete) | Ser alertados a tiempo | Jesús Arroyo | US07, US27, US40 |
-| No logran relacionar sueño, trabajo y entrenamiento | Deportistas: 1/3 (Yeremy Navarrete); Wellness Seekers: 3/3 | Ver sus datos integrados en una sola vista | Yeremy Navarrete | US03, US22, US06 |
-| Las métricas de sus dispositivos son difíciles de interpretar | Deportistas: 2/3; Wellness Seekers: 2/3 | Explicaciones en lenguaje sencillo | Walter Navarro, Alejandro Choquehuanca | US02, US03, US06 |
-| Evalúan su descanso solo por cómo se sienten al despertar | Wellness Seekers: 3/3 (Rodrigo Colonio, Alejandro Choquehuanca, Diana Pareja) | Saber si su descanso fue realmente suficiente | Rodrigo Colonio, Alejandro Choquehuanca | US02, US26, US23 |
-| El estrés empeora su sueño, pero no pueden comprobar la relación | Wellness Seekers: 2/3 (Alejandro Choquehuanca, Diana Pareja) | Identificar qué factores afectan su sueño | Diana Pareja | US31, US32 |
-| Obtener datos no significa saber qué hacer con ellos | Wellness Seekers: 3/3 | Recibir recomendaciones de cambios en su rutina | Rodrigo Colonio, Diana Pareja | US05, US08, US33, US41 |
+| No saben con certeza si están recuperados antes de entrenar | Deportistas: 3/3 (Walter Navarro, Jesús Arroyo, Yeremy Navarrete) | Conocer su nivel de recuperación antes de entrenar | Walter Navarro, Jesús Arroyo, Yeremy Navarrete | US01, US06, US25 |
+| No saben qué intensidad usar cuando duermen mal o están fatigados | Deportistas: 3/3 (Walter Navarro, Jesús Arroyo, Yeremy Navarrete) | Recibir una orientación concreta de intensidad | Walter Navarro, Jesús Arroyo, Yeremy Navarrete | US04, US30 |
+| Entrenaron estando demasiado cansados; detectan el sobreentrenamiento tarde | Deportistas: 2/3 (Jesús Arroyo, Yeremy Navarrete) | Ser alertados a tiempo ante riesgo de sobreentrenamiento | Jesús Arroyo, Yeremy Navarrete | US07, US27 |
+| No logran relacionar sueño, trabajo y entrenamiento | Deportistas: 1/3 (Yeremy Navarrete); Wellness Seekers: 3/3 (Rodrigo Colonio, Alejandro Choquehuanca, Diana Pareja) | Ver sus datos integrados en una sola vista | Yeremy Navarrete, Rodrigo Colonio, Alejandro Choquehuanca, Diana Pareja | US03, US22, US23 |
+| Las métricas de sus dispositivos son difíciles de interpretar | Deportistas: 2/3 (Walter Navarro, Jesús Arroyo); Wellness Seekers: 2/3 (Alejandro Choquehuanca, Diana Pareja) | Explicaciones en lenguaje sencillo | Walter Navarro, Jesús Arroyo, Alejandro Choquehuanca, Diana Pareja | US02, US03, US06 |
+| Evalúan su descanso solo por cómo se sienten al despertar | Wellness Seekers: 3/3 (Rodrigo Colonio, Alejandro Choquehuanca, Diana Pareja) | Saber si su descanso fue realmente suficiente | Rodrigo Colonio, Alejandro Choquehuanca, Diana Pareja | US02, US26 |
+| El estrés empeora su sueño, pero no pueden comprobar la relación | Wellness Seekers: 2/3 (Alejandro Choquehuanca, Diana Pareja) | Identificar qué factores afectan su sueño y reducir el estrés | Alejandro Choquehuanca, Diana Pareja | US31, US32 |
+| Obtener datos no significa saber qué hacer con ellos | Wellness Seekers: 3/3 (Rodrigo Colonio, Alejandro Choquehuanca, Diana Pareja) | Recibir recomendaciones de cambios en su rutina | Rodrigo Colonio, Alejandro Choquehuanca, Diana Pareja | US05, US08, US33 |
 | Los horarios variables dificultan mantener una rutina de descanso | Wellness Seekers: 1/3 (Alejandro Choquehuanca) | Recordatorios adaptados a su horario | Alejandro Choquehuanca | US41, US33 |
 
 ## 2.3. Needfinding

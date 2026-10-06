@@ -66,16 +66,16 @@ En esta sección se describen los principales acuerdos y definiciones realizadas
 
 **Sprint Planning Background**
 
-| Campo | Detalle |
-| :--- | :--- |
-| **Sprint #** | Sprint 1 |
-| **Date** | 13-09-2025 |
-| **Time** | 17:30 |
-| **Location** | Reunion Virtual |
-| **Prepared By** | Viza Quispe, Marlon Packard |
-| **Attendees** | Evangelista Ygnacio, Sergio Joaquin<br>Martin Farro, Alexis Sebastian<br>Carbajal Santivañez, Sebastian Aaron<br>Osorio Ramírez, Eduardo Jesús |
+| Campo | Detalle                                                                                                                                                                                                                                                                                                                                                     |
+| :--- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint #** | Sprint 1                                                                                                                                                                                                                                                                                                                                                    |
+| **Date** | 13-09-2026                                                                                                                                                                                                                                                                                                                                                  |
+| **Time** | 17:30                                                                                                                                                                                                                                                                                                                                                       |
+| **Location** | Reunion Virtual                                                                                                                                                                                                                                                                                                                                             |
+| **Prepared By** | Viza Quispe, Marlon Packard                                                                                                                                                                                                                                                                                                                                 |
+| **Attendees** | Evangelista Ygnacio, Sergio Joaquin<br>Martin Farro, Alexis Sebastian<br>Carbajal Santivañez, Sebastian Aaron<br>Osorio Ramírez, Eduardo Jesús                                                                                                                                                                                                              |
 | **Sprint 1 Review Summary** | Durante el Sprint 1 se logró implementar correctamente el Landing Page responsive de PulsePower, incluyendo navegación entre secciones, adaptación móvil y soporte multilenguaje. Además, el equipo consolidó la estructura base del frontend y definió estándares iniciales de trabajo colaborativo utilizando GitFlow y Trello para la gestión de tareas. |
-| **Sprint 1 Restrospective Summary** | El equipo identificó como principal fortaleza la capacidad tecnica y la comunicación constante durante el desarrollo del Sprint 1. Sin embargo, se detectaron pequeños retrasos en la delegacion de tareas, por lo que para este sprint se acordó mejorar la coordinación en estas fases y aumentar la frecuencia de revisiones entre integrantes. |
+| **Sprint 1 Restrospective Summary** | El equipo identificó como principal fortaleza la capacidad tecnica y la comunicación constante durante el desarrollo del Sprint 1. Sin embargo, se detectaron pequeños retrasos en la delegacion de tareas, por lo que para este sprint se acordó mejorar la coordinación en estas fases y aumentar la frecuencia de revisiones entre integrantes.          |
 
 <br>
 

@@ -223,7 +223,7 @@ Durante el Sprint 1, el equipo realizó el despliegue de la primera versión pú
 Durante el Sprint 1, el equipo utilizó GitHub como plataforma central de colaboración y control de versiones para el repositorio `upc-pre-202620-1asi0729-7737-SportPlus`, aplicando el flujo de trabajo GitFlow junto con Conventional Commits para mantener la trazabilidad.
 
 **Flujo de trabajo aplicado:**
-* Cada integrante trabajó en ramas individuales creadas desde la rama `develop` o `main`, siguiendo la nomenclatura de funcionalidades o capítulos de documentación (ej. `feature/chapter-1`, `feature/chapter-2`, etc.).
+* En el repositorio del informe, cada integrante trabajó en la rama de su capítulo (`feature/chapter-1` a `feature/chapter-5`), creada desde `develop`. En el repositorio de la Landing Page, el desarrollo se concentró en una rama compartida (`feature/app-features`) integrada a `main` mediante Pull Request; para los siguientes sprints se acordó crear una rama `feature/US[ID]-[nombre]` por historia, según la estrategia definida en la sección 5.1.2.
 * Los cambios se integraron mediante Pull Requests, requiriendo revisión antes del merge.
 * Los mensajes de commit siguieron un estándar estructurado (`feat:`, `fix:`, `docs:`), garantizando la correcta identificación del trabajo realizado, como se evidenció en los aportes de documentación de los capítulos 1 al 5.
 

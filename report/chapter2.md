@@ -454,3 +454,19 @@ Como resultado, se identificaron los procesos clave del dominio (sincronización
 - **Alert (Alerta):** Aviso que informa al usuario sobre un riesgo detectado en sus registros, como el sobreentrenamiento o el descanso insuficiente sostenido.
 - **Personalized Recommendation (Recomendación personalizada):** Orientación generada a partir de los datos, el historial y los objetivos del usuario para ayudarlo a tomar decisiones sobre su entrenamiento, su descanso o sus hábitos.
 - **AI Conversational Assistant (Asistente conversacional con IA):** Funcionalidad que permite al usuario consultar sus indicadores mediante lenguaje cotidiano y recibir explicaciones sobre sus datos fisiológicos.
+- **Visitor (Visitante):** Persona no registrada que consulta la Landing Page para conocer la propuesta de valor, los beneficios por segmento y los planes de PulsePower.
+- **Subscription Plan (Plan de suscripción):** Modalidad comercial que define las funcionalidades disponibles para el usuario (Basic o Pro) y su periodo de facturación mensual o anual.
+- **Wearable Connection (Conexión de la pulsera):** Vinculación entre el usuario y su pulsera compatible, que registra el proveedor, el estado de conexión y la última sincronización.
+- **Data Synchronization (Sincronización de datos):** Proceso mediante el cual los registros de la pulsera compatible o de aplicaciones de salud externas se incorporan a PulsePower.
+- **Record Source (Origen del registro):** Indica si un dato fue ingresado manualmente por el usuario o medido por la pulsera compatible, para no presentar información declarada como si fuera una medición.
+- **Training Plan (Plan de entrenamiento):** Conjunto de actividades físicas programadas por el usuario para un periodo determinado.
+- **Planned Activity (Actividad planificada):** Actividad prevista dentro de un plan de entrenamiento, con fecha, duración, intensidad y estado.
+- **Training Session (Sesión de entrenamiento):** Actividad física efectivamente realizada por el usuario, haya sido planificada o no.
+- **Sleep Record (Registro de sueño):** Periodo de descanso registrado con su hora de inicio y fin, su origen y su puntuación de sueño.
+- **Wellness Check-in (Registro diario de bienestar):** Declaración diaria del usuario sobre su estado general, su estrés percibido y la presencia de molestias.
+- **Wellness Habit (Hábito de bienestar):** Hábito que el usuario se propone mantener, con una frecuencia semanal objetivo.
+- **Recovery Assessment (Evaluación de recuperación):** Cálculo del nivel de recuperación del usuario a partir de su información fisiológica, de entrenamiento, de sueño y de bienestar en un periodo determinado.
+- **Progress Report (Reporte de progreso):** Documento que resume la evolución de los registros del usuario durante un periodo seleccionado.
+- **Achievement (Logro):** Reconocimiento que el usuario obtiene al cumplir una regla definida, como mantener una racha o completar sus objetivos.
+- **Streak (Racha):** Cantidad de días consecutivos en los que el usuario realiza una actividad determinada en PulsePower.
+- **Shared Progress (Progreso compartido):** Avance que el usuario decide publicar para un grupo de entrenamiento o un contacto, con un nivel de visibilidad que él mismo controla.

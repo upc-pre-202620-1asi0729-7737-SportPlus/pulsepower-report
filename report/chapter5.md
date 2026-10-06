@@ -94,10 +94,10 @@ A continuación se detalla la matriz de liderazgo y colaboración (LACX) para br
 | Team Member (Last Name, First Name) | GitHub Username | Landing Page UI/UX | Landing Page Structure | Basic Funcs | Special Funcs |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Osorio Ramírez, Eduardo Jesús | @[Iron819] | C | C | L | L |
-| Carbajal Santivañez, Sebastian Aaron | @[usuario] | L | C | C | C |
-| Martín Farro, Alexis Sebastián | @axismf | C | L | C | C |
-| Viza Quispe, Marlon Packard | @[usuario] | C | C | L | C |
-| Evangelista Ygnacio, Sergio Joaquin | @[usuario] | C | C | C | L |
+| Carbajal Santivañez, Sebastian Aaron | @[SC-fnfoc] | L | C | C | C |
+| Martín Farro, Alexis Sebastián | @[axismf] | C | L | C | C |
+| Viza Quispe, Marlon Packard | @[V8Z5] | C | C | L | C |
+| Evangelista Ygnacio, Sergio Joaquin | @[Sergi9017] | C | C | C | L |
 
 *(L = Leader, C = Collaborator)*
 

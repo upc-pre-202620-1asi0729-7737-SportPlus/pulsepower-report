@@ -443,13 +443,13 @@ El equipo realizó una sesión colaborativa de Big Picture EventStorming para en
 
 | Bounded Context | Eventos de dominio |
 |---|---|
-| Training Management | Training Plan Created, Activity Planned, Workout Recorded |
-| Sleep Management | Sleep Recorded, Sleep Routine Configured, Sleep Reminder Sent |
-| Wellness Management | Habits Recorded, Wellness Check-in Recorded, Stress Level Recorded, Breathing Session Completed |
-| Physiological Analysis & Recommendations | Fitness Tracker Connected, Data Synchronized, Effort Calculated, Recovery Calculated, Fatigue Detected, Low Recovery Detected, Alert Generated, Recommendation Generated, Reschedule Suggested, AI Assistant Consulted |
-| Reporting | History Accessed, Report Generated |
+| Training | Training Plan Created, Activity Planned, Workout Recorded |
+| Sleep | Sleep Recorded, Sleep Routine Configured, Sleep Reminder Sent |
+| Wellness | Habits Recorded, Wellness Check-in Recorded, Stress Level Recorded, Breathing Session Completed |
+| Physiology | Fitness Tracker Connected, Data Synchronized, Effort Calculated, Recovery Calculated, Fatigue Detected, Low Recovery Detected, Alert Generated, Recommendation Generated, Reschedule Suggested, AI Assistant Consulted |
+| Reports | History Accessed, Report Generated |
 | Community | Streak Updated, Achievement Unlocked, Progress Shared |
-| Support Modules | User Registered, Session Started, Plan Subscribed, Payment Confirmed, Subscription Cancelled |
+| IAM | User Registered, Session Started, Plan Subscribed, Payment Confirmed, Subscription Cancelled |
 
 **<img src="../assets/images/eventstorm-step4.png"><br/>**
 

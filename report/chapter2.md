@@ -425,15 +425,35 @@ Diana Pareja es una profesional de 24 años con una jornada laboral exigente que
 
 ## 2.4. Big Picture EventStorming
 
-El equipo realizó una sesión colaborativa de Big Picture EventStorming para entender el dominio de PulsePower a alto nivel, identificando los eventos significativos del negocio y sus relaciones. La sesión se desarrolló en tres etapas:
+El equipo realizó una sesión colaborativa de Big Picture EventStorming para entender el dominio de PulsePower a alto nivel, identificando los eventos significativos del negocio y sus relaciones. La sesión se desarrolló en cuatro etapas.
 
-**<img src="../assets/images/eventstorm.png"><br/>**
+**Step 1 – Open:** cada integrante registró libremente, en notas naranjas, los eventos de dominio que considera relevantes, redactados en pasado: *User Registered*, *Session Started*, *Fitness Tracker Connected*, *Data Synchronized*, *Sleep Recorded*, *Workout Recorded*, *Habits Recorded*, *Effort Calculated*, *Recovery Calculated*, *Fatigue Detected*, *Alert Generated*, *Recommendation Generated*, *AI Assistant Consulted*, *History Accessed* y *Report Generated*.
 
-- **Step 1 – Open:** cada integrante registró libremente, en notas naranjas, los eventos de dominio que considera relevantes, redactados en pasado: *User Registered*, *Fitness Tracker Connected*, *Data Synchronized*, *Session Started*, *Sleep Recorded*, *Workout Recorded*, *Habits Recorded*, *Effort Calculated*, *Recovery Calculated*, *Fatigue Detected*, *Alert Generated*, *Recommendation Generated*, *AI Assistant Consulted*, *History Accessed* y *Report Generated*.
-- **Step 2 – Explore:** los eventos se ordenaron en líneas de tiempo a partir del actor que los desencadena (*user*, en notas amarillas). Se identificaron cinco flujos: registro e inicio de sesión; conexión y sincronización de la pulsera; registro del sueño hasta la detección de fatiga y la alerta; registro del entrenamiento hasta el cálculo de la recuperación; y consulta del historial hasta la generación de reportes.
-- **Step 3 – Close:** se incorporaron los sistemas externos (notas moradas) que intervienen en los flujos: *Fitness Tracker* (la pulsera compatible), *External Health App* (aplicaciones de salud externas, como fuente adicional de sueño y entrenamiento) y *AI Assistant* (el servicio de inteligencia artificial). También se consolidó el flujo en el que los hábitos registrados y la consulta al asistente generan una recomendación personalizada.
+**<img src="../assets/images/eventstorm-step1.png"><br/>**
 
-Como resultado, se identificaron los procesos clave del dominio (sincronización de datos, análisis de sueño y entrenamiento, alertas, recomendaciones y reportes), que sirvieron de base para el Design-Level EventStorming y los bounded contexts de la sección 4.6.
+**Step 2 – Explore:** los eventos se ordenaron en líneas de tiempo a partir del actor que los desencadena (*user* o *visitor*, en notas amarillas) y se completaron los flujos con los eventos faltantes: *Training Plan Created*, *Activity Planned*, *Low Recovery Detected*, *Reschedule Suggested*, *Wellness Check-in Recorded*, *Stress Level Recorded*, *Breathing Session Completed*, *Sleep Routine Configured*, *Sleep Reminder Sent*, *Streak Updated*, *Achievement Unlocked*, *Progress Shared*, *Plan Subscribed*, *Payment Confirmed* y *Subscription Cancelled*.
+
+**<img src="../assets/images/eventstorm-step2.png"><br/>**
+
+**Step 3 – Close:** se incorporaron los sistemas externos (notas moradas) que intervienen en los flujos: *Fitness Tracker* (la pulsera compatible), *External Health App* (aplicaciones de salud externas, como fuente adicional de sueño y entrenamiento), *AI Assistant* (el servicio de inteligencia artificial) y *Payment Gateway* (la pasarela de pago de la suscripción).
+
+**<img src="../assets/images/eventstorm-step3.png"><br/>**
+
+**Step 4 – Bounded Contexts:** los eventos se agruparon según la responsabilidad de negocio a la que pertenecen, lo que dio origen a los seis bounded contexts del dominio y a los módulos de soporte:
+
+| Bounded Context | Eventos de dominio |
+|---|---|
+| Training Management | Training Plan Created, Activity Planned, Workout Recorded |
+| Sleep Management | Sleep Recorded, Sleep Routine Configured, Sleep Reminder Sent |
+| Wellness Management | Habits Recorded, Wellness Check-in Recorded, Stress Level Recorded, Breathing Session Completed |
+| Physiological Analysis & Recommendations | Fitness Tracker Connected, Data Synchronized, Effort Calculated, Recovery Calculated, Fatigue Detected, Low Recovery Detected, Alert Generated, Recommendation Generated, Reschedule Suggested, AI Assistant Consulted |
+| Reporting | History Accessed, Report Generated |
+| Community | Streak Updated, Achievement Unlocked, Progress Shared |
+| Support Modules | User Registered, Session Started, Plan Subscribed, Payment Confirmed, Subscription Cancelled |
+
+**<img src="../assets/images/eventstorm-step4.png"><br/>**
+
+Como resultado, se identificaron los procesos clave del dominio y su agrupación en bounded contexts, que sirvieron de base para el Design-Level EventStorming (sección 4.6.1) y se mantienen en el C4 Model (secciones 4.6.2 a 4.6.4) y en los Class Diagrams (sección 4.7.1).
 
 ## 2.5. Ubiquitous Language
 

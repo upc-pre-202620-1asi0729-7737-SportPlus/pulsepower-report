@@ -64,9 +64,6 @@ Considerando los avances alcanzados y las funcionalidades pendientes de implemen
   <li>
     Lee, C. (2023). <em>The Art of Crafting User Stories</em>. O'Reilly Media.
   </li>
-  <li>
-    Dirección General de Medicamentos, Insumos y Drogas [DIGEMID]. (2018). <em>Manual de Buenas Prácticas de Manufactura de Productos Farmacéuticos</em>. Ministerio de Salud del Perú.
-  </li>
 
   <li>
     Mendel, J. (s.f.). <em>Seriously, what’s your startup’s problem?</em>. Recuperado de <a href="https://medium.com/@jakemendel/seriously-whats-your-startup-s-problemb3a884c54ab4">https://medium.com/@jakemendel/seriously-whats-your-startup-s-problemb3a884c54ab4</a>

@@ -560,147 +560,148 @@ La siguiente imagen reúne los seis bounded contexts y los módulos de soporte. 
 
 ### 4.8. Database Design
 
-El diseño de base de datos de **PulsePower** transforma las entidades persistentes del dominio en una estructura relacional implementada sobre **PostgreSQL**. La información se organiza de acuerdo con los *bounded contexts* de la plataforma, permitiendo mantener relaciones consistentes entre los datos y preservar la responsabilidad de cada módulo.
+El diseño de base de datos de PulsePower transforma el modelo de clases de la sección 4.7 en una estructura relacional propuesta sobre PostgreSQL. La información se organiza en seis bounded contexts y módulos de soporte, manteniendo las responsabilidades y relaciones definidas en el diseño orientado a objetos.
 
-##### 4.8.1. Database Diagrams
+#### 4.8.1. Database Diagram
 
-El **Database Diagram** representa la estructura de persistencia de **PulsePower**, incluyendo las tablas, atributos, claves primarias, claves foráneas, restricciones y relaciones necesarias para almacenar la información generada por los diferentes módulos de la plataforma.
+El Database Diagram representa las tablas, atributos, claves primarias, claves foráneas y restricciones necesarias para almacenar la información de PulsePower.
 
-La separación de las tablas sigue los *bounded contexts* definidos en la arquitectura. Las relaciones internas de cada contexto se implementan mediante claves foráneas, mientras que las referencias hacia información perteneciente a otros contextos se realizan mediante identificadores y contratos internos, evitando que un módulo acceda directamente a la lógica o repositorios de otro contexto.
+Las entidades se representan mediante tablas. Los Value Objects se almacenan como atributos de sus entidades propietarias; por ejemplo, `DateRange` mediante fechas de inicio y fin, `Money` mediante importe y moneda, y `Measurement` mediante valor y unidad.
 
----
-
-### Support Modules: Identity, Profile & Subscription
-
-Los módulos de soporte administran la identidad del usuario, su perfil personal, sus objetivos y la relación comercial con **PulsePower**. Estas capacidades son compartidas por los diferentes *bounded contexts*, pero no constituyen un *bounded context* adicional dentro de la división principal de la solución.
-
-Incluye:
-
-* **`user_accounts`:** almacena la cuenta del usuario mediante identificador único, correo electrónico, contraseña cifrada, estado de la cuenta y fecha de creación.
-* **`user_profiles`:** conserva la información asociada al perfil, como nombre visible, enfoque principal del usuario, talla, peso y zona horaria.
-* **`personal_goals`:** registra los objetivos definidos por el usuario, su descripción, fecha objetivo y fecha de cumplimiento.
-* **`subscription_plans`:** contiene la configuración de los planes comerciales disponibles en **PulsePower**, identificados como **Basic** y **Pro**.
-* **`subscriptions`:** registra el plan contratado por cada usuario, ciclo de facturación, estado, fecha de inicio y posible fecha de finalización.
-* **`payments`:** conserva las referencias de las operaciones realizadas mediante el proveedor externo de pagos, incluyendo importe, moneda y estado de procesamiento.
-
-La relación principal establece que una cuenta puede disponer de un perfil, definir varios objetivos y mantener diferentes registros históricos de suscripción y pago. En el caso de los pagos, únicamente se conservan referencias proporcionadas por la pasarela externa, evitando almacenar números completos de tarjetas o códigos de seguridad.
+Las modificaciones internas de un agregado se guardarán en una misma transacción. Las operaciones entre agregados serán coordinadas por servicios de aplicación, respetando la responsabilidad de cada contexto.
 
 ---
 
-### Bounded Context: Training Management
+### Bounded Context: Training
 
-Gestiona la planificación y el registro de las actividades físicas realizadas por los usuarios orientados al entrenamiento. Este contexto permite diferenciar las actividades programadas de las sesiones efectivamente realizadas.
+Gestiona la planificación y el registro de entrenamientos, de acuerdo con los agregados `TrainingPlan` y `TrainingSession`.
 
 Incluye:
 
-* **`training_plans`:** representa los planes de entrenamiento definidos para un usuario, indicando nombre y periodo de vigencia.
-* **`planned_activities`:** almacena las actividades programadas dentro de cada plan, incluyendo tipo de actividad, fecha prevista, duración, intensidad y estado.
-* **`training_sessions`:** registra las sesiones realmente realizadas, incluyendo duración, tipo de actividad, esfuerzo percibido y observaciones.
+- **`training_plans`:** almacena el usuario propietario, nombre del plan y fechas de inicio y finalización correspondientes a `DateRange`.
+- **`planned_activities`:** registra las actividades del plan, su tipo, fecha prevista, duración, intensidad, estado y vinculación con la sesión realizada.
+- **`training_sessions`:** conserva las sesiones realizadas, su fecha, duración, tipo de actividad, esfuerzo percibido y observaciones.
 
-Existe una relación **uno a muchos** entre `training_plans` y `planned_activities`. Una actividad planificada puede asociarse como máximo con una sesión realizada, permitiendo también registrar sesiones que no hayan sido programadas previamente.
+Existe una relación uno a muchos entre `training_plans` y `planned_activities`. La asociación entre actividad planificada y sesión realizada será opcional y permitirá como máximo una sesión por actividad.
 
-Esta estructura coincide con el modelo orientado a objetos del proyecto, donde `TrainingPlan`, `PlannedActivity` y `TrainingSession` representan respectivamente la planificación, la actividad prevista y la ejecución real del entrenamiento.
+La duración será positiva y el esfuerzo percibido estará entre 1 y 10. Las actividades se modificarán mediante el agregado `TrainingPlan`, que validará su ubicación dentro del periodo y las transiciones de estado permitidas.
 
 ---
 
-### Bounded Context: Sleep Management
+### Bounded Context: Sleep
 
-Administra la información relacionada con el descanso del usuario y permite diferenciar los registros ingresados manualmente de aquellos obtenidos mediante la sincronización con una pulsera compatible.
+Administra los registros de sueño y las rutinas de descanso, correspondientes a los agregados `SleepRecord` y `SleepRoutine`.
 
 Incluye:
 
-* **`sleep_records`:** almacena cada periodo de sueño, incluyendo hora de inicio, hora de finalización, origen del registro, identificador externo, puntuación de sueño y observaciones.
-* **`sleep_routines`:** mantiene la configuración de descanso del usuario, incluyendo hora objetivo para dormir, hora de despertar, duración esperada y activación de recordatorios.
+- **`sleep_records`:** almacena el usuario, inicio y final del descanso, origen, identificador externo, conexión de origen, puntuación y observaciones.
+- **`sleep_routines`:** conserva los horarios objetivo para dormir y despertar, duración esperada y configuración de recordatorios.
 
-La plataforma distingue los registros cuyo origen es **MANUAL** de aquellos obtenidos mediante **AIoTI**, evitando presentar información declarada por el usuario como si hubiera sido medida directamente por un dispositivo.
+Los valores de `SleepPeriod` se almacenarán mediante fechas de inicio y finalización, mientras que `SleepScore` se representará mediante una puntuación opcional entre 0 y 100.
 
-Cada usuario mantiene una única configuración vigente de rutina de sueño, mientras que puede disponer de múltiples registros históricos. Esta diferenciación entre información manual y sincronizada ya forma parte del modelo funcional de **PulsePower**.
+El final del descanso deberá ser posterior a su inicio. Los registros manuales no tendrán puntuaciones atribuidas al dispositivo. Cada usuario podrá disponer de una rutina vigente y se evitará duplicar registros sincronizados mediante su conexión y referencia externa.
 
 ---
 
-### Bounded Context: Wellness Management
+### Bounded Context: Wellness
 
-Gestiona la información de bienestar declarada directamente por el usuario y el seguimiento de hábitos relacionados con su rutina cotidiana.
+Gestiona los hábitos y el bienestar declarado por el usuario, de acuerdo con `WellnessHabit` y `WellnessCheckIn`.
 
 Incluye:
 
-* **`wellness_check_ins`:** registra el estado general diario, estrés percibido, presencia de molestias y observaciones adicionales.
-* **`wellness_habits`:** almacena los hábitos que el usuario desea mantener, incluyendo nombre, frecuencia semanal objetivo y estado.
-* **`habit_logs`:** registra el cumplimiento de cada hábito en fechas específicas.
+- **`wellness_habits`:** almacena el nombre del hábito, usuario propietario, meta semanal y estado.
+- **`habit_logs`:** registra las fechas de seguimiento y el cumplimiento de cada hábito.
+- **`wellness_check_ins`:** conserva la fecha, estado general, estrés percibido, molestias y observaciones del usuario.
 
-Existe una relación **uno a muchos** entre `wellness_habits` y `habit_logs`, permitiendo conservar el historial de cumplimiento sin modificar la definición original del hábito.
+Existe una relación uno a muchos entre `wellness_habits` y `habit_logs`. Se permitirá un registro por hábito y fecha, y un check-in por usuario y día.
 
-Los valores de estado general y estrés percibido utilizan escalas controladas, permitiendo diferenciar claramente las percepciones declaradas por el usuario de las mediciones fisiológicas obtenidas mediante dispositivos.
+El estado general utilizará una escala de 1 a 5, correspondiente a `WellbeingLevel`, y el estrés percibido una escala de 1 a 10, correspondiente a `StressLevel`. La meta semanal estará entre 1 y 7 días.
 
 ---
 
-### Bounded Context: Physiological Analysis & Recommendations
+### Bounded Context: Physiology
 
-Concentra la información fisiológica utilizada por **PulsePower** para analizar el estado del usuario y generar evaluaciones, recomendaciones y alertas personalizadas. Es el contexto encargado de integrar los registros provenientes de la pulsera mediante **AIoTI**.
+Integra las mediciones fisiológicas y almacena las evaluaciones, recomendaciones, alertas y conversaciones del asistente.
 
 Incluye:
 
-* **`wearable_connections`:** registra la vinculación entre un usuario y una pulsera compatible, incluyendo proveedor, identificador externo, estado de conexión y última sincronización.
-* **`physiological_records`:** almacena mediciones fisiológicas como frecuencia cardíaca, frecuencia cardíaca en reposo, variabilidad de la frecuencia cardíaca y esfuerzo.
-* **`recovery_assessments`:** registra las evaluaciones de recuperación calculadas sobre un periodo determinado de información fisiológica.
-* **`recommendations`:** almacena las orientaciones generadas a partir de una evaluación, junto con su explicación, acción sugerida y estado.
-* **`guidance_alerts`:** conserva avisos generados a partir del análisis fisiológico y permite registrar cuándo fueron revisados.
-* **`assistant_conversations`:** representa las conversaciones iniciadas por el usuario con el asistente de **PulsePower**.
-* **`assistant_messages`:** almacena los mensajes pertenecientes a cada conversación, diferenciando los enviados por el usuario de las respuestas generadas por el asistente.
+- **`wearable_connections`:** registra el usuario, proveedor, identificador externo, estado de conexión y última sincronización.
+- **`physiological_records`:** conserva el tipo de indicador, valor, unidad, fecha de medición y referencia de origen.
+- **`recovery_assessments`:** almacena el periodo evaluado, nivel de recuperación y fecha de cálculo.
+- **`recommendations`:** registra la evaluación asociada, acción sugerida, explicación y estado.
+- **`guidance_alerts`:** conserva el tipo de aviso, estado, evaluación asociada cuando corresponda, fecha de creación y fecha de revisión.
+- **`assistant_conversations`:** representa las conversaciones del usuario con el asistente.
+- **`assistant_messages`:** almacena el contenido, emisor y fecha de cada mensaje.
 
-Una `wearable_connection` puede proporcionar múltiples `physiological_records`. A su vez, una `recovery_assessment` puede fundamentar múltiples recomendaciones y alertas.
+Una conexión puede proporcionar múltiples mediciones. Una evaluación puede fundamentar varias recomendaciones y alertas. Las conversaciones mantienen una relación uno a muchos con sus mensajes.
 
-Las conversaciones mantienen una relación **uno a muchos** con sus mensajes, permitiendo conservar el historial necesario para mantener el contexto de interacción con el asistente.
+Los Value Objects `Measurement`, `DataPeriod` y `RecoveryLevel` se representarán mediante sus valores, unidades, fechas y puntuaciones. El nivel de recuperación estará entre 0 y 100 y el inicio del periodo será anterior a su final.
 
-Este contexto constituye uno de los elementos centrales de **PulsePower**, ya que integra información fisiológica, recuperación y recomendaciones personalizadas, capacidades que también aparecen como funcionalidades principales en la arquitectura y en las vistas de la aplicación.
+Se evitarán mediciones duplicadas mediante su conexión y referencia externa. La referencia de una alerta a una evaluación será opcional para permitir avisos independientes, como batería baja.
 
 ---
 
-### Bounded Context: Reporting
+### Bounded Context: Reports
 
-Administra la solicitud y generación de reportes que permiten al usuario consultar la evolución de sus registros durante un periodo determinado.
+Administra la generación de reportes mediante la persistencia del agregado `ProgressReport`.
 
 Incluye:
 
-* **`progress_reports`:** almacena el tipo de reporte solicitado, periodo inicial y final, estado de generación, fecha de solicitud, fecha de finalización y referencia al documento generado.
+- **`progress_reports`:** almacena el usuario, tipo de reporte, periodo solicitado, estado, fecha de solicitud, fecha de finalización y referencia al documento generado.
 
-Los reportes pueden considerar información relacionada con **Training, Sleep, Wellness y Recovery**, pero el contexto **Reporting** no mantiene copias permanentes de todas las entidades utilizadas para producirlos. En su lugar, consulta la información necesaria mediante contratos internos entre contextos.
+`ReportPeriod` se almacenará mediante fechas de inicio y fin, mientras que `DocumentReference` se representará mediante la referencia al archivo.
 
-Este comportamiento coincide con el diseño de dominio definido actualmente para `ProgressReport`.
+El periodo deberá ser válido y un reporte completado deberá disponer de su documento y fecha de finalización. Los estados serán REQUESTED, GENERATING, COMPLETED y FAILED.
 
-De esta manera, **Reporting** conserva únicamente la información necesaria para controlar la generación y disponibilidad de cada documento.
+El servicio de aplicación obtendrá la información mediante `ReportDataProvider`. Este contrato no constituye una tabla, ya que representa una interfaz de consulta hacia otros contextos.
 
 ---
 
 ### Bounded Context: Community
 
-Gestiona los elementos relacionados con motivación, gamificación y avances que el usuario decide compartir dentro de **PulsePower**.
+Gestiona la persistencia de logros, rachas y avances compartidos.
 
 Incluye:
 
-* **`achievements`:** contiene el catálogo de logros disponibles, junto con su nombre, descripción y regla utilizada para determinar su obtención.
-* **`user_achievements`:** registra qué logros ha obtenido cada usuario y la fecha en que fueron alcanzados.
-* **`streaks`:** conserva el seguimiento de días consecutivos asociados a determinadas actividades.
-* **`shared_progress`:** almacena los avances que el usuario decide publicar, incluyendo título, contenido, nivel de visibilidad y fecha de publicación.
+- **`achievements`:** almacena el catálogo de logros, nombre, descripción, métrica y umbral correspondientes a `AchievementRule`.
+- **`user_achievements`:** registra el usuario, logro obtenido y fecha de obtención.
+- **`streaks`:** conserva el usuario, tipo de actividad, racha actual, racha máxima y última fecha registrada.
+- **`shared_progress`:** almacena título, contenido, visibilidad y fechas de publicación y retiro.
 
-Existe una relación **uno a muchos** entre `achievements` y `user_achievements`, permitiendo mantener un catálogo común de logros y registrar individualmente cuáles ha obtenido cada usuario.
+Existe una relación uno a muchos entre `achievements` y `user_achievements`. La combinación de usuario y logro será única. Las rachas se identificarán por usuario y tipo de actividad, y su valor actual no podrá superar el máximo registrado.
 
-Los avances compartidos mantienen una configuración de visibilidad que permite al usuario controlar qué información desea publicar. Este diseño es coherente con el dominio definido actualmente, donde `Achievement`, `UserAchievement`, `Streak` y `SharedProgress` componen las principales entidades de **Community**.
+Las publicaciones retiradas dejarán de estar disponibles para otros usuarios. Para implementar la visibilidad GROUP o TRUSTED_CONTACT, deberán incorporarse las referencias a los destinatarios y sus relaciones de autorización tanto en el modelo de clases como en la base de datos.
+
+---
+
+### Módulos de soporte: Identity, Profile & Subscription
+
+Administran las cuentas, perfiles, objetivos y suscripciones. Complementan los seis bounded contexts y corresponden a los módulos de soporte descritos en la sección 4.7.
+
+Incluye:
+
+- **`user_accounts`:** almacena el correo, hash de contraseña, estado de la cuenta y fecha de creación.
+- **`user_profiles`:** conserva el nombre visible, enfoque del usuario, talla, peso y zona horaria.
+- **`personal_goals`:** registra los objetivos del perfil, descripción, fecha prevista y fecha de cumplimiento.
+- **`subscription_plans`:** contiene los planes comerciales, sus precios y monedas.
+- **`subscriptions`:** registra el usuario, plan contratado, ciclo de facturación, estado y fechas de vigencia.
+- **`payments`:** conserva la suscripción asociada, referencia del proveedor, importe, moneda, estado y fecha de procesamiento.
+
+Cada cuenta puede disponer de un perfil y cada perfil puede contener varios objetivos. Una suscripción puede registrar múltiples pagos.
+
+`Email` se representará mediante un correo único y `Money` mediante importe y moneda. No se almacenarán contraseñas en texto plano ni datos completos de tarjetas. Las referencias del proveedor deberán evitar pagos duplicados.
 
 ---
 
 ### Relaciones entre contextos
 
-Aunque cada *bounded context* mantiene la responsabilidad sobre sus propias tablas, **PulsePower** necesita relacionar determinados registros para completar el flujo de análisis fisiológico.
+Las relaciones conservan la organización definida en los diagramas de clases:
 
-* **Support Modules ↔ Training / Sleep / Wellness / Physiological Analysis / Reporting / Community:** los distintos contextos utilizan el identificador `user_id` para asociar su información con el usuario propietario.
+- **Módulos de soporte ↔ demás contextos:** los registros se asocian con su propietario mediante el identificador de la cuenta.
+- **Sleep ↔ Physiology:** los registros sincronizados pueden referenciar la conexión utilizada como origen.
+- **Training, Sleep y Wellness ↔ Physiology:** la aplicación consulta los registros necesarios para generar evaluaciones y recomendaciones.
+- **Training, Sleep, Wellness y Physiology ↔ Reports:** los servicios de aplicación obtienen la información necesaria para elaborar reportes mediante contratos internos.
 
-* **Sleep Management ↔ Physiological Analysis & Recommendations:** los registros de sueño sincronizados pueden mantener una referencia a la conexión del dispositivo utilizada como origen de la información.
+Las claves primarias, claves foráneas y restricciones de unicidad y rango respaldarán la integridad de los registros. Estas restricciones complementarán las invariantes protegidas por los agregados, sin sustituir las reglas del dominio.
 
-* **Training Management + Sleep Management + Wellness Management ↔ Physiological Analysis & Recommendations:** la evaluación de recuperación utiliza información proveniente del esfuerzo físico, descanso, bienestar y mediciones fisiológicas disponibles.
-
-* **Physiological Analysis & Recommendations ↔ Reporting:** **Reporting** consulta las evaluaciones y tendencias necesarias para generar reportes de evolución.
-
-* **Training / Sleep / Wellness / Physiological Analysis ↔ Reporting:** los reportes consolidan información de diferentes contextos mediante contratos internos, evitando duplicar permanentemente los datos originales.
-
-![PulsePower-Database-Diagrams.png](../assets/images/PulsePower-Database-Diagrams.png)
+![Database Diagram - PulsePower](../assets/images/PulsePower-Database-Diagrams.png)

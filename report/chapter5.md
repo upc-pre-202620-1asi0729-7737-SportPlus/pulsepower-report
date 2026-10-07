@@ -125,7 +125,7 @@ El Sprint 1 incluye las seis primeras historias del Product Backlog (sección 3.
 
 Tablero de Trello:
 
-![Tablero Trello.png](../assets/images/Tablero%20Trello.png)
+![trello-sprint1.png](../assets/images/trello-sprint1.png)
 
 #### 5.2.1.4 Development Evidence for Sprint Review
 

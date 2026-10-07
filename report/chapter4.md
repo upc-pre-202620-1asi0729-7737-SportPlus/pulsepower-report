@@ -456,11 +456,11 @@ La aplicación se comunica con el backend mediante **REST sobre HTTPS**, interca
 
 El backend se desarrolla con **Java y Spring Boot** y organiza el dominio en seis *bounded contexts*:
 
-* **Training Management:** administra sesiones, intensidad, calendario y días de descanso.
-* **Sleep Management:** gestiona registros de sueño, horarios y hábitos de descanso.
-* **Wellness Management:** administra *check-ins*, estrés percibido y hábitos de bienestar.
-* **Physiological Analysis & Recommendations:** integra mediciones desde **AIoTI**, evalúa la recuperación y coordina recomendaciones y explicaciones con IA.
-* **Reporting:** genera reportes y presenta la evolución de los registros por periodos.
+* **Training:** administra sesiones, intensidad, calendario y días de descanso.
+* **Sleep:** gestiona registros de sueño, horarios y hábitos de descanso.
+* **Wellness:** administra *check-ins*, estrés percibido y hábitos de bienestar.
+* **Physiology:** integra mediciones desde **AIoTI**, evalúa la recuperación y coordina recomendaciones y explicaciones con IA.
+* **Reports:** genera reportes y presenta la evolución de los registros por periodos.
 * **Community:** gestiona rachas, logros y avances compartidos voluntariamente.
 
 La API también incorpora módulos de soporte para autenticación, perfiles y suscripciones. En esta propuesta no se contabilizan como *bounded contexts* adicionales.
@@ -485,15 +485,15 @@ El diagrama permite comprender la separación entre presentación, lógica de ne
 
 #### 4.6.4. Software Architecture Components Diagrams
 
-El diagrama de componentes presenta la estructura interna de la **API Application** de **PulsePower**, desarrollada con **Java y Spring Boot**. La solución se organiza en seis *bounded contexts*: **Training Management, Sleep Management, Wellness Management, Physiological Analysis & Recommendations, Reporting** y **Community**.
+El diagrama de componentes presenta la estructura interna de la **API Application** de **PulsePower**, desarrollada con **Java y Spring Boot**. La solución se organiza en seis *bounded contexts*: **Training, Sleep, Wellness, Physiology, Reports** y **Community**.
 
 Las solicitudes provenientes de la aplicación web llegan a los controladores **REST**, donde se aplican los controles de autenticación y autorización antes de delegar las operaciones a los servicios correspondientes. Cada contexto posee responsabilidades específicas:
 
-* **Training Management:** gestiona sesiones, planificación, intensidad y descanso.
-* **Sleep Management:** administra registros, horarios y hábitos de sueño.
-* **Wellness Management:** gestiona *check-ins*, estrés percibido y hábitos cotidianos.
-* **Physiological Analysis & Recommendations:** integra datos de **AIoTI**, analiza la recuperación y genera recomendaciones.
-* **Reporting:** genera reportes de evolución a partir de información de los demás contextos.
+* **Training:** gestiona sesiones, planificación, intensidad y descanso.
+* **Sleep:** administra registros, horarios y hábitos de sueño.
+* **Wellness:** gestiona *check-ins*, estrés percibido y hábitos cotidianos.
+* **Physiology:** integra datos de **AIoTI**, analiza la recuperación y genera recomendaciones.
+* **Reports:** genera reportes de evolución a partir de información de los demás contextos.
 * **Community:** administra rachas, logros y avances compartidos.
 
 Cada contexto mantiene sus propios repositorios, aunque todos utilizan **PostgreSQL** como base de datos. Las comunicaciones entre contextos se realizan mediante contratos internos, mientras que los módulos de acceso, perfil y suscripción funcionan como componentes de soporte.

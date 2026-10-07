@@ -439,7 +439,7 @@ El equipo realizó una sesión colaborativa de Big Picture EventStorming para en
 
 **<img src="../assets/images/eventstorm-step3.png"><br/>**
 
-**Step 4 – Bounded Contexts:** los eventos se agruparon según la responsabilidad de negocio a la que pertenecen, lo que dio origen a los seis bounded contexts del dominio y a los módulos de soporte:
+**Step 4 – Bounded Contexts:** los eventos se agruparon según la responsabilidad de negocio a la que pertenecen, lo que dio origen a los seis bounded contexts del dominio, además del módulo de soporte IAM (Identity and Access Management), que agrupa los eventos de cuenta, sesión y suscripción:
 
 | Bounded Context | Eventos de dominio |
 |---|---|
@@ -449,7 +449,7 @@ El equipo realizó una sesión colaborativa de Big Picture EventStorming para en
 | Physiology | Fitness Tracker Connected, Data Synchronized, Effort Calculated, Recovery Calculated, Fatigue Detected, Low Recovery Detected, Alert Generated, Recommendation Generated, Reschedule Suggested, AI Assistant Consulted |
 | Reports | History Accessed, Report Generated |
 | Community | Streak Updated, Achievement Unlocked, Progress Shared |
-| IAM | User Registered, Session Started, Plan Subscribed, Payment Confirmed, Subscription Cancelled |
+| IAM (módulo de soporte) | User Registered, Session Started, Plan Subscribed, Payment Confirmed, Subscription Cancelled |
 
 **<img src="../assets/images/eventstorm-step4.png"><br/>**
 

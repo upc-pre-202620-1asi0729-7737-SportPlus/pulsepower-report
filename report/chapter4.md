@@ -502,70 +502,61 @@ Cada contexto mantiene sus propios repositorios, aunque todos utilizan **Postgre
 
 ### 4.7. Software Object-Oriented Design
 
-En esta sección se presenta el diseño orientado a objetos de **PulsePower**, detallando la estructura interna de los principales elementos del dominio. Los diagramas de clases se organizan de acuerdo con los *bounded contexts* definidos previamente y representan las clases, atributos, operaciones, enumeraciones y relaciones necesarias para implementar las responsabilidades de cada módulo de la plataforma.
+El diseño orientado a objetos de PulsePower representa las clases, responsabilidades y relaciones necesarias para gestionar el entrenamiento, el sueño, el bienestar y el análisis fisiológico del usuario.
+
+El modelo se organiza en seis bounded contexts y módulos de soporte. Los diagramas identifican Aggregate Roots, entidades, Value Objects e invariantes para definir cómo se organiza y protege la información del dominio.
 
 #### 4.7.1. Class Diagrams
 
+Cada Aggregate Root controla las modificaciones de las entidades que contiene y protege sus reglas de negocio. Los cambios internos de un agregado se guardarán en una misma transacción. Los Value Objects serán inmutables y representarán valores como periodos, puntuaciones e importes.
 
-#### Bounded Context: Training Management
+##### Bounded Context: Training
 
-Gestiona el registro y la planificación de las actividades físicas. La entidad `TrainingPlan` agrupa actividades programadas mediante `PlannedActivity`, mientras que `TrainingSession` representa sesiones efectivamente realizadas.
+Gestiona la planificación y el registro de entrenamientos. `TrainingPlan` contiene las actividades programadas (`PlannedActivity`) y controla su creación, reprogramación y cancelación. `TrainingSession` representa una sesión realizada como un agregado independiente. Los Value Objects `DateRange` y `PerceivedEffort` permiten validar el periodo del plan y el esfuerzo percibido. Las invariantes impiden programar actividades fuera del periodo o modificar actividades ya completadas. El registro de una sesión y la actualización de su actividad planificada serán coordinados por la aplicación.
 
-Esta separación permite registrar entrenamientos no planificados, mantener actividades pendientes y diferenciar un día de descanso de una sesión completada. Las actividades pueden reprogramarse o cancelarse según las decisiones del usuario.
+![PulsePower_Bounded-Context-Training.png](../assets/images/PulsePower_Bounded-Context-Training.png)
 
-![PulsePower_Bounded-Context-Training-Management.png](../assets/images/PulsePower_Bounded-Context-Training-Management.png)
+##### Bounded Context: Sleep
 
-#### Bounded Context: Sleep Management
+Administra los registros de sueño mediante `SleepRecord` y las rutinas de descanso mediante `SleepRoutine`, como agregados independientes. `SleepPeriod` y `SleepScore` representan el periodo y la puntuación de sueño. Las reglas del contexto validan las fechas, diferencian los registros manuales de los sincronizados y evitan presentar una puntuación del dispositivo en un registro manual.
 
-Administra el historial y los hábitos de descanso. `SleepRecord` representa un periodo de sueño, incluyendo su origen manual o sincronizado. `SleepRoutine` establece los horarios y la duración objetivo del descanso.
+![PulsePower_Bounded-Context-Sleep.png](../assets/images/PulsePower_Bounded-Context-Sleep.png)
 
-Los datos estimados por el dispositivo, como una puntuación de sueño, pueden estar ausentes en los registros manuales. El sistema conserva esta diferencia para evitar presentar información ingresada por el usuario como una medición del dispositivo.
+##### Bounded Context: Wellness
 
-![PulsePower_Bounded-Context-Sleep-Management.png](../assets/images/PulsePower_Bounded-Context-Sleep-Management.png)
+Gestiona los hábitos y el bienestar declarado por el usuario. `WellnessHabit` contiene los registros de cumplimiento (`HabitLog`), que se modifican mediante la raíz del hábito. `WellnessCheckIn` registra el estado general, el estrés percibido y las molestias del día. Los Value Objects `WellbeingLevel` y `StressLevel` validan las escalas utilizadas. Las invariantes evitan duplicar registros diarios y establecen metas semanales válidas.
 
-#### Bounded Context: Wellness Management
+![PulsePower_Bounded-Context-Wellness.png](../assets/images/PulsePower_Bounded-Context-Wellness.png)
 
-Gestiona la información de bienestar declarada por el usuario. `WellnessCheckIn` registra el estado general, el estrés percibido, las molestias y las notas del día.
+##### Bounded Context: Physiology
 
-`WellnessHabit` representa un hábito que el usuario desea mantener, mientras que `HabitLog` registra su cumplimiento en fechas específicas. Estas entidades permiten realizar seguimiento sin confundir las percepciones personales con mediciones fisiológicas.
+Integra las mediciones de la pulsera y organiza su interpretación. `WearableConnection` administra la vinculación, `PhysiologicalRecord` conserva las mediciones y `RecoveryAssessment` representa las evaluaciones de recuperación. `Recommendation` y `GuidanceAlert` gestionan recomendaciones y avisos. `AssistantConversation` controla los mensajes de la conversación mediante `AssistantMessage`. Los Value Objects validan valores, unidades, periodos y niveles de recuperación. La aplicación coordina estos agregados y las consultas a los proveedores externos.
 
-![PulsePower_Bounded-Context-Wellness-Management.png](../assets/images/PulsePower_Bounded-Context-Wellness-Management.png)
+![PulsePower_Bounded-Context-Physiology.png](../assets/images/PulsePower_Bounded-Context-Physiology.png)
 
-#### Bounded Context: Physiological Analysis & Recommendations
+##### Bounded Context: Reports
 
-Integra los registros de la pulsera y organiza su interpretación. `WearableConnection` representa la vinculación con **AIoTI** y `PhysiologicalRecord` conserva las mediciones sincronizadas, con su fecha, unidad y referencia de origen.
+Gestiona la generación de reportes mediante `ProgressReport`, que registra el periodo solicitado, el estado del proceso y la referencia al documento generado. Los Value Objects `ReportPeriod` y `DocumentReference` representan el intervalo y el archivo del reporte. Un servicio de aplicación obtiene los datos mediante `ReportDataProvider` y actualiza el agregado al completar o fallar la generación.
 
-`RecoveryAssessment` representa una evaluación calculada sobre un periodo de datos. A partir de ella pueden generarse recomendaciones mediante `Recommendation` y avisos mediante `GuidanceAlert`.
+![PulsePower_Bounded-Context-Reports.png](../assets/images/PulsePower_Bounded-Context-Reports.png)
 
-El asistente utiliza `AssistantConversation` y `AssistantMessage` para mantener el historial de consultas y respuestas. La generación de respuestas corresponde al servicio de aplicación y al adaptador del proveedor de IA, no a las entidades por sí solas.
+##### Bounded Context: Community
 
-![PulsePower_Bounded-Context-Physiological-Analysis-&-Recommendations.png](../assets/images/PulsePower_Bounded-Context-Physiological-Analysis-%26-Recommendations.png)
+Administra las rachas, los logros y los avances compartidos. `Streak` mantiene la constancia del usuario, `Achievement` define los logros y `UserAchievement` registra su obtención.`SharedProgress` controla la publicación y su visibilidad. Las invariantes evitan otorgar dos veces el mismo logro y establecen que una publicación retirada deje de ser visible. Cada agregado mantiene sus propias operaciones y reglas.
 
-#### Bounded Context: Reporting
+![PulsePower_Bounded-Context-Community..png](../assets/images/PulsePower_Bounded-Context-Community..png)
 
-Administra la generación de reportes de evolución mediante `ProgressReport`. Esta entidad registra el tipo de reporte, el periodo solicitado, su estado de generación y la referencia al documento disponible.
+##### Módulos de soporte: IAM
 
-Los reportes consultan información de otros contextos a través de contratos de aplicación. No necesitan mantener copias permanentes de todos los registros utilizados para producirlos.
+Administran las cuentas, los perfiles y las suscripciones. `UserAccount` gestiona la identidad y `UserProfile` controla las metas personales mediante `PersonalGoal`. `SubscriptionPlan` define los planes comerciales y `Subscription` administra los pagos asociados mediante `Payment`. Los Value Objects `Email` y `Money` representan correos e importes. Estos módulos complementan los seis bounded contexts del producto.
 
-![PulsePower_Bounded-Context-Reporting.png](../assets/images/PulsePower_Bounded-Context-Reporting.png)
+![PulsePower_Bounded-Context-IAM.png](../assets/images/PulsePower_Bounded-Context-IAM.png)
 
-#### Bounded Context: Community
+##### Diagrama general de clases
 
-Gestiona la motivación y los avances compartidos. `Achievement` define los logros disponibles y `UserAchievement` registra cuáles ha obtenido cada usuario.
+La siguiente imagen reúne los seis bounded contexts y los módulos de soporte. Presenta una vista general del modelo, mientras que los diagramas individuales permiten consultar sus clases y reglas con mayor detalle.
 
-`Streak` mantiene el seguimiento de días consecutivos de una actividad definida. `SharedProgress` representa un avance que el usuario decide compartir, conservando su visibilidad y permitiendo retirar la publicación.
-
-![PulsePower_Bounded-Context-Community.png](../assets/images/PulsePower_Bounded-Context-Community.png)
-
-#### Módulos de soporte
-
-`UserAccount` administra la identidad y el estado de la cuenta. `UserProfile` almacena los datos personales y la orientación del usuario, mientras que `PersonalGoal` registra objetivos concretos.
-
-![PulsePower_Módulos-de-soporte.png](../assets/images/PulsePower_M%C3%B3dulos-de-soporte.png)
-
-`SubscriptionPlan` define los planes comerciales y `Subscription` representa la suscripción del usuario. `Payment` conserva referencias y estados de las operaciones procesadas por el proveedor externo, sin almacenar números completos de tarjetas ni códigos de seguridad.
-
-![PulsePower_Class-Diagrams.png](../assets/images/PulsePower_Class-Diagrams.png)
+![PulsePower_Class-Diagram-All-Bounded-Contexts.png](../assets/images/PulsePower_Class-Diagram-All-Bounded-Contexts.png)
 
 ### 4.8. Database Design
 

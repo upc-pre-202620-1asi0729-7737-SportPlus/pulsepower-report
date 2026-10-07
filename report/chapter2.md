@@ -439,7 +439,7 @@ El equipo realizó una sesión colaborativa de Big Picture EventStorming para en
 
 **<img src="../assets/images/eventstorm-step3.png"><br/>**
 
-**Step 4 – Bounded Contexts:** los eventos se agruparon según la responsabilidad de negocio a la que pertenecen, lo que dio origen a los seis bounded contexts del dominio, además del módulo de soporte IAM (Identity and Access Management), que agrupa los eventos de cuenta, sesión y suscripción:
+**Step 4 – Bounded Contexts:** los eventos se agruparon según su responsabilidad de negocio, identificando siete bounded contexts: **Training, Sleep, Wellness, Physiology, Reports, Community e IAM**. Cada contexto delimita sus conceptos, reglas y procesos. IAM reúne la gestión de cuentas, sesiones, perfiles y suscripciones.
 
 | Bounded Context | Eventos de dominio |
 |---|---|

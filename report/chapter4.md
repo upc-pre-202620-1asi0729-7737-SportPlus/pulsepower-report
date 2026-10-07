@@ -387,7 +387,7 @@ Se elabora un User Flow por cada User goal identificado para los dos User Person
 - [Video de demostración - Presentacion Prototype PulsePower](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111461_upc_edu_pe/IQBaWLWlCgspSq1tgpffHHajARZ70ceG_num1FG3vWednrk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=GgGatg)
 ### 4.6. Domain-Driven Software Architecture
 En esta sección se presenta la propuesta de arquitectura de software de PulsePower desde la perspectiva de Domain-Driven Design. El punto de partida es el Big Picture EventStorming elaborado en la sección 2.4, sobre el cual se profundiza mediante una sesión de Design-Level EventStorming que permite identificar con mayor detalle los bounded contexts, aggregates, commands, events y queries que estructuran el dominio.
-A partir de dicha identificación,a continuación la arquitectura se representará aplicando el C4 Model en sus niveles de contexto, contenedores y componentes, los cuales están debidamente desarrollados en las secciones 4.6.2, 4.6.3 y 4.6.4 respectivamente. Esta progresión permite pasar del entendimiento del dominio del negocio a la definición de las unidades de despliegue y sus responsabilidades internas, manteniendo la trazabilidad entre el lenguaje del negocio establecido en el Ubiquitous Language y los elementos técnicos de la solución:
+A partir de dicha identificación, a continuación la arquitectura se representará aplicando el C4 Model en sus niveles de contexto, contenedores y componentes, los cuales están debidamente desarrollados en las secciones 4.6.2, 4.6.3 y 4.6.4 respectivamente. Esta progresión permite pasar del entendimiento del dominio del negocio a la definición de las unidades de despliegue y sus responsabilidades internas, manteniendo la trazabilidad entre el lenguaje del negocio establecido en el Ubiquitous Language y los elementos técnicos de la solución:
 #### 4.6.1. Design-Level EventStorming
 
 ![PulsePower EventStorming](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_DesignLevelEventStorming.png)
@@ -544,7 +544,7 @@ Gestiona la generación de reportes mediante `ProgressReport`, que registra el p
 
 Administra las rachas, los logros y los avances compartidos. `Streak` mantiene la constancia del usuario, `Achievement` define los logros y `UserAchievement` registra su obtención.`SharedProgress` controla la publicación y su visibilidad. Las invariantes evitan otorgar dos veces el mismo logro y establecen que una publicación retirada deje de ser visible. Cada agregado mantiene sus propias operaciones y reglas.
 
-![PulsePower_Bounded-Context-Community..png](../assets/images/PulsePower_Bounded-Context-Community..png)
+![PulsePower_Bounded-Context-Community.png](../assets/images/PulsePower_Bounded-Context-Community.png)
 
 ##### Módulos de soporte: IAM
 

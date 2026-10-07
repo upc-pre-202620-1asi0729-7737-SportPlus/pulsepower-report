@@ -449,7 +449,7 @@ El equipo realizó una sesión colaborativa de Big Picture EventStorming para en
 | Physiology | Fitness Tracker Connected, Data Synchronized, Effort Calculated, Recovery Calculated, Fatigue Detected, Low Recovery Detected, Alert Generated, Recommendation Generated, Reschedule Suggested, AI Assistant Consulted |
 | Reports | History Accessed, Report Generated |
 | Community | Streak Updated, Achievement Unlocked, Progress Shared |
-| IAM (módulo de soporte) | User Registered, Session Started, Plan Subscribed, Payment Confirmed, Subscription Cancelled |
+| IAM | User Registered, Session Started, Plan Subscribed, Payment Confirmed, Subscription Cancelled |
 
 **<img src="../assets/images/eventstorm-step4.png"><br/>**
 

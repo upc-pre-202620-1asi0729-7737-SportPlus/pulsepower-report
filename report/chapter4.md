@@ -158,6 +158,7 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Meta Description:** Explore how PulsePower turns sleep, strain and recovery data into personalized insights to support your training, rest and everyday wellbeing.
 * **Keywords:** PulsePower, sleep tracking, recovery insights, training guidance, physiological data, AI wellbeing
 * **Author:** PulsePower Team
+* **User Stories:** US13, US14, US15, US36, US45, US46
 
 ### Vistas compartidas por ambos segmentos
 
@@ -167,6 +168,7 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Meta Description:** Review your latest sleep, strain and recovery indicators in one place. Access daily summaries and insights related to your personal goals.
 * **Keywords:** daily overview, physiological dashboard, sleep summary, strain indicators, recovery tracking
 * **Author:** PulsePower Team
+* **User Stories:** US01, US02, US03
 
 #### Profile and Goals Page
 
@@ -174,6 +176,7 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Meta Description:** Set your training and wellbeing goals, update your routine and manage the preferences used to personalize your PulsePower experience.
 * **Keywords:** user profile, training goals, wellbeing goals, personal preferences, daily routine
 * **Author:** PulsePower Team
+* **User Stories:** US09, US19, US20, US44
 
 #### Wearable Connection Page
 
@@ -181,6 +184,7 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Meta Description:** Link your compatible wristband to PulsePower, check its connection status and review when your physiological records were last synchronized.
 * **Keywords:** wearable connection, compatible wristband, data synchronization, connection status
 * **Author:** PulsePower Team
+* **User Stories:** US21, US22, US23, US24
 
 #### AI Assistant Page
 
@@ -188,6 +192,7 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Meta Description:** Ask questions about your sleep, strain and recovery records. Explore clear explanations and personalized guidance based on your available data.
 * **Keywords:** AI assistant, physiological insights, personalized guidance, sleep questions, recovery explanations
 * **Author:** PulsePower Team
+* **User Stories:** US06
 
 #### Progress and Reports Page
 
@@ -195,6 +200,7 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Meta Description:** Explore your sleep, strain and recovery history. Compare periods and download reports to understand how your recorded patterns change over time.
 * **Keywords:** progress reports, physiological history, sleep trends, recovery trends, PDF reports
 * **Author:** PulsePower Team
+* **User Stories:** US11, US12, US25, US26, US42, US43
 
 #### Alerts and Preferences Page
 
@@ -202,6 +208,7 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Meta Description:** Review notifications about changes in your records and customize your training reminders, sleep reminders and notification schedules.
 * **Keywords:** physiological alerts, notification preferences, training reminders, sleep reminders
 * **Author:** PulsePower Team
+* **User Stories:** US07, US08, US27, US40, US41
 
 #### Subscription Page
 
@@ -209,6 +216,7 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Meta Description:** Compare PulsePower Basic and Pro features, review your current plan and manage your subscription and renewal preferences.
 * **Keywords:** PulsePower Basic, PulsePower Pro, subscription plans, plan comparison, renewal preferences
 * **Author:** PulsePower Team
+* **User Stories:** US37
 
 ### Usuarios con rutinas de entrenamiento o alta exigencia física
 
@@ -218,6 +226,7 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Meta Description:** Explore your recovery indicators alongside recent sleep and strain records to help you review the balance between training and rest.
 * **Keywords:** recovery insights, training recovery, recovery history, sleep and strain, rest planning
 * **Author:** PulsePower Team
+* **User Stories:** US01, US04, US25
 
 #### Strain Page
 
@@ -225,6 +234,7 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Meta Description:** Review your recorded physical effort and activity trends. Relate your recent training load to your recovery indicators and personal goals.
 * **Keywords:** physical strain, activity tracking, training load, effort trends, training goals
 * **Author:** PulsePower Team
+* **User Stories:** US03, US22
 
 #### Training Planner Page
 
@@ -232,6 +242,7 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Meta Description:** Organize your weekly workouts and rest days. Review personalized suggestions to adjust your schedule using your recent physiological records.
 * **Keywords:** training planner, weekly workouts, rest days, workout schedule, personalized training
 * **Author:** PulsePower Team
+* **User Stories:** US28, US29, US30
 
 ### Personas que buscan mejorar su bienestar general y calidad de sueño
 
@@ -241,6 +252,7 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Meta Description:** Explore your nightly sleep summaries, duration and recorded patterns. Review trends to better understand your rest and daily routine.
 * **Keywords:** sleep insights, sleep duration, nightly summary, sleep patterns, rest tracking
 * **Author:** PulsePower Team
+* **User Stories:** US02, US05, US23, US26
 
 #### Habits and Wellbeing Page
 
@@ -248,6 +260,9 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Meta Description:** Record your daily habits, organize your bedtime routine and explore personalized suggestions that support your rest and wellbeing goals.
 * **Keywords:** daily habits, bedtime routine, wellbeing goals, rest habits, personalized suggestions
 * **Author:** PulsePower Team
+* **User Stories:** US31, US32, US33, US41
+
+Las User Stories que no se asocian a una vista específica corresponden a requisitos transversales o técnicos: US10 (protección de datos) se aplica a todas las vistas; US38 y US39 (centro de ayuda y soporte) se atenderán en una vista de ayuda prevista para siguientes sprints; y TS01 a TS04 son Technical Stories que habilitan las vistas descritas. US34 y US35 se atienden en la sección Community, descrita en el User Flow 8 (sección 4.4.4).
 
 #### 4.2.4. Searching Systems
 
@@ -359,27 +374,35 @@ En esta sección se presentan los User Flow Diagrams de la WebApp de PulsePower.
 Se elabora un User Flow por cada User goal identificado para los dos User Persona del proyecto. Los flujos son consistentes con el sistema de navegación descrito en la sección 4.2.5, en el que la navegación principal se resuelve mediante una barra lateral persistente con acceso directo a los módulos Home, Training, Sleep, Wellness, Planning, Reports, Community y Settings.
 
 ### User Flow 1
+**User goal:** registrarse desde la Landing Page, elegir un enfoque y vincular la pulsera. **User Stories:** US15, US19, US20, US21, TS02.
 ![User Flow 1](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_1.png)
 
 ### User Flow 2
+**User goal:** revisar el estado diario y decidir el entrenamiento del día. **User Stories:** US01, US03, US04, US07, US30, TS01, TS03.
 ![User Flow 2](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_2.png)
 
 ### User Flow 3
+**User goal:** registrar una sesión de entrenamiento y actualizar la carga semanal. **User Stories:** US04, US25.
 ![User Flow 3](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_3.png)
 
 ### User Flow 4
+**User goal:** planificar la semana de entrenamientos. **User Stories:** US28, US29, US30.
 ![User Flow 4](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_4.png)
 
 ### User Flow 5
+**User goal:** revisar el sueño de la noche y su tendencia, y configurar el recordatorio de rutina. **User Stories:** US02, US05, US23, US26, US41.
 ![User Flow 5](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_5.png)
 
 ### User Flow 6
+**User goal:** registrar el check-in diario de estrés y estado de ánimo. **User Stories:** US31.
 ![User Flow 6](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_6.png)
 
 ### User Flow 7
+**User goal:** revisar tendencias y exportar un reporte en PDF. **User Stories:** US11, US42, US43.
 ![User Flow 7](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_7.png)
 
 ### User Flow 8
+**User goal:** compartir el progreso con un contacto de confianza. **User Stories:** US34, US35.
 ![User Flow 8](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_UserFlow_8.png)
 
 ### 4.5. Web Applications Prototyping
@@ -387,7 +410,7 @@ Se elabora un User Flow por cada User goal identificado para los dos User Person
 - [Video de demostración - Presentacion Prototype PulsePower](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202111461_upc_edu_pe/IQBaWLWlCgspSq1tgpffHHajARZ70ceG_num1FG3vWednrk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=GgGatg)
 ### 4.6. Domain-Driven Software Architecture
 En esta sección se presenta la propuesta de arquitectura de software de PulsePower desde la perspectiva de Domain-Driven Design. El punto de partida es el Big Picture EventStorming elaborado en la sección 2.4, sobre el cual se profundiza mediante una sesión de Design-Level EventStorming que permite identificar con mayor detalle los bounded contexts, aggregates, commands, events y queries que estructuran el dominio.
-A partir de dicha identificación,a continuación la arquitectura se representará aplicando el C4 Model en sus niveles de contexto, contenedores y componentes, los cuales están debidamente desarrollados en las secciones 4.6.2, 4.6.3 y 4.6.4 respectivamente. Esta progresión permite pasar del entendimiento del dominio del negocio a la definición de las unidades de despliegue y sus responsabilidades internas, manteniendo la trazabilidad entre el lenguaje del negocio establecido en el Ubiquitous Language y los elementos técnicos de la solución:
+A partir de dicha identificación, a continuación la arquitectura se representará aplicando el C4 Model en sus niveles de contexto, contenedores y componentes, los cuales están debidamente desarrollados en las secciones 4.6.2, 4.6.3 y 4.6.4 respectivamente. Esta progresión permite pasar del entendimiento del dominio del negocio a la definición de las unidades de despliegue y sus responsabilidades internas, manteniendo la trazabilidad entre el lenguaje del negocio establecido en el Ubiquitous Language y los elementos técnicos de la solución:
 #### 4.6.1. Design-Level EventStorming
 
 ![PulsePower EventStorming](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_DesignLevelEventStorming.png)
@@ -476,6 +499,7 @@ El diagrama permite comprender la separación entre presentación, lógica de ne
 
 El diagrama de componentes presenta la estructura interna de la **API Application** de **PulsePower**, desarrollada con **Java y Spring Boot**. La solución se organiza en siete *bounded contexts*: **Training, Sleep, Wellness, Physiology, Reports, Community** e **IAM**.
 
+
 Las solicitudes provenientes de la aplicación web llegan a los controladores **REST**, donde se aplican los controles de autenticación y autorización antes de delegar las operaciones a los servicios correspondientes. Cada contexto posee responsabilidades específicas:
 
 * **Training:** gestiona sesiones, planificación, intensidad y descanso.
@@ -535,7 +559,7 @@ Gestiona la generación de reportes mediante `ProgressReport`, que registra el p
 
 Administra las rachas, los logros y los avances compartidos. `Streak` mantiene la constancia del usuario, `Achievement` define los logros y `UserAchievement` registra su obtención.`SharedProgress` controla la publicación y su visibilidad. Las invariantes evitan otorgar dos veces el mismo logro y establecen que una publicación retirada deje de ser visible. Cada agregado mantiene sus propias operaciones y reglas.
 
-![PulsePower_Bounded-Context-Community..png](../assets/images/PulsePower_Bounded-Context-Community..png)
+![PulsePower_Bounded-Context-Community.png](../assets/images/PulsePower_Bounded-Context-Community.png)
 
 ##### Módulos de soporte: IAM
 

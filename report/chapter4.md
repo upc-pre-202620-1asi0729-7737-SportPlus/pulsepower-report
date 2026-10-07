@@ -519,7 +519,7 @@ Las dependencias entre contextos son las siguientes: **Physiology** consulta a T
 
 El diseño orientado a objetos de PulsePower representa las clases, responsabilidades y relaciones necesarias para gestionar el entrenamiento, el sueño, el bienestar y el análisis fisiológico del usuario.
 
-El modelo se organiza en seis bounded contexts y módulos de soporte. Los diagramas identifican Aggregate Roots, entidades, Value Objects e invariantes para definir cómo se organiza y protege la información del dominio.
+El modelo se organiza en siete bounded contexts: **Training, Sleep, Wellness, Physiology, Reports, Community e IAM**. Los diagramas identifican Aggregate Roots, entidades, Value Objects e invariantes para definir cómo se organiza y protege la información del dominio.
 
 #### 4.7.1. Class Diagrams
 
@@ -561,21 +561,21 @@ Administra las rachas, los logros y los avances compartidos. `Streak` mantiene l
 
 ![PulsePower_Bounded-Context-Community.png](../assets/images/PulsePower_Bounded-Context-Community.png)
 
-##### Módulos de soporte: IAM
+##### Bounded Context: IAM
 
-Administran las cuentas, los perfiles y las suscripciones. `UserAccount` gestiona la identidad y `UserProfile` controla las metas personales mediante `PersonalGoal`. `SubscriptionPlan` define los planes comerciales y `Subscription` administra los pagos asociados mediante `Payment`. Los Value Objects `Email` y `Money` representan correos e importes. Estos módulos complementan los seis bounded contexts del producto.
+Administra las cuentas, los perfiles y las suscripciones. `UserAccount` gestiona la identidad y `UserProfile` controla las metas personales mediante `PersonalGoal`. `SubscriptionPlan` define los planes comerciales y `Subscription` administra los pagos asociados mediante `Payment`. Los Value Objects `Email` y `Money` representan correos e importes. IAM constituye uno de los siete bounded contexts de PulsePower; los demás contextos utilizan el identificador de la cuenta para asociar los registros con su propietario.
 
 ![PulsePower_Bounded-Context-IAM.png](../assets/images/PulsePower_Bounded-Context-IAM.png)
 
 ##### Diagrama general de clases
 
-La siguiente imagen reúne los seis bounded contexts y los módulos de soporte. Presenta una vista general del modelo, mientras que los diagramas individuales permiten consultar sus clases y reglas con mayor detalle.
+La siguiente imagen reúne los siete bounded contexts de PulsePower: **Training, Sleep, Wellness, Physiology, Reports, Community e IAM**. Presenta una vista general del modelo, mientras que los diagramas individuales permiten consultar las clases, relaciones e invariantes de cada contexto con mayor detalle.
 
 ![PulsePower_Class-Diagram-All-Bounded-Contexts.png](../assets/images/PulsePower_Class-Diagram-All-Bounded-Contexts.png)
 
 ### 4.8. Database Design
 
-El diseño de base de datos de PulsePower transforma el modelo de clases de la sección 4.7 en una estructura relacional propuesta sobre PostgreSQL. La información se organiza en seis bounded contexts y módulos de soporte, manteniendo las responsabilidades y relaciones definidas en el diseño orientado a objetos.
+El diseño de base de datos de PulsePower transforma el modelo de clases de la sección 4.7 en una estructura relacional propuesta sobre PostgreSQL. La información se organiza según los siete bounded contexts: **Training, Sleep, Wellness, Physiology, Reports, Community e IAM**, manteniendo las responsabilidades y relaciones definidas en el diseño orientado a objetos.
 
 #### 4.8.1. Database Diagram
 
@@ -689,9 +689,9 @@ Las publicaciones retiradas dejarán de estar disponibles para otros usuarios. P
 
 ---
 
-### Módulos de soporte: Identity, Profile & Subscription
+### Bounded Context: IAM
 
-Administran las cuentas, perfiles, objetivos y suscripciones. Complementan los seis bounded contexts y corresponden a los módulos de soporte descritos en la sección 4.7.
+Administra la persistencia de las cuentas, perfiles, objetivos personales, planes, suscripciones y pagos. Corresponde al bounded context IAM descrito en la sección 4.7 y mantiene la información que permite identificar al propietario de los registros de los demás contextos.
 
 Incluye:
 
@@ -712,7 +712,7 @@ Cada cuenta puede disponer de un perfil y cada perfil puede contener varios obje
 
 Las relaciones conservan la organización definida en los diagramas de clases:
 
-- **Módulos de soporte ↔ demás contextos:** los registros se asocian con su propietario mediante el identificador de la cuenta.
+- **IAM ↔ demás contextos:** los registros se asocian con su propietario mediante el identificador de la cuenta. Cada contexto mantiene la responsabilidad sobre sus propios datos y reglas de negocio.
 - **Sleep ↔ Physiology:** los registros sincronizados pueden referenciar la conexión utilizada como origen.
 - **Training, Sleep y Wellness ↔ Physiology:** la aplicación consulta los registros necesarios para generar evaluaciones y recomendaciones.
 - **Training, Sleep, Wellness y Physiology ↔ Reports:** los servicios de aplicación obtienen la información necesaria para elaborar reportes mediante contratos internos.

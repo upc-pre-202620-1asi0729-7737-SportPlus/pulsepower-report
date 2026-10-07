@@ -81,6 +81,30 @@ Los roles utilizados son los siguientes:
 
 ![Impact map Wellness.png](../assets/images/Impact%20map%20Wellness.png)
 
+**Matriz de trazabilidad Business Goal → Impact → Deliverable → User Story**
+
+Los Impact Maps anteriores presentan los Business Goals de cada segmento. La siguiente matriz los complementa con dos Business Goals transversales, derivados de los Business Outcome Assumptions de la sección 1.2.2.2, de modo que cada User Story y Technical Story queda asociada a un impacto y a un objetivo de negocio.
+
+| Business Goal | Persona / Actor | Impact | Deliverable | User Stories |
+|---|---|---|---|---|
+| **BG1.** Lograr que el 60 % de los deportistas registrados reduzcan en 50 % el riesgo de sobreentrenamiento durante los primeros 3 meses de uso | Deportista | Consulta su recuperación y sus variables fisiológicas antes de decidir la intensidad del entrenamiento | Módulo de monitoreo de recuperación | US01, US03, US22, TS01 |
+| BG1 | Deportista | Consulta su recuperación y sus variables fisiológicas antes de decidir la intensidad del entrenamiento | Módulo de proyección con IA | US06, US25 |
+| BG1 | Deportista | Recibe recomendaciones y alertas que ajustan su carga de esfuerzo a tiempo | Módulo de recomendaciones personalizadas | US04, US30 |
+| BG1 | Deportista | Recibe recomendaciones y alertas que ajustan su carga de esfuerzo a tiempo | Módulo de alertas de riesgo | US07, US27, US40, TS03 |
+| BG1 | Deportista | Planifica su semana incluyendo el descanso como parte del plan | Planificador de entrenamiento | US28, US29 |
+| BG1 | Deportista | Revisa su historial con su entrenador para ajustar la planificación | Reporte de entrenamiento en PDF | US42 |
+| **BG2.** Lograr que el 60 % de los Wellness Seekers registrados mejoren en 40 % la calidad percibida de su descanso durante los primeros 3 meses de uso | Wellness Seeker | Consulta un resumen claro de su sueño y su nivel de estrés diario | Módulo de resumen de sueño | US02, US23, US26 |
+| BG2 | Wellness Seeker | Consulta un resumen claro de su sueño y su nivel de estrés diario | Módulo de registro de estrés | US03, US31 |
+| BG2 | Wellness Seeker | Recibe sugerencias y alertas que le ayudan a ajustar su rutina de descanso | Módulo de sugerencias de rutina | US05, US32, US33 |
+| BG2 | Wellness Seeker | Recibe sugerencias y alertas que le ayudan a ajustar su rutina de descanso | Módulo de alertas de descanso | US08, US41 |
+| BG2 | Wellness Seeker | Revisa su historial de sueño con un profesional de salud | Reporte de sueño en PDF | US43 |
+| **BG3.** Lograr que la mayoría de los usuarios registrados conecte su pulsera y configure su perfil en su primera sesión | Visitante | Comprende la propuesta de valor y decide registrarse | Landing Page | US13, US14, US15, US36, US45, US46, TS04 |
+| BG3 | Deportista y Wellness Seeker | Configura su perfil y objetivos desde el primer uso | Onboarding de perfil y objetivos | US09, US19, US20, TS02 |
+| BG3 | Deportista y Wellness Seeker | Conecta su pulsera y mantiene la sincronización sin registro manual | Conexión de la pulsera | US21, US24 |
+| **BG4.** Convertir y mantener usuarios en la suscripción Pro demostrando el valor acumulado del seguimiento | Deportista y Wellness Seeker | Reconoce su progreso acumulado y mantiene el hábito de consulta | Reportes de progreso y logros | US11, US12 |
+| BG4 | Deportista y Wellness Seeker | Sostiene su constancia con el apoyo de su entorno | Comunidad | US34, US35 |
+| BG4 | Deportista y Wellness Seeker | Confía en la plataforma y mantiene el control de su cuenta | Gestión de cuenta, suscripción y soporte | US10, US37, US38, US39, US44 |
+
 ## 3.3. Product Backlog
 
 Link del Product Backlog en Trello: https://trello.com/invite/b/6aa715e59c152274c921e449/ATTI0d63ef4207a820d948329b1211456e537B320132/pulsepower

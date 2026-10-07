@@ -559,7 +559,7 @@ Gestiona la generación de reportes mediante `ProgressReport`, que registra el p
 
 Administra las rachas, los logros y los avances compartidos. `Streak` mantiene la constancia del usuario, `Achievement` define los logros y `UserAchievement` registra su obtención.`SharedProgress` controla la publicación y su visibilidad. Las invariantes evitan otorgar dos veces el mismo logro y establecen que una publicación retirada deje de ser visible. Cada agregado mantiene sus propias operaciones y reglas.
 
-![PulsePower_Bounded-Context-Community.png](../assets/images/PulsePower_Bounded-Context-Community.png)
+![PulsePower_Bounded-Context-Community.png](../assets/images/PulsePower_Bounded-Context-Community..png)
 
 ##### Bounded Context: IAM
 

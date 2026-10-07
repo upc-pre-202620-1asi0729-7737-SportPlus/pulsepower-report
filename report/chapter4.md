@@ -345,6 +345,62 @@ Los wireflow diagrams representan de manera visual el recorrido que realiza el u
 
 ![PulsePower_Web-Applications-Wireflow-Diagrams.jpeg](../assets/images/PulsePower_Web-Applications-Wireflow-Diagrams.jpeg)
 
+**WF-01. Explorar la propuesta e iniciar registro (Landing Page).**
+User goal: como visitante, conocer la propuesta de valor, comparar los planes y los beneficios de mi segmento antes de decidir registrarme.
+
+![wireflow-landing.png](../assets/images/wireflow-landing.png)
+
+Ruta esperada: la persona explora la página en su idioma, compara las características de los planes Basic y Pro, e inicia el flujo de creación de cuenta. Rutas alternativas: la persona puede detenerse a consultar los términos y la política de privacidad antes de avanzar, o abandonar el sitio sin iniciar el registro.
+
+**WF-02. Registrar cuenta y configurar perfil (Onboarding).**
+User goal: como nuevo usuario, crear una cuenta segura y definir mi perfil (Deportista o Wellness) junto con mis objetivos
+
+![wireflow-onboarding.png](../assets/images/wireflow-onboarding.png)
+
+Ruta esperada: se ingresan los datos para crear la cuenta, la persona selecciona lo que mejor la describe (Training User o Wellness User) y configura sus objetivos respectivos. Rutas alternativas: si la persona ya está registrada, toma la ruta de "Welcome back", la cual protege sus datos fisiológicos con inicio de sesión y omite la configuración inicial.
+
+**WF-03. Consultar métricas y check-in diario (Home)**. User goal: como usuario, evaluar mi nivel de recuperación, ver mis variables centralizadas y recibir una proyección de IA.
+
+![wireflow-home.png](../assets/images/wireflow-home.png)
+
+Ruta esperada: el usuario entra al dashboard, realiza el check-in manual sobre cómo se siente, y revisa su nivel de recuperación actual junto con las recomendaciones generadas por inteligencia artificial. Rutas alternativas: si los datos de los sensores son insuficientes, el sistema depende del check-in manual para ajustar la proyección del día.
+
+**WF-04. Monitorear y registrar sesiones (Training).** User goal: como Deportista, llevar un control de mis entrenamientos, sincronizar datos externos y prevenir lesiones.
+
+![wireflow-training.png](../assets/images/wireflow-training.png)
+
+Ruta esperada: consulta de las variables fisiológicas enfocadas en el rendimiento, revisión de recomendaciones y registro (o sincronización) de una nueva sesión. Rutas alternativas: si las métricas detectan un exceso de carga acumulada, el sistema interrumpe el flujo normal levantando una alerta de riesgo de sobreentrenamiento.
+
+**WF-05. Monitorear descanso nocturno (Sleep).** User goal: como usuario Wellness, revisar mi resumen de sueño al despertar y recibir sugerencias de rutinas.
+
+![wireflow-sleep.png](../assets/images/wireflow-sleep.png)
+
+Ruta esperada: el usuario revisa el detalle de su sueño, sincroniza los datos nocturnos y lee las sugerencias para mejorar su rutina de descanso. Rutas alternativas: si hay una racha de malas noches, se activa una alerta de descanso insuficiente sostenido; si faltan datos de la pulsera, la pantalla muestra un estado alterno de resumen parcial.
+
+**WF-06. Check-in emocional y respiración (Wellness).** User goal: como usuario Wellness, registrar mi nivel de estrés percibido y acceder a herramientas de relajación.
+
+![wireflow-wellness.png](../assets/images/wireflow-wellness.png)
+
+Ruta esperada: se ingresa el nivel de estrés mediante el formulario de check-in y se accede al panel general de bienestar. Rutas alternativas: el usuario puede saltarse el check-in y lanzar directamente una sesión guiada de respiración si necesita asistencia inmediata.
+
+**WF-07. Calendario y programación semanal (Planning).** User goal: como Deportista, organizar mis entrenamientos semanales, añadir sesiones y gestionar mis descansos.
+
+![wireflow-planning.png](../assets/images/wireflow-planning.png)
+
+Ruta esperada: el usuario visualiza la semana, añade o edita una sesión de entrenamiento y marca los días de descanso activo. Rutas alternativas: si el usuario registra una sesión intensa pero tiene baja recuperación, el sistema sugiere una reprogramación; si intenta empalmar sesiones en el mismo horario, salta una advertencia de superposición.
+
+**WF-08. Revisar tendencias y compartir (Reports / Community).** User goal: como usuario, analizar mi progreso, exportar reportes y compartir mis logros con otros.
+
+![wireflow-reports.png](../assets/images/wireflow-reports.png)
+
+Ruta esperada: consulta de la recuperación semanal o tendencia mensual, visualización de rachas y exportación del historial completo en PDF. Rutas alternativas: un Deportista sigue el flujo para compartir logros con su grupo de entrenamiento, mientras que un usuario Wellness toma la ruta alternativa para compartir su progreso únicamente con un contacto de confianza.
+
+**WF-09. Gestionar perfil, notificaciones y pulsera (Settings).** User goal: como usuario, configurar mis alertas, horarios de desconexión y sincronizar mis dispositivos físicos.
+
+![wireflow-settings.png](../assets/images/wireflow-settings.png)
+
+Ruta esperada: la persona vincula su pulsera, configura los horarios para notificaciones de entrenamiento o recordatorios de sueño, y establece su horario de desconexión digital. Rutas alternativas: si la batería del dispositivo sincronizado es baja, el sistema emite una alerta; en el perfil, el usuario puede optar por el flujo destructivo de eliminar su cuenta y todos los datos asociados.
+
 #### 4.4.3. Web Applications Mock-ups
 
 En esta sección se presentan los mock-ups de alta fidelidad de la aplicación web de PulsePower. Estos diseños muestran la apariencia final de las principales pantallas, aplicando la identidad visual, colores, tipografía y componentes definidos para ofrecer una experiencia clara, moderna y consistente.

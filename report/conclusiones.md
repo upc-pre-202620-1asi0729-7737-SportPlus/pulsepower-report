@@ -22,7 +22,7 @@ Asimismo, se reconoció que los dos segmentos tienen necesidades diferentes: los
 
 Durante el desarrollo del proyecto, se definió la identidad visual de **PulsePower** y se elaboraron la arquitectura de información, los wireframes, los mock-ups y los diagramas de navegación de la **Landing Page** y la aplicación web. Estos entregables permitieron representar la experiencia propuesta para ambos segmentos y mantener coherencia entre las principales funcionalidades.
 
-Desde la perspectiva técnica, se estableció una arquitectura basada en **Angular y TypeScript** para la aplicación web, **Java y Spring Boot** para la API, y **PostgreSQL** para la persistencia de datos. El dominio se organizó en seis *bounded contexts*, complementados por módulos de soporte para identidad, perfiles y suscripciones. Los diagramas de arquitectura, clases y base de datos proporcionan una referencia para continuar la implementación de manera modular.
+Desde la perspectiva técnica, se estableció una arquitectura basada en **Angular y TypeScript** para la aplicación web, **Java y Spring Boot** para la API, y **PostgreSQL** para la persistencia de datos. El dominio se organizó en siete *bounded contexts*: Training, Sleep, Wellness, Physiology, Reports, Community e IAM. Los diagramas de arquitectura, clases y base de datos proporcionan una referencia para continuar la implementación de manera modular.
 
 En el **Sprint 1**, el equipo avanzó en la implementación de la **Landing Page responsive** de PulsePower, orientada a presentar la propuesta de valor, los beneficios y las principales funcionalidades del producto. Asimismo, se establecieron herramientas y convenciones de trabajo colaborativo para gestionar el código fuente y organizar los siguientes incrementos del sistema.
 

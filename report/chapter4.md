@@ -401,32 +401,24 @@ El diagrama utiliza la notación **C4 Model**, expresada mediante **PlantUML**.
 #### Actores
 
 * **Usuario de entrenamiento:** persona con rutinas de entrenamiento o alta exigencia física. Registra sus objetivos, actividades y sesiones; organiza su calendario y consulta indicadores de esfuerzo y recuperación para revisar su planificación.
-
 * **Usuario de bienestar:** persona interesada en mejorar su descanso y bienestar cotidiano. Registra hábitos, horarios de sueño y estrés percibido; consulta tendencias y recomendaciones relacionadas con sus objetivos.
-
-Ambos actores pueden acceder a funciones compartidas, como editar su perfil, vincular una pulsera, consultar reportes y gestionar su suscripción. Los segmentos expresan necesidades diferentes y no implican necesariamente roles de autorización distintos.
+  Ambos actores pueden acceder a funciones compartidas, como editar su perfil, vincular una pulsera, consultar reportes y gestionar su suscripción. Los segmentos expresan necesidades diferentes y no implican necesariamente roles de autorización distintos.
 
 #### Sistemas externos
 
 * **Sistema AIoTI:** proporciona los registros autorizados de las pulseras compatibles. **PulsePower** utilizará estos datos para actualizar indicadores y analizar su evolución. El mecanismo concreto de sincronización dependerá del contrato disponible en **AIoTI**.
-
 * **Proveedor de inteligencia artificial:** permite generar explicaciones y respuestas contextualizadas para el asistente conversacional, utilizando únicamente la información necesaria y autorizada.
-
 * **Proveedor de pagos:** integración propuesta para procesar las transacciones asociadas a las suscripciones. El proveedor específico deberá definirse durante el desarrollo.
-
 #### Interacciones principales
 
 * **Interacciones de los usuarios:** registro de datos personales, objetivos, sesiones, hábitos y *check-ins*, además de la consulta de indicadores y reportes.
-
 * **Intercambio de datos fisiológicos:** sincronización de registros disponibles a través del sistema **AIoTI**.
-
 * **Solicitudes a servicios externos:** generación de explicaciones mediante IA y procesamiento de pagos de suscripción.
-
 #### Propósito del sistema
 
 **PulsePower** busca facilitar la comprensión conjunta del esfuerzo, el sueño y la recuperación. Para ello, combina los registros del dispositivo con la información ingresada por el usuario y presenta orientaciones que apoyan la organización de sus actividades y descansos.
 
-![Software_Architecture_Context_Diagram.png](../assets/images/Software_Architecture_Context_Diagram.png)
+![Software_Architecture_Context_Diagram_2.png](../assets/images/Software_Architecture_Context_Diagram_2.png)
 
 #### 4.6.3. Software Architecture Container Diagrams
 
@@ -449,22 +441,19 @@ Centraliza las siguientes interacciones:
 * Vinculación de pulsera y consulta del estado de sincronización.
 * Consulta de indicadores, recomendaciones y reportes.
 * Participación en comunidad y gestión de suscripciones.
-
-La aplicación se comunica con el backend mediante **REST sobre HTTPS**, intercambiando mensajes **JSON**. Las validaciones de seguridad y las reglas de negocio se ejecutan en el servidor.
+  La aplicación se comunica con el backend mediante **REST sobre HTTPS**, intercambiando mensajes **JSON**. Las validaciones de seguridad y las reglas de negocio se ejecutan en el servidor.
 
 #### API Application
 
-El backend se desarrolla con **Java y Spring Boot** y organiza el dominio en seis *bounded contexts*:
+El backend se desarrolla con **Java y Spring Boot** y organiza el dominio en siete *bounded contexts*:
 
-* **Training Management:** administra sesiones, intensidad, calendario y días de descanso.
-* **Sleep Management:** gestiona registros de sueño, horarios y hábitos de descanso.
-* **Wellness Management:** administra *check-ins*, estrés percibido y hábitos de bienestar.
-* **Physiological Analysis & Recommendations:** integra mediciones desde **AIoTI**, evalúa la recuperación y coordina recomendaciones y explicaciones con IA.
-* **Reporting:** genera reportes y presenta la evolución de los registros por periodos.
+* **Training:** administra sesiones, intensidad, calendario y días de descanso.
+* **Sleep:** gestiona registros de sueño, horarios y hábitos de descanso.
+* **Wellness:** administra *check-ins*, estrés percibido y hábitos de bienestar.
+* **Physiology:** integra mediciones desde **AIoTI**, evalúa la recuperación y coordina recomendaciones y explicaciones con IA.
+* **Reports:** genera reportes y presenta la evolución de los registros por periodos.
 * **Community:** gestiona rachas, logros y avances compartidos voluntariamente.
-
-La API también incorpora módulos de soporte para autenticación, perfiles y suscripciones. En esta propuesta no se contabilizan como *bounded contexts* adicionales.
-
+* **IAM:** administra cuentas, perfiles, objetivos personales, planes y suscripciones.
 #### Base de datos
 
 Se propone **PostgreSQL** para persistir la información estructurada de la plataforma.
@@ -481,24 +470,26 @@ La API centraliza la comunicación con **AIoTI**, el proveedor de inteligencia a
 
 El diagrama permite comprender la separación entre presentación, lógica de negocio y persistencia, así como las dependencias externas necesarias para el funcionamiento propuesto de **PulsePower**.
 
-![Software_Architecture_Container_Diagrams.png](../assets/images/Software_Architecture_Container_Diagrams.png)
+![Software_Architecture_Container_Diagrams_2.png](../assets/images/Software_Architecture_Container_Diagrams_2.png)
 
 #### 4.6.4. Software Architecture Components Diagrams
 
-El diagrama de componentes presenta la estructura interna de la **API Application** de **PulsePower**, desarrollada con **Java y Spring Boot**. La solución se organiza en seis *bounded contexts*: **Training Management, Sleep Management, Wellness Management, Physiological Analysis & Recommendations, Reporting** y **Community**.
+El diagrama de componentes presenta la estructura interna de la **API Application** de **PulsePower**, desarrollada con **Java y Spring Boot**. La solución se organiza en siete *bounded contexts*: **Training, Sleep, Wellness, Physiology, Reports, Community** e **IAM**.
 
 Las solicitudes provenientes de la aplicación web llegan a los controladores **REST**, donde se aplican los controles de autenticación y autorización antes de delegar las operaciones a los servicios correspondientes. Cada contexto posee responsabilidades específicas:
 
-* **Training Management:** gestiona sesiones, planificación, intensidad y descanso.
-* **Sleep Management:** administra registros, horarios y hábitos de sueño.
-* **Wellness Management:** gestiona *check-ins*, estrés percibido y hábitos cotidianos.
-* **Physiological Analysis & Recommendations:** integra datos de **AIoTI**, analiza la recuperación y genera recomendaciones.
-* **Reporting:** genera reportes de evolución a partir de información de los demás contextos.
+* **Training:** gestiona sesiones, planificación, intensidad y descanso.
+* **Sleep:** administra registros, horarios y hábitos de sueño.
+* **Wellness:** gestiona *check-ins*, estrés percibido y hábitos cotidianos.
+* **Physiology:** integra datos de **AIoTI**, analiza la recuperación y genera recomendaciones.
+* **Reports:** genera reportes de evolución a partir de información de los demás contextos.
 * **Community:** administra rachas, logros y avances compartidos.
+* **IAM:** gestiona cuentas, perfiles, objetivos personales, planes y suscripciones.
+  Cada contexto mantiene sus propios repositorios, aunque todos utilizan **PostgreSQL** como base de datos. Las comunicaciones entre contextos se realizan mediante contratos internos, mientras que el contexto **IAM** gestiona el acceso, el perfil y la suscripción de los usuarios.
 
-Cada contexto mantiene sus propios repositorios, aunque todos utilizan **PostgreSQL** como base de datos. Las comunicaciones entre contextos se realizan mediante contratos internos, mientras que los módulos de acceso, perfil y suscripción funcionan como componentes de soporte.
+Las dependencias entre contextos son las siguientes: **Physiology** consulta a Training, Sleep y Wellness para evaluar la recuperación; **Reports** consulta a Training, Sleep, Wellness y Physiology para generar los reportes; **Sleep** referencia la conexión de pulsera administrada por Physiology; e **IAM** se comunica con el proveedor de pagos. Los demás contextos conocen a IAM únicamente por el identificador `user_id`.
 
-![Software_Architecture_Components_Diagrams.png](../assets/images/Software_Architecture_Components_Diagrams.png)
+![Software_Architecture_Components_Diagrams_2.png](../assets/images/Software_Architecture_Components_Diagrams_2.png)
 
 ### 4.7. Software Object-Oriented Design
 

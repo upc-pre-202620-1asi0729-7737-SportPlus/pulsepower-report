@@ -428,7 +428,7 @@ El *Container Diagram* descompone **PulsePower** en aplicaciones y almacenes de 
 
 Es la página pública de presentación de **PulsePower**, desarrollada con **HTML, CSS y JavaScript**. Incluye las secciones *Hero*, *What We Offer*, *Features*, *Benefits*, *About Us*, *Our Team* y *Plans*.
 
-Permite conocer la propuesta de valor, identificar los beneficios para cada segmento y consultar los planes **Basic, Pro y Premium**. Sus botones de acceso y registro conducen a la aplicación web.
+Permite conocer la propuesta de valor, identificar los beneficios para cada segmento y consultar los planes **Basic y Pro**. Sus botones de acceso y registro conducen a la aplicación web.
 
 #### Web Application
 

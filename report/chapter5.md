@@ -92,12 +92,12 @@ En esta sección se describen los principales acuerdos y definiciones realizadas
 A continuación se detalla la matriz de liderazgo y colaboración (LACX) para brindar claridad en la comunicación del equipo durante el desarrollo de las tareas de este Sprint.
 
 | Team Member (Last Name, First Name) | GitHub Username | Landing Page UI/UX | Landing Page Structure | Basic Funcs | Special Funcs |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| Osorio Ramírez, Eduardo Jesús | @[Iron819] | C | C | L | L |
-| Carbajal Santivañez, Sebastian Aaron | @[SC-fnfoc] | L | C | C | C |
-| Martín Farro, Alexis Sebastián | @[axismf] | C | L | C | C |
-| Viza Quispe, Marlon Packard | @[V8Z5] | C | C | L | C |
-| Evangelista Ygnacio, Sergio Joaquin | @[Sergi9017] | C | C | C | L |
+| :--- |:----------------| :--- | :--- | :--- | :--- |
+| Osorio Ramírez, Eduardo Jesús | @Iron819        | C | C | L | L |
+| Carbajal Santivañez, Sebastian Aaron | @SC-fnfoc       | L | C | C | C |
+| Martín Farro, Alexis Sebastián | @axismf         | C | L | C | C |
+| Viza Quispe, Marlon Packard | @V8Z5           | C | C | L | C |
+| Evangelista Ygnacio, Sergio Joaquin | @Sergi9017      | C | C | C | L |
 
 *(L = Leader, C = Collaborator)*
 

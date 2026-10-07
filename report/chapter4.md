@@ -704,4 +704,4 @@ Las relaciones conservan la organización definida en los diagramas de clases:
 
 Las claves primarias, claves foráneas y restricciones de unicidad y rango respaldarán la integridad de los registros. Estas restricciones complementarán las invariantes protegidas por los agregados, sin sustituir las reglas del dominio.
 
-![Database Diagram - PulsePower](../assets/images/PulsePower-Database-Diagrams.png)
+![PulsePower-fix-Database-Diagrams.png](../assets/images/PulsePower-fix-Database-Diagrams.png)

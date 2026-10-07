@@ -469,7 +469,30 @@ En esta sección se presenta la propuesta de arquitectura de software de PulsePo
 A partir de dicha identificación, a continuación la arquitectura se representará aplicando el C4 Model en sus niveles de contexto, contenedores y componentes, los cuales están debidamente desarrollados en las secciones 4.6.2, 4.6.3 y 4.6.4 respectivamente. Esta progresión permite pasar del entendimiento del dominio del negocio a la definición de las unidades de despliegue y sus responsabilidades internas, manteniendo la trazabilidad entre el lenguaje del negocio establecido en el Ubiquitous Language y los elementos técnicos de la solución:
 #### 4.6.1. Design-Level EventStorming
 
-![PulsePower EventStorming](https://raw.githubusercontent.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report/e9a5a39ea71ca0b03d9ad4f1b28d888d970d1a45/assets/images/PulsePower_DesignLevelEventStorming.png)
+El Design-Level EventStorming profundiza el Big Picture EventStorming de la sección 2.4. Para cada bounded context se identificaron los commands que inician las acciones, los aggregates que las procesan y protegen sus reglas, los domain events resultantes, las policies que reaccionan a esos eventos, los read models que consumen las vistas y los sistemas externos involucrados. Los domain events coinciden con los del Big Picture y los aggregates corresponden a los Aggregate Roots definidos en la sección 4.7.
+
+Tablero en Miro: https://miro.com/app/board/uXjVHDKjsAk=/?moveToWidget=3458764686408858775
+
+##### Training
+![design-level-training.png](../assets/images/design-level-training.png)
+
+##### Sleep
+![design-level-sleep.png](../assets/images/design-level-sleep.png)
+
+##### Wellness
+![design-level-wellness.png](../assets/images/design-level-wellness.png)
+
+##### Physiology
+![design-level-physiology.png](../assets/images/design-level-physiology.png)
+
+##### Reports
+![design-level-reports.png](../assets/images/design-level-reports.png)
+
+##### Community
+![design-level-community.png](../assets/images/design-level-community.png)
+
+##### IAM
+![design-level-iam.png](../assets/images/design-level-iam.png)
 
 #### 4.6.2. Software Architecture Context Diagram
 

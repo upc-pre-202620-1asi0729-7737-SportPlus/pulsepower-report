@@ -306,8 +306,7 @@ El Sprint 2 continúa con el resto del Product Backlog (sección 3.3) una vez ce
 
 **Tablero del Sprint 2 en Trello**. El Product Backlog contiene las User Stories y Technical Stories pendientes, y las listas de cada Sprint registran el avance de sus historias.
 
-<!-- TB1: captura del tablero del Sprint 2 en Trello -> guardar en assets/images/tb1-sprint2.png -->
-_[Captura pendiente: tablero del Sprint 2 en Trello]_
+![trello-sprint2.png](../assets/images/trello-sprint2.png)
 
 #### 5.2.2.4 Development Evidence for Sprint Review
 
@@ -317,8 +316,7 @@ El código se organiza en `src/app/modules/`, con un módulo por bounded context
 
 La capa `domain` no depende de Angular ni de HTTP: los componentes consumen servicios de `application` y las implementaciones de persistencia se inyectan desde `src/app/app.providers.ts` mediante adaptadores `local-*-repository`. Los modelos persistidos se convierten a través de assemblers, y las cargas concurrentes de un mismo almacén se comparten para evitar resúmenes vacíos. La navegación se resuelve por rutas con carga diferida (`loadChildren`) en `src/app/app.routes.ts`.
 
-<!-- CONFIRMAR: el resto del texto dice AV2, esta linea decia AV1 en el borrador original -->
-En el repositorio se aplicaron las correcciones de la AV2.
+En el repositorio se aplicaron las correcciones de la AV1.
 
 #### 5.2.2.5 Execution Evidence for Sprint Review
 
@@ -344,10 +342,6 @@ A continuación se presenta el recorrido por la aplicación:
 Durante este Sprint la Web Application **no expone ni consume servicios REST**. Las Technical Stories TS01, TS02 y TS03 permanecen en el Product Backlog como trabajo del backend en Spring Boot y PostgreSQL descrito en la sección 4.6, por lo que aún no existe documentación OpenAPI/Swagger que reportar en esta entrega.
 
 La aplicación consume sus propios almacenes locales, cableados en `src/app/app.providers.ts`, bajo los prefijos `pulsepower.demo.v1.`, `pulsepower.user.<id>.` y `pulsepower.v1.`, lo que aísla el espacio de trabajo de cada cuenta. La única llamada HTTP de la aplicación es la carga de los catálogos de idioma `public/i18n/es.json` y `public/i18n/en.json`.
-
-| **Recurso/Endpoint** | **Bounded Context** | **Verbos HTTP** | **Propósito** |
-| :--- | :--- | :--- | :--- |
-| __ | — | — | TS01–TS03 permanecen en el Product Backlog. |
 
 La documentación de servicios mediante OpenAPI/Swagger se incorporará a partir del Sprint 3, cuando se inicie la implementación del backend.
 

@@ -56,7 +56,7 @@ Para mantener la legibilidad y calidad del código, todo el equipo aplicará nom
 
 ## 5.2 Landing Page, Services & Applications Implementation
 
-En esta sección se describe el proceso de implementación del producto PulsePower, incluyendo el desarrollo, pruebas, documentación y despliegue de la Landing Page. Para este avance se implementó la primera versión del Landing Page, orientada a presentar la propuesta de valor del sistema: "No puedes rendir más sin recuperarte mejor. Conócete primero."	
+En esta sección se describe el proceso de implementación del producto PulsePower, incluyendo el desarrollo, pruebas, documentación y despliegue de la Landing Page. Para este avance se implementó la primera versión del Landing Page, orientada a presentar la propuesta de valor del sistema: "No puedes rendir más sin recuperarte mejor. Conócete primero."
 
 ### 5.2.1 Sprint 1
 
@@ -129,7 +129,7 @@ Tablero de Trello:
 
 #### 5.2.1.4 Development Evidence for Sprint Review
 
-Durante el Sprint 1, el equipo avanzó en la implementación del Landing Page, desarrollado en HTML5, CSS3 y JavaScript vanilla, y desplegado en GitHub Pages. Los principales avances incluyeron la estructura base de todas las secciones de la landing (Hero, Funcionalidades, Segmentos, Planes, Testimonios, FAQ, Contacto y Footer), la implementación del diseño responsive con media queries para móvil y tablet, y la habilitación del scroll suave y menú de navegación. A continuación se presentan los commits representativos del repositorio de Landing Page durante este Sprint.  
+Durante el Sprint 1, el equipo avanzó en la implementación del Landing Page, desarrollado en HTML5, CSS3 y JavaScript vanilla, y desplegado en GitHub Pages. Los principales avances incluyeron la estructura base de todas las secciones de la landing (Hero, Funcionalidades, Segmentos, Planes, Testimonios, FAQ, Contacto y Footer), la implementación del diseño responsive con media queries para móvil y tablet, y la habilitación del scroll suave y menú de navegación. A continuación se presentan los commits representativos del repositorio de Landing Page durante este Sprint.
 
 | Repository                                                                     | Branch                 | Commit Id | Commit Message                                                                                            | Committed on (Date) |
 |:-------------------------------------------------------------------------------|:-----------------------|:----------|:----------------------------------------------------------------------------------------------------------|:--------------------|
@@ -249,7 +249,7 @@ En esta sección se describen los principales acuerdos y definiciones realizadas
 | **Prepared By** | Viza Quispe, Marlon Packard |
 | **Attendees** | Osorio Ramírez, Eduardo Jesús<br>Carbajal Santivañez, Sebastian Aaron<br>Martín Farro, Alexis Sebastián<br>Evangelista Ygnacio, Sergio Joaquin |
 | **Sprint 2 Review Summary** | Se implementó la primera versión funcional de la Web Application: los siete bounded contexts con sus cuatro capas, navegación por rutas con carga diferida, persistencia local aislada por cuenta e interfaz bilingüe. |
-| **Sprint 2 Retrospective Summary** | Mejoró la participación y la comunicación interna. Se acordó que cada integrante lidere un bounded context en su propia rama, y que las correcciones de la AV2 se resuelvan dentro del Sprint 2. |
+| **Sprint 2 Retrospective Summary** | Mejoró la participación y la comunicación interna. Se acordó que cada integrante lidere un bounded context y que las correcciones de la AV1 se resuelvan dentro del Sprint 2. |
 
 <br>
 
@@ -258,8 +258,8 @@ En esta sección se describen los principales acuerdos y definiciones realizadas
 | Campo | Detalle |
 | :--- | :--- |
 | **Sprint 2 Goal** | Our focus is on delivering a navigable Single Page Application where each of the seven bounded contexts is implemented as its own module with domain, application, infrastructure and presentation layers, backed by automated tests. This will be confirmed when `npm run build`, `npm test` and `npm run check:architecture` all pass. |
-| **Sprint 2 Velocity** | 126 Story Points |
-| **Sum of Story Points** | 150 |
+| **Sprint 2 Velocity** | 81 horas (tareas en Done) |
+| **Sum of Estimated Hours** | 100 horas (81 h en Done y 19 h en To-Do) |
 
 #### 5.2.2.2 Aspect Leaders and Collaborators
 
@@ -296,7 +296,7 @@ El Sprint 2 continúa con el resto del Product Backlog (sección 3.3) una vez ce
 | US11, US26, US42, US43 | Reportes y exportación en PDF | T22 | Reports page | PDF de entrenamiento, sueño, bienestar y recuperación simulada; exige una semana de historial por categoría. | 7 | Osorio Ramírez, Eduardo Jesús | Done |
 | US12, US34, US35 | Rachas, logros y avance compartido | T23 | Community page | Rachas locales, logro de siete días, publicación por audiencia y revocación de permisos. | 5 | Martín Farro, Alexis Sebastián | Done |
 | US38, US39 | Centro de ayuda y soporte | T24 | Help center | HelpPage con búsqueda de artículos y solicitud de soporte con referencia e historial local. | 4 | Carbajal Santivañez, Sebastian Aaron | Done |
-| — | Internacionalización de la aplicación | T25 | i18n catalogs (ES/EN) | Catálogos `public/i18n/es.json` y `en.json` con ngx-translate aplicados a toda la interfaz. | 4 | Viza Quispe, Marlon Packard | Done |
+| — | Internacionalización de la aplicación | T25 | i18n catalogs (ES/EN) | Catálogos `public/i18n/es.json` y `en.json` consumidos por el servicio de traducción propio (`shared/application/i18n.ts`) y aplicados a toda la interfaz. | 4 | Viza Quispe, Marlon Packard | Done |
 | US33, US40, US41 | Notificaciones y desconexión | T26 | Notification preferences | Preferencias e historial local, comprobación de franjas con la app abierta y aplazamiento de entrenamientos fuera de horario. | 5 | Evangelista Ygnacio, Sergio Joaquin | Done |
 | US10 | Proteger datos fisiológicos del usuario | T27 | Transport and authorization | API con TLS, autenticación y autorización entre usuarios. | 3 | Martín Farro, Alexis Sebastián | To-Do |
 | US22, US23 | Sincronizar con apps de salud externas | T28 | Health platform sync | Importación automática desde Apple Health y Google Fit con resolución de duplicados. | 5 | Osorio Ramírez, Eduardo Jesús | To-Do |
@@ -310,13 +310,13 @@ El Sprint 2 continúa con el resto del Product Backlog (sección 3.3) una vez ce
 
 #### 5.2.2.4 Development Evidence for Sprint Review
 
-En el Sprint 2 se implementó la primera versión de la Web Application como *Single Page Application* en Angular 22.1.7 y TypeScript 6.0.3, `@ngx-translate` 18 para la internacionalización y Prettier 3.9.8 para el formateo consistente del código. Marlon Viza preparó la base del proyecto y el equipo lo extendió por bounded context.
+En el Sprint 2 se implementó la primera versión de la Web Application como *Single Page Application* en Angular 22.2 y TypeScript 6.0, con un servicio de internacionalización propio (`shared/application/i18n.ts`) y Prettier 3.8 para el formateo consistente del código. Marlon Viza preparó la base del proyecto y el equipo lo extendió por bounded context.
 
 El código se organiza en `src/app/modules/`, con un módulo por bounded context — `training`, `sleep`, `wellness`, `physiology`, `reports`, `community` e `iam` — y cada uno divide su código en las capas `domain`, `application`, `infrastructure` y `presentation`, tal como define el diseño del capítulo 4. La carpeta `src/app/shared/` concentra UI, traducciones y utilidades, y **no** constituye un octavo bounded context.
 
-La capa `domain` no depende de Angular ni de HTTP: los componentes consumen servicios de `application` y las implementaciones de persistencia se inyectan desde `src/app/app.providers.ts` mediante adaptadores `local-*-repository`. Los modelos persistidos se convierten a través de assemblers, y las cargas concurrentes de un mismo almacén se comparten para evitar resúmenes vacíos. La navegación se resuelve por rutas con carga diferida (`loadChildren`) en `src/app/app.routes.ts`.
+La capa `domain` no depende de Angular ni de HTTP: los componentes consumen servicios de `application` y las implementaciones de persistencia se inyectan desde `src/app/app.config.ts` mediante adaptadores `local-*-repository`. Los modelos persistidos se convierten a través de assemblers, y las cargas concurrentes de un mismo almacén se comparten para evitar resúmenes vacíos. La navegación se resuelve por rutas con carga diferida (`loadChildren`) en `src/app/app.routes.ts`.
 
-En el repositorio se aplicaron las correcciones de la AV1. 
+En el repositorio se aplicaron las correcciones de la AV1.
 
 Tabla commits
 
@@ -326,40 +326,40 @@ Tabla commits
 
 A continuación se presenta el recorrido por la aplicación:
 
-1. Inicio de sesión 
- 
+1. Inicio de sesión
+
 ![login-wireframe.png](../assets/images/login-wireframe.png)
 
-2. Registro en dos pasos 
+2. Registro en dos pasos
 
 ![register-wireframe.png](../assets/images/register-wireframe.png)
 
-3. Panel principal  
- 
+3. Panel principal
+
 ![panel-wireframe.png](../assets/images/panel-wireframe.png)
 
 4. Entrenamientos
 
 ![trainingg-wireframe.png](../assets/images/trainingg-wireframe.png)
 
-5. Planificación 
+5. Planificación
 
 ![planificacion-wireframe.png](../assets/images/planificacion-wireframe.png)
 
-6. Sueño 
+6. Sueño
 
 ![sleep-wireframe.png](../assets/images/sleep-wireframe.png)
 
-7. Bienestar 
+7. Bienestar
 
 ![wellness-wireframe.png](../assets/images/wellness-wireframe.png)
 
 
-8. Reportes 
+8. Reportes
 
 ![Reports-wireframe.png](../assets/images/Reports-wireframe.png)
 
-9. Comunidad 
+9. Comunidad
 
 ![Community-wireframe.png](../assets/images/Community-wireframe.png)
 
@@ -367,38 +367,40 @@ A continuación se presenta el recorrido por la aplicación:
 
 ![settings-wireframe.png](../assets/images/settings-wireframe.png)
 
-11. Suscripción 
+11. Suscripción
 
 ![subscription-wireframe.png](../assets/images/subscription-wireframe.png)
 
 
 #### 5.2.2.6 Services Documentation Evidence for Sprint Review
 
-Durante este Sprint la Web Application **no expone ni consume servicios REST**. Las Technical Stories TS01, TS02 y TS03 permanecen en el Product Backlog como trabajo del backend en Spring Boot y PostgreSQL descrito en la sección 4.6, por lo que aún no existe documentación OpenAPI/Swagger que reportar en esta entrega.
+Durante este Sprint la Web Application **no expone servicios REST propios**, ya que es una *Single Page Application* de frontend, pero **sí consume un servicio REST**: el endpoint `GET /api/v1/physiological-overview` (resumen fisiológico) de la API desplegada en Render. Las Technical Stories TS01, TS02 y TS03 permanecen en el Product Backlog como trabajo pendiente del backend en Spring Boot y PostgreSQL descrito en la sección 4.6, por lo que aún no existe documentación OpenAPI/Swagger que reportar en esta entrega.
 
-La aplicación consume sus propios almacenes locales, cableados en `src/app/app.providers.ts`, bajo los prefijos `pulsepower.demo.v1.`, `pulsepower.user.<id>.` y `pulsepower.v1.`, lo que aísla el espacio de trabajo de cada cuenta. La única llamada HTTP de la aplicación es la carga de los catálogos de idioma `public/i18n/es.json` y `public/i18n/en.json`.
+El resto de los datos de la aplicación se gestiona en almacenes locales, cableados en `src/app/app.config.ts`, bajo los prefijos `pulsepower.demo.v1.`, `pulsepower.user.<id>.` y `pulsepower.v1.`, lo que aísla el espacio de trabajo de cada cuenta. Además de la consulta a `GET /api/v1/physiological-overview`, la única llamada HTTP de la aplicación es la carga de los catálogos de idioma `public/i18n/es.json` y `public/i18n/en.json`.
 
-La documentación de servicios mediante OpenAPI/Swagger se incorporará a partir del Sprint 3, cuando se inicie la implementación del backend.
+La documentación de servicios mediante OpenAPI/Swagger se incorporará a partir del Sprint 3, junto con la implementación de los endpoints pendientes del backend.
 
 #### 5.2.2.7 Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 2, el equipo realizó el despliegue de la primera versión pública de la Web App utilizando Render..
+Durante el Sprint 2, el equipo realizó el despliegue de la primera versión pública de la Web App utilizando Vercel, mientras que la API que consume la aplicación se encuentra desplegada en Render.
 
-* **Plataforma de despliegue:** Render 
+* **Plataforma de despliegue (Web App):** Vercel
+* **Plataforma de despliegue (API):** Render
 * **URL base del repositorio:** https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-webapp
 
 **Proceso de despliegue:**
 1. Se utilizó el repositorio central del equipo bajo la organización de la clase.
 2. Todo el contenido fue integrado mediante Pull Requests revisados por los integrantes del equipo, siguiendo el flujo GitFlow.
-3. En la sección *Settings → Pages* del repositorio, se seleccionó la rama principal de producción como fuente de publicación.
-4. Render generó automáticamente la URL pública y publicó el sitio estático para su acceso global.
+3. En Vercel se importó el repositorio `pulsepower-webapp` mediante su integración nativa con GitHub y se seleccionó la rama `main` como rama de producción.
+4. Vercel reconoció el proyecto como una aplicación Angular, ejecutó su build y generó automáticamente la URL pública; a partir de ese momento publica cada Pull Request fusionado en `main`.
+5. La Web App consume la API alojada en Render (`GET /api/v1/physiological-overview`), cuyo despliegue es independiente del de la aplicación.
 
 #### 5.2.2.8 Team Collaboration Insights during Sprint.
 
-El equipo mantuvo un ritmo de trabajo organizado por bounded contexts: cada integrante lidereó su contexto en su propia rama y colaboró en los demás, respetando la arquitectura definida en el capítulo 4.
+El equipo mantuvo un ritmo de trabajo organizado por bounded contexts: cada integrante lideró su contexto y colaboró en los demás, respetando la arquitectura definida en el capítulo 4.
 
-* **Domain-Driven Design verificado por pruebas.** `src/app/app.architecture.spec.ts` falla si un bounded context no expone las cuatro capas, si `domain/` importa Angular o HTTP, o si `presentation` o `application` importan `infrastructure`. La separación de capas no es una convención voluntaria: es un contrato ejecutable.
-* **Suite automatizada.** Se implementaron 16 archivos de prueba con 30 casos, ejecutados con `npm test` (Vitest), que cubren reglas de dominio, rangos, solapamientos, reportes, geometría de gráficos, catálogos de idiomas, cuentas locales y persistencia aislada.
+* **Domain-Driven Design verificado por pruebas.** `src/app/app.spec.ts` falla si un bounded context no expone las cuatro capas, si `domain/` importa Angular o HTTP, o si `presentation` o `application` importan `infrastructure`. La separación de capas no es una convención voluntaria: es un contrato ejecutable.
+* **Suite automatizada.** Se implementaron 18 archivos de prueba con 38 casos, ejecutados con `npm test` (Vitest), que cubren reglas de dominio, rangos, solapamientos, reportes, geometría de gráficos, catálogos de idiomas, cuentas locales y persistencia aislada.
 * **Consistencia de formato.** Prettier se ejecuta con `npm run format:check` sobre `src`, `public/i18n` y los archivos de configuración, evitando discusiones de estilo en la revisión por pares.
 * **Internacionalización centralizada.** El soporte español/inglés y el layout compartido se mantienen en `shared`, garantizando coherencia visual entre los siete contextos.
 * **Límites declarados.** El equipo dejó explícito en el repositorio qué es funcionalidad local, qué es simulación y qué depende de un servicio externo: la proyección de recuperación no utiliza IA, las fases de sueño no son mediciones de calidad, y los umbrales 40 y 70 son exclusivos del prototipo. Una pantalla visible no demuestra todos sus criterios de aceptación.

@@ -318,7 +318,32 @@ La capa `domain` no depende de Angular ni de HTTP: los componentes consumen serv
 
 En el repositorio se aplicaron las correcciones de la AV1.
 
-Tabla commits
+Tabla commits:
+
+| # | Commit | Fecha | Autor | Mensaje |
+|---|--------|-------|-------|---------|
+| 1 | `91ad4e1` | 2026-10-08 18:30 | Iron819 | chore(config): set production API URL to Render |
+| 2 | `bc02b19` | 2026-10-08 18:26 | Sergi9017 | feat(physiology): implement unconnected physiological repository for local workspace |
+| 3 | `59387a9` | 2026-10-08 18:25 | Sergi9017 | feat(physiology): create recovery page component for simulation interactions |
+| 4 | `e266ddf` | 2026-10-08 18:25 | Sergi9017 | feat(physiology): add recovery page for displaying physiological insights and recommendations |
+| 5 | `b37c220` | 2026-10-08 18:25 | Sergi9017 | feat(physiology): add PhysiologicalOverviewDto interface for data structure |
+| 6 | `7b4f9f7` | 2026-10-08 18:25 | Sergi9017 | feat(physiology): add physiological overview assembler for DTO conversion |
+| 7 | `25d150e` | 2026-10-08 18:25 | Sergi9017 | feat(physiology): add routing for recovery page in physiological module |
+| 8 | `06378c2` | 2026-10-08 18:25 | Sergi9017 | feat(physiology): implement DemoPhysiologicalRepository for managing simulated physiological data |
+| 9 | `16d5842` | 2026-10-08 18:25 | Sergi9017 | test(physiology): add unit tests for simulated guidance alerts in DemoPhysiologicalRepository |
+| 10 | `5d79334` | 2026-10-08 18:21 | Sergi9017 | feat(physiology): add WearableConnection interface for managing wearable device connections |
+| … | — | — | — | *…91 commits más* |
+
+*Total en `develop`: 101 commits.*
+
+**Autores:**
+
+| Autor | Commits |
+|-------|---------|
+| Sergi9017 | 64 |
+| axis | 13 |
+| V8Z5 | 10 |
+| Iron819 | 7 |
 
 #### 5.2.2.5 Execution Evidence for Sprint Review
 
@@ -404,4 +429,6 @@ El equipo mantuvo un ritmo de trabajo organizado por bounded contexts: los integ
 * **Suite automatizada.** Se implementaron 18 archivos de prueba con 38 casos, ejecutados con `npm test` (Vitest), que cubren reglas de dominio, rangos, solapamientos, reportes, geometría de gráficos, catálogos de idiomas, cuentas locales y persistencia aislada.
 * **Consistencia de formato.** Prettier se ejecuta con `npm run format:check` sobre `src`, `public/i18n` y los archivos de configuración, evitando discusiones de estilo en la revisión por pares.
 * **Internacionalización centralizada.** El soporte español/inglés y el layout compartido se mantienen en `shared`, garantizando coherencia visual entre los siete contextos.
-* **Límites declarados.** El equipo dejó explícito en el repositorio qué es funcionalidad local, qué es simulación y qué depende de un servicio externo: la proyección de recuperación no utiliza IA, las fases de sueño no son mediciones de calidad, y los umbrales 40 y 70 son exclusivos del prototipo. Una pantalla visible no demuestra todos sus criterios de aceptación.
+* **Límites declarados.** El equipo dejó explícito en el repositorio qué es funcionalidad local, qué es simulación y qué depende de un servicio externo: la proyección de recuperación no utiliza IA, las fases de sueño no son mediciones de calidad, y los umbrales 40 y 70 son exclusivos del prototipo. Una pantalla visible no demuestra todos sus criterios de aceptación. 
+* Captura de los commits realizados
+![commits-tb1.png](../assets/images/commits-tb1.png)

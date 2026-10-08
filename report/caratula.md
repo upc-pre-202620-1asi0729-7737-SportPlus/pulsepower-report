@@ -53,7 +53,7 @@ Proyecto: **PulsePower**
       <td style="padding: 8px; border: 1px solid #666; text-align: center;">Viza Quispe, Marlon Packard</td>
     </tr>
     <tr>
-      <td style="padding: 8px; border: 1px solid #666; text-align: center;">U202411378</td>
+      <td style="padding: 8px; border: 1px solid #666; text-align: center;">U202421631</td>
       <td style="padding: 8px; border: 1px solid #666; text-align: center;">Osorio Ramirez, Eduardo Jesus</td>
     </tr>
   </tbody>

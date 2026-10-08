@@ -310,13 +310,13 @@ El Sprint 2 continúa con el resto del Product Backlog (sección 3.3) una vez ce
 
 #### 5.2.2.4 Development Evidence for Sprint Review
 
-En el Sprint 2 se implementó la primera versión de la Web Application como *Single Page Application* en Angular 22.1.7 y TypeScript 6.0.3, con RxJS 7.8 para la reactividad, `@ngx-translate` 18 para la internacionalización y Prettier 3.9.8 para el formateo consistente del código. Marlon Viza preparó la base del proyecto y el equipo lo extendió por bounded context.
+En el Sprint 2 se implementó la primera versión de la Web Application como *Single Page Application* en Angular 22.1.7 y TypeScript 6.0.3, `@ngx-translate` 18 para la internacionalización y Prettier 3.9.8 para el formateo consistente del código. Marlon Viza preparó la base del proyecto y el equipo lo extendió por bounded context.
 
 El código se organiza en `src/app/modules/`, con un módulo por bounded context — `training`, `sleep`, `wellness`, `physiology`, `reports`, `community` e `iam` — y cada uno divide su código en las capas `domain`, `application`, `infrastructure` y `presentation`, tal como define el diseño del capítulo 4. La carpeta `src/app/shared/` concentra UI, traducciones y utilidades, y **no** constituye un octavo bounded context.
 
 La capa `domain` no depende de Angular ni de HTTP: los componentes consumen servicios de `application` y las implementaciones de persistencia se inyectan desde `src/app/app.providers.ts` mediante adaptadores `local-*-repository`. Los modelos persistidos se convierten a través de assemblers, y las cargas concurrentes de un mismo almacén se comparten para evitar resúmenes vacíos. La navegación se resuelve por rutas con carga diferida (`loadChildren`) en `src/app/app.routes.ts`.
 
-En el repositorio se aplicaron las correcciones de la AV1.
+En el repositorio se aplicaron las correcciones de la AV1. 
 
 #### 5.2.2.5 Execution Evidence for Sprint Review
 

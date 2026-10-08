@@ -63,7 +63,7 @@ Proyecto: **PulsePower**
 
 **Período 2026-02**
 
-**Setiembre 2026**
+**Octubre 2026**
 
 </div>
 

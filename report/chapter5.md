@@ -324,18 +324,51 @@ En el repositorio se aplicaron las correcciones de la AV1.
 
 A continuación se presenta el recorrido por la aplicación:
 
-1. Inicio de sesión — _[Captura pendiente: sign-in]_
-2. Registro en dos pasos — _[Captura pendiente: sign-up]_
-3. Panel principal — _[Captura pendiente: home]_
-4. Entrenamientos — _[Captura pendiente: training]_
-5. Planificación — _[Captura pendiente: planning]_
-6. Sueño — _[Captura pendiente: sleep]_
-7. Bienestar — _[Captura pendiente: wellness]_
-8. Recuperación — _[Captura pendiente: recovery]_
-9. Reportes — _[Captura pendiente: reports]_
-10. Comunidad — _[Captura pendiente: community]_
-11. Configuración — _[Captura pendiente: settings]_
-12. Suscripción — _[Captura pendiente: subscription]_
+1. Inicio de sesión 
+ 
+![login-wireframe.png](../assets/images/login-wireframe.png)
+
+2. Registro en dos pasos 
+
+![register-wireframe.png](../assets/images/register-wireframe.png)
+
+3. Panel principal  
+ 
+![panel-wireframe.png](../assets/images/panel-wireframe.png)
+
+4. Entrenamientos
+
+![trainingg-wireframe.png](../assets/images/trainingg-wireframe.png)
+
+5. Planificación 
+
+![planificacion-wireframe.png](../assets/images/planificacion-wireframe.png)
+
+6. Sueño 
+
+![sleep-wireframe.png](../assets/images/sleep-wireframe.png)
+
+7. Bienestar 
+
+![wellness-wireframe.png](../assets/images/wellness-wireframe.png)
+
+
+8. Reportes 
+
+![Reports-wireframe.png](../assets/images/Reports-wireframe.png)
+
+9. Comunidad 
+
+![Community-wireframe.png](../assets/images/Community-wireframe.png)
+
+10. Configuración
+
+![settings-wireframe.png](../assets/images/settings-wireframe.png)
+
+11. Suscripción 
+
+![subscription-wireframe.png](../assets/images/subscription-wireframe.png)
+
 
 #### 5.2.2.6 Services Documentation Evidence for Sprint Review
 

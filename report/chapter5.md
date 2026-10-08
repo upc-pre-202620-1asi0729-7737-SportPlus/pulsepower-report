@@ -318,6 +318,8 @@ La capa `domain` no depende de Angular ni de HTTP: los componentes consumen serv
 
 En el repositorio se aplicaron las correcciones de la AV1. 
 
+Tabla commits
+
 #### 5.2.2.5 Execution Evidence for Sprint Review
 
 **URL de despliegue:** _[PENDIENTE]_
@@ -380,11 +382,16 @@ La documentación de servicios mediante OpenAPI/Swagger se incorporará a partir
 
 #### 5.2.2.7 Software Deployment Evidence for Sprint Review
 
-Frontend Web Application: la aplicación se construye con Angular CLI mediante `npm run build`, generando los artefactos estáticos de producción, y puede previsualizarse en configuración de producción con `npm run preview`.
+Durante el Sprint 2, el equipo realizó el despliegue de la primera versión pública de la Web App utilizando Render..
 
-No existe todavía un flujo de Integración y Despliegue Continuo: el repositorio no incluye trabajos de GitHub Actions, por lo que la publicación se realiza de forma manual.
+* **Plataforma de despliegue:** Render 
+* **URL base del repositorio:** https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-webapp
 
-La Landing Page del Sprint 1 continúa publicada y automatizada mediante GitHub Pages. El despliegue de la Web Application en el PaaS descrito en la sección 5.1.4 y el backend productivo con base de datos relacional están planificados para los siguientes Sprints, una vez cerradas las Technical Stories TS01–TS03.
+**Proceso de despliegue:**
+1. Se utilizó el repositorio central del equipo bajo la organización de la clase.
+2. Todo el contenido fue integrado mediante Pull Requests revisados por los integrantes del equipo, siguiendo el flujo GitFlow.
+3. En la sección *Settings → Pages* del repositorio, se seleccionó la rama principal de producción como fuente de publicación.
+4. Render generó automáticamente la URL pública y publicó el sitio estático para su acceso global.
 
 #### 5.2.2.8 Team Collaboration Insights during Sprint.
 

@@ -294,7 +294,15 @@ La Landing Page de **PulsePower** presenta de forma clara la propuesta de valor 
 
 El wireframe muestra la estructura inicial de la Landing Page de **PulsePower**, organizando las secciones principales, la navegación y la distribución del contenido antes de aplicar el diseño visual definitivo.
 
-![PulsePower-Landing_Page_Wireframe.jpeg](../assets/images/PulsePower-Landing_Page_Wireframe.jpeg)
+![landing1.png](../assets/images/landing1.png)
+![landing2.png](../assets/images/landing2.png)
+![landing3.png](../assets/images/landing3.png)
+![landing4.png](../assets/images/landing4.png)
+![landing5.png](../assets/images/landing5.png)
+![landing6.png](../assets/images/landing6.png)
+![landing7.png](../assets/images/landing7.png)
+![landing8.png](../assets/images/landing8.png)
+![landing9.png](../assets/images/landing9.png)
 
 #### 4.3.2. Landing Page Mock-up
 

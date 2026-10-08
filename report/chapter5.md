@@ -347,7 +347,7 @@ Tabla commits:
 
 #### 5.2.2.5 Execution Evidence for Sprint Review
 
-**URL de despliegue:** _[PENDIENTE]_
+**URL de despliegue:** https://pulsepower-ten.vercel.app/sign-in
 
 A continuación se presenta el recorrido por la aplicación:
 

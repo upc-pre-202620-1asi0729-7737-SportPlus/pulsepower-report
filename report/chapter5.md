@@ -230,3 +230,141 @@ Durante el Sprint 1, el equipo utilizó GitHub como plataforma central de colabo
 ![Commits Report.jpg](../assets/images/Commits%20Report.jpg)
 
 Esta captura de pantalla muestra el gráfico de actividad de GitHub del repositorio `upc-pre-202620-1asi0729-7737-SportPlus`. En él se puede observar una alta concentración de trabajo en equipo durante el mes de septiembre, con múltiples contribuciones y commits registrados durante la consolidación del Sprint 1, reflejando el trabajo concurrente de los distintos líderes de aspecto y colaboradores en sus respectivas ramas.
+
+
+### 5.2.2 Sprint 2
+
+#### 5.2.2.1 Sprint Planning 2
+
+En esta sección se describen los principales acuerdos y definiciones realizadas durante el Sprint Planning del Sprint 2, enfocado en la implementación de la Web Application de PulsePower.
+
+**Sprint Planning Background**
+
+| Campo | Detalle |
+| :--- |:---|
+| **Sprint #** | Sprint 2 |
+| **Date** | 04-10-2026 |
+| **Time** | 17:30 |
+| **Location** | Reunión Virtual |
+| **Prepared By** | Viza Quispe, Marlon Packard |
+| **Attendees** | Osorio Ramírez, Eduardo Jesús<br>Carbajal Santivañez, Sebastian Aaron<br>Martín Farro, Alexis Sebastián<br>Evangelista Ygnacio, Sergio Joaquin |
+| **Sprint 2 Review Summary** | Se implementó la primera versión funcional de la Web Application: los siete bounded contexts con sus cuatro capas, navegación por rutas con carga diferida, persistencia local aislada por cuenta e interfaz bilingüe. |
+| **Sprint 2 Retrospective Summary** | Mejoró la participación y la comunicación interna. Se acordó que cada integrante lidere un bounded context en su propia rama, y que las correcciones de la AV2 se resuelvan dentro del Sprint 2. |
+
+<br>
+
+**Sprint Goal & User Stories**
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Sprint 2 Goal** | Our focus is on delivering a navigable Single Page Application where each of the seven bounded contexts is implemented as its own module with domain, application, infrastructure and presentation layers, backed by automated tests. This will be confirmed when `npm run build`, `npm test` and `npm run check:architecture` all pass. |
+| **Sprint 2 Velocity** | 126 Story Points |
+| **Sum of Story Points** | 150 |
+
+#### 5.2.2.2 Aspect Leaders and Collaborators
+
+A continuación se detalla la matriz de liderazgo y colaboración (LACX) para el Sprint 2, organizada por los siete bounded contexts definidos en el Design-Level EventStorming.
+
+| Team Member (Last Name, First Name) | GitHub Username | Training | Sleep | Wellness | Physiology | Reports | Community | IAM |
+| :--- |:----------------| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Osorio Ramírez, Eduardo Jesús | @Iron819        | C | C | C | L | L | C | C |
+| Carbajal Santivañez, Sebastian Aaron | @SC-fnfoc       | L | C | C | C | C | C | C |
+| Martín Farro, Alexis Sebastián | @axismf         | C | C | C | C | C | L | C |
+| Viza Quispe, Marlon Packard | @V8Z5           | C | L | C | C | C | C | L |
+| Evangelista Ygnacio, Sergio Joaquin | @Sergi9017      | C | C | L | C | C | C | C |
+
+*(L = Leader, C = Collaborator)*
+
+#### 5.2.2.3 Sprint Backlog 2
+
+El Sprint 2 continúa con el resto del Product Backlog (sección 3.3) una vez cerradas las seis historias del Sprint 1, y queda pendiente únicamente de las tareas marcadas como To-Do. El tablero del proyecto en Trello: https://trello.com/invite/b/6aaede0bb47af502ba9eb29d/ATTI6002400c8c79f6ddabb88999b2168b7a7AB82763/pulsepower
+
+**Sprint #**: Sprint 2
+
+| Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| US09 | Registrar perfil de Deportista | T12 | Local sign-up (two steps) | Registro local en dos pasos con verificador PBKDF2 con sal y espacio de trabajo aislado por cuenta. | 6 | Viza Quispe, Marlon Packard | Done |
+| US19, US20 | Configurar objetivos en el onboarding | T13 | Onboarding goals assistant | Asistente local de dos pasos, reanudable, que guarda los objetivos de entrenamiento y de bienestar. | 5 | Osorio Ramírez, Eduardo Jesús | Done |
+| US37 | Cancelar suscripción Pro | T14 | Subscription cancellation | SubscriptionPage con periodo Pro de 30 días, confirmación obligatoria y vigencia hasta el fin del periodo. | 4 | Carbajal Santivañez, Sebastian Aaron | Done |
+| US44 | Eliminar cuenta y datos asociados | T15 | Account deletion | Baja local confirmada que borra únicamente el espacio de la cuenta seleccionada. | 4 | Martín Farro, Alexis Sebastián | Done |
+| US01, US03, US04, US06, US25 | Nivel de recuperación y recomendaciones | T16 | Recovery page | Nivel de recuperación, variables fisiológicas, recomendaciones, comparación entre dos semanas y proyección ilustrativa. | 8 | Evangelista Ygnacio, Sergio Joaquin | Done |
+| US07, US08, US24, US27 | Alertas y prevención | T17 | Guidance alerts | Alertas persistentes sin duplicados diarios, historial de alertas y aviso de batería baja sin repetición. | 6 | Osorio Ramírez, Eduardo Jesús | Done |
+| US21 | Vincular pulsera durante el onboarding | T18 | Wearable scenarios | Escenarios demo de pulsera conectada, desconectada, autorización denegada y sincronización pendiente. | 5 | Martín Farro, Alexis Sebastián | Done |
+| US28, US29, US30 | Calendario y planificación | T19 | Training planning page | Calendario de sesiones, conflictos de horario, día de descanso activo y sugerencia de reprogramación. | 7 | Carbajal Santivañez, Sebastian Aaron | Done |
+| US02, US05 | Resumen y rutina de sueño | T20 | Sleep records | Registro de sueño con validación de solapamientos, rutina y duración semanal y mensual. | 6 | Viza Quispe, Marlon Packard | Done |
+| US31, US32 | Estrés y respiración guiada | T21 | Wellness check-ins | Check-ins diarios, hábitos y sesión guiada de respiración de un minuto con estado completado o interrumpido. | 5 | Evangelista Ygnacio, Sergio Joaquin | Done |
+| US11, US26, US42, US43 | Reportes y exportación en PDF | T22 | Reports page | PDF de entrenamiento, sueño, bienestar y recuperación simulada; exige una semana de historial por categoría. | 7 | Osorio Ramírez, Eduardo Jesús | Done |
+| US12, US34, US35 | Rachas, logros y avance compartido | T23 | Community page | Rachas locales, logro de siete días, publicación por audiencia y revocación de permisos. | 5 | Martín Farro, Alexis Sebastián | Done |
+| US38, US39 | Centro de ayuda y soporte | T24 | Help center | HelpPage con búsqueda de artículos y solicitud de soporte con referencia e historial local. | 4 | Carbajal Santivañez, Sebastian Aaron | Done |
+| — | Internacionalización de la aplicación | T25 | i18n catalogs (ES/EN) | Catálogos `public/i18n/es.json` y `en.json` con ngx-translate aplicados a toda la interfaz. | 4 | Viza Quispe, Marlon Packard | Done |
+| US33, US40, US41 | Notificaciones y desconexión | T26 | Notification preferences | Preferencias e historial local, comprobación de franjas con la app abierta y aplazamiento de entrenamientos fuera de horario. | 5 | Evangelista Ygnacio, Sergio Joaquin | Done |
+| US10 | Proteger datos fisiológicos del usuario | T27 | Transport and authorization | API con TLS, autenticación y autorización entre usuarios. | 3 | Martín Farro, Alexis Sebastián | To-Do |
+| US22, US23 | Sincronizar con apps de salud externas | T28 | Health platform sync | Importación automática desde Apple Health y Google Fit con resolución de duplicados. | 5 | Osorio Ramírez, Eduardo Jesús | To-Do |
+| US15 | Iniciar mi registro desde la Landing Page | T29 | Registration CTA | CTA de registro en la Landing Page que redirige a la Web Application. | 2 | Evangelista Ygnacio, Sergio Joaquin | To-Do |
+| TS01, TS02 | Exponer endpoints de recuperación y perfil | T30 | Recovery and profile endpoints | `GET /api/v1/users/{userId}/recovery-assessments/latest` y `POST /api/v1/profiles`. | 6 | Carbajal Santivañez, Sebastian Aaron | To-Do |
+| TS03 | Exponer endpoint de alertas activas | T31 | Active alerts endpoint | `GET /api/v1/users/{userId}/guidance-alerts?status=ACTIVE`. | 3 | Viza Quispe, Marlon Packard | To-Do |
+
+**Tablero del Sprint 2 en Trello**. El Product Backlog contiene las User Stories y Technical Stories pendientes, y las listas de cada Sprint registran el avance de sus historias.
+
+<!-- TB1: captura del tablero del Sprint 2 en Trello -> guardar en assets/images/tb1-sprint2.png -->
+_[Captura pendiente: tablero del Sprint 2 en Trello]_
+
+#### 5.2.2.4 Development Evidence for Sprint Review
+
+En el Sprint 2 se implementó la primera versión de la Web Application como *Single Page Application* en Angular 22.1.7 y TypeScript 6.0.3, con RxJS 7.8 para la reactividad, `@ngx-translate` 18 para la internacionalización y Prettier 3.9.8 para el formateo consistente del código. Marlon Viza preparó la base del proyecto y el equipo lo extendió por bounded context.
+
+El código se organiza en `src/app/modules/`, con un módulo por bounded context — `training`, `sleep`, `wellness`, `physiology`, `reports`, `community` e `iam` — y cada uno divide su código en las capas `domain`, `application`, `infrastructure` y `presentation`, tal como define el diseño del capítulo 4. La carpeta `src/app/shared/` concentra UI, traducciones y utilidades, y **no** constituye un octavo bounded context.
+
+La capa `domain` no depende de Angular ni de HTTP: los componentes consumen servicios de `application` y las implementaciones de persistencia se inyectan desde `src/app/app.providers.ts` mediante adaptadores `local-*-repository`. Los modelos persistidos se convierten a través de assemblers, y las cargas concurrentes de un mismo almacén se comparten para evitar resúmenes vacíos. La navegación se resuelve por rutas con carga diferida (`loadChildren`) en `src/app/app.routes.ts`.
+
+<!-- CONFIRMAR: el resto del texto dice AV2, esta linea decia AV1 en el borrador original -->
+En el repositorio se aplicaron las correcciones de la AV2.
+
+#### 5.2.2.5 Execution Evidence for Sprint Review
+
+**URL de despliegue:** _[PENDIENTE]_
+
+A continuación se presenta el recorrido por la aplicación:
+
+1. Inicio de sesión — _[Captura pendiente: sign-in]_
+2. Registro en dos pasos — _[Captura pendiente: sign-up]_
+3. Panel principal — _[Captura pendiente: home]_
+4. Entrenamientos — _[Captura pendiente: training]_
+5. Planificación — _[Captura pendiente: planning]_
+6. Sueño — _[Captura pendiente: sleep]_
+7. Bienestar — _[Captura pendiente: wellness]_
+8. Recuperación — _[Captura pendiente: recovery]_
+9. Reportes — _[Captura pendiente: reports]_
+10. Comunidad — _[Captura pendiente: community]_
+11. Configuración — _[Captura pendiente: settings]_
+12. Suscripción — _[Captura pendiente: subscription]_
+
+#### 5.2.2.6 Services Documentation Evidence for Sprint Review
+
+Durante este Sprint la Web Application **no expone ni consume servicios REST**. Las Technical Stories TS01, TS02 y TS03 permanecen en el Product Backlog como trabajo del backend en Spring Boot y PostgreSQL descrito en la sección 4.6, por lo que aún no existe documentación OpenAPI/Swagger que reportar en esta entrega.
+
+La aplicación consume sus propios almacenes locales, cableados en `src/app/app.providers.ts`, bajo los prefijos `pulsepower.demo.v1.`, `pulsepower.user.<id>.` y `pulsepower.v1.`, lo que aísla el espacio de trabajo de cada cuenta. La única llamada HTTP de la aplicación es la carga de los catálogos de idioma `public/i18n/es.json` y `public/i18n/en.json`.
+
+| **Recurso/Endpoint** | **Bounded Context** | **Verbos HTTP** | **Propósito** |
+| :--- | :--- | :--- | :--- |
+| __ | — | — | TS01–TS03 permanecen en el Product Backlog. |
+
+La documentación de servicios mediante OpenAPI/Swagger se incorporará a partir del Sprint 3, cuando se inicie la implementación del backend.
+
+#### 5.2.2.7 Software Deployment Evidence for Sprint Review
+
+Frontend Web Application: la aplicación se construye con Angular CLI mediante `npm run build`, generando los artefactos estáticos de producción, y puede previsualizarse en configuración de producción con `npm run preview`.
+
+No existe todavía un flujo de Integración y Despliegue Continuo: el repositorio no incluye trabajos de GitHub Actions, por lo que la publicación se realiza de forma manual.
+
+La Landing Page del Sprint 1 continúa publicada y automatizada mediante GitHub Pages. El despliegue de la Web Application en el PaaS descrito en la sección 5.1.4 y el backend productivo con base de datos relacional están planificados para los siguientes Sprints, una vez cerradas las Technical Stories TS01–TS03.
+
+#### 5.2.2.8 Team Collaboration Insights during Sprint.
+
+El equipo mantuvo un ritmo de trabajo organizado por bounded contexts: cada integrante lidereó su contexto en su propia rama y colaboró en los demás, respetando la arquitectura definida en el capítulo 4.
+
+* **Domain-Driven Design verificado por pruebas.** `src/app/app.architecture.spec.ts` falla si un bounded context no expone las cuatro capas, si `domain/` importa Angular o HTTP, o si `presentation` o `application` importan `infrastructure`. La separación de capas no es una convención voluntaria: es un contrato ejecutable.
+* **Suite automatizada.** Se implementaron 16 archivos de prueba con 30 casos, ejecutados con `npm test` (Vitest), que cubren reglas de dominio, rangos, solapamientos, reportes, geometría de gráficos, catálogos de idiomas, cuentas locales y persistencia aislada.
+* **Consistencia de formato.** Prettier se ejecuta con `npm run format:check` sobre `src`, `public/i18n` y los archivos de configuración, evitando discusiones de estilo en la revisión por pares.
+* **Internacionalización centralizada.** El soporte español/inglés y el layout compartido se mantienen en `shared`, garantizando coherencia visual entre los siete contextos.
+* **Límites declarados.** El equipo dejó explícito en el repositorio qué es funcionalidad local, qué es simulación y qué depende de un servicio externo: la proyección de recuperación no utiliza IA, las fases de sueño no son mediciones de calidad, y los umbrales 40 y 70 son exclusivos del prototipo. Una pantalla visible no demuestra todos sus criterios de aceptación.

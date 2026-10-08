@@ -175,7 +175,7 @@ Considerando los avances alcanzados y las funcionalidades pendientes de implemen
 | Entrega | Título                                                                                                   | Enlace        |
 |--------|----------------------------------------------------------------------------------------------------------|---------------|
 | AV1 | Presentación de la propuesta de negocio, Lean UX Process y primera versión del Landing Page| https://lix.li/10vH1f |
-| TB1 | Presentación de la propuesta de negocio, Lean UX Process, Landing Page y primera versión del Web App|  |
+| TB1 | Presentación de la propuesta de negocio, Lean UX Process, Landing Page y primera versión del Web App| https://lix.li/69TWkm |
 
 ## Anexo B. Repositorios del Proyecto
 

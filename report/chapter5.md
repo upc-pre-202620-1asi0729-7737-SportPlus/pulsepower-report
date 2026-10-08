@@ -267,13 +267,13 @@ A continuación se detalla la matriz de liderazgo y colaboración (LACX) para el
 
 | Team Member (Last Name, First Name) | GitHub Username | Training | Sleep | Wellness | Physiology | Reports | Community | IAM |
 | :--- |:----------------| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Osorio Ramírez, Eduardo Jesús | @Iron819        | C | C | C | L | L | C | C |
-| Carbajal Santivañez, Sebastian Aaron | @SC-fnfoc       | L | C | C | C | C | C | C |
-| Martín Farro, Alexis Sebastián | @axismf         | C | C | C | C | C | L | C |
-| Viza Quispe, Marlon Packard | @V8Z5           | C | L | C | C | C | C | L |
-| Evangelista Ygnacio, Sergio Joaquin | @Sergi9017      | C | C | L | C | C | C | C |
+| Osorio Ramírez, Eduardo Jesús | @Iron819        | L | C | C | C | L | C | C |
+| Carbajal Santivañez, Sebastian Aaron | @SC-fnfoc       | — | — | — | — | — | — | — |
+| Martín Farro, Alexis Sebastián | @axismf         | C | C | C | C | C | L | L |
+| Viza Quispe, Marlon Packard | @V8Z5           | C | C | C | C | C | C | C |
+| Evangelista Ygnacio, Sergio Joaquin | @Sergi9017      | C | L | L | L | C | C | C |
 
-*(L = Leader, C = Collaborator)*
+*(L = Leader, C = Collaborator, — = sin participación en este Sprint)*
 
 #### 5.2.2.3 Sprint Backlog 2
 
@@ -285,17 +285,17 @@ El Sprint 2 continúa con el resto del Product Backlog (sección 3.3) una vez ce
 |:---|:---|:---|:---|:---|:---|:---|:---|
 | US09 | Registrar perfil de Deportista | T12 | Local sign-up (two steps) | Registro local en dos pasos con verificador PBKDF2 con sal y espacio de trabajo aislado por cuenta. | 6 | Viza Quispe, Marlon Packard | Done |
 | US19, US20 | Configurar objetivos en el onboarding | T13 | Onboarding goals assistant | Asistente local de dos pasos, reanudable, que guarda los objetivos de entrenamiento y de bienestar. | 5 | Osorio Ramírez, Eduardo Jesús | Done |
-| US37 | Cancelar suscripción Pro | T14 | Subscription cancellation | SubscriptionPage con periodo Pro de 30 días, confirmación obligatoria y vigencia hasta el fin del periodo. | 4 | Carbajal Santivañez, Sebastian Aaron | Done |
+| US37 | Cancelar suscripción Pro | T14 | Subscription cancellation | SubscriptionPage con periodo Pro de 30 días, confirmación obligatoria y vigencia hasta el fin del periodo. | 4 | Martín Farro, Alexis Sebastián | Done |
 | US44 | Eliminar cuenta y datos asociados | T15 | Account deletion | Baja local confirmada que borra únicamente el espacio de la cuenta seleccionada. | 4 | Martín Farro, Alexis Sebastián | Done |
 | US01, US03, US04, US06, US25 | Nivel de recuperación y recomendaciones | T16 | Recovery page | Nivel de recuperación, variables fisiológicas, recomendaciones, comparación entre dos semanas y proyección ilustrativa. | 8 | Evangelista Ygnacio, Sergio Joaquin | Done |
 | US07, US08, US24, US27 | Alertas y prevención | T17 | Guidance alerts | Alertas persistentes sin duplicados diarios, historial de alertas y aviso de batería baja sin repetición. | 6 | Osorio Ramírez, Eduardo Jesús | Done |
 | US21 | Vincular pulsera durante el onboarding | T18 | Wearable scenarios | Escenarios demo de pulsera conectada, desconectada, autorización denegada y sincronización pendiente. | 5 | Martín Farro, Alexis Sebastián | Done |
-| US28, US29, US30 | Calendario y planificación | T19 | Training planning page | Calendario de sesiones, conflictos de horario, día de descanso activo y sugerencia de reprogramación. | 7 | Carbajal Santivañez, Sebastian Aaron | Done |
+| US28, US29, US30 | Calendario y planificación | T19 | Training planning page | Calendario de sesiones, conflictos de horario, día de descanso activo y sugerencia de reprogramación. | 7 | Osorio Ramírez, Eduardo Jesús | Done |
 | US02, US05 | Resumen y rutina de sueño | T20 | Sleep records | Registro de sueño con validación de solapamientos, rutina y duración semanal y mensual. | 6 | Viza Quispe, Marlon Packard | Done |
 | US31, US32 | Estrés y respiración guiada | T21 | Wellness check-ins | Check-ins diarios, hábitos y sesión guiada de respiración de un minuto con estado completado o interrumpido. | 5 | Evangelista Ygnacio, Sergio Joaquin | Done |
 | US11, US26, US42, US43 | Reportes y exportación en PDF | T22 | Reports page | PDF de entrenamiento, sueño, bienestar y recuperación simulada; exige una semana de historial por categoría. | 7 | Osorio Ramírez, Eduardo Jesús | Done |
 | US12, US34, US35 | Rachas, logros y avance compartido | T23 | Community page | Rachas locales, logro de siete días, publicación por audiencia y revocación de permisos. | 5 | Martín Farro, Alexis Sebastián | Done |
-| US38, US39 | Centro de ayuda y soporte | T24 | Help center | HelpPage con búsqueda de artículos y solicitud de soporte con referencia e historial local. | 4 | Carbajal Santivañez, Sebastian Aaron | Done |
+| US38, US39 | Centro de ayuda y soporte | T24 | Help center | HelpPage con búsqueda de artículos y solicitud de soporte con referencia e historial local. | 4 | Viza Quispe, Marlon Packard | Done |
 | — | Internacionalización de la aplicación | T25 | i18n catalogs (ES/EN) | Catálogos `public/i18n/es.json` y `en.json` consumidos por el servicio de traducción propio (`shared/application/i18n.ts`) y aplicados a toda la interfaz. | 4 | Viza Quispe, Marlon Packard | Done |
 | US33, US40, US41 | Notificaciones y desconexión | T26 | Notification preferences | Preferencias e historial local, comprobación de franjas con la app abierta y aplazamiento de entrenamientos fuera de horario. | 5 | Evangelista Ygnacio, Sergio Joaquin | Done |
 | US10 | Proteger datos fisiológicos del usuario | T27 | Transport and authorization | API con TLS, autenticación y autorización entre usuarios. | 3 | Martín Farro, Alexis Sebastián | To-Do |
@@ -374,7 +374,7 @@ A continuación se presenta el recorrido por la aplicación:
 
 #### 5.2.2.6 Services Documentation Evidence for Sprint Review
 
-Durante este Sprint la Web Application **no expone servicios REST propios**, ya que es una *Single Page Application* de frontend, pero **sí consume un servicio REST**: el endpoint `GET /api/v1/physiological-overview` (resumen fisiológico) de la API desplegada en Render. Las Technical Stories TS01, TS02 y TS03 permanecen en el Product Backlog como trabajo pendiente del backend en Spring Boot y PostgreSQL descrito en la sección 4.6, por lo que aún no existe documentación OpenAPI/Swagger que reportar en esta entrega.
+Durante este Sprint la Web Application **no expone servicios REST propios**, ya que es una *Single Page Application* de frontend, pero **sí consume un servicio REST**: el endpoint `GET /api/v1/physiological-overview` (resumen fisiológico) de la API desplegada en Render (`https://pulsepower-api.onrender.com/api/v1/physiological-overview`). Las Technical Stories TS01, TS02 y TS03 permanecen en el Product Backlog como trabajo pendiente del backend en Spring Boot y PostgreSQL descrito en la sección 4.6, por lo que aún no existe documentación OpenAPI/Swagger que reportar en esta entrega.
 
 El resto de los datos de la aplicación se gestiona en almacenes locales, cableados en `src/app/app.config.ts`, bajo los prefijos `pulsepower.demo.v1.`, `pulsepower.user.<id>.` y `pulsepower.v1.`, lo que aísla el espacio de trabajo de cada cuenta. Además de la consulta a `GET /api/v1/physiological-overview`, la única llamada HTTP de la aplicación es la carga de los catálogos de idioma `public/i18n/es.json` y `public/i18n/en.json`.
 
@@ -386,18 +386,19 @@ Durante el Sprint 2, el equipo realizó el despliegue de la primera versión pú
 
 * **Plataforma de despliegue (Web App):** Vercel
 * **Plataforma de despliegue (API):** Render
+* **URL de la API:** https://pulsepower-api.onrender.com/api/v1/physiological-overview
 * **URL base del repositorio:** https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-webapp
 
 **Proceso de despliegue:**
 1. Se utilizó el repositorio central del equipo bajo la organización de la clase.
-2. Todo el contenido fue integrado mediante Pull Requests revisados por los integrantes del equipo, siguiendo el flujo GitFlow.
-3. En Vercel se importó el repositorio `pulsepower-webapp` mediante su integración nativa con GitHub y se seleccionó la rama `main` como rama de producción.
-4. Vercel reconoció el proyecto como una aplicación Angular, ejecutó su build y generó automáticamente la URL pública; a partir de ese momento publica cada Pull Request fusionado en `main`.
+2. Cada integrante integró los módulos de su bounded context en la rama `develop` mediante commits propios con mensajes convencionales (feat, fix, docs).
+3. En Vercel se importó el repositorio `pulsepower-webapp` mediante su integración nativa con GitHub y se configuró la rama `develop`, donde se integró el trabajo del Sprint 2, como rama de despliegue.
+4. Vercel reconoció el proyecto como una aplicación Angular, ejecutó su build y generó automáticamente la URL pública; a partir de ese momento publica cada cambio integrado en `develop`.
 5. La Web App consume la API alojada en Render (`GET /api/v1/physiological-overview`), cuyo despliegue es independiente del de la aplicación.
 
 #### 5.2.2.8 Team Collaboration Insights during Sprint.
 
-El equipo mantuvo un ritmo de trabajo organizado por bounded contexts: cada integrante lideró su contexto y colaboró en los demás, respetando la arquitectura definida en el capítulo 4.
+El equipo mantuvo un ritmo de trabajo organizado por bounded contexts: los integrantes lideraron los bounded contexts según la matriz LACX de la sección 5.2.2.2 y colaboraron en los demás, respetando la arquitectura definida en el capítulo 4.
 
 * **Domain-Driven Design verificado por pruebas.** `src/app/app.spec.ts` falla si un bounded context no expone las cuatro capas, si `domain/` importa Angular o HTTP, o si `presentation` o `application` importan `infrastructure`. La separación de capas no es una convención voluntaria: es un contrato ejecutable.
 * **Suite automatizada.** Se implementaron 18 archivos de prueba con 38 casos, ejecutados con `npm test` (Vitest), que cubren reglas de dominio, rangos, solapamientos, reportes, geometría de gráficos, catálogos de idiomas, cuentas locales y persistencia aislada.

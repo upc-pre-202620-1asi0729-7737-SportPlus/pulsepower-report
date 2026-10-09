@@ -183,12 +183,14 @@ Considerando los avances alcanzados y las funcionalidades pendientes de implemen
 |------------|--------|
 | Repositorio del Informe del Proyecto | https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report       |
 | Repositorio de la Landing Page | https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website |
+| Repositorio de la Web App | https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-webapp |
 
 ## Anexo C. Enlaces de Despliegue (Deployment)
 
 | Descripción | Enlace |
 |------------|--------|
 | Deployment de la Landing Page en GitHub Pages | https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/ |
+| Deployment de la Web App | https://pulsepower-ten.vercel.app/sign-in |
 
 ## Anexo D. Diseño
 

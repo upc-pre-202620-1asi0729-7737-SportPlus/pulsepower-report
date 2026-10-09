@@ -191,6 +191,7 @@ Considerando los avances alcanzados y las funcionalidades pendientes de implemen
 |------------|--------|
 | Deployment de la Landing Page en GitHub Pages | https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/ |
 | Deployment de la Web App | https://pulsepower-ten.vercel.app/sign-in |
+| Deployment de la Fake - Api |https://pulsepower-api.onrender.com/api/v1/physiological-overview |
 
 ## Anexo D. Diseño
 

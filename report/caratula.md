@@ -87,6 +87,11 @@ A continuación, se detallan las actividades realizadas en cada entrega, la part
 
 **TB1**
 
+Reporte:
+
+![report-commits-tb1.png](../assets/images/report-commits-tb1.png)
+
+Web-App:
 ![commits-tb1.png](../assets/images/commits-tb1.png)
 
 ## AV1 – Sprint Review (Semana 4)

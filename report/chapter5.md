@@ -73,7 +73,7 @@ En esta sección se describen los principales acuerdos y definiciones realizadas
 | **Time** | 17:30                                                                                                                                                                                                                                                                                                                                                       |
 | **Location** | Reunión Virtual                                                                                                                                                                                                                                                                                                                                             |
 | **Prepared By** | Viza Quispe, Marlon Packard                                                                                                                                                                                                                                                                                                                                 |
-| **Attendees** | Evangelista Ygnacio, Sergio Joaquin<br>Martin Farro, Alexis Sebastian<br>Carbajal Santivañez, Sebastian Aaron<br>Osorio Ramírez, Eduardo Jesús                                                                                                                                                                                                              |
+| **Attendees** | Evangelista Ygnacio, Sergio Joaquin<br>Martín Farro, Alexis Sebastián<br>Carbajal Santivañez, Sebastian Aaron<br>Osorio Ramírez, Eduardo Jesús                                                                                                                                                                                                              |
 | **Sprint 1 Review Summary** | Durante el Sprint 1 se logró implementar correctamente el Landing Page responsive de PulsePower, incluyendo navegación entre secciones, adaptación móvil y soporte multilenguaje. Además, el equipo consolidó la estructura base del frontend y definió estándares iniciales de trabajo colaborativo utilizando GitFlow y Trello para la gestión de tareas. |
 | **Sprint 1 Retrospective Summary** | El equipo identificó como principal fortaleza la capacidad técnica y la comunicación constante durante el desarrollo del Sprint 1. Sin embargo, se detectaron pequeños retrasos en la delegación de tareas, por lo que para este sprint se acordó mejorar la coordinación en estas fases y aumentar la frecuencia de revisiones entre integrantes.          |
 
@@ -111,8 +111,8 @@ El Sprint 1 incluye las seis primeras historias del Product Backlog (sección 3.
 
 | Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 |:---|:---|:---|:---|:---|:---|:---|:---|
-| TS04 | Configurar repositorio y despliegue de la Landing Page | T01 | Setup Static Proj | Inicializar el repositorio de la Landing Page con la estructura base HTML5/CSS y configurar el tablero de Trello. | 3 | Evangelista Ygnacio, Sergio Joaquín | Done |
-| US13 | Conocer la propuesta de valor de PulsePower | T02 | Implement Hero Section | Desarrollar la sección principal (Hero) responsiva con Flexbox/Grid, incluyendo la propuesta de valor de PulsePower. | 5 | Evangelista Ygnacio, Sergio Joaquín | Done |
+| TS04 | Configurar repositorio y despliegue de la Landing Page | T01 | Setup Static Proj | Inicializar el repositorio de la Landing Page con la estructura base HTML5/CSS y configurar el tablero de Trello. | 3 | Evangelista Ygnacio, Sergio Joaquin | Done |
+| US13 | Conocer la propuesta de valor de PulsePower | T02 | Implement Hero Section | Desarrollar la sección principal (Hero) responsiva con Flexbox/Grid, incluyendo la propuesta de valor de PulsePower. | 5 | Evangelista Ygnacio, Sergio Joaquin | Done |
 | US13 | Conocer la propuesta de valor de PulsePower | T03 | Header / Navbar | Implementar la barra de navegación superior con enlaces a cada sección y al selector de idioma. | 4 | Martín Farro, Alexis Sebastián | Done |
 | US13 | Conocer la propuesta de valor de PulsePower | T04 | Grid de funcionalidades | Implementar una cuadrícula responsiva con las funcionalidades principales (indicadores, recomendaciones, reportes). | 4 | Viza Quispe, Marlon Packard | Done |
 | US13 | Conocer la propuesta de valor de PulsePower | T05 | FAQ y Contacto | Implementar la sección de preguntas frecuentes y el formulario estático de contacto. | 4 | Osorio Ramírez, Eduardo Jesús | Done |
@@ -367,46 +367,68 @@ A continuación se presenta el recorrido por la aplicación:
 
 ![login-wireframe.png](../assets/images/login-wireframe.png)
 
+*Pantalla de inicio de sesión con correo y contraseña, enlaces a recuperación de contraseña, registro y espacio de trabajo local, y selector de idioma.*
+
 2. Registro en dos pasos
 
 ![register-wireframe.png](../assets/images/register-wireframe.png)
+
+*Primer paso del registro (credenciales); el segundo paso registra el enfoque del usuario (Deportista o Wellness Seeker).*
 
 3. Panel principal
 
 ![panel-wireframe.png](../assets/images/panel-wireframe.png)
 
+*Panel principal con el check-in diario, HRV y frecuencia cardiaca en reposo, último sueño, nivel de recuperación y tiempo de entrenamiento de la semana. La franja superior indica que los registros mostrados son datos de ejemplo.*
+
 4. Entrenamientos
 
 ![trainingg-wireframe.png](../assets/images/trainingg-wireframe.png)
+
+*Resumen de entrenamiento con sesiones, minutos y esfuerzo percibido de la semana, tendencia de los últimos 8 días e historial de sesiones.*
 
 5. Planificación
 
 ![planificacion-wireframe.png](../assets/images/planificacion-wireframe.png)
 
+*Calendario semanal de planificación con sesiones planificadas y de descanso activo, opciones de reprogramar o cancelar y periodo del plan.*
+
 6. Sueño
 
 ![sleep-wireframe.png](../assets/images/sleep-wireframe.png)
 
+*Resumen de sueño con último registro, promedio de 7 días, meta de horas, fases de sueño ilustrativas y puntuación semanal y mensual (datos de demostración).*
+
 7. Bienestar
 
 ![wellness-wireframe.png](../assets/images/wellness-wireframe.png)
+
+*Resumen de bienestar con estrés y estado promedio, check-ins de la semana, evolución de ánimo y estrés, hábitos e historial de check-ins.*
 
 
 8. Reportes
 
 ![Reports-wireframe.png](../assets/images/Reports-wireframe.png)
 
+*Reportes con tendencias semanales de sueño, entrenamiento y HRV, y exportación en PDF por periodo y categorías.*
+
 9. Comunidad
 
 ![Community-wireframe.png](../assets/images/Community-wireframe.png)
+
+*Comunidad con racha de registros, notas de progreso privadas, logros y vista previa de lo que se compartiría con un contacto o grupo.*
 
 10. Configuración
 
 ![settings-wireframe.png](../assets/images/settings-wireframe.png)
 
+*Configuración del perfil (datos personales, enfoque y medidas), objetivos personales y acceso a la suscripción y al espacio de trabajo local.*
+
 11. Suscripción
 
 ![subscription-wireframe.png](../assets/images/subscription-wireframe.png)
+
+*Pantalla de suscripción con los planes Basic y Pro; la suscripción Pro se simula sin realizar cobros.*
 
 
 #### 5.2.2.6 Services Documentation Evidence for Sprint Review

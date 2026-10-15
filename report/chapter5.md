@@ -318,6 +318,36 @@ El Sprint 2 incluye las 41 historias restantes del Product Backlog (sección 3.3
 | TS01, TS02 | Exponer endpoints de recuperación y perfil | T30 | Recovery and profile endpoints | `GET /api/v1/users/{userId}/recovery-assessments/latest` y `POST /api/v1/profiles`. | 6 | Carbajal Santivañez, Sebastian Aaron | To-Do |
 | TS03 | Exponer endpoint de alertas activas | T31 | Active alerts endpoint | `GET /api/v1/users/{userId}/guidance-alerts?status=ACTIVE`. | 3 | Viza Quispe, Marlon Packard | To-Do |
 
+**Estado verificado de las tareas del Sprint 2**
+
+La columna *Status* del Sprint Backlog indica si la tarea se cerró en Trello. La siguiente tabla precisa el alcance real de cada tarea: **terminado y probado** (funciona y sus reglas están cubiertas por pruebas automatizadas de `npm test`), **demostración** (funciona en la interfaz, pero depende de datos o resultados simulados) o **pendiente** (aún no implementado).
+
+| Tarea | Estado | Evidencia |
+|:-|:-|:-|
+| T12 Local sign-up | Terminado y probado | `local-registration.spec.ts`: rechaza correos duplicados y no guarda contraseñas |
+| T13 Onboarding goals assistant | Terminado y probado | `local-registration.spec.ts`: reanuda el onboarding |
+| T15 Account deletion | Terminado y probado | `local-registration.spec.ts`: elimina solo la cuenta seleccionada |
+| T19 Training planning page | Terminado y probado | `planned-activity`, `training-plan` y `training-data.spec.ts`: cruces de horario, periodo del plan y esfuerzo válido |
+| T20 Sleep records | Terminado y probado | `sleep-data.spec.ts`: rechaza periodos de sueño superpuestos |
+| T21 Wellness check-ins | Terminado y probado | `wellness-data` y `breathing-session.spec.ts`: un check-in por día y respiración completa o interrumpida |
+| T22 Reports page | Terminado y probado | `report-request` y `chart-series.spec.ts`: periodo válido y días sin datos como vacíos |
+| T25 i18n catalogs (ES/EN) | Terminado y probado | `i18n.spec.ts`: mismas claves en ambos idiomas y preferencia guardada |
+| T26 Notification preferences | Terminado y probado | `notification-center` y `notification-preferences.spec.ts`: franjas horarias y aplazamiento sin duplicados |
+| T24 Help center | Terminado, sin prueba automatizada | Verificado manualmente en la Web Application |
+| T14 Subscription cancellation | Demostración | La suscripción Pro es una simulación de 30 días sin cobro |
+| T16 Recovery page | Demostración | La recuperación usa una fórmula ilustrativa (`recovery-simulation.spec.ts` prueba su comportamiento, no su validez médica) |
+| T17 Guidance alerts | Demostración | Alertas generadas con umbrales de demostración (`demo-physiological-repository.spec.ts`) |
+| T18 Wearable scenarios | Demostración | Estados de la pulsera simulados; no hay una pulsera real conectada |
+| T23 Community page | Demostración | Compartir es una vista previa; no se envía a ningún contacto |
+| T27 Transport and authorization | Pendiente | Requiere el backend |
+| T28 Health platform sync | Pendiente | Requiere integración con Apple Health y Google Fit |
+| T29 Registration CTA | Pendiente | — |
+| T30 Recovery and profile endpoints | Pendiente | Requiere el backend |
+| T31 Active alerts endpoint | Pendiente | Requiere el backend |
+
+En resumen: 9 tareas terminadas y probadas, 1 terminada sin prueba automatizada, 5 disponibles como demostración y 5 pendientes.
+
+
 **Tablero del Sprint 2 en Trello**. El Product Backlog contiene las User Stories y Technical Stories pendientes, y las listas de cada Sprint registran el avance de sus historias.
 
 ![trello-sprint2.png](../assets/images/trello-sprint2.png)
@@ -482,7 +512,7 @@ Durante el Sprint 2, el equipo realizó el despliegue de la primera versión pú
 El equipo mantuvo un ritmo de trabajo organizado por bounded contexts: los integrantes lideraron los bounded contexts según la matriz LACX de la sección 5.2.2.2 y colaboraron en los demás, respetando la arquitectura definida en el capítulo 4.
 
 * **Domain-Driven Design verificado por pruebas.** `src/app/app.spec.ts` falla si un bounded context no expone las cuatro capas, si `domain/` importa Angular o HTTP, o si `presentation` o `application` importan `infrastructure`. La separación de capas no es una convención voluntaria: es un contrato ejecutable.
-* **Suite automatizada.** Se implementaron 18 archivos de prueba con 38 casos, ejecutados con `npm test` (Vitest), que cubren reglas de dominio, rangos, solapamientos, reportes, geometría de gráficos, catálogos de idiomas, cuentas locales y persistencia aislada.
+* **Suite automatizada.** Se implementaron 18 archivos de prueba con 40 casos, ejecutados con `npm test` (Vitest), que cubren reglas de dominio, rangos, solapamientos, reportes, geometría de gráficos, catálogos de idiomas, cuentas locales y persistencia aislada.
 * **Consistencia de formato.** Prettier se ejecuta con `npm run format:check` sobre `src`, `public/i18n` y los archivos de configuración, evitando discusiones de estilo en la revisión por pares.
 * **Internacionalización centralizada.** El soporte español/inglés y el layout compartido se mantienen en `shared`, garantizando coherencia visual entre los siete contextos.
 * **Límites declarados.** El equipo dejó explícito en el repositorio qué es funcionalidad local, qué es simulación y qué depende de un servicio externo: la proyección de recuperación no utiliza IA, las fases de sueño no son mediciones de calidad, y los umbrales 40 y 70 son exclusivos del prototipo. Una pantalla visible no demuestra todos sus criterios de aceptación. 

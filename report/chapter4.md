@@ -262,7 +262,7 @@ En esta sección se definen los **SEO Tags** y **Meta Tags** propuestos para **P
 * **Author:** PulsePower Team
 * **User Stories:** US31, US32, US33, US41
 
-Las User Stories que no se asocian a una vista específica corresponden a requisitos transversales o técnicos: US10 (protección de datos) se aplica a todas las vistas; US38 y US39 (centro de ayuda y soporte) se atenderán en una vista de ayuda prevista para siguientes sprints; y TS01 a TS04 son Technical Stories que habilitan las vistas descritas. US34 y US35 se atienden en la sección Community, descrita en el User Flow 8 (sección 4.4.4).
+Las User Stories que no se asocian a una vista específica corresponden a requisitos transversales o técnicos: US10 (protección de datos) y US47 (uso de la aplicación en español o inglés) se aplican a todas las vistas; US38 y US39 (centro de ayuda y soporte) se atenderán en una vista de ayuda prevista para siguientes sprints; y TS01 a TS04 son Technical Stories que habilitan las vistas descritas. US34 y US35 se atienden en la sección Community, descrita en el User Flow 8 (sección 4.4.4).
 
 #### 4.2.4. Searching Systems
 

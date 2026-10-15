@@ -260,7 +260,7 @@ En esta sección se describen los principales acuerdos y definiciones realizadas
 | **Location** | Reunión Virtual |
 | **Prepared By** | Viza Quispe, Marlon Packard |
 | **Attendees** | Osorio Ramírez, Eduardo Jesús<br>Carbajal Santivañez, Sebastian Aaron<br>Martín Farro, Alexis Sebastián<br>Evangelista Ygnacio, Sergio Joaquin |
-| **Sprint 2 Review Summary** | Se completaron 15 de las 20 tareas planificadas (34 historias, 126 de 150 Story Points). Se desplegó en Vercel la primera versión de la Web Application, con los siete bounded contexts organizados en cuatro capas, navegación por rutas con carga diferida, interfaz bilingüe y persistencia local aislada por cuenta. La mayor parte de la información se guarda localmente o corresponde a datos de demostración; solo el resumen fisiológico se consume desde la API simulada desplegada en Render. Quedaron pendientes la protección de datos con TLS y autorización (US10), la sincronización con apps de salud externas (US22, US23), el CTA de registro desde la Landing Page (US15) y los endpoints del backend (TS01, TS02 y TS03), que pasan al siguiente Sprint. |
+| **Sprint 2 Review Summary** | Se completaron 15 de las 20 tareas planificadas (35 historias, 128 de 152 Story Points). Se desplegó en Vercel la primera versión de la Web Application, con los siete bounded contexts organizados en cuatro capas, navegación por rutas con carga diferida, interfaz bilingüe y persistencia local aislada por cuenta. La mayor parte de la información se guarda localmente o corresponde a datos de demostración; solo el resumen fisiológico se consume desde la API simulada desplegada en Render. Quedaron pendientes la protección de datos con TLS y autorización (US10), la sincronización con apps de salud externas (US22, US23), el CTA de registro desde la Landing Page (US15) y los endpoints del backend (TS01, TS02 y TS03), que pasan al siguiente Sprint. |
 | **Sprint 2 Retrospective Summary** | La comunicación interna mejoró respecto del Sprint 1 y se acordó resolver las correcciones de la AV1 dentro del Sprint 2. El liderazgo de los siete bounded contexts quedó concentrado en tres integrantes (sección 5.2.2.2); Marlon Viza colaboró en todos los contextos con la base compartida de la aplicación y un integrante no registró aportes. Para el siguiente Sprint se acordó distribuir el liderazgo de forma más equitativa y asignar a cada integrante tareas con entregables verificables. |
 
 <br>
@@ -270,8 +270,8 @@ En esta sección se describen los principales acuerdos y definiciones realizadas
 | Campo | Detalle |
 | :--- | :--- |
 | **Sprint 2 Goal** | Our focus is on delivering a navigable Single Page Application where each of the seven bounded contexts is implemented as its own module with domain, application, infrastructure and presentation layers, backed by automated tests. This will be confirmed when `npm run build`, `npm test` and `npm run check:architecture` all pass. |
-| **Sprint 2 Velocity** | 126 Story Points (historias en Done) |
-| **Sum of Story Points** | 150 (126 SP en Done y 24 SP en To-Do) |
+| **Sprint 2 Velocity** | 128 Story Points (historias en Done) |
+| **Sum of Story Points** | 152 (128 SP en Done y 24 SP en To-Do) |
 
 #### 5.2.2.2 Aspect Leaders and Collaborators
 
@@ -291,7 +291,7 @@ A continuación se detalla la matriz de liderazgo y colaboración (LACX) para el
 
 El Sprint 2 continúa con el resto del Product Backlog (sección 3.3) una vez cerradas las seis historias del Sprint 1, y queda pendiente únicamente de las tareas marcadas como To-Do. El tablero del proyecto en Trello: https://trello.com/invite/b/6aaede0bb47af502ba9eb29d/ATTI6002400c8c79f6ddabb88999b2168b7a7AB82763/pulsepower
 
-El Sprint 2 incluye las 41 historias restantes del Product Backlog (sección 3.3), que suman 150 Story Points. De ellas, 34 historias se completaron y suman 126 Story Points, que constituyen la velocity del Sprint; las 7 restantes (US10, US15, US22, US23, TS01, TS02 y TS03) suman 24 Story Points y permanecen en To-Do. Las horas indicadas en cada tarea son la estimación interna del esfuerzo de desarrollo.
+El Sprint 2 incluye las 42 historias restantes del Product Backlog (sección 3.3), que suman 152 Story Points. De ellas, 35 historias se completaron y suman 128 Story Points, que constituyen la velocity del Sprint; las 7 restantes (US10, US15, US22, US23, TS01, TS02 y TS03) suman 24 Story Points y permanecen en To-Do. Las horas indicadas en cada tarea son la estimación interna del esfuerzo de desarrollo.
 
 **Sprint #**: Sprint 2
 
@@ -310,7 +310,7 @@ El Sprint 2 incluye las 41 historias restantes del Product Backlog (sección 3.3
 | US11, US26, US42, US43 | Reportes y exportación en PDF | T22 | Reports page | PDF de entrenamiento, sueño, bienestar y recuperación simulada; exige una semana de historial por categoría. | 7 | Osorio Ramírez, Eduardo Jesús | Done |
 | US12, US34, US35 | Rachas, logros y avance compartido | T23 | Community page | Rachas locales, logro de siete días, publicación por audiencia y revocación de permisos. | 5 | Martín Farro, Alexis Sebastián | Done |
 | US38, US39 | Centro de ayuda y soporte | T24 | Help center | HelpPage con búsqueda de artículos y solicitud de soporte con referencia e historial local. | 4 | Viza Quispe, Marlon Packard | Done |
-| — | Internacionalización de la aplicación | T25 | i18n catalogs (ES/EN) | Catálogos `public/i18n/es.json` y `en.json` consumidos por el servicio de traducción propio (`shared/application/i18n.ts`) y aplicados a toda la interfaz. | 4 | Viza Quispe, Marlon Packard | Done |
+| US47 | Usar la aplicación en mi idioma | T25 | i18n catalogs (ES/EN) | Catálogos `public/i18n/es.json` y `en.json` consumidos por el servicio de traducción propio (`shared/application/i18n.ts`) y aplicados a toda la interfaz. | 4 | Viza Quispe, Marlon Packard | Done |
 | US33, US40, US41 | Notificaciones y desconexión | T26 | Notification preferences | Preferencias e historial local, comprobación de franjas con la app abierta y aplazamiento de entrenamientos fuera de horario. | 5 | Viza Quispe, Marlon Packard | Done |
 | US10 | Proteger datos fisiológicos del usuario | T27 | Transport and authorization | API con TLS, autenticación y autorización entre usuarios. | 3 | Martín Farro, Alexis Sebastián | To-Do |
 | US22, US23 | Sincronizar con apps de salud externas | T28 | Health platform sync | Importación automática desde Apple Health y Google Fit con resolución de duplicados. | 5 | Osorio Ramírez, Eduardo Jesús | To-Do |

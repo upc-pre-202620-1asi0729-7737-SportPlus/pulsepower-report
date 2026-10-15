@@ -187,25 +187,35 @@ Durante el Sprint 1, el equipo avanzó en la implementación del Landing Page, d
 | `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `5225ad3` | `feat(landing):add update team member details and replace logo images`                                    | `19/09/2026`        |
 | `https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website` | `feature/app-features` | `047c046` | `feat(landing): add privacy policy page for PulsePower website`                                           | `18/09/2026`        |
 
-### 5.2.1.5. Execution Evidence for Sprint Review.
+#### 5.2.1.5 Execution Evidence for Sprint Review
 
-Durante el Sprint 1, el equipo implementó y desplegó la primera versión pública del Landing Page de SportPlus, accesible en: [https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/](https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/)).
+Durante el Sprint 1, el equipo implementó y desplegó la primera versión pública de la Landing Page de PulsePower, accesible en: [https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/](https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/).
 
-La landing page presenta un diseño moderno y responsive enfocado en la salud y el fitness. Incluye secciones clave como el Hero con llamadas a la acción, descripción de servicios de coaching, demostraciones de la aplicación, videos explicativos, presentación del equipo y planes de bienestar. A continuación se presenta la captura de la página implementada.
+La Landing Page es un sitio estático desarrollado con HTML, CSS y JavaScript. Es responsive y bilingüe: un selector de idioma permite cambiar todo el contenido entre español e inglés. Su objetivo es presentar la propuesta de valor de PulsePower a los dos segmentos objetivo y dirigirlos hacia los planes de suscripción. A continuación se presenta la captura de la página completa implementada.
 
 ![PulsePower-Landing_Page_Wireframe.jpeg](../assets/images/PulsePower-Landing_Page_Wireframe.jpeg)
 
-Esta captura de pantalla muestra el diseño completo de la página web de **PulsePower**, diseñada con un estilo dinámico que intercala secciones de fondo oscuro, blanco y tonos pastel claros. En la parte superior, el *Hero section* destaca la palabra "HEALTH" en gran tamaño junto a una atleta, con el lema *"Science-Backed, Results Driven Coaching"* y botones de registro. Descendiendo, la página expone los servicios (*Our Coaching Services*) con una imagen de entrenamiento y una lista de beneficios.
+*Captura completa de la Landing Page de PulsePower desplegada en GitHub Pages (versión en inglés).*
 
-Una parte central muy visual es la sección *"How PulsePower Works"*, que utiliza coloridas maquetas de dispositivos móviles (en tonos rosa, azul, naranja y turquesa) para explicar el proceso paso a paso. Posteriormente, se integran reproductores de video incrustados para detallar características como monitoreo fisiológico y reportes de progreso. Finalmente, la página incluye una sección de presentación del equipo (*Our Team*) con fotografías y nombres de los integrantes, una demostración de la interfaz móvil de la app bajo el título *"A Plan for Your Wellbeing"*, y concluye con un pie de página (footer) oscuro que contiene enlaces de navegación y redes sociales.
+La página se organiza en las siguientes secciones, en el orden en que aparecen:
 
-### 5.2.1.6. Services Documentation Evidence for Sprint Review.
+* **Barra de navegación:** logotipo de PulsePower, enlaces a Features, Benefits, About Us, Our Team y Plans, y selector de idioma ES/EN.
+* **Hero:** presenta el mensaje principal: PulsePower convierte los datos de sueño, esfuerzo y recuperación del usuario en información clara para planificar su entrenamiento y descanso. Incluye un botón de llamada a la acción y una tarjeta destacada sobre sueño, esfuerzo y recuperación con perspectivas de IA.
+* **Propuesta y servicios:** explican cómo PulsePower convierte los datos fisiológicos en orientación y reúne los registros de sueño, esfuerzo y recuperación para respaldar decisiones en la rutina diaria.
+* **How PulsePower Works:** describe en cinco pasos el uso del producto: definir objetivos, conectar el wearable, comprender el cuerpo con ayuda del asistente de IA, planificar la rutina diaria y monitorear el progreso.
+* **Videos explicativos:** un reproductor con cuatro pestañas (Monitoreo fisiológico, Sueño y recuperación, Recomendaciones de IA e Informes de progreso).
+* **Our Team:** tarjetas con la foto, el nombre y una breve descripción de los cinco integrantes del equipo.
+* **Planes:** comparación de los planes Basic y Pro con cambio entre facturación mensual y anual.
+* **Overview:** resume qué es PulsePower y sus tres pilares: monitoreo integrado, orientación personalizada y seguimiento de hábitos.
+* **Footer:** enlaces a servicios, recursos y compañía, junto con los enlaces a los Términos de Servicio y la Política de Privacidad.
+
+#### 5.2.1.6 Services Documentation Evidence for Sprint Review
 
 Durante el Sprint 1, el alcance de implementación estuvo enfocado exclusivamente en el desarrollo, diseño y despliegue de la primera versión del Landing Page de PulsePower/SportPlus, así como en la estructuración de la documentación técnica y las bases del sistema de diseño a nivel de interfaz de usuario.
 
 En consecuencia, no se ha realizado en este sprint el desarrollo de Web Services ni la implementación de endpoints RESTful, por lo que no existe documentación de servicios mediante OpenAPI/Swagger que reportar en esta entrega. La documentación de servicios será incorporada a partir del Sprint 2, cuando se inicie la implementación del backend, conforme al plan de desarrollo establecido en el Product Backlog.
 
-### 5.2.1.7. Software Deployment Evidence for Sprint Review.
+#### 5.2.1.7 Software Deployment Evidence for Sprint Review
 
 Durante el Sprint 1, el equipo realizó el despliegue de la primera versión pública de la Landing Page utilizando GitHub Pages, servicio gratuito y estático integrado directamente con el repositorio de GitHub.
 
@@ -218,7 +228,7 @@ Durante el Sprint 1, el equipo realizó el despliegue de la primera versión pú
 3. En la sección *Settings → Pages* del repositorio, se seleccionó la rama principal de producción como fuente de publicación.
 4. GitHub Pages generó automáticamente la URL pública y publicó el sitio estático para su acceso global.
 
-### 5.2.1.8. Team Collaboration Insights during Sprint.
+#### 5.2.1.8 Team Collaboration Insights during Sprint
 
 Durante el Sprint 1, el equipo utilizó GitHub como plataforma central de colaboración y control de versiones para el repositorio `upc-pre-202620-1asi0729-7737-SportPlus`, aplicando el flujo de trabajo GitFlow junto con Conventional Commits para mantener la trazabilidad.
 

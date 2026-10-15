@@ -330,7 +330,7 @@ La capa `domain` no depende de Angular ni de HTTP: los componentes consumen serv
 
 En el repositorio se aplicaron las correcciones de la AV1.
 
-Tabla commits:
+**Últimos 10 commits de la Web Application (rama `develop`)**
 
 | # | Commit | Fecha | Autor | Mensaje |
 |---|--------|-------|-------|---------|
@@ -348,14 +348,23 @@ Tabla commits:
 
 *Total en `develop`: 101 commits.*
 
-**Autores:**
+**Commits por integrante**
 
-| Autor | Commits |
-|-------|---------|
-| Sergi9017 | 64 |
-| axis | 13 |
-| V8Z5 | 10 |
-| Iron819 | 7 |
+El siguiente conteo corresponde al repositorio `pulsepower-webapp` en GitHub, sin contar los merges, y coincide con la captura de contribuidores incluida en la sección 5.2.2.8.
+
+| Integrante | Usuario de GitHub | Commits |
+|-|-|-|
+| Evangelista Ygnacio, Sergio Joaquin | @Sergi9017 | 64 |
+| Viza Quispe, Marlon Packard | @V8Z5 | 20 |
+| Martín Farro, Alexis Sebastián | @axismf | 13 |
+| Osorio Ramírez, Eduardo Jesús | @Iron819 | 7 |
+| Carbajal Santivañez, Sebastian Aaron | @SC-fnfoc | 0 |
+| **Total** | | **104** |
+
+*Notas:*
+* La rama `develop` registra 101 commits. Los 3 restantes son commits de Marlon Viza en las ramas `feature/training` y `feature/reports`, integrados a `main` mediante los Pull Requests #1 y #2.
+* En el historial de git, 7 commits de Marlon Viza figuran con el nombre de autor `catch-up-platform` por una configuración local de git; GitHub los atribuye a @V8Z5 porque están firmados con su correo.
+* Los commits de @axismf figuran en el historial de git con el nombre de autor `axis`.
 
 #### 5.2.2.5 Execution Evidence for Sprint Review
 

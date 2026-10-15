@@ -352,7 +352,7 @@ En el repositorio se aplicaron las correcciones de la AV1.
 
 **Commits por integrante**
 
-El siguiente conteo corresponde al repositorio `pulsepower-webapp` en GitHub, sin contar los merges, y coincide con la captura de contribuidores incluida en la sección 5.2.2.8.
+Commits de cada integrante en el repositorio `pulsepower-webapp` (todas las ramas, sin merges), según la captura de contribuidores de GitHub de la sección 5.2.2.8.
 
 | Integrante | Usuario de GitHub | Commits |
 |-|-|-|
@@ -362,11 +362,6 @@ El siguiente conteo corresponde al repositorio `pulsepower-webapp` en GitHub, si
 | Osorio Ramírez, Eduardo Jesús | @Iron819 | 7 |
 | Carbajal Santivañez, Sebastian Aaron | @SC-fnfoc | 0 |
 | **Total** | | **104** |
-
-*Notas:*
-* La rama `develop` registra 101 commits. Los 3 restantes son commits de Marlon Viza en las ramas `feature/training` y `feature/reports`, integrados a `main` mediante los Pull Requests #1 y #2.
-* En el historial de git, 7 commits de Marlon Viza figuran con el nombre de autor `catch-up-platform` por una configuración local de git; GitHub los atribuye a @V8Z5 porque están firmados con su correo.
-* Los commits de @axismf figuran en el historial de git con el nombre de autor `axis`.
 
 #### 5.2.2.5 Execution Evidence for Sprint Review
 

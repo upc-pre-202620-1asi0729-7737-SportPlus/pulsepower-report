@@ -94,12 +94,12 @@ A continuación se detalla la matriz de liderazgo y colaboración (LACX) para br
 | Team Member (Last Name, First Name) | GitHub Username | Landing Page UI/UX | Landing Page Structure | Basic Funcs | Special Funcs |
 | :--- |:----------------| :--- | :--- | :--- | :--- |
 | Osorio Ramírez, Eduardo Jesús | @Iron819        | C | C | L | L |
-| Carbajal Santivañez, Sebastian Aaron | @SC-fnfoc       | L | C | C | C |
+| Carbajal Santivañez, Sebastian Aaron | @SC-fnfoc       | — | — | — | — |
 | Martín Farro, Alexis Sebastián | @axismf         | C | L | C | C |
-| Viza Quispe, Marlon Packard | @V8Z5           | C | C | L | C |
+| Viza Quispe, Marlon Packard | @V8Z5           | L | C | L | C |
 | Evangelista Ygnacio, Sergio Joaquin | @Sergi9017      | C | C | C | L |
 
-*(L = Leader, C = Collaborator)*
+*(L = Leader, C = Collaborator, — = sin participación en este Sprint)*
 
 #### 5.2.1.3 Sprint Backlog 1
 
@@ -119,9 +119,9 @@ El Sprint 1 incluye las seis primeras historias del Product Backlog (sección 3.
 | US14 | Identificar los beneficios para mi segmento | T06 | Maquetar sección "Beneficios" | Crear el contenedor y las tarjetas informativas sobre los beneficios para deportistas y para usuarios enfocados en su bienestar. | 4 | Martín Farro, Alexis Sebastián | Done |
 | US14 | Identificar los beneficios para mi segmento | T07 | Segmentos y Testimonios | Maquetar las secciones de segmentos objetivo ("Para quién es") y los testimonios de usuarios. | 4 | Osorio Ramírez, Eduardo Jesús | Done |
 | US45 | Consultar la Landing Page en mi idioma | T08 | Selector de idioma | Implementar el mecanismo de cambio de idioma (Español/Inglés) reutilizable en todas las secciones de la Landing Page. | 4 | Viza Quispe, Marlon Packard | Done |
-| US36 | Comparar los planes Basic y Pro | T09 | Maquetar sección "Planes" | Desarrollar la sección de planes Basic y Pro con el cambio entre facturación mensual y anual. | 4 | Carbajal Santivañez, Sebastian Aaron | Done |
-| US46 | Consultar términos y política de privacidad | T10 | Footer y páginas legales | Añadir el footer con contacto y redes sociales, y enlazar las páginas de términos del servicio y política de privacidad. | 2 | Carbajal Santivañez, Sebastian Aaron | Done |
-| TS04 | Configurar repositorio y despliegue de la Landing Page | T11 | Despliegue en GitHub Pages | Configurar la rama main y publicar el sitio estático mediante GitHub Pages. | 2 | Carbajal Santivañez, Sebastian Aaron | Done |
+| US36 | Comparar los planes Basic y Pro | T09 | Maquetar sección "Planes" | Desarrollar la sección de planes Basic y Pro con el cambio entre facturación mensual y anual. | 4 | Viza Quispe, Marlon Packard<br>Martín Farro, Alexis Sebastián | Done |
+| US46 | Consultar términos y política de privacidad | T10 | Footer y páginas legales | Añadir el footer con contacto y redes sociales, y enlazar las páginas de términos del servicio y política de privacidad. | 2 | Viza Quispe, Marlon Packard<br>Osorio Ramírez, Eduardo Jesús<br>Evangelista Ygnacio, Sergio Joaquin | Done |
+| TS04 | Configurar repositorio y despliegue de la Landing Page | T11 | Despliegue en GitHub Pages | Configurar la rama main y publicar el sitio estático mediante GitHub Pages. | 2 | Evangelista Ygnacio, Sergio Joaquin | Done |
 
 Tablero de Trello:
 
@@ -315,7 +315,7 @@ El Sprint 2 incluye las 41 historias restantes del Product Backlog (sección 3.3
 | US10 | Proteger datos fisiológicos del usuario | T27 | Transport and authorization | API con TLS, autenticación y autorización entre usuarios. | 3 | Martín Farro, Alexis Sebastián | To-Do |
 | US22, US23 | Sincronizar con apps de salud externas | T28 | Health platform sync | Importación automática desde Apple Health y Google Fit con resolución de duplicados. | 5 | Osorio Ramírez, Eduardo Jesús | To-Do |
 | US15 | Iniciar mi registro desde la Landing Page | T29 | Registration CTA | CTA de registro en la Landing Page que redirige a la Web Application. | 2 | Evangelista Ygnacio, Sergio Joaquin | To-Do |
-| TS01, TS02 | Exponer endpoints de recuperación y perfil | T30 | Recovery and profile endpoints | `GET /api/v1/users/{userId}/recovery-assessments/latest` y `POST /api/v1/profiles`. | 6 | Carbajal Santivañez, Sebastian Aaron | To-Do |
+| TS01, TS02 | Exponer endpoints de recuperación y perfil | T30 | Recovery and profile endpoints | `GET /api/v1/users/{userId}/recovery-assessments/latest` y `POST /api/v1/profiles`. | 6 | Sin asignar | To-Do |
 | TS03 | Exponer endpoint de alertas activas | T31 | Active alerts endpoint | `GET /api/v1/users/{userId}/guidance-alerts?status=ACTIVE`. | 3 | Viza Quispe, Marlon Packard | To-Do |
 
 **Estado verificado de las tareas del Sprint 2**

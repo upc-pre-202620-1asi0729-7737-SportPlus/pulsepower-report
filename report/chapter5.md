@@ -258,7 +258,7 @@ En esta sección se describen los principales acuerdos y definiciones realizadas
 | **Location** | Reunión Virtual |
 | **Prepared By** | Viza Quispe, Marlon Packard |
 | **Attendees** | Osorio Ramírez, Eduardo Jesús<br>Carbajal Santivañez, Sebastian Aaron<br>Martín Farro, Alexis Sebastián<br>Evangelista Ygnacio, Sergio Joaquin |
-| **Sprint 2 Review Summary** | Se implementó la primera versión funcional de la Web Application: los siete bounded contexts con sus cuatro capas, navegación por rutas con carga diferida, persistencia local aislada por cuenta e interfaz bilingüe. |
+| **Sprint 2 Review Summary** | Se completaron 15 de las 20 tareas planificadas (34 historias, 126 de 150 Story Points). Se desplegó en Vercel la primera versión de la Web Application, con los siete bounded contexts organizados en cuatro capas, navegación por rutas con carga diferida, interfaz bilingüe y persistencia local aislada por cuenta. La mayor parte de la información se guarda localmente o corresponde a datos de demostración; solo el resumen fisiológico se consume desde la API simulada desplegada en Render. Quedaron pendientes la protección de datos con TLS y autorización (US10), la sincronización con apps de salud externas (US22, US23), el CTA de registro desde la Landing Page (US15) y los endpoints del backend (TS01, TS02 y TS03), que pasan al siguiente Sprint. |
 | **Sprint 2 Retrospective Summary** | Mejoró la participación y la comunicación interna. Se acordó que cada integrante lidere un bounded context y que las correcciones de la AV1 se resuelvan dentro del Sprint 2. |
 
 <br>

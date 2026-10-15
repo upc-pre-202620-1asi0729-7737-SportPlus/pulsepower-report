@@ -268,8 +268,8 @@ En esta sección se describen los principales acuerdos y definiciones realizadas
 | Campo | Detalle |
 | :--- | :--- |
 | **Sprint 2 Goal** | Our focus is on delivering a navigable Single Page Application where each of the seven bounded contexts is implemented as its own module with domain, application, infrastructure and presentation layers, backed by automated tests. This will be confirmed when `npm run build`, `npm test` and `npm run check:architecture` all pass. |
-| **Sprint 2 Velocity** | 81 horas (tareas en Done) |
-| **Sum of Estimated Hours** | 100 horas (81 h en Done y 19 h en To-Do) |
+| **Sprint 2 Velocity** | 126 Story Points (historias en Done) |
+| **Sum of Story Points** | 150 (126 SP en Done y 24 SP en To-Do) |
 
 #### 5.2.2.2 Aspect Leaders and Collaborators
 
@@ -288,6 +288,8 @@ A continuación se detalla la matriz de liderazgo y colaboración (LACX) para el
 #### 5.2.2.3 Sprint Backlog 2
 
 El Sprint 2 continúa con el resto del Product Backlog (sección 3.3) una vez cerradas las seis historias del Sprint 1, y queda pendiente únicamente de las tareas marcadas como To-Do. El tablero del proyecto en Trello: https://trello.com/invite/b/6aaede0bb47af502ba9eb29d/ATTI6002400c8c79f6ddabb88999b2168b7a7AB82763/pulsepower
+
+El Sprint 2 incluye las 41 historias restantes del Product Backlog (sección 3.3), que suman 150 Story Points. De ellas, 34 historias se completaron y suman 126 Story Points, que constituyen la velocity del Sprint; las 7 restantes (US10, US15, US22, US23, TS01, TS02 y TS03) suman 24 Story Points y permanecen en To-Do. Las horas indicadas en cada tarea son la estimación interna del esfuerzo de desarrollo.
 
 **Sprint #**: Sprint 2
 

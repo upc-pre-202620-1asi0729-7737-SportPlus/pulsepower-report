@@ -54,6 +54,8 @@ Para mantener la legibilidad y calidad del código, todo el equipo aplicará nom
 - Landing Page (Sitio Estático): Se desplegará utilizando la infraestructura gratuita de GitHub Pages, configurada para publicar automáticamente cada PR fusionado en main desde el repositorio del Landing Page.
 - Frontend (Angular Web App): Se desplegará en la plataforma PaaS Vercel, utilizando su integración nativa con GitHub para publicar automáticamente cada PR fusionado en main.
 
+> **Resumen de la sección 5.1.** El equipo gestiona el código en GitHub con GitFlow (ramas `main`, `develop` y `feature/*`), Conventional Commits y guías de estilo por lenguaje. La Landing Page se publica en GitHub Pages y la Web Application en Vercel.
+
 ## 5.2 Landing Page, Services & Applications Implementation
 
 En esta sección se describe el proceso de implementación del producto PulsePower, incluyendo el desarrollo, pruebas, documentación y despliegue de la Landing Page. Para este avance se implementó la primera versión del Landing Page, orientada a presentar la propuesta de valor del sistema: "No puedes rendir más sin recuperarte mejor. Conócete primero."
@@ -213,7 +215,7 @@ La página se organiza en las siguientes secciones, en el orden en que aparecen:
 
 #### 5.2.1.6 Services Documentation Evidence for Sprint Review
 
-Durante el Sprint 1, el alcance de implementación estuvo enfocado exclusivamente en el desarrollo, diseño y despliegue de la primera versión del Landing Page de PulsePower/SportPlus, así como en la estructuración de la documentación técnica y las bases del sistema de diseño a nivel de interfaz de usuario.
+Durante el Sprint 1, el alcance de implementación estuvo enfocado exclusivamente en el desarrollo, diseño y despliegue de la primera versión del Landing Page de PulsePower, así como en la estructuración de la documentación técnica y las bases del sistema de diseño a nivel de interfaz de usuario.
 
 En consecuencia, no se ha realizado en este sprint el desarrollo de Web Services ni la implementación de endpoints RESTful, por lo que no existe documentación de servicios mediante OpenAPI/Swagger que reportar en esta entrega. La documentación de servicios será incorporada a partir del Sprint 2, cuando se inicie la implementación del backend, conforme al plan de desarrollo establecido en el Product Backlog.
 
@@ -242,6 +244,8 @@ Durante el Sprint 1, el equipo utilizó GitHub como plataforma central de colabo
 ![Commits Report.jpg](../assets/images/Commits%20Report.jpg)
 
 Esta captura de pantalla muestra el gráfico de actividad de GitHub del repositorio `upc-pre-202620-1asi0729-7737-SportPlus`. En él se puede observar una alta concentración de trabajo en equipo durante el mes de septiembre, con múltiples contribuciones y commits registrados durante la consolidación del Sprint 1, reflejando el trabajo concurrente de los distintos líderes de aspecto y colaboradores en sus respectivas ramas.
+
+> **Resumen del Sprint 1.** Se entregó la Landing Page estática, responsive y bilingüe (6 historias, 16 Story Points), desplegada en GitHub Pages. La evidencia está en los 53 commits de la sección 5.2.1.4, la página publicada (5.2.1.5) y su despliegue (5.2.1.7).
 
 
 ### 5.2.2 Sprint 2
@@ -531,3 +535,5 @@ La siguiente tabla conecta, para cada integrante, las tareas del Sprint Backlog 
 
 * Captura de los commits realizados
 ![commits-tb1.png](../assets/images/commits-tb1.png)
+
+> **Resumen del Sprint 2.** Se completaron 15 de las 20 tareas (128 de 152 Story Points): una Web Application en Angular con los siete bounded contexts, desplegada en Vercel y conectada a una API simulada en Render. Las cinco tareas pendientes dependen del backend, de integraciones externas o de la Landing Page (5.2.2.3). Lo que es real y lo que es simulado se detalla por pantalla en la sección 5.2.2.5, y la evidencia de cada integrante en la sección 5.2.2.8.

@@ -436,6 +436,22 @@ A continuación se presenta el recorrido por la aplicación:
 
 *Pantalla de suscripción con los planes Basic y Pro; la suscripción Pro se simula sin realizar cobros.*
 
+**Origen de los datos por pantalla**
+
+La aplicación funciona con dos espacios de trabajo. El **espacio de demostración** (opción *Open local workspace*, usuario de ejemplo Alex Lopez) se carga con 30 días de registros de ejemplo y muestra el aviso *"Example records — not real measurements"*; todas las capturas anteriores corresponden a este espacio. Una **cuenta personal** creada con el registro empieza sin datos: lo que el usuario registra se guarda en su navegador y los datos de la pulsera se consultan a la API simulada desplegada en Render. La siguiente tabla indica, para cada pantalla, de dónde proviene la información y qué aún no cuenta con un servicio real.
+
+| Pantalla | Registrado por el usuario (local) | Desde la API en Render (cuenta personal) | Simulado o de demostración | Sin servicio real todavía |
+|:-|:-|:-|:-|:-|
+| Inicio de sesión y registro | Cuenta y contraseña protegida con PBKDF2 en el navegador | — | Espacio de demostración de Alex Lopez | Autenticación en servidor (US10, TS02) |
+| Panel principal | Check-in diario, último sueño y entrenamiento de la semana | HRV, frecuencia cardiaca en reposo y nivel de recuperación | En la demostración, HRV, frecuencia cardiaca y recuperación son de ejemplo | Sincronización real con la pulsera |
+| Entrenamiento y planificación | Sesiones, esfuerzo percibido y calendario de actividades | — | Registros de ejemplo en la demostración | Sincronización con apps de salud (US22) |
+| Sueño | Registros de sueño, rutina y meta de horas | — | Fases del sueño ilustrativas; la puntuación compara la duración con la meta y no mide la calidad del sueño | Sincronización con apps de salud (US23) |
+| Bienestar | Check-ins, estrés, hábitos y sesiones de respiración | — | Registros de ejemplo en la demostración | — |
+| Recuperación | — | Conexión de la pulsera, métricas, nivel de recuperación, recomendaciones y alertas | Proyección de recuperación calculada en el navegador con una fórmula ilustrativa (horas de sueño frente a 8 h, menos estrés y esfuerzo percibido); no es una predicción médica | Endpoints propios del backend (TS01, TS03) y asistente de IA |
+| Reportes | Tendencias y PDF generados en el navegador a partir de los registros | — | Serie de HRV ilustrativa | — |
+| Comunidad | Rachas, notas de progreso y logros, guardados solo en el navegador | — | La opción de compartir es una vista previa; no se envía a nadie | Servicio para compartir con contactos y grupos |
+| Configuración | Perfil, objetivos, preferencias y notificaciones | — | — | — |
+| Suscripción | — | — | Suscripción Pro simulada por 30 días, sin cobro | Pasarela de pagos |
 
 #### 5.2.2.6 Services Documentation Evidence for Sprint Review
 

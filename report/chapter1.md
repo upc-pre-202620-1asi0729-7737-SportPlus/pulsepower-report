@@ -208,7 +208,7 @@ _Figura 1 (Lean UX Canvas)_
 
 **Segundo Segmento Objetivo - Personas que buscan mejorar su bienestar general y su calidad de sueño (Wellness Seeker)**
 
-- Demográfico: Hombres y mujeres entre los 25 y 55 años, profesionales con jornadas laborales exigentes, estudiantes de posgrado y/o personas con niveles elevados de estrés cotidiano.
+- Demográfico: Hombres y mujeres entre los 20 y 55 años, profesionales con jornadas laborales exigentes, estudiantes de posgrado y/o personas con niveles elevados de estrés cotidiano.
 - Psicográfico: Valoran el equilibrio entre su vida diaria y su bienestar personal. Buscan reducir la incertidumbre sobre su propio cuerpo y prevenir el desgaste derivado del estrés acumulado. Están orientados a mejorar su calidad de vida de forma sostenible, sin necesariamente seguir una rutina de entrenamiento intensa.
 - Conductual: Poseen un manejo elemental de herramientas digitales de salud y bienestar. Acuden al servicio de forma regular, principalmente para revisar su recuperación nocturna y en momentos de descanso a lo largo del día. Están dispuestos a adoptar nuevas herramientas si estas ofrecen un beneficio inmediato y claro para su bienestar.
 - Geográfico: Residentes en Perú, principalmente en zonas urbanas de alta densidad poblacional, con conectividad plena a internet móvil.

@@ -297,13 +297,13 @@ El Sprint 2 incluye las 41 historias restantes del Product Backlog (sección 3.3
 
 | Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 |:---|:---|:---|:---|:---|:---|:---|:---|
-| US09 | Registrar perfil de Deportista | T12 | Local sign-up (two steps) | Registro local en dos pasos con verificador PBKDF2 con sal y espacio de trabajo aislado por cuenta. | 6 | Viza Quispe, Marlon Packard | Done |
-| US19, US20 | Configurar objetivos en el onboarding | T13 | Onboarding goals assistant | Asistente local de dos pasos, reanudable, que guarda los objetivos de entrenamiento y de bienestar. | 5 | Osorio Ramírez, Eduardo Jesús | Done |
+| US09 | Registrar perfil de Deportista | T12 | Local sign-up (two steps) | Registro local en dos pasos con verificador PBKDF2 con sal y espacio de trabajo aislado por cuenta. | 6 | Martín Farro, Alexis Sebastián | Done |
+| US19, US20 | Configurar objetivos en el onboarding | T13 | Onboarding goals assistant | Asistente local de dos pasos, reanudable, que guarda los objetivos de entrenamiento y de bienestar. | 5 | Martín Farro, Alexis Sebastián | Done |
 | US37 | Cancelar suscripción Pro | T14 | Subscription cancellation | SubscriptionPage con periodo Pro de 30 días, confirmación obligatoria y vigencia hasta el fin del periodo. | 4 | Martín Farro, Alexis Sebastián | Done |
 | US44 | Eliminar cuenta y datos asociados | T15 | Account deletion | Baja local confirmada que borra únicamente el espacio de la cuenta seleccionada. | 4 | Martín Farro, Alexis Sebastián | Done |
 | US01, US03, US04, US06, US25 | Nivel de recuperación y recomendaciones | T16 | Recovery page | Nivel de recuperación, variables fisiológicas, recomendaciones, comparación entre dos semanas y proyección ilustrativa. | 8 | Evangelista Ygnacio, Sergio Joaquin | Done |
-| US07, US08, US24, US27 | Alertas y prevención | T17 | Guidance alerts | Alertas persistentes sin duplicados diarios, historial de alertas y aviso de batería baja sin repetición. | 6 | Osorio Ramírez, Eduardo Jesús | Done |
-| US21 | Vincular pulsera durante el onboarding | T18 | Wearable scenarios | Escenarios demo de pulsera conectada, desconectada, autorización denegada y sincronización pendiente. | 5 | Martín Farro, Alexis Sebastián | Done |
+| US07, US08, US24, US27 | Alertas y prevención | T17 | Guidance alerts | Alertas persistentes sin duplicados diarios, historial de alertas y aviso de batería baja sin repetición. | 6 | Evangelista Ygnacio, Sergio Joaquin | Done |
+| US21 | Vincular pulsera durante el onboarding | T18 | Wearable scenarios | Escenarios demo de pulsera conectada, desconectada, autorización denegada y sincronización pendiente. | 5 | Evangelista Ygnacio, Sergio Joaquin | Done |
 | US28, US29, US30 | Calendario y planificación | T19 | Training planning page | Calendario de sesiones, conflictos de horario, día de descanso activo y sugerencia de reprogramación. | 7 | Osorio Ramírez, Eduardo Jesús | Done |
 | US02, US05 | Resumen y rutina de sueño | T20 | Sleep records | Registro de sueño con validación de solapamientos, rutina y duración semanal y mensual. | 6 | Viza Quispe, Marlon Packard | Done |
 | US31, US32 | Estrés y respiración guiada | T21 | Wellness check-ins | Check-ins diarios, hábitos y sesión guiada de respiración de un minuto con estado completado o interrumpido. | 5 | Evangelista Ygnacio, Sergio Joaquin | Done |
@@ -311,7 +311,7 @@ El Sprint 2 incluye las 41 historias restantes del Product Backlog (sección 3.3
 | US12, US34, US35 | Rachas, logros y avance compartido | T23 | Community page | Rachas locales, logro de siete días, publicación por audiencia y revocación de permisos. | 5 | Martín Farro, Alexis Sebastián | Done |
 | US38, US39 | Centro de ayuda y soporte | T24 | Help center | HelpPage con búsqueda de artículos y solicitud de soporte con referencia e historial local. | 4 | Viza Quispe, Marlon Packard | Done |
 | — | Internacionalización de la aplicación | T25 | i18n catalogs (ES/EN) | Catálogos `public/i18n/es.json` y `en.json` consumidos por el servicio de traducción propio (`shared/application/i18n.ts`) y aplicados a toda la interfaz. | 4 | Viza Quispe, Marlon Packard | Done |
-| US33, US40, US41 | Notificaciones y desconexión | T26 | Notification preferences | Preferencias e historial local, comprobación de franjas con la app abierta y aplazamiento de entrenamientos fuera de horario. | 5 | Evangelista Ygnacio, Sergio Joaquin | Done |
+| US33, US40, US41 | Notificaciones y desconexión | T26 | Notification preferences | Preferencias e historial local, comprobación de franjas con la app abierta y aplazamiento de entrenamientos fuera de horario. | 5 | Viza Quispe, Marlon Packard | Done |
 | US10 | Proteger datos fisiológicos del usuario | T27 | Transport and authorization | API con TLS, autenticación y autorización entre usuarios. | 3 | Martín Farro, Alexis Sebastián | To-Do |
 | US22, US23 | Sincronizar con apps de salud externas | T28 | Health platform sync | Importación automática desde Apple Health y Google Fit con resolución de duplicados. | 5 | Osorio Ramírez, Eduardo Jesús | To-Do |
 | US15 | Iniciar mi registro desde la Landing Page | T29 | Registration CTA | CTA de registro en la Landing Page que redirige a la Web Application. | 2 | Evangelista Ygnacio, Sergio Joaquin | To-Do |
@@ -516,5 +516,18 @@ El equipo mantuvo un ritmo de trabajo organizado por bounded contexts: los integ
 * **Consistencia de formato.** Prettier se ejecuta con `npm run format:check` sobre `src`, `public/i18n` y los archivos de configuración, evitando discusiones de estilo en la revisión por pares.
 * **Internacionalización centralizada.** El soporte español/inglés y el layout compartido se mantienen en `shared`, garantizando coherencia visual entre los siete contextos.
 * **Límites declarados.** El equipo dejó explícito en el repositorio qué es funcionalidad local, qué es simulación y qué depende de un servicio externo: la proyección de recuperación no utiliza IA, las fases de sueño no son mediciones de calidad, y los umbrales 40 y 70 son exclusivos del prototipo. Una pantalla visible no demuestra todos sus criterios de aceptación. 
+
+**Evidencia de aporte por integrante**
+
+La siguiente tabla conecta, para cada integrante, las tareas del Sprint Backlog 2, los commits que las respaldan en el repositorio `pulsepower-webapp` y el resultado que puede comprobarse en la aplicación desplegada.
+
+| Integrante | Tareas del Sprint 2 | Commits representativos | Resultado verificable |
+|:-|:-|:-|:-|
+| Evangelista Ygnacio, Sergio Joaquin (@Sergi9017, 64 commits) | T16, T17, T18, T20 y T21 (pendiente: T29) | `e266ddf` página de recuperación, `2e8cc96` simulación de recuperación, `34d4c00` alertas de orientación, `5d79334` conexión de la pulsera, `56442d3` página de sueño, `9e13368` página de bienestar, `e43818a` pruebas de la simulación | Páginas de Recuperación, Sueño y Bienestar; alertas y escenarios de la pulsera de demostración; reglas de recuperación cubiertas por pruebas |
+| Viza Quispe, Marlon Packard (@V8Z5, 20 commits) | T24, T25 y T26, además de la base de la aplicación (pendiente: T31) | `6736fb0` shell, tema y estilos; `68bc39d` modelos y servicios compartidos; `b90843a` almacenamiento local; `4216077` componentes y páginas compartidas; `bb47b37` catálogos ES/EN | Estructura de la Web Application, centro de ayuda, preferencias de notificación e interfaz bilingüe |
+| Martín Farro, Alexis Sebastián (@axismf, 13 commits) | T12, T13, T14, T15 y T23 (pendiente: T27) | `62358c6` módulo IAM, `00dc01e` disponibilidad de identidad, `a54c5d4` suscripción, `cc34f60` módulo Community | Registro e inicio de sesión, onboarding de objetivos, configuración, suscripción simulada, eliminación de cuenta y página de Comunidad |
+| Osorio Ramírez, Eduardo Jesús (@Iron819, 7 commits) | T19 y T22, además de la API simulada y su integración (pendiente: T28) | `fb367f5` entrenamiento y planificación, `f049f23` reportes en PDF, `f91600d` API simulada con json-server, `b26d2b0` consumo de la API desde Render, `c92611b` rutas de la aplicación | Planificación de entrenamientos, reportes exportables en PDF y resumen fisiológico obtenido desde la API desplegada en Render |
+| Carbajal Santivañez, Sebastian Aaron (@SC-fnfoc, 0 commits) | — | — | No registra aportes en el Sprint 2 |
+
 * Captura de los commits realizados
 ![commits-tb1.png](../assets/images/commits-tb1.png)

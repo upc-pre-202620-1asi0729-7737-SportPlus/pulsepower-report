@@ -275,7 +275,7 @@ En esta sección se describen los principales acuerdos y definiciones realizadas
 
 #### 5.2.2.2 Aspect Leaders and Collaborators
 
-A continuación se detalla la matriz de liderazgo y colaboración (LACX) para el Sprint 2, organizada por los siete bounded contexts definidos en el Design-Level EventStorming.
+A continuación se detalla la matriz de liderazgo y colaboración (LACX) para el Sprint 2, organizada por los siete bounded contexts definidos en el Design-Level EventStorming. El líder (L) es responsable de organizar y entregar el bounded context; los colaboradores (C) apoyan en su implementación, pruebas o revisión.
 
 | Integrante | Training | Sleep | Wellness | Physiology | Reports | Community | IAM |
 |:-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -360,7 +360,7 @@ El código se organiza en `src/app/modules/`, con un módulo por bounded context
 
 La capa `domain` no depende de Angular ni de HTTP: los componentes consumen servicios de `application` y las implementaciones de persistencia se inyectan desde `src/app/app.config.ts` mediante adaptadores `local-*-repository`. Los modelos persistidos se convierten a través de assemblers, y las cargas concurrentes de un mismo almacén se comparten para evitar resúmenes vacíos. La navegación se resuelve por rutas con carga diferida (`loadChildren`) en `src/app/app.routes.ts`.
 
-En el repositorio se aplicaron las correcciones de la AV1.
+Las correcciones de la AV1 aplicadas en el informe se resumen en la sección "Atención de observaciones de la AV1" del Registro de versiones.
 
 **Últimos 10 commits de la Web Application (rama `develop`)**
 

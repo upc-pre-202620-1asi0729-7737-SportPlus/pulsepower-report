@@ -502,6 +502,51 @@ Tablero en Miro: https://miro.com/app/board/uXjVHDKjsAk=/?moveToWidget=345876468
 ##### IAM
 ![design-level-iam.png](../assets/images/design-level-iam.png)
 
+##### Proceso central: evaluación de recuperación y orientación personalizada
+
+El proceso que mejor representa el valor diferencial de PulsePower es la evaluación de recuperación, que convierte lo que el usuario entrena, duerme y siente en una orientación concreta para el día. Este proceso pertenece al bounded context Physiology y consume información de Training, Sleep y Wellness; Reports, Community e IAM cumplen funciones de apoyo: Reports reúne lo que producen los demás contextos, Community favorece la motivación e IAM gestiona el acceso, el perfil y la suscripción (en esta versión la suscripción es una simulación sin cobros, por lo que no se separó en un contexto propio).
+
+**Información que recibe**
+
+| Bounded context | Dato | Origen |
+|:-|:-|:-|
+| Training | Esfuerzo percibido de las sesiones (1–10) y actividades planificadas | Registrado por el usuario |
+| Sleep | Horas dormidas y meta de sueño | Registrado por el usuario |
+| Wellness | Nivel de estrés del check-in diario (1–10) | Registrado por el usuario |
+| Physiology | HRV y frecuencia cardiaca en reposo | Pulsera vinculada (API) |
+
+**Reglas de decisión**
+
+| Regla | Condición | Resultado |
+|:-|:-|:-|
+| Nivel de recuperación | Existe un registro de sueño del día | Nivel = (horas dormidas ÷ 8) × 100 − 2 × estrés − 2 × esfuerzo, acotado entre 0 y 100 |
+| Datos faltantes | No hay registro de sueño del día | No se calcula el nivel y se informa que no hay datos de recuperación para hoy |
+| Orientación del día | Nivel menor que 40 / entre 40 y 69 / 70 o más | Descansar o reprogramar / reducir la intensidad / seguir el plan |
+| Alerta de sobrecarga | Nivel menor que 40 y esfuerzo percibido de 7 o más | Se emite un GuidanceAlert; como máximo uno por tipo y por día |
+| Alerta de descanso insuficiente | Tres noches seguidas por debajo de la meta de sueño | Se emite un GuidanceAlert de descanso |
+| Comparación semanal | Siete días con nivel calculado en cada una de las dos últimas semanas | Se muestra la variación porcentual entre ambas semanas |
+| Batería baja | Pulsera conectada con batería menor que 15 % | Se emite una sola alerta hasta la siguiente carga |
+| Reprogramación | La actividad está en estado Planned | Se mueve a otra fecha y se advierte si se superpone con otra actividad |
+
+Los pesos y umbrales (8 horas, 40 y 70 puntos, esfuerzo 7) son valores de demostración que deberán validarse con el piloto descrito en los Hypothesis Statements; el nivel de recuperación es una orientación y no constituye una evaluación médica.
+
+**Recorrido completo del proceso**
+
+1. **Registrar actividad (Training).** El Deportista registra una sesión intensa con esfuerzo percibido 8 → *Workout Recorded*.
+2. **Registrar sueño (Sleep).** Esa noche duerme 5 horas, por debajo de su meta de 8 → *Sleep Recorded*.
+3. **Registrar estado (Wellness).** Al despertar registra un estrés de 6 en su check-in → *Stress Level Recorded*.
+4. **Evaluar recuperación (Physiology).** Al consultar su recuperación se calcula (5 ÷ 8) × 100 − 12 − 16 = 35 → *Recovery Calculated*. Como el nivel es menor que 40, la orientación es descansar o reprogramar → *Low Recovery Detected*, *Reschedule Suggested*; y como el esfuerzo fue 8 se emite una alerta de sobrecarga → *Alert Generated*.
+5. **Ajustar el plan (Training).** El usuario reprograma la sesión planificada del día a otra fecha o la marca como descanso activo → *Activity Planned*.
+6. **Observar el cambio (Reports).** El reporte semanal muestra la caída del nivel, el día de descanso y su efecto en los días siguientes → *Report Generated*.
+
+Si falta información, el proceso no inventa resultados: sin registro de sueño no se calcula el nivel; si la pulsera está desconectada, se informa su estado y las métricas de la pulsera no se muestran, pero el nivel se sigue calculando con los registros manuales.
+
+**Otros recorridos del Design-Level EventStorming**
+
+* **Registrar actividad y ajustar el plan:** pasos 1 y 5 del recorrido anterior; la regla de reprogramación evita mover actividades ya completadas y advierte de cruces de horario.
+* **Relacionar sueño y esfuerzo para emitir una recomendación:** pasos 2 a 4; las alertas de sobrecarga y de descanso insuficiente se generan a partir de la misma información.
+* **Registrar un hábito y observar su evolución (Wellness):** el usuario define un hábito, lo marca cada día y la vista muestra su cumplimiento semanal (por ejemplo, 3 de 7 días); el reporte de bienestar refleja esa evolución junto con el estrés y el estado de ánimo.
+
 #### 4.6.2. Software Architecture Context Diagram
 
 El *Context Diagram* presenta a **PulsePower** como un sistema completo dentro de su entorno. Identifica a los usuarios que interactúan con la plataforma y a los sistemas externos que proporcionan datos o servicios, sin mostrar todavía sus componentes internos.

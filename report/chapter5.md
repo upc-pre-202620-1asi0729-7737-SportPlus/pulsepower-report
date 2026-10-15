@@ -277,13 +277,13 @@ En esta sección se describen los principales acuerdos y definiciones realizadas
 
 A continuación se detalla la matriz de liderazgo y colaboración (LACX) para el Sprint 2, organizada por los siete bounded contexts definidos en el Design-Level EventStorming.
 
-| Team Member (Last Name, First Name) | GitHub Username | Training | Sleep | Wellness | Physiology | Reports | Community | IAM |
-| :--- |:----------------| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Osorio Ramírez, Eduardo Jesús | @Iron819        | L | C | C | C | L | C | C |
-| Carbajal Santivañez, Sebastian Aaron | @SC-fnfoc       | — | — | — | — | — | — | — |
-| Martín Farro, Alexis Sebastián | @axismf         | C | C | C | C | C | L | L |
-| Viza Quispe, Marlon Packard | @V8Z5           | C | C | C | C | C | C | C |
-| Evangelista Ygnacio, Sergio Joaquin | @Sergi9017      | C | L | L | L | C | C | C |
+| Integrante | Training | Sleep | Wellness | Physiology | Reports | Community | IAM |
+|:-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Osorio Ramírez, Eduardo Jesús | L | C | C | C | L | C | C |
+| Carbajal Santivañez, Sebastian Aaron | — | — | — | — | — | — | — |
+| Martín Farro, Alexis Sebastián | C | C | C | C | C | L | L |
+| Viza Quispe, Marlon Packard | C | C | C | C | C | C | C |
+| Evangelista Ygnacio, Sergio Joaquin | C | L | L | L | C | C | C |
 
 *(L = Leader, C = Collaborator, — = sin participación en este Sprint)*
 

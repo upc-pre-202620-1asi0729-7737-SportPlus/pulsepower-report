@@ -507,8 +507,8 @@ Durante el Sprint 2, el equipo realizó el despliegue de la primera versión pú
 **Proceso de despliegue:**
 1. Se utilizó el repositorio central del equipo bajo la organización de la clase.
 2. Cada integrante integró los módulos de su bounded context en la rama `develop` mediante commits propios con mensajes convencionales (feat, fix, docs).
-3. En Vercel se importó el repositorio `pulsepower-webapp` mediante su integración nativa con GitHub y se configuró la rama `develop`, donde se integró el trabajo del Sprint 2, como rama de despliegue.
-4. Vercel reconoció el proyecto como una aplicación Angular, ejecutó su build y generó automáticamente la URL pública; a partir de ese momento publica cada cambio integrado en `develop`.
+3. Al cerrar el Sprint 2, la rama `develop` se integró en `main`, que es la rama de producción. En Vercel se importó el repositorio `pulsepower-webapp` mediante su integración nativa con GitHub y se configuró `main` como rama de despliegue.
+4. Vercel reconoció el proyecto como una aplicación Angular, ejecutó su build y generó automáticamente la URL pública; a partir de ese momento publica cada cambio integrado en `main`.
 5. La Web App consume la API alojada en Render (`GET /api/v1/physiological-overview`), cuyo despliegue es independiente del de la aplicación.
 
 #### 5.2.2.8 Team Collaboration Insights during Sprint.

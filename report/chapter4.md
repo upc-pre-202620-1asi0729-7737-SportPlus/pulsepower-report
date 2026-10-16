@@ -504,6 +504,8 @@ Tablero en Miro: https://miro.com/app/board/uXjVHDKjsAk=/?moveToWidget=345876468
 
 ##### Proceso central: evaluación de recuperación y orientación personalizada
 
+![design-level-central-process.png](../assets/images/design-level-central-process.png)
+
 El proceso que mejor representa el valor diferencial de PulsePower es la evaluación de recuperación, que convierte lo que el usuario entrena, duerme y siente en una orientación concreta para el día. Este proceso pertenece al bounded context Physiology y consume información de Training, Sleep y Wellness; Reports, Community e IAM cumplen funciones de apoyo: Reports reúne lo que producen los demás contextos, Community favorece la motivación e IAM gestiona el acceso, el perfil y la suscripción (en esta versión la suscripción es una simulación sin cobros, por lo que no se separó en un contexto propio).
 
 **Información que recibe**

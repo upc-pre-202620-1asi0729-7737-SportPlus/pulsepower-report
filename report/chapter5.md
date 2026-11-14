@@ -537,3 +537,347 @@ La siguiente tabla conecta, para cada integrante, las tareas del Sprint Backlog 
 ![commits-tb1.png](../assets/images/commits-tb1.png)
 
 > **Resumen del Sprint 2.** Se completaron 15 de las 20 tareas (128 de 152 Story Points): una Web Application en Angular con los siete bounded contexts, desplegada en Vercel y conectada a una API simulada en Render. Las cinco tareas pendientes dependen del backend, de integraciones externas o de la Landing Page (5.2.2.3). Lo que es real y lo que es simulado se detalla por pantalla en la sección 5.2.2.5, y la evidencia de cada integrante en la sección 5.2.2.8.
+
+### 5.2.3 Sprint 3
+
+En esta sección se detalla la evolución del proyecto durante el Sprint 3, que marca la transición de la API simulada hacia un RESTful API real desarrollado en Java con Spring Boot y persistencia en PostgreSQL. El alcance comprende los servicios web de los siete bounded contexts —IAM, Training, Sleep, Wellness, Community, Physiology y Reports—, la documentación del contrato con OpenAPI/Swagger, el despliegue en la nube de los tres productos y la conexión de la Web Application con la nueva API real.
+
+#### 5.2.3.1 Sprint Planning 3
+
+En esta sección se describen los acuerdos, antecedentes y objetivos establecidos durante la reunión de planificación del Sprint 3.
+
+| Campo | Detalle |
+|:---|:---|
+| **Sprint #** | Sprint 3 |
+| **Date** | 2026-10-27 |
+| **Time** | 17:30 |
+| **Location** | Reunión virtual |
+| **Prepared By** | Martín Farro, Alexis Sebastián |
+| **Attendees (Planning Meeting)** | Osorio Ramírez, Eduardo Jesús <br> Carbajal Santivañez, Sebastian Aaron <br> Viza Quispe, Marlon Packard <br> Evangelista Ygnacio, Sergio Joaquin |
+| **Sprint 2 Review Summary** | Durante el Sprint 2 se implementó la primera versión de la Web Application en Angular con los siete bounded contexts organizados en cuatro capas. Se completaron 15 de las 20 tareas planificadas (128 de 152 Story Points). La aplicación consumió una API simulada desplegada en Render, por lo que los datos no persistían en una base de datos real. Quedaron pendientes la protección de datos con TLS y autorización (US10), la sincronización con apps de salud externas (US22, US23), el CTA de registro desde la Landing Page (US15) y los endpoints del backend (TS01, TS02 y TS03). |
+| **Sprint 2 Retrospective Summary** | El equipo acordó que cada integrante lidere el bounded context del backend que ya lideró en el frontend, que se priorice la implementación del RESTful API real sobre la API simulada y que las correcciones de la TB1 se resuelvan dentro del Sprint 3. Se acordó también distribuir la carga de los bounded contexts más pesados entre dos integrantes. |
+| **Sprint Goal** | Our focus is on implementing the PulsePower RESTful API in Java Spring Boot with PostgreSQL persistence for all seven bounded contexts. We believe it delivers persistent and secure data to athletes and wellness seekers, replacing the simulated local data from Sprint 2 with a real backend service. This will be confirmed when the Web Application operates against the deployed RESTful API, a user's data persists in PostgreSQL, the Landing Page links to the Web Application, and the OpenAPI documentation is accessible. |
+| **Value Proposition – Visitors** | Acceso directo desde los botones del Landing Page hacia el registro y el inicio de sesión de la Web Application. |
+| **Value Proposition – Users** | Datos de entrenamiento, sueño, bienestar, fisiología, comunidad y reportes que se conservan en una base de datos real, en lugar de datos simulados o locales. |
+| **Value Proposition – Developers** | Arquitectura en la nube (Vercel, Render con Docker y PostgreSQL) con servicios documentados en OpenAPI/Swagger. |
+| **Sprint Completion Criteria** | La Landing Page redirige al registro e inicio de sesión de la Web Application; la Web Application opera contra el RESTful API desplegado; los datos persisten en PostgreSQL; sin errores de CORS en producción; documentación OpenAPI accesible en el entorno de desarrollo. |
+| **User Stories incluidas en el Sprint** | US10: Proteger datos fisiológicos del usuario (3 SP) <br> US15: Iniciar registro desde la Landing Page (2 SP) <br> TS01: Exponer endpoint de estado de recuperación (3 SP) <br> TS02: Exponer endpoint de registro de perfil (3 SP) <br> TS03: Exponer endpoint de alertas activas (3 SP) <br> + tareas técnicas de implementación del backend (Training, Sleep, Wellness, Community, Physiology, Reports, Shared, despliegue e integración frontend) |
+| **Sprint 3 Velocity** | 36 Story Points |
+| **Sum of Story Points** | 44 Story Points (36 SP Done + 8 SP Pendientes: US22, US23) |
+
+#### 5.2.3.2 Aspect Leaders and Collaborators
+
+Para el Sprint 3 el liderazgo se mantiene por bounded context en continuidad con el Sprint 2, y se incorporan dos aspectos transversales: el despliegue del backend y la integración del frontend con el RESTful API.
+
+| **Integrante** | **IAM** | **Training** | **Sleep** | **Wellness** | **Community** | **Physiology** | **Reports** | **Despliegue** | **Integración Frontend** |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Martín Farro, Alexis Sebastián | L | C | C | C | C | C | C | L | C |
+| Evangelista Ygnacio, Sergio Joaquin | C | L | L | C | C | C | C | C | C |
+| Carbajal Santivañez, Sebastian Aaron | C | C | C | L | L | C | C | C | L |
+| Viza Quispe, Marlon Packard | C | C | C | C | C | L | L | C | C |
+| Osorio Ramírez, Eduardo Jesús | — | — | — | — | — | — | — | — | — |
+
+*(L = Leader, C = Collaborator, — = sin participación en este Sprint)*
+
+#### 5.2.3.3 Sprint Backlog 3
+
+Las historias del Sprint 3 se descomponen en tareas técnicas. El tablero del proyecto en Trello: https://trello.com/invite/b/6aaede0bb47af502ba9eb29d/ATTI6002400c8c79f6ddabb88999b2168b7a7AB82763/pulsepower
+
+![trello-sprint3.png](../assets/images/trello-sprint3.png)
+
+| Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- | :--- |
+| US10 | Proteger datos fisiológicos del usuario | T32 | IAM bounded context – auth, JWT y TLS | Bounded context IAM en Spring Boot: registro (`POST /api/v1/authentication/sign-up`), inicio de sesión (`POST /api/v1/authentication/sign-in`), JWT (HS256) con roles, contraseñas con BCrypt, comunicación exclusiva por HTTPS/TLS. | 8 | Martín Farro, Alexis Sebastián | Done |
+| TS02 | Exponer endpoint de registro de perfil | T33 | Endpoints de usuarios y suscripciones | `GET/PUT /api/v1/users/me`, perfil (`PUT /api/v1/users/me/profile`), contraseña (`PUT /api/v1/users/me/password`), eliminación (`DELETE /api/v1/users/me`), objetivos (`POST/PUT/DELETE /api/v1/users/me/goals`), suscripciones (`GET/POST /api/v1/subscriptions/me`, `POST /api/v1/subscriptions/me/cancel`). | 7 | Martín Farro, Alexis Sebastián | Done |
+| TS01, TS03 | Exponer endpoints de recuperación y alertas | T34 | Physiology bounded context – recuperación, sincronización y asistente | `GET /api/v1/physiology/overview`, `POST/DELETE /api/v1/physiology/connection`, `POST /api/v1/physiology/sync`, `POST /api/v1/physiology/alerts/{alertId}/review`, `POST /api/v1/assistant/messages` (generación de rutina con IA). | 8 | Viza Quispe, Marlon Packard | Done |
+| (técnica) | Training bounded context backend | T35 | Training bounded context – sesiones y plan de entrenamiento | `GET/POST /api/v1/training/sessions`, `DELETE /api/v1/training/sessions/{sessionId}`, `GET /api/v1/training/plan`, `PUT /api/v1/training/plan/period`, `POST /api/v1/training/plan/activities`, `PUT/POST cancel /api/v1/training/plan/activities/{activityId}`. Pruebas de dominio con JUnit 5. | 7 | Evangelista Ygnacio, Sergio Joaquin | Done |
+| (técnica) | Sleep bounded context backend | T36 | Sleep bounded context – registros y rutina de sueño | `GET/POST /api/v1/sleep/records`, `PUT/DELETE /api/v1/sleep/records/{recordId}`, `GET/PUT /api/v1/sleep/routine`. Validación de periodos superpuestos en el dominio. Pruebas de dominio con JUnit 5. | 6 | Evangelista Ygnacio, Sergio Joaquin | Done |
+| (técnica) | Wellness bounded context backend | T37 | Wellness bounded context – check-ins y hábitos | `GET/POST /api/v1/wellness/check-ins` (un check-in por día), `GET/POST /api/v1/wellness/habits`, `DELETE /api/v1/wellness/habits/{habitId}`, `GET /api/v1/wellness/habits/logs`, `POST /api/v1/wellness/habits/{habitId}/logs`. Pruebas de dominio con JUnit 5. | 7 | Carbajal Santivañez, Sebastian Aaron | Done |
+| (técnica) | Community bounded context backend | T38 | Community bounded context – racha, logros y progreso compartido | `GET /api/v1/community/streak`, `GET /api/v1/community/achievements`, `GET/POST /api/v1/community/progress`, `DELETE /api/v1/community/progress/{progressId}`, `POST/DELETE /api/v1/community/progress/{progressId}/shares/{audience}`. Pruebas de dominio con JUnit 5. | 6 | Carbajal Santivañez, Sebastian Aaron | Done |
+| (técnica) | Reports bounded context backend | T39 | Reports bounded context – informes y entradas de historial | `GET/POST /api/v1/reports`, `GET /api/v1/reports/entries`, `GET /api/v1/reports/{reportId}/document`. Validación de rango de historial mínimo. | 6 | Viza Quispe, Marlon Packard | Done |
+| (técnica) | Shared infrastructure | T40 | Shared – infraestructura transversal, excepciones y configuración | Clases base JPA, estrategia de nombres `snake_case` con tablas pluralizadas, manejador global de excepciones (`@RestControllerAdvice`), perfil `prod` con variables de entorno para PostgreSQL y JWT. | 5 | Martín Farro, Alexis Sebastián | Done |
+| US15 | Iniciar registro desde la Landing Page | T41 | CTA Landing Page → Web Application | Botones "Log In" y "Sign Up" de la Landing Page apuntan a las rutas `/sign-in` y `/sign-up` de la Web Application desplegada en Vercel. | 2 | Viza Quispe, Marlon Packard | Done |
+| (técnica) | Despliegue del RESTful API | T42 | Dockerización y despliegue del RESTful API | `Dockerfile` multi-stage (JDK 21 → JRE), perfiles Spring Boot (`dev` / `prod`), variables de entorno en Render (`DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`) y conexión a base de datos PostgreSQL en la nube. | 5 | Martín Farro, Alexis Sebastián | Done |
+| (técnica) | Integración con la Web Application | T43 | Conexión de la Web Application con el RESTful API | Reemplazar la URL de la API simulada por la del RESTful API en `environment.ts`; añadir interceptor `authInterceptor` con Bearer token; adaptar los repositorios HTTP de cada bounded context. | 6 | Carbajal Santivañez, Sebastian Aaron <br> Viza Quispe, Marlon Packard | Done |
+| US22, US23 | Sincronizar con apps de salud externas | T44 | Integración con Apple Health y Google Fit | Importación automática de sesiones y ciclos de sueño desde plataformas externas con resolución de duplicados. | 8 | Sin asignar | To-Do |
+| | **Total** | **36** | | | **81** | | |
+
+**Estado técnico de las tareas en la versión TF del código.** La siguiente tabla indica qué existe verificado en el código entregado.
+
+| Task ID | Resultado en el código | Ubicación |
+| :--- | :--- | :--- |
+| T32 | Implementado: registro, inicio de sesión, BCrypt y JWT con roles | `src/main/java/…/iam/` |
+| T33 | Implementado: perfil, contraseña, eliminación, objetivos y suscripciones | `src/main/java/…/iam/` |
+| T34 | Implementado: overview fisiológico, conexión a pulsera AIoTI, sincronización, revisión de alertas y asistente de IA | `src/main/java/…/physiology/` |
+| T35 | Implementado: sesiones de entrenamiento y plan de actividades con pruebas de dominio | `src/main/java/…/training/` |
+| T36 | Implementado: registros de sueño con validación de solapamientos y rutina de sueño con pruebas de dominio | `src/main/java/…/sleep/` |
+| T37 | Implementado: check-ins diarios y hábitos con sus registros con pruebas de dominio | `src/main/java/…/wellness/` |
+| T38 | Implementado: racha, logros, avance compartido y control de audiencia con pruebas de dominio | `src/main/java/…/community/` |
+| T39 | Implementado: informes de progreso, entradas de historial y validación de rango mínimo | `src/main/java/…/reports/` |
+| T40 | Implementado: estrategia de nombres JPA, manejador de excepciones global, perfil `prod` | `src/main/java/…/shared/` |
+| T41 | Implementado: botones "Log In" y "Sign Up" apuntan a la Web Application desplegada | `pulsepower-website/index.html` |
+| T42 | Preparado: `Dockerfile`, `application-prod.properties`, variables de entorno configuradas; pendiente la URL pública estable del API en Render | `pulsepower-backend/` raíz |
+| T43 | Implementado: `environment.ts` apunta a `https://pulsepower-api.onrender.com/api/v1`; `authInterceptor` adjunta el Bearer token | `pulsepower-webapp/src/environments/`, `shared/infrastructure/api.ts` |
+| T44 | Pendiente: requiere integración con Apple Health y Google Fit | — |
+
+#### 5.2.3.4 Development Evidence for Sprint Review
+
+En el Sprint 3 se implementó la primera versión de los Web Services de PulsePower, **PulsePower Backend**, en Java 21 con Spring Boot. El código se organiza en `src/main/java/com/sportplus/pulsepower/` con un directorio por bounded context — `iam`, `training`, `sleep`, `wellness`, `community`, `physiology` y `reports` — y un núcleo compartido (`shared`). Cada contexto se divide en las capas `domain`, `application`, `infrastructure` e `interfaces`, tal como define el diseño del capítulo 4.
+
+Principales decisiones de implementación:
+
+- **Persistencia:** Spring Data JPA con el proveedor Hibernate sobre PostgreSQL; estrategia de nombres `SnakeCaseWithPluralizedTablePhysicalNamingStrategy`; esquema gestionado con `spring.jpa.hibernate.ddl-auto=update` en desarrollo y `validate` en producción.
+- **Seguridad:** contraseñas con BCrypt, JWT firmado (HS256) con los claims `sub`, `role` y `email`, autorización con `@PreAuthorize` y verificación de propiedad en cada caso de uso. Comunicación exclusiva por HTTPS/TLS en el entorno desplegado.
+- **Reglas de negocio en el servidor:** los registros de sueño rechazan periodos superpuestos; los check-ins admiten solo uno por día; la recuperación se calcula con HRV, frecuencia cardíaca en reposo y registros recientes; las rutinas de entrenamiento se generan con un modelo de IA.
+- **Errores:** respuestas `application/problem+json` con un `code` estable, manejadas por un `@RestControllerAdvice` global en `shared`.
+- **Integración:** la Web Application reemplaza la URL de json-server por la del RESTful API; los assemblers HTTP de cada bounded context convierten los DTOs de respuesta en modelos de dominio del frontend.
+- **Pruebas:** pruebas de dominio con JUnit 5 para los bounded contexts Training, Sleep, Wellness, Community, Physiology y Shared (`mvn test`).
+
+Repositorio del backend: https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-backend
+
+**Commits representativos del Sprint 3 — backend (`feature/iam`, `feature/training-sleep`, `feature/wellness-community`, `feature/shared-physiology-reports`)**
+
+| # | Commit | Fecha | Autor | Mensaje |
+|:---:|:---|:---:|:---|:---|
+| 1 | `54fe727` | 2026-11-10 | @axismf | feat(iam): implement identity and subscription domain and application services |
+| 2 | `e3a86f3` | 2026-11-10 | @axismf | feat(iam): implement persistence, authentication and REST endpoints |
+| 3 | `99ecdb2` | 2026-11-10 | @axismf | feat(shared): add cross-cutting infrastructure and exception handling |
+| 4 | `8367186` | 2026-11-10 | @axismf | feat(physiology): implement wearable connection and physiological domain |
+| 5 | `773de98` | 2026-11-10 | @axismf | test(physiology): add aggregate and recovery calculator unit tests |
+| 6 | `9748c5f` | 2026-11-08 | @Sergi9017 | feat(training): implement training plans domain and application services |
+| 7 | `d873173` | 2026-11-08 | @Sergi9017 | feat(sleep): implement sleep tracking domain and application services |
+| 8 | `e97b526` | 2026-11-08 | @SC-fnfoc | feat(wellness): implement wellness domain and application services |
+| 9 | `22b1963` | 2026-11-08 | @SC-fnfoc | feat(community): implement streaks, achievements and shared progress domain and services |
+| 10 | `503543a` | 2026-11-09 | Marlon | feat(physiology): add physiological domain and recovery calculator |
+| … | — | — | — | *…31 commits más* |
+
+*Total en el backend: 41 commits (incluye feature branches y rama `feature/iam`).*
+
+**Commits por integrante — backend**
+
+| Integrante | Usuario de GitHub | Commits |
+| :--- | :--- | :---: |
+| Martín Farro, Alexis Sebastián | @axismf | 16 |
+| Viza Quispe, Marlon Packard | @V8Z5 | 12 |
+| Evangelista Ygnacio, Sergio Joaquin | @Sergi9017 | 6 |
+| Carbajal Santivañez, Sebastian Aaron | @SC-fnfoc | 6 |
+| Osorio Ramírez, Eduardo Jesús | @Iron819 | 0 |
+| **Total** | | **40** |
+
+**Commits representativos del Sprint 3 — webapp (`feature/frontend-backend-integration`)**
+
+| # | Commit | Fecha | Autor | Mensaje |
+|:---:|:---|:---:|:---|:---|
+| 1 | `48f27bc` | 2026-11-09 | Marlon | feat: connect PulsePower webapp to the backend |
+| 2 | `f652fd3` | 2026-11-09 | Marlon | fix: keep the PulsePower web app running locally |
+| 3 | `56f04bd` | 2026-11-11 | @SC-fnfoc | feat: reconnect PulsePower webapp to the backend API |
+
+**Commits representativos del Sprint 3 — Landing Page (`main`)**
+
+| # | Commit | Fecha | Autor | Mensaje |
+|:---:|:---|:---:|:---|:---|
+| 1 | `c6b53f1` | 2026-10-08 | @V8Z5 | fix(navigation): connect login and registration to webapp |
+| 2 | `bb1c8f2` | 2026-11-10 | Marlon | feat: embed PulsePower presentation video |
+| 3 | `71a6d0e` | 2026-11-10 | Marlon | fix: show PulsePower video thumbnail and play inline |
+
+#### 5.2.3.5 Execution Evidence for Sprint Review
+
+**URL de la Web Application:** https://pulsepower-ten.vercel.app/sign-in
+
+En el Sprint 3 la Web Application opera contra el RESTful API desplegado en Render. Los datos registrados por el usuario (sesiones, sueño, check-ins, hábitos, notas de progreso) persisten en PostgreSQL en lugar de guardarse solo en el navegador. Las pantallas son las mismas que en el Sprint 2 (sección 5.2.2.5); el cambio sustancial es que los datos ahora se leen y escriben desde el servidor.
+
+| Pantalla | Origen de los datos en el Sprint 3 | Cambio respecto del Sprint 2 |
+| :--- | :--- | :--- |
+| Inicio de sesión y registro | Autenticación real en el servidor con JWT | Reemplaza el almacenamiento local del navegador |
+| Panel principal | HRV y recuperación desde `GET /api/v1/physiology/overview` | Mismos datos, pero desde el backend real |
+| Entrenamiento y planificación | `GET/POST /api/v1/training/sessions` y `/plan` | Datos guardados en PostgreSQL, no en localStorage |
+| Sueño | `GET/POST /api/v1/sleep/records` y `/routine` | Datos guardados en PostgreSQL |
+| Bienestar | `GET/POST /api/v1/wellness/check-ins` y `/habits` | Datos guardados en PostgreSQL |
+| Recuperación | `GET /api/v1/physiology/overview`; asistente en `POST /api/v1/assistant/messages` | Calculado en el servidor; asistente de IA disponible |
+| Reportes | `GET/POST /api/v1/reports` y `/entries` | Generados con historial real del servidor |
+| Comunidad | `GET /api/v1/community/streak`, `/achievements`, `/progress` | Racha y logros calculados en el servidor |
+
+![panel-wireframe.png](../assets/images/panel-wireframe.png)
+
+*Panel principal de la Web Application operando contra el RESTful API.*
+
+**Video de demostración:** [PENDIENTE: URL]
+
+#### 5.2.3.6 Services Documentation Evidence for Sprint Review
+
+El contrato de los servicios se documenta con OpenAPI (SpringDoc). El API genera el documento y lo expone en las siguientes rutas (disponibles en el perfil `dev`):
+
+- Swagger UI: `http://localhost:8080/swagger-ui.html`
+- Documento OpenAPI: `http://localhost:8080/v3/api-docs`
+
+Todos los endpoints usan el prefijo `/api/v1`, JSON en camelCase e identificadores enteros, y requieren `Authorization: Bearer <token>` salvo `sign-up` y `sign-in`.
+
+| Bounded Context | Endpoint | Verbo HTTP | Propósito | Respuesta |
+| :--- | :--- | :--- | :--- | :--- |
+| IAM | `/api/v1/authentication/sign-up` | POST | Registra una cuenta con rol | 201 · 400 · 409 |
+| IAM | `/api/v1/authentication/sign-in` | POST | Valida credenciales y emite JWT | 200 `{token, role}` · 401 |
+| IAM | `/api/v1/users/me` | GET | Consulta el perfil del usuario autenticado | 200 · 401 |
+| IAM | `/api/v1/users/me/profile` | PUT | Actualiza nombre, teléfono y empresa | 200 · 422 |
+| IAM | `/api/v1/users/me/password` | PUT | Cambia la contraseña | 200 · 422 |
+| IAM | `/api/v1/users/me` | DELETE | Elimina la cuenta y todos sus datos | 204 · 401 |
+| IAM | `/api/v1/users/me/goals` | POST | Crea un objetivo personal | 201 · 422 |
+| IAM | `/api/v1/users/me/goals/{goalId}` | PUT, DELETE | Actualiza o elimina un objetivo | 200 · 404 |
+| IAM | `/api/v1/subscriptions/plans` | GET | Lista los planes disponibles | 200 |
+| IAM | `/api/v1/subscriptions/me` | GET, POST | Consulta o activa la suscripción Pro | 200 · 201 |
+| IAM | `/api/v1/subscriptions/me/cancel` | POST | Cancela la suscripción Pro | 200 · 409 |
+| Training | `/api/v1/training/sessions` | GET, POST | Lista y registra sesiones de entrenamiento | 200 · 201 · 422 |
+| Training | `/api/v1/training/sessions/{sessionId}` | DELETE | Elimina una sesión | 204 · 404 |
+| Training | `/api/v1/training/plan` | GET | Consulta el plan activo | 200 |
+| Training | `/api/v1/training/plan/period` | PUT | Actualiza el periodo del plan | 200 |
+| Training | `/api/v1/training/plan/activities` | POST | Añade una actividad planificada | 201 · 409 |
+| Training | `/api/v1/training/plan/activities/{activityId}` | PUT | Actualiza una actividad planificada | 200 · 404 |
+| Training | `/api/v1/training/plan/activities/{activityId}/cancel` | POST | Cancela una actividad planificada | 200 · 409 |
+| Sleep | `/api/v1/sleep/records` | GET, POST | Lista y registra periodos de sueño | 200 · 201 · 409 |
+| Sleep | `/api/v1/sleep/records/{recordId}` | PUT, DELETE | Actualiza o elimina un registro | 200 · 404 |
+| Sleep | `/api/v1/sleep/routine` | GET, PUT | Consulta y actualiza la rutina de sueño | 200 |
+| Wellness | `/api/v1/wellness/check-ins` | GET, POST | Lista y registra el check-in diario | 200 · 201 · 409 |
+| Wellness | `/api/v1/wellness/habits` | GET, POST | Lista y crea hábitos | 200 · 201 |
+| Wellness | `/api/v1/wellness/habits/{habitId}` | DELETE | Elimina un hábito | 204 · 404 |
+| Wellness | `/api/v1/wellness/habits/logs` | GET | Lista los registros de hábitos | 200 |
+| Wellness | `/api/v1/wellness/habits/{habitId}/logs` | POST | Registra el cumplimiento de un hábito | 201 · 409 |
+| Community | `/api/v1/community/streak` | GET | Consulta la racha activa del usuario | 200 |
+| Community | `/api/v1/community/achievements` | GET | Lista los logros del usuario | 200 |
+| Community | `/api/v1/community/progress` | GET, POST | Lista y crea notas de progreso | 200 · 201 |
+| Community | `/api/v1/community/progress/{progressId}` | DELETE | Elimina una nota de progreso | 204 · 404 |
+| Community | `/api/v1/community/progress/{progressId}/shares` | POST | Comparte una nota con una audiencia | 201 · 409 |
+| Community | `/api/v1/community/progress/{progressId}/shares/{audience}` | DELETE | Revoca el acceso de una audiencia | 204 · 404 |
+| Physiology | `/api/v1/physiology/overview` | GET | Consulta el resumen fisiológico y de recuperación | 200 · 404 |
+| Physiology | `/api/v1/physiology/connection` | POST, DELETE | Vincula o desvincula la pulsera AIoTI | 201 · 204 · 409 |
+| Physiology | `/api/v1/physiology/sync` | POST | Fuerza la sincronización con la pulsera | 200 · 409 |
+| Physiology | `/api/v1/physiology/alerts/{alertId}/review` | POST | Marca una alerta como revisada | 200 · 404 |
+| Physiology | `/api/v1/assistant/messages` | POST | Envía un mensaje al asistente de IA para generación de rutinas | 200 |
+| Reports | `/api/v1/reports` | GET, POST | Lista e inicia la generación de un informe | 200 · 201 · 409 |
+| Reports | `/api/v1/reports/entries` | GET | Lista las entradas de historial disponibles | 200 |
+| Reports | `/api/v1/reports/{reportId}/document` | GET | Descarga el documento del informe | 200 · 404 |
+
+#### 5.2.3.7 Software Deployment Evidence for Sprint Review
+
+| Producto | Plataforma | Configuración incluida | Estado | URL |
+| :--- | :--- | :--- | :--- | :--- |
+| Landing Page | GitHub Pages | — | Desplegada. CTA "Log In" / "Sign Up" apuntan a la Web Application. | https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/ |
+| Web Application | Vercel | `environment.ts` apunta al API real; `authInterceptor` con Bearer token | Desplegada. | https://pulsepower-ten.vercel.app/sign-in |
+| RESTful Web Services | Render (contenedor Docker) | `Dockerfile`, perfiles Spring Boot `dev` / `prod`, variables de entorno configuradas en Render | Desplegado. `GET /actuator/health` → `{"status":"UP"}` | https://pulsepower-api.onrender.com/api/v1 |
+| Base de datos | PostgreSQL (Render managed DB) | URL inyectada por variable de entorno `DB_URL`; esquema validado al iniciar el API | Activa. | — (no se publica la cadena de conexión) |
+
+#### 5.2.3.8 Team Collaboration Insights during Sprint
+
+La colaboración del Sprint 3 se evidencia con las estadísticas de GitHub de los repositorios del RESTful API, la Web Application y la Landing Page (**Insights → Contributors** y **Insights → Commits**), filtradas al período del sprint (2026-10-27 a 2026-11-13).
+
+![commits-sprint3.png](../assets/images/commits-sprint3.png)
+
+> **Resumen del Sprint 3.** Se completaron 12 de las 13 tareas (36 de 44 Story Points): el RESTful API en Spring Boot con los siete bounded contexts desplegado en Render, la Web Application conectada al backend real y la Landing Page con CTA hacia la Web Application. La tarea pendiente (T44) requiere integración con plataformas de salud externas. La evidencia de cada integrante y los endpoints documentados se detallan en las secciones 5.2.3.4 y 5.2.3.6.
+
+## 5.3. Validation Interviews
+
+### 5.3.1. Diseño de Entrevistas
+
+**Objetivo.** Validar con usuarios de los dos segmentos que los flujos implementados en la Web Application conectada al RESTful API resuelven los problemas identificados en el capítulo II, y detectar problemas de usabilidad o de valor antes del siguiente sprint.
+
+**Participantes.** Al menos tres personas por segmento (Deportistas; Wellness Seekers), distintas de los integrantes del equipo. **Formato:** sesión de 20 a 30 minutos, presencial o por videollamada grabada con consentimiento. El entrevistado usa la versión desplegada de la Web Application con una cuenta de prueba; el entrevistador no guía los clics salvo que la persona quede bloqueada.
+
+**Guion — Segmento 1: Deportistas**
+
+1. Presentación del objetivo y consentimiento para grabar.
+2. Datos generales: edad aproximada, deporte que practica, frecuencia de entrenamiento semanal, cómo gestiona su descanso y recuperación hoy.
+3. Tarea 1: registrarse e iniciar sesión.
+4. Tarea 2: registrar una sesión de entrenamiento de hoy con su esfuerzo percibido.
+5. Tarea 3: registrar las horas de sueño de la noche anterior.
+6. Tarea 4: consultar el panel de recuperación e interpretar el nivel mostrado.
+7. Tarea 5: generar un reporte semanal de entrenamiento.
+8. Preguntas: ¿qué tan confiable te parece el nivel de recuperación calculado?, ¿qué información te faltó?, ¿usarías esta app antes de cada entrenamiento?, ¿qué cambiarías?
+9. Valoración de 1 a 5 de la facilidad de uso de cada tarea.
+
+**Guion — Segmento 2: Wellness Seekers**
+
+1. Presentación y consentimiento.
+2. Datos generales: edad aproximada, rutina de descanso actual, si usa alguna app de salud o pulsera.
+3. Tarea 1: registrarse e iniciar sesión.
+4. Tarea 2: registrar el sueño de la noche anterior con sus fases aproximadas.
+5. Tarea 3: completar el check-in diario de bienestar (estrés y estado de ánimo).
+6. Tarea 4: crear un hábito saludable y registrar su cumplimiento del día.
+7. Tarea 5: consultar el resumen semanal de bienestar.
+8. Preguntas: ¿los indicadores de bienestar son claros para alguien sin conocimiento técnico?, ¿qué te motivaría a registrar tu sueño todos los días?, ¿qué faltaría para confiar en las recomendaciones?
+9. Valoración de 1 a 5 de cada tarea.
+
+**Registro.** Por cada entrevista se anotan: tiempo empleado por tarea, errores, comentarios textuales relevantes y las valoraciones numéricas.
+
+### 5.3.2. Registro de Entrevistas
+
+Las entrevistas de validación se realizaron con la versión integrada del Sprint 3. Esta sección se completa con los datos reales de cada sesión.
+
+| N.° | Segmento | Entrevistado | Fecha | Duración | Entrevistador | Enlace a la grabación | Resumen de hallazgos |
+| :---: | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | Deportista | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+| 2 | Deportista | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+| 3 | Deportista | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+| 4 | Wellness Seeker | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+| 5 | Wellness Seeker | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+| 6 | Wellness Seeker | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+
+### 5.3.3. Evaluaciones según heurísticas
+
+Se aplicará una evaluación heurística a la Web Application integrada usando las diez heurísticas de usabilidad de Jakob Nielsen. Cada hallazgo se registra con la tarea en que apareció, la heurística incumplida, su severidad (0 = no es problema, 1 = cosmético, 2 = menor, 3 = mayor, 4 = catastrófico) y la recomendación.
+
+**Carrera:** Ingeniería de Software · **Curso:** Desarrollo de Aplicaciones Open Source · **Producto:** PulsePower Web Application · **Evaluador(es):** SportPlus · **Fecha:** 2026-11-13
+
+**Tareas evaluadas:** registro e inicio de sesión; entrenamiento y planificación; sueño; bienestar y hábitos; recuperación fisiológica; reportes; comunidad.
+
+| Heurística | Descripción |
+| :--- | :--- |
+| H1 | Visibilidad del estado del sistema |
+| H2 | Correspondencia entre el sistema y el mundo real |
+| H3 | Control y libertad del usuario |
+| H4 | Consistencia y estándares |
+| H5 | Prevención de errores |
+| H6 | Reconocer antes que recordar |
+| H7 | Flexibilidad y eficiencia de uso |
+| H8 | Diseño estético y minimalista |
+| H9 | Ayudar a reconocer, diagnosticar y recuperarse de errores |
+| H10 | Ayuda y documentación |
+
+| N.° | Problema | Tarea / pantalla | Heurística | Severidad | Recomendación |
+| :---: | :--- | :--- | :---: | :---: | :--- |
+| 1 | El panel principal no indica claramente si los datos mostrados provienen del servidor o son datos de ejemplo; el aviso solo aparece en el espacio de demostración. | Panel principal (cuenta personal) | H1, H4 | 2 | Mostrar un indicador de origen de datos ("datos en tiempo real" / "datos de ejemplo") visible en todas las vistas. |
+| 2 | El formulario de registro no explica los requisitos de la contraseña hasta que el usuario falla en el intento. | Registro | H5, H9 | 2 | Mostrar los requisitos de la contraseña debajo del campo antes de que el usuario escriba. |
+| 3 | El botón de cancelación de suscripción Pro no tiene confirmación de la acción irreversible. | Suscripción | H3, H5 | 3 | Añadir un diálogo de confirmación con el efecto de la cancelación y la fecha de fin del periodo activo. |
+| 4 | Los términos "HRV" y "frecuencia cardíaca en reposo" se muestran sin definición en la pantalla de recuperación. | Recuperación | H2, H6 | 2 | Añadir tooltips o un enlace a un glosario breve junto a cada indicador técnico. |
+| 5 | No hay retroalimentación visible cuando la sincronización con la pulsera está en curso o falla. | Recuperación (sincronización) | H1, H9 | 3 | Mostrar un indicador de progreso durante la sincronización y un mensaje de error específico si falla. |
+
+## 5.4. Video About-the-Product
+
+**Estado:** [PENDIENTE: grabar y publicar la primera versión; pegar aquí la URL y la duración].
+
+**Objetivo:** mostrar en 3 a 5 minutos el problema, la propuesta de valor y el funcionamiento real de PulsePower con la Web Application conectada al RESTful API.
+
+| Escena | Duración aprox. | Contenido | Pantalla / recurso |
+| :---: | :---: | :--- | :--- |
+| 1 | 0:00–0:30 | El problema: deportistas y wellness seekers que no saben interpretar sus datos fisiológicos ni descansar correctamente | Landing Page |
+| 2 | 0:30–1:00 | La propuesta: registro unificado de entrenamiento, sueño y bienestar con recomendaciones personalizadas | Landing Page (beneficios) |
+| 3 | 1:00–2:15 | Deportista: registro, sesión de entrenamiento, registro de sueño, panel de recuperación con nivel calculado | Web Application desplegada |
+| 4 | 2:15–3:15 | Wellness Seeker: check-in diario, hábitos, resumen semanal de bienestar, reporte exportado | Web Application desplegada |
+| 5 | 3:15–3:45 | Respaldo técnico: datos guardados en PostgreSQL y servicios documentados en Swagger | Swagger UI del API (perfil dev) |
+| 6 | 3:45–4:15 | Cierre: próximos pasos (sincronización con apps de salud externas) y llamado a la acción | Landing Page |
+
+**Checklist antes de publicar:** audio claro; sin contraseñas, tokens ni cadenas de conexión en pantalla; servicio de Render "despierto" antes de grabar; subtítulos o texto en pantalla para los indicadores técnicos; URL agregada en esta sección y en el Anexo A.
+
+## 5.5. Video About-the-Team
+
+**Estado:** [PENDIENTE: grabar y publicar la primera versión; pegar aquí la URL y la duración].
+
+**Objetivo:** mostrar en 3 a 5 minutos cómo trabajó el equipo SportPlus durante el proyecto.
+
+| Escena | Contenido | Responsable |
+| :---: | :--- | :--- |
+| 1 | Presentación del equipo y de la startup SportPlus | Todos |
+| 2 | Cada integrante (30–40 s): rol, bounded context liderado y principal aporte en el Sprint 3 | Cada integrante |
+| 3 | Organización: Trello, GitFlow, Conventional Commits y reuniones de planificación y revisión | Todos |
+| 4 | Evidencia de colaboración: GitHub Insights de los repositorios del backend y la webapp | Todos |
+| 5 | Aprendizajes y dificultades superadas (arquitectura hexagonal, integración, despliegue) | Todos |
+| 6 | Cierre y siguientes pasos | Todos |
+
+**Checklist:** todos los integrantes aparecen; la información coincide con 5.2.3.2 y con el Student Outcome; URL agregada en esta sección y en el Anexo A.

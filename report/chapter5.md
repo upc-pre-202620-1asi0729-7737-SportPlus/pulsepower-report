@@ -583,7 +583,7 @@ Para el Sprint 3 el liderazgo se mantiene por bounded context en continuidad con
 
 #### 5.2.3.3 Sprint Backlog 3
 
-Las historias del Sprint 3 se descomponen en tareas técnicas. El tablero del proyecto en Trello: https://trello.com/invite/b/6aaede0bb47af502ba9eb29d/ATTI6002400c8c79f6ddabb88999b2168b7a7AB82763/pulsepower
+Las historias del Sprint 3 se descomponen en tareas técnicas. El tablero del proyecto en Trello: (https://trello.com/invite/b/6af92dee72fc6b042349c8f1/ATTI0644eb6b6dc66aaab44c0dfb57f729dcE733B55B/pulsepower)
 
 ![trello-sprint3.png](../assets/images/trello-sprint3.png)
 

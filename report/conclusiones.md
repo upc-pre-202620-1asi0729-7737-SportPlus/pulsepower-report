@@ -28,6 +28,12 @@ En el **Sprint 1**, el equipo avanzó en la implementación de la **Landing Page
 
 En conjunto, estos avances permiten concluir que **PulsePower** cuenta con una propuesta de producto y una base de diseño y arquitectura definidas. La validación de sus beneficios fisiológicos, la personalización efectiva de las recomendaciones y la integración completa de los servicios permanecen como objetivos de las siguientes etapas.
 
+En el **Sprint 3**, el equipo implementó la primera versión del **RESTful API** de PulsePower en Java 27 con Spring Boot 4.1.2, con persistencia en PostgreSQL. Se integró además un asistente de inteligencia artificial (Gemini) que interpreta los registros de sueño, entrenamiento y bienestar del usuario y genera rutinas de entrenamiento personalizadas. Se desarrollaron los siete bounded contexts del backend —IAM, Training, Sleep, Wellness, Community, Physiology y Reports—, se documentó el contrato de cada servicio con OpenAPI, se desplegó el API en Render mediante Docker y se conectó la Web Application al backend real. La Landing Page también se actualizó para redirigir a los visitantes al registro e inicio de sesión de la Web Application. Los datos que el usuario registra en la aplicación ahora persisten en la base de datos en lugar de guardarse únicamente en el navegador.
+
+Las entrevistas de validación del Sprint 3 (sección 5.3) mostraron que los indicadores de recuperación y bienestar resultan comprensibles para los usuarios sin conocimiento técnico previo, que el flujo de registro y registro de datos es intuitivo, y que la principal área de mejora es la retroalimentación visual durante la sincronización con la pulsera y la claridad de los términos fisiológicos (HRV, frecuencia cardíaca en reposo).
+
+La evaluación heurística (sección 5.3.3) identificó cinco problemas de usabilidad, dos de severidad mayor (cancelación de suscripción sin confirmación; ausencia de retroalimentación durante la sincronización) y tres de severidad menor o cosmética, que el equipo priorizará en el siguiente sprint.
+
 ## Recomendaciones (Roadmap)
 
 Considerando los avances alcanzados y las funcionalidades pendientes de implementación y validación, se proponen las siguientes líneas de acción para continuar el desarrollo de **PulsePower**:
@@ -174,24 +180,28 @@ Considerando los avances alcanzados y las funcionalidades pendientes de implemen
 
 | Entrega | Título                                                                                                   | Enlace        |
 |--------|----------------------------------------------------------------------------------------------------------|---------------|
-| AV1 | Presentación de la propuesta de negocio, Lean UX Process y primera versión del Landing Page| https://lix.li/10vH1f |
-| TB1 | Presentación de la propuesta de negocio, Lean UX Process, Landing Page y primera versión del Web App| https://lix.li/69TWkm |
+| AV1 | Presentación de la propuesta de negocio, Lean UX Process y primera versión del Landing Page | https://lix.li/10vH1f |
+| TB1 | Presentación de la propuesta de negocio, Lean UX Process, Landing Page y primera versión del Web App | https://lix.li/69TWkm |
+| TF | Presentación del Sprint 3: RESTful API, integración con la Web Application y entrevistas de validación | https://lix.li/YjmIXF |
+| Video About-the-Product | Primera versión del video del producto PulsePower | https://youtu.be/PeENrbJvSIY |
+| Video About-the-Team | Primera versión del video del equipo SportPlus | https://lix.li/Zwgxei |
 
 ## Anexo B. Repositorios del Proyecto
 
 | Descripción | Enlace |
 |------------|--------|
-| Repositorio del Informe del Proyecto | https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report       |
+| Repositorio del Informe del Proyecto | https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-report |
 | Repositorio de la Landing Page | https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website |
-| Repositorio de la Web App | https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-webapp |
+| Repositorio de la Web Application | https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-webapp |
+| Repositorio del RESTful API (Backend) | https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-backend |
 
 ## Anexo C. Enlaces de Despliegue (Deployment)
 
 | Descripción | Enlace |
 |------------|--------|
-| Deployment de la Landing Page en GitHub Pages | https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/ |
-| Deployment de la Web App | https://pulsepower-ten.vercel.app/sign-in |
-| Deployment de la Fake - Api |https://pulsepower-api.onrender.com/api/v1/physiological-overview |
+| Deployment de la Landing Page en Render (Static Site) | https://pulsepower-website.onrender.com |
+| Deployment de la Web Application (Vercel) | https://pulsepower-webapp.vercel.app/sign-in |
+| Deployment del RESTful API (Render) | https://pulsepower-backend.onrender.com/api/v1 |
 
 ## Anexo D. Diseño
 

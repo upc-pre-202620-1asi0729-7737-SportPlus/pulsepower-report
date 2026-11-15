@@ -591,7 +591,7 @@ Las historias del Sprint 3 se descomponen en tareas técnicas. El tablero del pr
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :--- |
 | US10 | Proteger datos fisiológicos del usuario | T32 | IAM bounded context – auth, JWT y TLS | Bounded context IAM en Spring Boot: registro (`POST /api/v1/authentication/sign-up`), inicio de sesión (`POST /api/v1/authentication/sign-in`), JWT (HS256) con roles, contraseñas con BCrypt, comunicación exclusiva por HTTPS/TLS. | 8 | Martín Farro, Alexis Sebastián | Done |
 | TS02 | Exponer endpoint de registro de perfil | T33 | Endpoints de usuarios y suscripciones | `GET/PUT /api/v1/users/me`, perfil (`PUT /api/v1/users/me/profile`), contraseña (`PUT /api/v1/users/me/password`), eliminación (`DELETE /api/v1/users/me`), objetivos (`POST/PUT/DELETE /api/v1/users/me/goals`), suscripciones (`GET/POST /api/v1/subscriptions/me`, `POST /api/v1/subscriptions/me/cancel`). | 7 | Martín Farro, Alexis Sebastián | Done |
-| TS01, TS03 | Exponer endpoints de recuperación y alertas | T34 | Physiology bounded context – recuperación, sincronización y asistente | `GET /api/v1/physiology/overview`, `POST/DELETE /api/v1/physiology/connection`, `POST /api/v1/physiology/sync`, `POST /api/v1/physiology/alerts/{alertId}/review`, `POST /api/v1/assistant/messages` (generación de rutina con IA). | 8 | Viza Quispe, Marlon Packard | Done |
+| TS01, TS03 | Exponer endpoints de recuperación y alertas | T34 | Physiology bounded context – recuperación, sincronización y asistente | `GET /api/v1/physiology/overview`, `POST/DELETE /api/v1/physiology/connection`, `POST /api/v1/physiology/sync`, `POST /api/v1/physiology/alerts/{alertId}/review`, `POST /api/v1/assistant/messages` (chat con el asistente de IA), `POST /api/v1/assistant/routines` (generación de rutina con IA). | 8 | Viza Quispe, Marlon Packard | Done |
 | (técnica) | Training bounded context backend | T35 | Training bounded context – sesiones y plan de entrenamiento | `GET/POST /api/v1/training/sessions`, `DELETE /api/v1/training/sessions/{sessionId}`, `GET /api/v1/training/plan`, `PUT /api/v1/training/plan/period`, `POST /api/v1/training/plan/activities`, `PUT/POST cancel /api/v1/training/plan/activities/{activityId}`. Pruebas de dominio con JUnit 5. | 7 | Evangelista Ygnacio, Sergio Joaquin | Done |
 | (técnica) | Sleep bounded context backend | T36 | Sleep bounded context – registros y rutina de sueño | `GET/POST /api/v1/sleep/records`, `PUT/DELETE /api/v1/sleep/records/{recordId}`, `GET/PUT /api/v1/sleep/routine`. Validación de periodos superpuestos en el dominio. Pruebas de dominio con JUnit 5. | 6 | Evangelista Ygnacio, Sergio Joaquin | Done |
 | (técnica) | Wellness bounded context backend | T37 | Wellness bounded context – check-ins y hábitos | `GET/POST /api/v1/wellness/check-ins` (un check-in por día), `GET/POST /api/v1/wellness/habits`, `DELETE /api/v1/wellness/habits/{habitId}`, `GET /api/v1/wellness/habits/logs`, `POST /api/v1/wellness/habits/{habitId}/logs`. Pruebas de dominio con JUnit 5. | 7 | Carbajal Santivañez, Sebastian Aaron | Done |
@@ -599,7 +599,7 @@ Las historias del Sprint 3 se descomponen en tareas técnicas. El tablero del pr
 | (técnica) | Reports bounded context backend | T39 | Reports bounded context – informes y entradas de historial | `GET/POST /api/v1/reports`, `GET /api/v1/reports/entries`, `GET /api/v1/reports/{reportId}/document`. Validación de rango de historial mínimo. | 6 | Viza Quispe, Marlon Packard | Done |
 | (técnica) | Shared infrastructure | T40 | Shared – infraestructura transversal, excepciones y configuración | Clases base JPA, estrategia de nombres `snake_case` con tablas pluralizadas, manejador global de excepciones (`@RestControllerAdvice`), perfil `prod` con variables de entorno para PostgreSQL y JWT. | 5 | Martín Farro, Alexis Sebastián | Done |
 | US15 | Iniciar registro desde la Landing Page | T41 | CTA Landing Page → Web Application | Botones "Log In" y "Sign Up" de la Landing Page apuntan a las rutas `/sign-in` y `/sign-up` de la Web Application desplegada en Vercel. | 2 | Viza Quispe, Marlon Packard | Done |
-| (técnica) | Despliegue del RESTful API | T42 | Dockerización y despliegue del RESTful API | `Dockerfile` multi-stage (JDK 21 → JRE), perfiles Spring Boot (`dev` / `prod`), variables de entorno en Render (`DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`) y conexión a base de datos PostgreSQL en la nube. | 5 | Martín Farro, Alexis Sebastián | Done |
+| (técnica) | Despliegue del RESTful API | T42 | Dockerización y despliegue del RESTful API | `Dockerfile` multi-stage (JDK 27 → JRE), perfiles Spring Boot (`dev` / `prod`), variables de entorno en Render (`DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`, `GEMINI_API_KEY`) y conexión a base de datos PostgreSQL en la nube. | 5 | Martín Farro, Alexis Sebastián | Done |
 | (técnica) | Integración con la Web Application | T43 | Conexión de la Web Application con el RESTful API | Reemplazar la URL de la API simulada por la del RESTful API en `environment.ts`; añadir interceptor `authInterceptor` con Bearer token; adaptar los repositorios HTTP de cada bounded context. | 6 | Carbajal Santivañez, Sebastian Aaron <br> Viza Quispe, Marlon Packard | Done |
 | US22, US23 | Sincronizar con apps de salud externas | T44 | Integración con Apple Health y Google Fit | Importación automática de sesiones y ciclos de sueño desde plataformas externas con resolución de duplicados. | 8 | Sin asignar | To-Do |
 | | **Total** | **36** | | | **81** | | |
@@ -610,7 +610,7 @@ Las historias del Sprint 3 se descomponen en tareas técnicas. El tablero del pr
 | :--- | :--- | :--- |
 | T32 | Implementado: registro, inicio de sesión, BCrypt y JWT con roles | `src/main/java/…/iam/` |
 | T33 | Implementado: perfil, contraseña, eliminación, objetivos y suscripciones | `src/main/java/…/iam/` |
-| T34 | Implementado: overview fisiológico, conexión a pulsera AIoTI, sincronización, revisión de alertas y asistente de IA | `src/main/java/…/physiology/` |
+| T34 | Implementado: overview fisiológico, conexión a pulsera AIoTI, sincronización, revisión de alertas, asistente de IA (`/assistant/messages`) y generación de rutinas con IA (`/assistant/routines`) | `src/main/java/…/physiology/` |
 | T35 | Implementado: sesiones de entrenamiento y plan de actividades con pruebas de dominio | `src/main/java/…/training/` |
 | T36 | Implementado: registros de sueño con validación de solapamientos y rutina de sueño con pruebas de dominio | `src/main/java/…/sleep/` |
 | T37 | Implementado: check-ins diarios y hábitos con sus registros con pruebas de dominio | `src/main/java/…/wellness/` |
@@ -618,7 +618,7 @@ Las historias del Sprint 3 se descomponen en tareas técnicas. El tablero del pr
 | T39 | Implementado: informes de progreso, entradas de historial y validación de rango mínimo | `src/main/java/…/reports/` |
 | T40 | Implementado: estrategia de nombres JPA, manejador de excepciones global, perfil `prod` | `src/main/java/…/shared/` |
 | T41 | Implementado: botones "Log In" y "Sign Up" apuntan a la Web Application desplegada | `pulsepower-website/index.html` |
-| T42 | Preparado: `Dockerfile`, `application-prod.properties`, variables de entorno configuradas; pendiente la URL pública estable del API en Render | `pulsepower-backend/` raíz |
+| T42 | Implementado: `Dockerfile` multi-stage (JDK 27), `application-prod.properties`, variables de entorno configuradas en Render; API desplegada en `https://pulsepower-backend.onrender.com` | `pulsepower-backend/` raíz |
 | T43 | Implementado: `environment.ts` apunta a `https://pulsepower-backend.onrender.com/api/v1`; `authInterceptor` adjunta el Bearer token | `pulsepower-webapp/src/environments/`, `shared/infrastructure/api.ts` |
 | T44 | Pendiente: requiere integración con Apple Health y Google Fit | — |
 
@@ -634,7 +634,7 @@ Principales decisiones de implementación:
 - **Errores:** respuestas `application/problem+json` con un `code` estable, manejadas por un `@RestControllerAdvice` global en `shared`.
 - **Integración:** la Web Application reemplaza la URL de json-server por la del RESTful API; los assemblers HTTP de cada bounded context convierten los DTOs de respuesta en modelos de dominio del frontend.
 - **Pruebas:** pruebas de dominio con JUnit 5 para los bounded contexts Training, Sleep, Wellness, Community, Physiology, Reports y Shared (`mvn test`).
-- **Empaquetado y despliegue:** el proyecto incluye un `Dockerfile` multi-stage (`eclipse-temurin:27-jdk-alpine` para la compilación con Maven y `eclipse-temurin:27-jre-alpine` para la ejecución bajo un usuario no privilegiado). Render construye el contenedor en cada commit integrado en `main`, inyecta las variables `SPRING_PROFILES_ACTIVE=prod`, `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET` y `CORS_ALLOWED_ORIGINS`, y expone el servicio en `https://pulsepower-backend.onrender.com`.
+- **Empaquetado y despliegue:** el proyecto incluye un `Dockerfile` multi-stage (`eclipse-temurin:27-jdk-alpine` para la compilación con Maven y `eclipse-temurin:27-jre-alpine` para la ejecución bajo un usuario no privilegiado). Render construye el contenedor en cada commit integrado en `main`, inyecta las variables `SPRING_PROFILES_ACTIVE=prod`, `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`, `CORS_ALLOWED_ORIGINS` y `GEMINI_API_KEY`, y expone el servicio en `https://pulsepower-backend.onrender.com`.
 
 Repositorio del backend: https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-backend
 
@@ -756,7 +756,8 @@ Todos los endpoints usan el prefijo `/api/v1`, JSON en camelCase e identificador
 | Physiology | `/api/v1/physiology/connection` | POST, DELETE | Vincula o desvincula la pulsera AIoTI | 201 · 204 · 409 |
 | Physiology | `/api/v1/physiology/sync` | POST | Fuerza la sincronización con la pulsera | 200 · 409 |
 | Physiology | `/api/v1/physiology/alerts/{alertId}/review` | POST | Marca una alerta como revisada | 200 · 404 |
-| Physiology | `/api/v1/assistant/messages` | POST | Envía un mensaje al asistente de IA para generación de rutinas | 200 |
+| Physiology | `/api/v1/assistant/messages` | POST | Envía un mensaje al asistente de IA; responde con análisis de sueño, entrenamiento y bienestar | 200 |
+| Physiology | `/api/v1/assistant/routines` | POST | Genera una rutina de entrenamiento personalizada con IA y la guarda en el plan del usuario | 200 |
 | Reports | `/api/v1/reports` | GET, POST | Lista e inicia la generación de un informe | 200 · 201 · 409 |
 | Reports | `/api/v1/reports/entries` | GET | Lista las entradas de historial disponibles | 200 |
 | Reports | `/api/v1/reports/{reportId}/document` | GET | Descarga el documento del informe | 200 · 404 |

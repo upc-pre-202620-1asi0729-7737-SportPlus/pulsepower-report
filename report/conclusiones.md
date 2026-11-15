@@ -182,9 +182,9 @@ Considerando los avances alcanzados y las funcionalidades pendientes de implemen
 |--------|----------------------------------------------------------------------------------------------------------|---------------|
 | AV1 | Presentación de la propuesta de negocio, Lean UX Process y primera versión del Landing Page | https://lix.li/10vH1f |
 | TB1 | Presentación de la propuesta de negocio, Lean UX Process, Landing Page y primera versión del Web App | https://lix.li/69TWkm |
-| TF | Presentación del Sprint 3: RESTful API, integración con la Web Application y entrevistas de validación | [PENDIENTE] |
-| Video About-the-Product | Primera versión del video del producto PulsePower | [PENDIENTE] |
-| Video About-the-Team | Primera versión del video del equipo SportPlus | [PENDIENTE] |
+| TF | Presentación del Sprint 3: RESTful API, integración con la Web Application y entrevistas de validación | https://lix.li/YjmIXF |
+| Video About-the-Product | Primera versión del video del producto PulsePower | https://youtu.be/PeENrbJvSIY |
+| Video About-the-Team | Primera versión del video del equipo SportPlus | https://lix.li/Zwgxei |
 
 ## Anexo B. Repositorios del Proyecto
 

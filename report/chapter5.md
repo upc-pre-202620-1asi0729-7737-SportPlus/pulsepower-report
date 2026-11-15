@@ -707,7 +707,7 @@ En el Sprint 3 la Web Application opera contra el RESTful API desplegado en Rend
 
 *Panel principal de la Web Application operando contra el RESTful API.*
 
-**Video de demostración:** [PENDIENTE: URL]
+**Video de demostración:** https://youtu.be/PeENrbJvSIY
 
 #### 5.2.3.6 Services Documentation Evidence for Sprint Review
 
@@ -813,19 +813,6 @@ La colaboración del Sprint 3 se evidencia con las estadísticas de GitHub de lo
 
 **Registro.** Por cada entrevista se anotan: tiempo empleado por tarea, errores, comentarios textuales relevantes y las valoraciones numéricas.
 
-### 5.3.2. Registro de Entrevistas
-
-Las entrevistas de validación se realizaron con la versión integrada del Sprint 3. Esta sección se completa con los datos reales de cada sesión.
-
-| N.° | Segmento | Entrevistado | Fecha | Duración | Entrevistador | Enlace a la grabación | Resumen de hallazgos |
-| :---: | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Deportista | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-| 2 | Deportista | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-| 3 | Deportista | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-| 4 | Wellness Seeker | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-| 5 | Wellness Seeker | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-| 6 | Wellness Seeker | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-
 ### 5.3.3. Evaluaciones según heurísticas
 
 Se aplicará una evaluación heurística a la Web Application integrada usando las diez heurísticas de usabilidad de Jakob Nielsen. Cada hallazgo se registra con la tarea en que apareció, la heurística incumplida, su severidad (0 = no es problema, 1 = cosmético, 2 = menor, 3 = mayor, 4 = catastrófico) y la recomendación.
@@ -857,7 +844,7 @@ Se aplicará una evaluación heurística a la Web Application integrada usando l
 
 ## 5.4. Video About-the-Product
 
-**Estado:** [PENDIENTE: grabar y publicar la primera versión; pegar aquí la URL y la duración].
+**URL:** https://youtu.be/PeENrbJvSIY
 
 **Objetivo:** mostrar en 3 a 5 minutos el problema, la propuesta de valor y el funcionamiento real de PulsePower con la Web Application conectada al RESTful API.
 
@@ -874,7 +861,7 @@ Se aplicará una evaluación heurística a la Web Application integrada usando l
 
 ## 5.5. Video About-the-Team
 
-**Estado:** [PENDIENTE: grabar y publicar la primera versión; pegar aquí la URL y la duración].
+**URL:** https://lix.li/Zwgxei
 
 **Objetivo:** mostrar en 3 a 5 minutos cómo trabajó el equipo SportPlus durante el proyecto.
 

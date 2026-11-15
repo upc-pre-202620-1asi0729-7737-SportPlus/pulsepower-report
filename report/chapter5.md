@@ -51,10 +51,12 @@ Para mantener la legibilidad y calidad del código, todo el equipo aplicará nom
 ### 5.1.4. Software Deployment Configuration
 
 - El despliegue del ecosistema PulsePower combinará métodos de publicación ágil para el Frontend y prácticas de Integración/Despliegue Continuo (CI/CD) para el Backend:
-- Landing Page (Sitio Estático): Se desplegará utilizando la infraestructura gratuita de GitHub Pages, configurada para publicar automáticamente cada PR fusionado en main desde el repositorio del Landing Page.
-- Frontend (Angular Web App): Se desplegará en la plataforma PaaS Vercel, utilizando su integración nativa con GitHub para publicar automáticamente cada PR fusionado en main.
+- Landing Page (Sitio Estático): Se desplegará utilizando la infraestructura gratuita de Render (Static Site), configurada para publicar automáticamente cada PR fusionado en main desde el repositorio del Landing Page.
+- Frontend (Angular Web App): Se despliega en la plataforma PaaS Vercel, utilizando su integración nativa con GitHub para publicar automáticamente cada commit fusionado en `main`.
+- Backend (Spring Boot RESTful API): Se despliega en Render como Web Service a partir de un contenedor Docker (multi-stage build con Maven y JRE 27). Render construye y publica cada commit integrado en `main`; las credenciales de base de datos y el perfil `prod` se inyectan mediante variables de entorno.
+- Base de datos (PostgreSQL): Se provisiona en Render como base gestionada; el API recibe la cadena de conexión por variable de entorno `DB_URL` y ejecuta las migraciones de Flyway al iniciar.
 
-> **Resumen de la sección 5.1.** El equipo gestiona el código en GitHub con GitFlow (ramas `main`, `develop` y `feature/*`), Conventional Commits y guías de estilo por lenguaje. La Landing Page se publica en GitHub Pages y la Web Application en Vercel.
+> **Resumen de la sección 5.1.** El equipo gestiona el código en GitHub con GitFlow (ramas `main`, `develop` y `feature/*`), Conventional Commits y guías de estilo por lenguaje. La Landing Page se publica en Render (Static Site), la Web Application en Vercel y el RESTful API en Render (contenedor Docker con base de datos PostgreSQL gestionada).
 
 ## 5.2 Landing Page, Services & Applications Implementation
 
@@ -123,7 +125,7 @@ El Sprint 1 incluye las seis primeras historias del Product Backlog (sección 3.
 | US45 | Consultar la Landing Page en mi idioma | T08 | Selector de idioma | Implementar el mecanismo de cambio de idioma (Español/Inglés) reutilizable en todas las secciones de la Landing Page. | 4 | Viza Quispe, Marlon Packard | Done |
 | US36 | Comparar los planes Basic y Pro | T09 | Maquetar sección "Planes" | Desarrollar la sección de planes Basic y Pro con el cambio entre facturación mensual y anual. | 4 | Viza Quispe, Marlon Packard<br>Martín Farro, Alexis Sebastián | Done |
 | US46 | Consultar términos y política de privacidad | T10 | Footer y páginas legales | Añadir el footer con contacto y redes sociales, y enlazar las páginas de términos del servicio y política de privacidad. | 2 | Viza Quispe, Marlon Packard<br>Osorio Ramírez, Eduardo Jesús<br>Evangelista Ygnacio, Sergio Joaquin | Done |
-| TS04 | Configurar repositorio y despliegue de la Landing Page | T11 | Despliegue en GitHub Pages | Configurar la rama main y publicar el sitio estático mediante GitHub Pages. | 2 | Evangelista Ygnacio, Sergio Joaquin | Done |
+| TS04 | Configurar repositorio y despliegue de la Landing Page | T11 | Despliegue en Render (Static Site) | Configurar la rama main y publicar el sitio estático mediante Render (Static Site). | 2 | Evangelista Ygnacio, Sergio Joaquin | Done |
 
 Tablero de Trello:
 
@@ -131,7 +133,7 @@ Tablero de Trello:
 
 #### 5.2.1.4 Development Evidence for Sprint Review
 
-Durante el Sprint 1, el equipo implementó la Landing Page de PulsePower con HTML5, CSS3 y JavaScript vanilla, y la desplegó en GitHub Pages. Los principales avances fueron la estructura de todas las secciones de la landing (barra de navegación, Hero, propuesta y servicios, How PulsePower Works, videos explicativos, Our Team, Planes, Overview y Footer), el diseño responsive con media queries para móvil y tablet, el selector de idioma español/inglés, el cambio de facturación mensual/anual de los planes y las páginas de Términos de Servicio y Política de Privacidad. A continuación se presentan los 53 commits del repositorio de la Landing Page realizados durante este Sprint.
+Durante el Sprint 1, el equipo implementó la Landing Page de PulsePower con HTML5, CSS3 y JavaScript vanilla, y la desplegó en Render (Static Site). Los principales avances fueron la estructura de todas las secciones de la landing (barra de navegación, Hero, propuesta y servicios, How PulsePower Works, videos explicativos, Our Team, Planes, Overview y Footer), el diseño responsive con media queries para móvil y tablet, el selector de idioma español/inglés, el cambio de facturación mensual/anual de los planes y las páginas de Términos de Servicio y Política de Privacidad. A continuación se presentan los 53 commits del repositorio de la Landing Page realizados durante este Sprint.
 
 **Repositorio:** https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-website
 
@@ -193,13 +195,13 @@ Durante el Sprint 1, el equipo implementó la Landing Page de PulsePower con HTM
 
 #### 5.2.1.5 Execution Evidence for Sprint Review
 
-Durante el Sprint 1, el equipo implementó y desplegó la primera versión pública de la Landing Page de PulsePower, accesible en: [https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/](https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/).
+Durante el Sprint 1, el equipo implementó y desplegó la primera versión pública de la Landing Page de PulsePower, accesible en: [https://pulsepower-website.onrender.com](https://pulsepower-website.onrender.com).
 
 La Landing Page es un sitio estático desarrollado con HTML, CSS y JavaScript. Es responsive y bilingüe: un selector de idioma permite cambiar todo el contenido entre español e inglés. Su objetivo es presentar la propuesta de valor de PulsePower a los dos segmentos objetivo y dirigirlos hacia los planes de suscripción. A continuación se presenta la captura de la página completa implementada.
 
 ![PulsePower-Landing_Page_Wireframe.jpeg](../assets/images/PulsePower-Landing_Page_Wireframe.jpeg)
 
-*Captura completa de la Landing Page de PulsePower desplegada en GitHub Pages (versión en inglés).*
+*Captura completa de la Landing Page de PulsePower desplegada en Render (Static Site) (versión en inglés).*
 
 La página se organiza en las siguientes secciones, en el orden en que aparecen:
 
@@ -221,16 +223,16 @@ En consecuencia, no se ha realizado en este sprint el desarrollo de Web Services
 
 #### 5.2.1.7 Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 1, el equipo realizó el despliegue de la primera versión pública de la Landing Page utilizando GitHub Pages, servicio gratuito y estático integrado directamente con el repositorio de GitHub.
+Durante el Sprint 1, el equipo realizó el despliegue de la primera versión pública de la Landing Page utilizando Render (Static Site), servicio gratuito y estático integrado directamente con el repositorio de GitHub.
 
-* **Plataforma de despliegue:** GitHub Pages — [https://pages.github.com](https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/)
+* **Plataforma de despliegue:** Render (Static Site) — [https://render.com](https://render.com)
 * **URL base del repositorio:** https://github.com/upc-pre-202620-1asi0729-7737-SportPlus
 
 **Proceso de despliegue:**
 1. Se utilizó el repositorio central del equipo bajo la organización de la clase.
 2. Todo el contenido estático de la landing page (HTML, CSS, JS) fue integrado mediante Pull Requests revisados por los integrantes del equipo, siguiendo el flujo GitFlow.
 3. En la sección *Settings → Pages* del repositorio, se seleccionó la rama principal de producción como fuente de publicación.
-4. GitHub Pages generó automáticamente la URL pública y publicó el sitio estático para su acceso global.
+4. Render (Static Site) generó automáticamente la URL pública y publicó el sitio estático para su acceso global.
 
 #### 5.2.1.8 Team Collaboration Insights during Sprint
 
@@ -245,7 +247,7 @@ Durante el Sprint 1, el equipo utilizó GitHub como plataforma central de colabo
 
 Esta captura de pantalla muestra el gráfico de actividad de GitHub del repositorio `upc-pre-202620-1asi0729-7737-SportPlus`. En él se puede observar una alta concentración de trabajo en equipo durante el mes de septiembre, con múltiples contribuciones y commits registrados durante la consolidación del Sprint 1, reflejando el trabajo concurrente de los distintos líderes de aspecto y colaboradores en sus respectivas ramas.
 
-> **Resumen del Sprint 1.** Se entregó la Landing Page estática, responsive y bilingüe (6 historias, 16 Story Points), desplegada en GitHub Pages. La evidencia está en los 53 commits de la sección 5.2.1.4, la página publicada (5.2.1.5) y su despliegue (5.2.1.7).
+> **Resumen del Sprint 1.** Se entregó la Landing Page estática, responsive y bilingüe (6 historias, 16 Story Points), desplegada en Render (Static Site). La evidencia está en los 53 commits de la sección 5.2.1.4, la página publicada (5.2.1.5) y su despliegue (5.2.1.7).
 
 
 ### 5.2.2 Sprint 2
@@ -399,7 +401,7 @@ Commits de cada integrante en el repositorio `pulsepower-webapp` (todas las rama
 
 #### 5.2.2.5 Execution Evidence for Sprint Review
 
-**URL de despliegue:** https://pulsepower-ten.vercel.app/sign-in
+**URL de despliegue:** https://pulsepower-webapp.vercel.app/sign-in
 
 A continuación se presenta el recorrido por la aplicación:
 
@@ -489,7 +491,7 @@ La aplicación funciona con dos espacios de trabajo. El **espacio de demostraci�
 
 #### 5.2.2.6 Services Documentation Evidence for Sprint Review
 
-Durante este Sprint la Web Application **no expone servicios REST propios**, ya que es una *Single Page Application* de frontend, pero **sí consume un servicio REST**: el endpoint `GET /api/v1/physiological-overview` (resumen fisiológico) de la API desplegada en Render (`https://pulsepower-api.onrender.com/api/v1/physiological-overview`). Las Technical Stories TS01, TS02 y TS03 permanecen en el Product Backlog como trabajo pendiente del backend en Spring Boot y PostgreSQL descrito en la sección 4.6, por lo que aún no existe documentación OpenAPI/Swagger que reportar en esta entrega.
+Durante este Sprint la Web Application **no expone servicios REST propios**, ya que es una *Single Page Application* de frontend, pero **sí consume un servicio REST**: el endpoint `GET /api/v1/physiological-overview` (resumen fisiológico) de la API desplegada en Render (`https://pulsepower-backend.onrender.com/api/v1/physiological-overview`). Las Technical Stories TS01, TS02 y TS03 permanecen en el Product Backlog como trabajo pendiente del backend en Spring Boot y PostgreSQL descrito en la sección 4.6, por lo que aún no existe documentación OpenAPI/Swagger que reportar en esta entrega.
 
 El resto de los datos de la aplicación se gestiona en almacenes locales, cableados en `src/app/app.config.ts`, bajo los prefijos `pulsepower.demo.v1.`, `pulsepower.user.<id>.` y `pulsepower.v1.`, lo que aísla el espacio de trabajo de cada cuenta. Además de la consulta a `GET /api/v1/physiological-overview`, la única llamada HTTP de la aplicación es la carga de los catálogos de idioma `public/i18n/es.json` y `public/i18n/en.json`.
 
@@ -501,7 +503,7 @@ Durante el Sprint 2, el equipo realizó el despliegue de la primera versión pú
 
 * **Plataforma de despliegue (Web App):** Vercel
 * **Plataforma de despliegue (API):** Render
-* **URL de la API:** https://pulsepower-api.onrender.com/api/v1/physiological-overview
+* **URL de la API:** https://pulsepower-backend.onrender.com/api/v1/physiological-overview
 * **URL base del repositorio:** https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-webapp
 
 **Proceso de despliegue:**
@@ -617,21 +619,22 @@ Las historias del Sprint 3 se descomponen en tareas técnicas. El tablero del pr
 | T40 | Implementado: estrategia de nombres JPA, manejador de excepciones global, perfil `prod` | `src/main/java/…/shared/` |
 | T41 | Implementado: botones "Log In" y "Sign Up" apuntan a la Web Application desplegada | `pulsepower-website/index.html` |
 | T42 | Preparado: `Dockerfile`, `application-prod.properties`, variables de entorno configuradas; pendiente la URL pública estable del API en Render | `pulsepower-backend/` raíz |
-| T43 | Implementado: `environment.ts` apunta a `https://pulsepower-api.onrender.com/api/v1`; `authInterceptor` adjunta el Bearer token | `pulsepower-webapp/src/environments/`, `shared/infrastructure/api.ts` |
+| T43 | Implementado: `environment.ts` apunta a `https://pulsepower-backend.onrender.com/api/v1`; `authInterceptor` adjunta el Bearer token | `pulsepower-webapp/src/environments/`, `shared/infrastructure/api.ts` |
 | T44 | Pendiente: requiere integración con Apple Health y Google Fit | — |
 
 #### 5.2.3.4 Development Evidence for Sprint Review
 
-En el Sprint 3 se implementó la primera versión de los Web Services de PulsePower, **PulsePower Backend**, en Java 21 con Spring Boot. El código se organiza en `src/main/java/com/sportplus/pulsepower/` con un directorio por bounded context — `iam`, `training`, `sleep`, `wellness`, `community`, `physiology` y `reports` — y un núcleo compartido (`shared`). Cada contexto se divide en las capas `domain`, `application`, `infrastructure` e `interfaces`, tal como define el diseño del capítulo 4.
+En el Sprint 3 se implementó la primera versión de los Web Services de PulsePower, **PulsePower Backend**, en Java 27 con Spring Boot 4.1.2. El código se organiza en `src/main/java/com/sportplus/pulsepower/` con un directorio por bounded context — `iam`, `training`, `sleep`, `wellness`, `community`, `physiology` y `reports` — y un núcleo compartido (`shared`). Cada contexto se divide en las capas `domain`, `application`, `infrastructure` e `interfaces`, tal como define el diseño del capítulo 4.
 
 Principales decisiones de implementación:
 
-- **Persistencia:** Spring Data JPA con el proveedor Hibernate sobre PostgreSQL; estrategia de nombres `SnakeCaseWithPluralizedTablePhysicalNamingStrategy`; esquema gestionado con `spring.jpa.hibernate.ddl-auto=update` en desarrollo y `validate` en producción.
+- **Persistencia:** Spring Data JPA con el proveedor Hibernate sobre PostgreSQL; estrategia de nombres `SnakeCaseWithPluralizedTablePhysicalNamingStrategy`; esquema inicial creado por Flyway con siete migraciones versionadas (`V1__iam.sql` … `V7__community.sql`) y mantenido por Hibernate con `spring.jpa.hibernate.ddl-auto=validate` en los perfiles `dev` y `test`, y `update` en el perfil `prod` para garantizar la convergencia del esquema en Render.
 - **Seguridad:** contraseñas con BCrypt, JWT firmado (HS256) con los claims `sub`, `role` y `email`, autorización con `@PreAuthorize` y verificación de propiedad en cada caso de uso. Comunicación exclusiva por HTTPS/TLS en el entorno desplegado.
 - **Reglas de negocio en el servidor:** los registros de sueño rechazan periodos superpuestos; los check-ins admiten solo uno por día; la recuperación se calcula con HRV, frecuencia cardíaca en reposo y registros recientes; las rutinas de entrenamiento se generan con un modelo de IA.
 - **Errores:** respuestas `application/problem+json` con un `code` estable, manejadas por un `@RestControllerAdvice` global en `shared`.
 - **Integración:** la Web Application reemplaza la URL de json-server por la del RESTful API; los assemblers HTTP de cada bounded context convierten los DTOs de respuesta en modelos de dominio del frontend.
-- **Pruebas:** pruebas de dominio con JUnit 5 para los bounded contexts Training, Sleep, Wellness, Community, Physiology y Shared (`mvn test`).
+- **Pruebas:** pruebas de dominio con JUnit 5 para los bounded contexts Training, Sleep, Wellness, Community, Physiology, Reports y Shared (`mvn test`).
+- **Empaquetado y despliegue:** el proyecto incluye un `Dockerfile` multi-stage (`eclipse-temurin:27-jdk-alpine` para la compilación con Maven y `eclipse-temurin:27-jre-alpine` para la ejecución bajo un usuario no privilegiado). Render construye el contenedor en cada commit integrado en `main`, inyecta las variables `SPRING_PROFILES_ACTIVE=prod`, `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET` y `CORS_ALLOWED_ORIGINS`, y expone el servicio en `https://pulsepower-backend.onrender.com`.
 
 Repositorio del backend: https://github.com/upc-pre-202620-1asi0729-7737-SportPlus/pulsepower-backend
 
@@ -649,20 +652,23 @@ Repositorio del backend: https://github.com/upc-pre-202620-1asi0729-7737-SportPl
 | 8 | `e97b526` | 2026-11-08 | @SC-fnfoc | feat(wellness): implement wellness domain and application services |
 | 9 | `22b1963` | 2026-11-08 | @SC-fnfoc | feat(community): implement streaks, achievements and shared progress domain and services |
 | 10 | `503543a` | 2026-11-09 | Marlon | feat(physiology): add physiological domain and recovery calculator |
+| 11 | `6ab0ca2` | 2026-11-14 | @axismf | build(deploy): add Dockerfile and fix pom.xml dependencies for Render |
+| 12 | `dd42df0` | 2026-11-14 | @axismf | fix(config): explicitly enable Flyway migrations for prod profile |
+| 13 | `3de6c2a` | 2026-11-14 | @axismf | fix(config): use ddl-auto=update to let Hibernate create schema on prod |
 | … | — | — | — | *…31 commits más* |
 
-*Total en el backend: 41 commits (incluye feature branches y rama `feature/iam`).*
+*Total en el backend: 44 commits (incluye feature branches y rama `feature/iam`).*
 
 **Commits por integrante — backend**
 
 | Integrante | Usuario de GitHub | Commits |
 | :--- | :--- | :---: |
-| Martín Farro, Alexis Sebastián | @axismf | 16 |
+| Martín Farro, Alexis Sebastián | @axismf | 19 |
 | Viza Quispe, Marlon Packard | @V8Z5 | 12 |
 | Evangelista Ygnacio, Sergio Joaquin | @Sergi9017 | 6 |
 | Carbajal Santivañez, Sebastian Aaron | @SC-fnfoc | 6 |
 | Osorio Ramírez, Eduardo Jesús | @Iron819 | 0 |
-| **Total** | | **40** |
+| **Total** | | **43** |
 
 **Commits representativos del Sprint 3 — webapp (`feature/frontend-backend-integration`)**
 
@@ -682,7 +688,7 @@ Repositorio del backend: https://github.com/upc-pre-202620-1asi0729-7737-SportPl
 
 #### 5.2.3.5 Execution Evidence for Sprint Review
 
-**URL de la Web Application:** https://pulsepower-ten.vercel.app/sign-in
+**URL de la Web Application:** https://pulsepower-webapp.vercel.app/sign-in
 
 En el Sprint 3 la Web Application opera contra el RESTful API desplegado en Render. Los datos registrados por el usuario (sesiones, sueño, check-ins, hábitos, notas de progreso) persisten en PostgreSQL en lugar de guardarse solo en el navegador. Las pantallas son las mismas que en el Sprint 2 (sección 5.2.2.5); el cambio sustancial es que los datos ahora se leen y escriben desde el servidor.
 
@@ -759,9 +765,9 @@ Todos los endpoints usan el prefijo `/api/v1`, JSON en camelCase e identificador
 
 | Producto | Plataforma | Configuración incluida | Estado | URL |
 | :--- | :--- | :--- | :--- | :--- |
-| Landing Page | GitHub Pages | — | Desplegada. CTA "Log In" / "Sign Up" apuntan a la Web Application. | https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/ |
-| Web Application | Vercel | `environment.ts` apunta al API real; `authInterceptor` con Bearer token | Desplegada. | https://pulsepower-ten.vercel.app/sign-in |
-| RESTful Web Services | Render (contenedor Docker) | `Dockerfile`, perfiles Spring Boot `dev` / `prod`, variables de entorno configuradas en Render | Desplegado. `GET /actuator/health` → `{"status":"UP"}` | https://pulsepower-api.onrender.com/api/v1 |
+| Landing Page | Render (Static Site) | — | Desplegada. CTA "Log In" / "Sign Up" apuntan a la Web Application. | https://pulsepower-website.onrender.com |
+| Web Application | Vercel | `environment.ts` apunta al API real; `authInterceptor` con Bearer token | Desplegada. | https://pulsepower-webapp.vercel.app/sign-in |
+| RESTful Web Services | Render (contenedor Docker) | `Dockerfile`, perfiles Spring Boot `dev` / `prod`, variables de entorno configuradas en Render | Desplegado. `GET /actuator/health` → `{"status":"UP"}` | https://pulsepower-backend.onrender.com/api/v1 |
 | Base de datos | PostgreSQL (Render managed DB) | URL inyectada por variable de entorno `DB_URL`; esquema validado al iniciar el API | Activa. | — (no se publica la cadena de conexión) |
 
 #### 5.2.3.8 Team Collaboration Insights during Sprint

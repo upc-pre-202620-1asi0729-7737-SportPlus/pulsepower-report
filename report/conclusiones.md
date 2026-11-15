@@ -199,9 +199,9 @@ Considerando los avances alcanzados y las funcionalidades pendientes de implemen
 
 | Descripción | Enlace |
 |------------|--------|
-| Deployment de la Landing Page en GitHub Pages | https://upc-pre-202620-1asi0729-7737-sportplus.github.io/pulsepower-website/ |
-| Deployment de la Web Application (Vercel) | https://pulsepower-ten.vercel.app/sign-in |
-| Deployment del RESTful API (Render) | https://pulsepower-api.onrender.com/api/v1 |
+| Deployment de la Landing Page en Render (Static Site) | https://pulsepower-website.onrender.com |
+| Deployment de la Web Application (Vercel) | https://pulsepower-webapp.vercel.app/sign-in |
+| Deployment del RESTful API (Render) | https://pulsepower-backend.onrender.com/api/v1 |
 
 ## Anexo D. Diseño
 
